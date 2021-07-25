@@ -44,7 +44,16 @@ jQuery(document).ready(function($) {
 	$(function() {
 		$('.accordion .show-option').click(function(event) {
 			event.preventDefault();
-			$(this).parent().siblings().find('.fretboard').slideUp();
+			$(this).parent().find('.fretboard').slideUp();
+			$(this).parent().find('.fretboard').slideToggle();
+		});
+	});
+	// end Effect accordion
+
+	// Effect dropdown list
+	$(function() {
+		$('.dropdown .show-option').click(function(event) {
+			event.preventDefault();
 			$(this).parent().find('.fretboard').slideToggle();
 		});
 	});

@@ -1,5 +1,5 @@
 * {
-	outline: none !important;
+	outline: none;
 }
 
 //button,link
@@ -12,12 +12,10 @@ a {
 	}
 }
 
-._keyfocus {
-	* {
-		&:focus {
-			box-shadow: none;
-			outline: none;
-		}
+* {
+	&:focus {
+		box-shadow: none;
+		outline: none;
 	}
 }
 
@@ -50,33 +48,4 @@ table {
 	.col {
 		width: auto;
 	}
-}
-
-
-/* responsive */
-& when (@media-common =true) {
-    @media (min-width: 1200px) {
-        body .container {
-            max-width: 1170px;
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-    }
-}
-
-// right to left
-& when (@media-common =true) {
-    .rtl {
-
-        input[type="checkbox"],
-        input[type="radio"] {
-            margin: 2px 0 0 5px;
-        }
-
-        select {
-            background-position: left 7px center;
-            padding: 0 12px 0 20px;
-        }
-    }
 }

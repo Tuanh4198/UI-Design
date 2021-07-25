@@ -1,0 +1,224 @@
+/* line 5, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\000035}}
+.category-sidebar {
+  width: 30%;
+}
+/* line 8, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\000038}}
+.category-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 13, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000313}}
+.category-sidebar .show-option {
+  color: #242424;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+/* line 18, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000318}}
+.category-sidebar .show-option:hover {
+  color: #993a3a;
+}
+/* line 20, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000320}}
+.category-sidebar .show-option .name-option {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+/* line 28, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000328}}
+.category-sidebar .show-option .show {
+  font-size: 25px;
+  line-height: 30px;
+}
+/* line 36, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000336}}
+.category-sidebar .list-support-fiter > li:not(:last-child) {
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EFEFEF;
+}
+/* line 44, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000344}}
+.category-sidebar .list-support-option {
+  margin-top: 15px;
+}
+/* line 47, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000347}}
+.category-sidebar .list-support-option.size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/* line 53, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000353}}
+.category-sidebar .list-support-option.size li {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1px;
+  padding: 15px 20px;
+  margin-right: 10px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+/* line 65, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000365}}
+.category-sidebar .list-support-option.size li:hover,
+.category-sidebar .list-support-option.size li:active {
+  background: #242424;
+}
+/* line 69, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000369}}
+.category-sidebar .list-support-option.size li:hover a,
+.category-sidebar .list-support-option.size li:active a {
+  color: white;
+  text-decoration: none;
+}
+/* line 77, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000377}}
+.category-sidebar .list-support-option.color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/* line 83, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000383}}
+.category-sidebar .list-support-option.color li {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+/* line 97, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000397}}
+.category-sidebar .list-support-option.color li:hover,
+.category-sidebar .list-support-option.color li:active {
+  border: 2px solid #9A9A9A;
+}
+/* line 102, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003102}}
+.category-sidebar .list-support-option.color li a {
+  font-size: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* line 112, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003112}}
+.category-sidebar .list-support-option a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #808080;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-transform: capitalize;
+}
+/* line 124, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003124}}
+.category-sidebar .list-support-option:not(.swatch) li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+/* line 133, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003133}}
+.category-sidebar .list-support-option:not(.swatch) li:not(:last-child) {
+  margin-bottom: 15px;
+}
+/* line 137, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003137}}
+.category-sidebar .list-support-option:not(.swatch) li:before {
+  content: url(../../images/page/category/check.png);
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  left: 0;
+}
+/* line 147, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003147}}
+.category-sidebar .list-support-option:not(.swatch) li:hover,
+.category-sidebar .list-support-option:not(.swatch) li.active {
+  padding-left: 25px;
+}
+/* line 151, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003151}}
+.category-sidebar .list-support-option:not(.swatch) li:hover:before,
+.category-sidebar .list-support-option:not(.swatch) li.active:before {
+  opacity: 1;
+}
+/* line 155, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003155}}
+.category-sidebar .list-support-option:not(.swatch) li:hover a,
+.category-sidebar .list-support-option:not(.swatch) li.active a {
+  color: #242424;
+  text-decoration: none;
+}
+/* line 164, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003164}}
+.category-products {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
