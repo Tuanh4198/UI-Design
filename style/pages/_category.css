@@ -222,3 +222,154 @@
       -ms-flex: 1;
           flex: 1;
 }
+/* line 3, E:\Themes\UI-Design\style\config\_reset.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\000033}}
+* {
+  outline: none !important;
+}
+/* line 8, E:\Themes\UI-Design\style\config\_reset.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\000038}}
+button,
+a {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+/* line 11, E:\Themes\UI-Design\style\config\_reset.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\0000311}}
+button:hover,
+a:hover {
+  text-decoration: none;
+}
+/* line 18, E:\Themes\UI-Design\style\config\_reset.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\0000318}}
+._keyfocus *:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+/* line 25, E:\Themes\UI-Design\style\config\_reset.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\0000325}}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0;
+}
+/* line 41, E:\Themes\UI-Design\style\config\_reset.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\0000341}}
+ul {
+  padding: 0;
+  list-style: none;
+}
+/* line 47, E:\Themes\UI-Design\style\config\_reset.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\0000347}}
+table th {
+  text-align: left;
+}
+/* line 51, E:\Themes\UI-Design\style\config\_reset.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\0000351}}
+table .col {
+  width: auto;
+}
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('../../fonts/font-Inter/Inter-Regular.ttf');
+}
+/* responsive */
+@media screen and (min-width: 1440px) {
+  /* line 82, E:\Themes\UI-Design\style\config\_reset.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\0000382}}
+  .container-fluid {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 89, E:\Themes\UI-Design\style\config\_reset.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_reset\.less}line{font-family:\0000389}}
+  body .container {
+    max-width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 1, E:\Themes\UI-Design\style\config\_mixin.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_mixin\.less}line{font-family:\000031}}
+.hidden {
+  display: none !important;
+}
+/* line 5, E:\Themes\UI-Design\style\config\_mixin.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_mixin\.less}line{font-family:\000035}}
+.alignleft {
+  float: left;
+}
+/* line 9, E:\Themes\UI-Design\style\config\_mixin.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_mixin\.less}line{font-family:\000039}}
+.alignright {
+  float: right;
+}
+/* line 49, E:\Themes\UI-Design\style\config\_mixin.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_mixin\.less}line{font-family:\0000349}}
+.hidden-visibility {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 60, E:\Themes\UI-Design\style\config\_mixin.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_mixin\.less}line{font-family:\0000360}}
+.button-close {
+  background-image: none;
+  -moz-box-sizing: content-box;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+}
+/* line 75, E:\Themes\UI-Design\style\config\_mixin.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_mixin\.less}line{font-family:\0000375}}
+.center-transform {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/* line 102, E:\Themes\UI-Design\style\config\_mixin.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_mixin\.less}line{font-family:\00003102}}
+.dflex {
+  display: -webkit-box;
+  display: -ms-flex-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 109, E:\Themes\UI-Design\style\config\_mixin.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/config\/_mixin\.less}line{font-family:\00003109}}
+.dflex:before,
+.dflex:after {
+  display: none;
+}
