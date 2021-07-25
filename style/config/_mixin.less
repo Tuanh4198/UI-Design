@@ -1,0 +1,234 @@
+.hidden {
+    display: none !important;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.placeholder(@rules) {
+    ::-webkit-input-placeholder {
+        @rules();
+    }
+
+    :-moz-placeholder {
+        @rules();
+    }
+
+    ::-moz-placeholder {
+        @rules();
+    }
+
+    :-ms-input-placeholder {
+        @rules();
+    }
+}
+
+.box-shadow(@x: 0, @y: 0, @blur: 1px, @color: #000) {
+    box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+}
+
+.round-borders (@radius: 5px) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+
+.inner-round-borders(@a: 0, @b: 0, @c: 0, @d: 0) {
+    border-radius: @arguments;
+    -moz-border-radius: @arguments;
+    -webkit-border-radius: @arguments;
+}
+
+.button-number {
+
+    .increase,
+    .reduced {
+        width: 35px;
+        line-height: 1;
+        font-weight: 400;
+        position: absolute;
+        right: 0;
+        border: none;
+        color: #888888;
+        font-size: 1.6rem;
+        height: 50%;
+        background-color: transparent;
+
+        &:before {
+            font-family: @fontawesome;
+        }
+
+        &:hover {
+            background: transparent;
+            color: @black;
+        }
+
+        i {
+            display: none;
+        }
+    }
+
+    .increase {
+        top: 0;
+
+        &:before {
+            content: "\f0d8 ";
+        }
+    }
+
+    .reduced {
+        bottom: 0;
+
+        &:before {
+            content: "\f0d7";
+        }
+    }
+}
+
+.rating-star {
+    display: block;
+    font-family: @fontawesome;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 20px;
+    letter-spacing: 10px;
+    line-height: 20px;
+    position: absolute;
+    vertical-align: top;
+}
+
+.hidden-visibility {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.button-close {
+    background-image: none;
+    -moz-box-sizing: content-box;
+    border: 0;
+    box-shadow: none;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+}
+
+.tranform50 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ro-transform(@deg: 180deg) {
+    -webkit-transform: rotate(@deg);
+    -ms-transform: rotate(@deg);
+    -o-transform: rotate(@deg);
+    transform: rotate(@deg);
+}
+
+.roX-transform(@deg: 180deg) {
+    -webkit-transform: rotateX(@deg);
+    -ms-transform: rotateX(@deg);
+    -o-transform: rotateX(@deg);
+    transform: rotateX(@deg);
+}
+
+.roY-transform(@deg: 180deg) {
+    -webkit-transform: rotateY(@deg);
+    -ms-transform: rotateY(@deg);
+    -o-transform: rotateY(@deg);
+    transform: rotateY(@deg);
+}
+
+.roZ-transform(@deg: 180deg) {
+    -webkit-transform: rotateY(@deg);
+    -ms-transform: rotateY(@deg);
+    -o-transform: rotateY(@deg);
+    transform: rotateY(@deg);
+}
+
+.late3D-transform(@x: 5px, @y: 5px, @z: 5px) {
+    -webkit-transform: translate3d(@x, @y, @z);
+    -ms-transform: translate3d(@x, @y, @z);
+    -o-transform: translate3d(@x, @y, @z);
+    transform: translate3d(@x, @y, @z);
+}
+
+.late-transform(@x: 5px, @y: 5px) {
+    -webkit-transform: translate(@x, @y);
+    -ms-transform: translate(@x, @y);
+    -o-transform: translate(@x, @y);
+    transform: translate(@x, @y);
+}
+
+.lateX-transform(@x: 5px) {
+    -webkit-transform: translateX(@x);
+    -ms-transform: translateX(@x);
+    -o-transform: translateX(@x);
+    transform: translateX(@x);
+}
+
+.lateY-transform(@y: 5px) {
+    -webkit-transform: translateY(@y);
+    -ms-transform: translateY(@y);
+    -o-transform: translateY(@y);
+    transform: translateY(@y);
+}
+
+.sca-transform(@x: 1.1) {
+    transform: scale(@x);
+    -moz-transform: scale(@x);
+    -webkit-transform: scale(@x);
+    -o-transform: scale(@x);
+    -ms-transform: scale(@x);
+}
+
+.transition(@value: ease, @min: 0.3s) {
+    transition: all @min @value;
+    -moz-transition: all @min @value;
+    -webkit-transition: all @min @value;
+    -o-transition: all @min @value;
+}
+
+.dflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:before,
+    &:after {
+        display: none;
+    }
+}
+
+.rtl {
+    .button-number {
+        .increase,
+        .reduced {
+            right: auto;
+            left: 0;
+
+        }
+    }
+}

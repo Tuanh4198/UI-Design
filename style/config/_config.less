@@ -1,0 +1,296 @@
+& when (@media-common =true) {
+    div.mage-error[generated] {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        max-width: 220px;
+        background-color: @white;
+        .box-shadow(@x: 0, @y: 0, @blur: 5px, @color: #d2d2d2);
+        padding: 10px;
+        .round-borders(@radius: 3px);
+    }
+
+    .load-more {
+        padding: 0 30px;
+        height: 40px;
+        .round-borders(@radius: 30px);
+    }
+
+    //field choice
+    .field.choice:not(.payment-method-title):not(.review-field-rating):not(.related) {
+
+        >input[type=checkbox],
+        input[type=radio] {
+            display: none;
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            &:checked~label:before {
+                content: "\f046";
+            }
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            &~label {
+                position: relative;
+                padding-left: 17px;
+
+                &:before {
+                    content: "\f096";
+                    font-family: @fontawesome;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    //body
+    body {
+        color: @text-base;
+        background-color: @white;
+        overflow-x: hidden;
+
+        //input
+        input,
+        textarea,
+        select {
+            &:not([disabled]) {
+                &:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="search"],
+        input[type="datetime"],
+        input[type="email"] {
+            height: 45px;
+            padding: 0 20px;
+            border: 1px solid #dddddd;
+        }
+
+        input[type="number"] {
+            height: 45px;
+            padding: 0 5px;
+            border: 1px solid #dddddd;
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            cursor: pointer;
+        }
+
+        textarea {
+            border: 1px solid #dddddd;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            background-image: url("../images/alothemes/arrow-select.png");
+            background-repeat: no-repeat;
+            background-position: right 7px center;
+            cursor: pointer;
+            height: 45px;
+            background-size: 10px;
+            padding: 0 20px 0 12px;
+            border: 1px solid #dddddd;
+        }
+    }
+
+    //page
+    .page-wrapper {
+        overflow: hidden;
+    }
+
+    //order
+    .order-links {
+        .item {
+            margin-right: 15px;
+            margin-left: 0;
+        }
+    }
+
+    // messages
+    .message.success {
+        margin: 0 0 20px;
+    }
+
+    table {
+        th {
+            text-align: left;
+        }
+    }
+
+    .table tbody+tbody {
+        border-top: 1px;
+    }
+}
+
+
+/* responsive */
+& when (@media-common =true) {
+    @media screen and (max-width: (@screen__xm - 1)) {
+
+        //dropdown       
+        .authentication-dropdown {
+            width: 300px;
+            left: auto;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: (@screen__m - 1)) {
+        body {
+
+            .abs-pager-toolbar-mobile .toolbar-amount,
+            .abs-pager-toolbar-mobile .limiter,
+            .abs-pager-toolbar-mobile .pages,
+            &.account .toolbar .toolbar-amount,
+            &.account .toolbar .limiter,
+            &.account .toolbar .pages,
+            .toolbar-wishlist-results .toolbar-amount,
+            .toolbar-wishlist-results .limiter,
+            .toolbar-wishlist-results .pages {
+                margin-bottom: 0;
+            }
+        }
+
+        //body
+        .column.main {
+            width: 100%;
+        }
+
+        //dropdown        
+        .authentication-dropdown {
+            top: 0 !important;
+            width: 100%;
+
+            .block-customer-login {
+                background: #f4f4f4;
+            }
+
+            .block-authentication {
+                .actions-toolbar {
+                    margin-bottom: 0;
+
+                    >.primary {
+                        order: 0;
+                        width: 100%;
+                        margin-bottom: 5px;
+
+                        .action {
+                            width: 100%;
+                        }
+                    }
+
+                    >.secondary {
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: @screen__xs ) {
+
+        //title
+        .page-title-wrapper {
+            .page-title {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+
+& when (@media-common =true) {
+    .rtl {
+
+        //social
+        .socials {
+            .social-link {
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        table {
+            th {
+                text-align: right;
+            }
+        }
+
+        .product-info-main .product.attribute ul,
+        .product-info-main .product.attribute ol,
+        .product.detailed .product.description ol,
+        .product.detailed .product.description ul,
+        .product-item-description ul,
+        .post-text-hld ul,
+        .post-text-hld ol,
+        .catalog-product-view .block.related ul.block-content,
+        .catalog-product-view .block.related ol.block-content,
+        .post-view .block.related ul.block-content,
+        .post-view .block.related ol.block-content {
+            padding-left: 0;
+            padding-right: 17px;
+        }
+
+        .field.choice:not(.payment-method-title) {
+
+            >input[type=checkbox],
+            input[type=radio] {
+                &~label {
+                    padding-left: 0;
+                    padding-right: 17px;
+
+                    &:before {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+
+        }
+
+        // message
+        .message {
+            padding-left: 20px;
+            padding-right: 40px;
+
+            &.success {
+                >*:first-child {
+                    &:before {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        .message.error {
+            >* {
+                &:first-child {
+                    &:before {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

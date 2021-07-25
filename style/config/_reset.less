@@ -1,0 +1,84 @@
+& when (@media-common =true) {
+    * {
+        outline: none !important;
+    }
+
+    //button,link
+    button,
+    a {
+        .transition();
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    ._keyfocus {
+        * {
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        margin-bottom: 0;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    table {
+        th {
+            text-align: left;
+        }
+
+        .col {
+            width: auto;
+        }
+    }
+}
+
+
+/* responsive */
+& when (@media-common =true) {
+    @media (min-width: 1200px) {
+        body .container {
+            max-width: 1170px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+}
+
+// right to left
+& when (@media-common =true) {
+    .rtl {
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin: 2px 0 0 5px;
+        }
+
+        select {
+            background-position: left 7px center;
+            padding: 0 12px 0 20px;
+        }
+    }
+}
