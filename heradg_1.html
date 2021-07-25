@@ -1,66 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>heradg.com.vn</title>
-	<!-- animation -->
-	<link rel="stylesheet" href="./library/animate.css"/>
-	<!-- font fontawesome -->
-	<link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css"/>
-	<!-- bs4 -->
-	<link rel="stylesheet" href="./library/css/bootstrap.min.css"/>
-	<!-- slick slider -->
-	<link rel="stylesheet" href="./library/slick/slick-theme.css"/>
-	<link rel="stylesheet" href="./library/slick/slick.css"/>
-	<!-- main style -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heradg.com.vn</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <!-- animation -->
+    <link rel="stylesheet" href="./library/animate.css" />
+    <!-- font fontawesome -->
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
+    <!-- bs4 -->
+    <link rel="stylesheet" href="./library/css/bootstrap.min.css" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="./library/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./library/slick/slick.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="./style/config/_reset.css">
+    <link rel="stylesheet" href="./style/heradg.com.vn/_header.css">
+    <link rel="stylesheet" href="./style/heradg.com.vn/_footer.css">
+    <link rel="stylesheet" href="./style/heradg.com.vn/_home1.less">
 </head>
 
 <body>
-	<!-- Header -->
-	<section>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container-fluid">
+                <div class="dflex justify-content-between">
+                    <ul class="header-custom-links list-unstyled">
+                        <li class="header-custom-link"><a href="#">Hệ thống showroom</a></li>
+                        <li class="header-custom-link"><a href="#">Mua hàng online (08h30-17h30 từ T2-T7)</a></li>
+                        <li class="header-custom-link"><a href="#">CSKH (08h30 - 17h30 từ T2-T7) 1900 0091</a></li>
+                    </ul>
+                    <ul class="header-custom-links list-unstyled">
+                        <li class="header-custom-link">
+                            <a href="#"></a>Khám phá thời trang nam</li>
+                        <li class="header-custom-link">
+                            <a href="#"><img src="./images/dgcselection 1.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container-fluid">
+                <div class="dflex">
+                    <h1 class="logo">
+                        <a href="#"><img src="./images/logo.png" alt=""></a>
+                    </h1>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						  </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Hàng mới về</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hàng bán chạy</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Ưu đãi</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bộ sưu tập</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">đồng phục</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">khác</a>
+                                    </li>
+                                </ul>
+                                <form class="dflex">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
 
-	</section>
-	<!-- End header -->
-
-	<!-- Content -->
-	<section>
-		<!-- Tất cả nội dung web mn viết vào đây nhé -->
+    <!-- Content -->
+    <section>
+        <!-- Tất cả nội dung web mn viết vào đây nhé -->
 
 
 
-		<!-- Khi làm mọi người tạo mỗi người 1 branch riêng nhe -->
-		<!-- tạo branch: git checkout -b tên_branch -->
-		<!-- sau khi commit thì lệnh push là: git push origin tên_branch -->
+        <!-- Khi làm mọi người tạo mỗi người 1 branch riêng nhe -->
+        <!-- tạo branch: git checkout -b tên_branch -->
+        <!-- sau khi commit thì lệnh push là: git push origin tên_branch -->
 
 
-		<!-- demo header -->
-		<header class="fixed-main-menu">
-			header cho thêm class fixed-main-menu vào, khi cuộn header sẽ đc add thêm class fixed, mn dựa ấy viết css
-		</header>
-		<br>
-		<br>
-		<br>
-		<!-- demo slide -->
-		<div class="autoplay"
-			data-dots='false'
-			data-infinite="true"
-			data-speed="300"
-			data-autoplay="true"
-			data-slides-To-Show="1"
-			data-slides-To-Scroll="1"
-		>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum facilis saepe maiores officia quisquam vitae. Magnam facilis, quisquam odit ipsum maiores velit eveniet quia, odio unde nihil reprehenderit itaque?</div>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum facilis saepe maiores officia quisquam vitae. Magnam facilis, quisquam odit ipsum maiores velit eveniet quia, odio unde nihil reprehenderit itaque?</div>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum facilis saepe maiores officia quisquam vitae. Magnam facilis, quisquam odit ipsum maiores velit eveniet quia, odio unde nihil reprehenderit itaque?</div>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum facilis saepe maiores officia quisquam vitae. Magnam facilis, quisquam odit ipsum maiores velit eveniet quia, odio unde nihil reprehenderit itaque?</div>
-		</div>
-		<!-- demo dropdown -->
-		<br>
-		<br>
-		<br>
-		<span class="inside">
+        <!-- demo header -->
+        <header class="fixed-main-menu">
+            header cho thêm class fixed-main-menu vào, khi cuộn header sẽ đc add thêm class fixed, mn dựa ấy viết css
+        </header>
+        <br>
+        <br>
+        <br>
+        <!-- demo slide -->
+        <div class="autoplay" data-dots='false' data-infinite="true" data-speed="300" data-autoplay="true" data-slides-To-Show="1" data-slides-To-Scroll="1">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum facilis saepe maiores officia quisquam vitae. Magnam facilis, quisquam odit ipsum maiores velit eveniet quia, odio unde nihil reprehenderit itaque?</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum facilis saepe maiores officia quisquam vitae. Magnam facilis, quisquam odit ipsum maiores velit eveniet quia, odio unde nihil reprehenderit itaque?</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum facilis saepe maiores officia quisquam vitae. Magnam facilis, quisquam odit ipsum maiores velit eveniet quia, odio unde nihil reprehenderit itaque?</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum facilis saepe maiores officia quisquam vitae. Magnam facilis, quisquam odit ipsum maiores velit eveniet quia, odio unde nihil reprehenderit itaque?</div>
+        </div>
+        <!-- demo dropdown -->
+        <br>
+        <br>
+        <br>
+        <span class="inside">
 			<button class="command-button">Dollar (US)</button>
 			<ul class="drop-down">
 				<li><a href="#">Pond (GBP)</a></li>
@@ -68,103 +146,105 @@
 				<li><a href="#">Dollar (USD)</a></li>
 			</ul>
 		</span>
-		<style>
-			.drop-down {display: none;}
-		</style>
-		<!-- demo accordion -->
-		<br>
-		<br>
-		<br>
-		<div class="support-option">
-			<ul class="list-support-option accordion">
-				<li>
-					<div class="show-option">
-						<div class="show">+</div>
-						<div class="name-option">Support 24/7</div>
-					</div>
-					<p class="fretboard" style="display: none;">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-				</li>
-				<li>
-					<div class="show-option">
-						<div class="show">+</div>
-						<div class="name-option">Best Quanlity</div>
-					</div>
-					<p class="fretboard" style="display: none;">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-				</li>
-				<li>
-					<div class="show-option">
-						<div class="show">+</div>
-						<div class="name-option">Fastest Delivery</div>
-					</div>
-					<p class="fretboard">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-				</li>
-				<li>
-					<div class="show-option">
-						<div class="show">+</div>
-						<div class="name-option">Customer Care</div>
-					</div>
-					<p class="fretboard">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-				</li>
-			</ul>
-		</div>
-		<style>
-			.fretboard {display: none;}
-		</style>
-		<!-- demo to top -->
-		<br>
-		<br>
-		<br>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit dignissimos, ut accusamus numquam animi recusandae provident possimus ipsa itaque tempora doloribus obcaecati, amet ipsum! Nostrum soluta mollitia molestias a.
-		Iure, repellendus magnam. Id ratione est facere et eaque molestias eligendi, voluptas animi. Nobis qui dolor optio maiores doloremque, sunt sint officiis, ducimus, sit ratione hic nesciunt impedit ea eveniet!
-		Amet libero dicta necessitatibus officia, suscipit accusantium obcaecati sit deserunt ipsa maiores quibusdam. Pariatur, reprehenderit repellat, facere soluta nihil, doloribus autem nulla earum quidem sapiente doloremque incidunt ducimus consectetur id?
-		Veritatis, quaerat magni quo sed architecto accusantium sit expedita! Veniam fugiat, assumenda rerum deserunt pariatur illo, nihil hic mollitia odit ullam tempore vitae illum. Repudiandae fugiat ipsum voluptate ipsam maiores?
-		Nemo dignissimos temporibus odit repudiandae corporis, repellendus, harum debitis dicta ab consequuntur ipsa laborum qui? Error, dicta. Rerum maiores doloribus minima dolore aspernatur nemo provident, debitis vitae, eligendi nobis eius!
-		Fugit, sequi? Ea libero, voluptatem rerum ut accusamus reiciendis? Animi maxime magnam enim accusamus alias quod itaque iure numquam repellat porro amet dolor, libero est dolorem quidem nam officia explicabo.
-		Consequuntur, dicta quisquam ducimus sed nemo officia architecto. Enim nulla sapiente ratione ad rem distinctio velit, magnam corporis quidem commodi, nam eos adipisci vel aspernatur eligendi officiis suscipit animi atque.
-		Veniam voluptatem, quam cum fugiat molestiae autem deserunt labore, sint ut quod est sapiente ullam at, architecto obcaecati dicta quo. Officia dolores fugiat atque, minus veniam quos cupiditate quia odio?
-		Ullam cum tempora nemo dolorem unde, enim fugit placeat hic odio quas voluptatum voluptates. Excepturi perferendis beatae maiores maxime quo nostrum eum fuga fugit obcaecati. Vel numquam necessitatibus ex accusantium.
-		Expedita culpa harum aperiam sapiente obcaecati assumenda aspernatur atque rerum praesentium consectetur dolorem quam ex dicta, quo optio rem. Assumenda, at. Corrupti, consequuntur consectetur consequatur ut repellendus in accusamus id!
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit dignissimos, ut accusamus numquam animi recusandae provident possimus ipsa itaque tempora doloribus obcaecati, amet ipsum! Nostrum soluta mollitia molestias a.
-		Iure, repellendus magnam. Id ratione est facere et eaque molestias eligendi, voluptas animi. Nobis qui dolor optio maiores doloremque, sunt sint officiis, ducimus, sit ratione hic nesciunt impedit ea eveniet!
-		Amet libero dicta necessitatibus officia, suscipit accusantium obcaecati sit deserunt ipsa maiores quibusdam. Pariatur, reprehenderit repellat, facere soluta nihil, doloribus autem nulla earum quidem sapiente doloremque incidunt ducimus consectetur id?
-		Veritatis, quaerat magni quo sed architecto accusantium sit expedita! Veniam fugiat, assumenda rerum deserunt pariatur illo, nihil hic mollitia odit ullam tempore vitae illum. Repudiandae fugiat ipsum voluptate ipsam maiores?
-		Nemo dignissimos temporibus odit repudiandae corporis, repellendus, harum debitis dicta ab consequuntur ipsa laborum qui? Error, dicta. Rerum maiores doloribus minima dolore aspernatur nemo provident, debitis vitae, eligendi nobis eius!
-		Fugit, sequi? Ea libero, voluptatem rerum ut accusamus reiciendis? Animi maxime magnam enim accusamus alias quod itaque iure numquam repellat porro amet dolor, libero est dolorem quidem nam officia explicabo.
-		Consequuntur, dicta quisquam ducimus sed nemo officia architecto. Enim nulla sapiente ratione ad rem distinctio velit, magnam corporis quidem commodi, nam eos adipisci vel aspernatur eligendi officiis suscipit animi atque.
-		Veniam voluptatem, quam cum fugiat molestiae autem deserunt labore, sint ut quod est sapiente ullam at, architecto obcaecati dicta quo. Officia dolores fugiat atque, minus veniam quos cupiditate quia odio?
-		Ullam cum tempora nemo dolorem unde, enim fugit placeat hic odio quas voluptatum voluptates. Excepturi perferendis beatae maiores maxime quo nostrum eum fuga fugit obcaecati. Vel numquam necessitatibus ex accusantium.
-		Expedita culpa harum aperiam sapiente obcaecati assumenda aspernatur atque rerum praesentium consectetur dolorem quam ex dicta, quo optio rem. Assumenda, at. Corrupti, consequuntur consectetur consequatur ut repellendus in accusamus id!
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit dignissimos, ut accusamus numquam animi recusandae provident possimus ipsa itaque tempora doloribus obcaecati, amet ipsum! Nostrum soluta mollitia molestias a.
-		Iure, repellendus magnam. Id ratione est facere et eaque molestias eligendi, voluptas animi. Nobis qui dolor optio maiores doloremque, sunt sint officiis, ducimus, sit ratione hic nesciunt impedit ea eveniet!
-		Amet libero dicta necessitatibus officia, suscipit accusantium obcaecati sit deserunt ipsa maiores quibusdam. Pariatur, reprehenderit repellat, facere soluta nihil, doloribus autem nulla earum quidem sapiente doloremque incidunt ducimus consectetur id?
-		Veritatis, quaerat magni quo sed architecto accusantium sit expedita! Veniam fugiat, assumenda rerum deserunt pariatur illo, nihil hic mollitia odit ullam tempore vitae illum. Repudiandae fugiat ipsum voluptate ipsam maiores?
-		Nemo dignissimos temporibus odit repudiandae corporis, repellendus, harum debitis dicta ab consequuntur ipsa laborum qui? Error, dicta. Rerum maiores doloribus minima dolore aspernatur nemo provident, debitis vitae, eligendi nobis eius!
-		Fugit, sequi? Ea libero, voluptatem rerum ut accusamus reiciendis? Animi maxime magnam enim accusamus alias quod itaque iure numquam repellat porro amet dolor, libero est dolorem quidem nam officia explicabo.
-		Consequuntur, dicta quisquam ducimus sed nemo officia architecto. Enim nulla sapiente ratione ad rem distinctio velit, magnam corporis quidem commodi, nam eos adipisci vel aspernatur eligendi officiis suscipit animi atque.
-		Veniam voluptatem, quam cum fugiat molestiae autem deserunt labore, sint ut quod est sapiente ullam at, architecto obcaecati dicta quo. Officia dolores fugiat atque, minus veniam quos cupiditate quia odio?
-		Ullam cum tempora nemo dolorem unde, enim fugit placeat hic odio quas voluptatum voluptates. Excepturi perferendis beatae maiores maxime quo nostrum eum fuga fugit obcaecati. Vel numquam necessitatibus ex accusantium.
-		Expedita culpa harum aperiam sapiente obcaecati assumenda aspernatur atque rerum praesentium consectetur dolorem quam ex dicta, quo optio rem. Assumenda, at. Corrupti, consequuntur consectetur consequatur ut repellendus in accusamus id!
-	</section>
+        <style>
+            .drop-down {
+                display: none;
+            }
+        </style>
+        <!-- demo accordion -->
+        <br>
+        <br>
+        <br>
+        <div class="support-option">
+            <ul class="list-support-option accordion">
+                <li>
+                    <div class="show-option">
+                        <div class="show">+</div>
+                        <div class="name-option">Support 24/7</div>
+                    </div>
+                    <p class="fretboard" style="display: none;">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </li>
+                <li>
+                    <div class="show-option">
+                        <div class="show">+</div>
+                        <div class="name-option">Best Quanlity</div>
+                    </div>
+                    <p class="fretboard" style="display: none;">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </li>
+                <li>
+                    <div class="show-option">
+                        <div class="show">+</div>
+                        <div class="name-option">Fastest Delivery</div>
+                    </div>
+                    <p class="fretboard">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </li>
+                <li>
+                    <div class="show-option">
+                        <div class="show">+</div>
+                        <div class="name-option">Customer Care</div>
+                    </div>
+                    <p class="fretboard">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </li>
+            </ul>
+        </div>
+        <style>
+            .fretboard {
+                display: none;
+            }
+        </style>
+        <!-- demo to top -->
+        <br>
+        <br>
+        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit dignissimos, ut accusamus numquam animi recusandae provident possimus ipsa itaque tempora doloribus obcaecati, amet ipsum! Nostrum soluta mollitia molestias a. Iure,
+        repellendus magnam. Id ratione est facere et eaque molestias eligendi, voluptas animi. Nobis qui dolor optio maiores doloremque, sunt sint officiis, ducimus, sit ratione hic nesciunt impedit ea eveniet! Amet libero dicta necessitatibus officia,
+        suscipit accusantium obcaecati sit deserunt ipsa maiores quibusdam. Pariatur, reprehenderit repellat, facere soluta nihil, doloribus autem nulla earum quidem sapiente doloremque incidunt ducimus consectetur id? Veritatis, quaerat magni quo sed
+        architecto accusantium sit expedita! Veniam fugiat, assumenda rerum deserunt pariatur illo, nihil hic mollitia odit ullam tempore vitae illum. Repudiandae fugiat ipsum voluptate ipsam maiores? Nemo dignissimos temporibus odit repudiandae corporis,
+        repellendus, harum debitis dicta ab consequuntur ipsa laborum qui? Error, dicta. Rerum maiores doloribus minima dolore aspernatur nemo provident, debitis vitae, eligendi nobis eius! Fugit, sequi? Ea libero, voluptatem rerum ut accusamus reiciendis?
+        Animi maxime magnam enim accusamus alias quod itaque iure numquam repellat porro amet dolor, libero est dolorem quidem nam officia explicabo. Consequuntur, dicta quisquam ducimus sed nemo officia architecto. Enim nulla sapiente ratione ad rem
+        distinctio velit, magnam corporis quidem commodi, nam eos adipisci vel aspernatur eligendi officiis suscipit animi atque. Veniam voluptatem, quam cum fugiat molestiae autem deserunt labore, sint ut quod est sapiente ullam at, architecto obcaecati
+        dicta quo. Officia dolores fugiat atque, minus veniam quos cupiditate quia odio? Ullam cum tempora nemo dolorem unde, enim fugit placeat hic odio quas voluptatum voluptates. Excepturi perferendis beatae maiores maxime quo nostrum eum fuga fugit
+        obcaecati. Vel numquam necessitatibus ex accusantium. Expedita culpa harum aperiam sapiente obcaecati assumenda aspernatur atque rerum praesentium consectetur dolorem quam ex dicta, quo optio rem. Assumenda, at. Corrupti, consequuntur consectetur
+        consequatur ut repellendus in accusamus id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit dignissimos, ut accusamus numquam animi recusandae provident possimus ipsa itaque tempora doloribus obcaecati, amet ipsum! Nostrum
+        soluta mollitia molestias a. Iure, repellendus magnam. Id ratione est facere et eaque molestias eligendi, voluptas animi. Nobis qui dolor optio maiores doloremque, sunt sint officiis, ducimus, sit ratione hic nesciunt impedit ea eveniet! Amet
+        libero dicta necessitatibus officia, suscipit accusantium obcaecati sit deserunt ipsa maiores quibusdam. Pariatur, reprehenderit repellat, facere soluta nihil, doloribus autem nulla earum quidem sapiente doloremque incidunt ducimus consectetur
+        id? Veritatis, quaerat magni quo sed architecto accusantium sit expedita! Veniam fugiat, assumenda rerum deserunt pariatur illo, nihil hic mollitia odit ullam tempore vitae illum. Repudiandae fugiat ipsum voluptate ipsam maiores? Nemo dignissimos
+        temporibus odit repudiandae corporis, repellendus, harum debitis dicta ab consequuntur ipsa laborum qui? Error, dicta. Rerum maiores doloribus minima dolore aspernatur nemo provident, debitis vitae, eligendi nobis eius! Fugit, sequi? Ea libero,
+        voluptatem rerum ut accusamus reiciendis? Animi maxime magnam enim accusamus alias quod itaque iure numquam repellat porro amet dolor, libero est dolorem quidem nam officia explicabo. Consequuntur, dicta quisquam ducimus sed nemo officia architecto.
+        Enim nulla sapiente ratione ad rem distinctio velit, magnam corporis quidem commodi, nam eos adipisci vel aspernatur eligendi officiis suscipit animi atque. Veniam voluptatem, quam cum fugiat molestiae autem deserunt labore, sint ut quod est sapiente
+        ullam at, architecto obcaecati dicta quo. Officia dolores fugiat atque, minus veniam quos cupiditate quia odio? Ullam cum tempora nemo dolorem unde, enim fugit placeat hic odio quas voluptatum voluptates. Excepturi perferendis beatae maiores maxime
+        quo nostrum eum fuga fugit obcaecati. Vel numquam necessitatibus ex accusantium. Expedita culpa harum aperiam sapiente obcaecati assumenda aspernatur atque rerum praesentium consectetur dolorem quam ex dicta, quo optio rem. Assumenda, at. Corrupti,
+        consequuntur consectetur consequatur ut repellendus in accusamus id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit dignissimos, ut accusamus numquam animi recusandae provident possimus ipsa itaque tempora doloribus obcaecati,
+        amet ipsum! Nostrum soluta mollitia molestias a. Iure, repellendus magnam. Id ratione est facere et eaque molestias eligendi, voluptas animi. Nobis qui dolor optio maiores doloremque, sunt sint officiis, ducimus, sit ratione hic nesciunt impedit
+        ea eveniet! Amet libero dicta necessitatibus officia, suscipit accusantium obcaecati sit deserunt ipsa maiores quibusdam. Pariatur, reprehenderit repellat, facere soluta nihil, doloribus autem nulla earum quidem sapiente doloremque incidunt ducimus
+        consectetur id? Veritatis, quaerat magni quo sed architecto accusantium sit expedita! Veniam fugiat, assumenda rerum deserunt pariatur illo, nihil hic mollitia odit ullam tempore vitae illum. Repudiandae fugiat ipsum voluptate ipsam maiores? Nemo
+        dignissimos temporibus odit repudiandae corporis, repellendus, harum debitis dicta ab consequuntur ipsa laborum qui? Error, dicta. Rerum maiores doloribus minima dolore aspernatur nemo provident, debitis vitae, eligendi nobis eius! Fugit, sequi?
+        Ea libero, voluptatem rerum ut accusamus reiciendis? Animi maxime magnam enim accusamus alias quod itaque iure numquam repellat porro amet dolor, libero est dolorem quidem nam officia explicabo. Consequuntur, dicta quisquam ducimus sed nemo officia
+        architecto. Enim nulla sapiente ratione ad rem distinctio velit, magnam corporis quidem commodi, nam eos adipisci vel aspernatur eligendi officiis suscipit animi atque. Veniam voluptatem, quam cum fugiat molestiae autem deserunt labore, sint ut
+        quod est sapiente ullam at, architecto obcaecati dicta quo. Officia dolores fugiat atque, minus veniam quos cupiditate quia odio? Ullam cum tempora nemo dolorem unde, enim fugit placeat hic odio quas voluptatum voluptates. Excepturi perferendis
+        beatae maiores maxime quo nostrum eum fuga fugit obcaecati. Vel numquam necessitatibus ex accusantium. Expedita culpa harum aperiam sapiente obcaecati assumenda aspernatur atque rerum praesentium consectetur dolorem quam ex dicta, quo optio rem.
+        Assumenda, at. Corrupti, consequuntur consectetur consequatur ut repellendus in accusamus id!
+    </section>
 
-	<!-- Footer -->
-	<section>
+    <!-- Footer -->
+    <section>
 
-	</section>
-	<!-- End Footer -->
+    </section>
+    <!-- End Footer -->
 
-	<!-- scroll top -->
-	<span class="up"><i class="fa fa-chevron-up"></i></span>
+    <!-- scroll top -->
+    <span class="up"><i class="fa fa-chevron-up"></i></span>
 </body>
 <!-- jquerry -->
 <script type="text/javascript" src="./library/jquery.min.js"></script>
 <!-- bs4 -->
 <script type="text/javascript" src="./library/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./library/js/bootstrap.js"></script>
 <!-- slick -->
 <script type="text/javascript" src="./library/slick/slick.min.js"></script>
 <!-- main js -->
 <script type="text/javascript" src="./javascript/main.js"></script>
 <!-- custom js -->
 <script type="text/javascript">
-
 </script>
+
 </html>

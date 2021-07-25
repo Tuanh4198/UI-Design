@@ -1,3 +1,5 @@
+@import './_mixin.less';
+
 * {
 	outline: none !important;
 }
@@ -5,8 +7,7 @@
 //button,link
 button,
 a {
-	.transition();
-
+	.transition(all .3s ease);
 	&:hover {
 		text-decoration: none;
 	}
@@ -52,31 +53,43 @@ table {
 	}
 }
 
+@fontbase: 'Inter', sans-serif;
+@fontawesome: Fontawesome;
 
-/* responsive */
-& when (@media-common =true) {
-    @media (min-width: 1200px) {
-        body .container {
-            max-width: 1170px;
-            padding-left: 0;
-            padding-right: 0;
-        }
+@screen__xxs: 320px;
+@screen__xs-m: 360px;
+@screen__xs-l: 413px;
+@screen__xs: 480px;
+@screen__ss: 576px;
+@screen__s: 640px;
+@screen__m: 768px;
+@screen__xm: 992px;
+@screen__l: 1024px;
+@screen__xl-m: 1200px;
+@screen__xxl-m: 1440px;
+@screen__xxl-l: 1600px;
+@screen__xxl: 1920px;
 
-    }
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../../fonts/font-Inter/Inter-Regular.ttf');
 }
 
-// right to left
-& when (@media-common =true) {
-    .rtl {
 
-        input[type="checkbox"],
-        input[type="radio"] {
-            margin: 2px 0 0 5px;
-        }
+/* responsive */
+@media screen and (min-width: 1440px){
+	.container-fluid{
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
 
-        select {
-            background-position: left 7px center;
-            padding: 0 12px 0 20px;
-        }
-    }
+@media (min-width: 1200px) {
+	body .container {
+		max-width: 1170px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 }
