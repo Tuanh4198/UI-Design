@@ -46,12 +46,6 @@ jQuery(document).ready(function($) {
 			event.preventDefault();
 			$(this).parent().siblings().find('.fretboard').slideUp();
 			$(this).parent().find('.fretboard').slideToggle();
-
-			$(this).parent().siblings().find('.show').removeClass('active').text('+');
-			($(this).parent().find('.show').text() == '-') ? ($(this).parent().find('.show').removeClass('active').text('+')) : ($(this).parent().find('.show').addClass('active').text('-'))
-
-			$(this).parent().find('i').toggleClass('rotate');
-			$(this).parent().siblings().find('i').removeClass('rotate');
 		});
 	});
 	// end Effect accordion
