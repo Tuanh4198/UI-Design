@@ -136,30 +136,39 @@ table .col {
 }
 /* line 3, E:\Themes\UI-Design\style\pages\_category.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\000033}}
-.category-sidebar {
-  width: 30%;
+.container {
+  max-width: 1600px;
+  padding: 0 30px;
 }
-/* line 6, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\000036}}
+/* line 8, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\000038}}
+.category-sidebar {
+  width: 20%;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  padding: 0 15px;
+}
+/* line 13, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000313}}
 .category-sidebar ul {
   list-style: none;
   padding: 0;
 }
-/* line 11, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000311}}
+/* line 18, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000318}}
 .category-sidebar .show-option {
   color: #242424;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
-/* line 16, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000316}}
+/* line 23, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000323}}
 .category-sidebar .show-option:hover {
   color: #993a3a;
 }
-/* line 18, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000318}}
+/* line 25, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000325}}
 .category-sidebar .show-option .name-option {
   font-style: normal;
   font-weight: 500;
@@ -167,26 +176,31 @@ table .col {
   line-height: 30px;
   text-transform: uppercase;
 }
-/* line 26, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000326}}
+/* line 33, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000333}}
 .category-sidebar .show-option .show {
   font-size: 25px;
   line-height: 30px;
 }
-/* line 34, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000334}}
+/* line 41, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000341}}
 .category-sidebar .list-support-fiter > li:not(:last-child) {
   margin-bottom: 15px;
   padding-bottom: 20px;
   border-bottom: 1px solid #EFEFEF;
 }
-/* line 42, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000342}}
+/* line 49, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000349}}
 .category-sidebar .list-support-option {
   margin-top: 15px;
 }
-/* line 45, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000345}}
+/* line 52, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000352}}
+.category-sidebar .list-support-option li {
+  cursor: pointer;
+}
+/* line 56, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000356}}
 .category-sidebar .list-support-option.size {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,8 +214,8 @@ table .col {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-/* line 51, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000351}}
+/* line 62, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000362}}
 .category-sidebar .list-support-option.size li {
   background: #FFFFFF;
   border: 1px solid #E5E5E5;
@@ -216,21 +230,21 @@ table .col {
   transition: 0.3s ease-in;
   cursor: pointer;
 }
-/* line 63, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000363}}
+/* line 74, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000374}}
 .category-sidebar .list-support-option.size li:hover,
-.category-sidebar .list-support-option.size li:active {
+.category-sidebar .list-support-option.size li.active {
   background: #242424;
 }
-/* line 67, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000367}}
+/* line 78, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000378}}
 .category-sidebar .list-support-option.size li:hover a,
-.category-sidebar .list-support-option.size li:active a {
+.category-sidebar .list-support-option.size li.active a {
   color: white;
   text-decoration: none;
 }
-/* line 75, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000375}}
+/* line 86, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000386}}
 .category-sidebar .list-support-option.color {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,8 +258,8 @@ table .col {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-/* line 81, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000381}}
+/* line 92, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000392}}
 .category-sidebar .list-support-option.color li {
   width: 26px;
   height: 26px;
@@ -262,14 +276,14 @@ table .col {
   transition: 0.3s ease-in;
   cursor: pointer;
 }
-/* line 95, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\0000395}}
+/* line 106, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003106}}
 .category-sidebar .list-support-option.color li:hover,
-.category-sidebar .list-support-option.color li:active {
+.category-sidebar .list-support-option.color li.active {
   border: 2px solid #9A9A9A;
 }
-/* line 100, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003100}}
+/* line 111, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003111}}
 .category-sidebar .list-support-option.color li a {
   font-size: 0;
   display: block;
@@ -277,8 +291,8 @@ table .col {
   height: 100%;
   border-radius: 50%;
 }
-/* line 110, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003110}}
+/* line 121, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003121}}
 .category-sidebar .list-support-option a {
   font-style: normal;
   font-weight: normal;
@@ -295,8 +309,8 @@ table .col {
   transition: 0.3s ease-in;
   text-transform: capitalize;
 }
-/* line 122, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003122}}
+/* line 133, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003133}}
 .category-sidebar .list-support-option:not(.swatch) li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,13 +328,13 @@ table .col {
       flex-wrap: wrap;
   position: relative;
 }
-/* line 131, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003131}}
+/* line 142, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003142}}
 .category-sidebar .list-support-option:not(.swatch) li:not(:last-child) {
   margin-bottom: 15px;
 }
-/* line 135, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003135}}
+/* line 146, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003146}}
 .category-sidebar .list-support-option:not(.swatch) li:before {
   content: url(../../images/page/category/check.png);
   opacity: 0;
@@ -332,29 +346,410 @@ table .col {
   transition: 0.3s ease-in;
   left: 0;
 }
-/* line 145, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003145}}
+/* line 156, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003156}}
 .category-sidebar .list-support-option:not(.swatch) li:hover,
 .category-sidebar .list-support-option:not(.swatch) li.active {
   padding-left: 25px;
 }
-/* line 149, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003149}}
+/* line 160, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003160}}
 .category-sidebar .list-support-option:not(.swatch) li:hover:before,
 .category-sidebar .list-support-option:not(.swatch) li.active:before {
   opacity: 1;
 }
-/* line 153, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003153}}
+/* line 164, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003164}}
 .category-sidebar .list-support-option:not(.swatch) li:hover a,
 .category-sidebar .list-support-option:not(.swatch) li.active a {
   color: #242424;
   text-decoration: none;
 }
-/* line 162, E:\Themes\UI-Design\style\pages\_category.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003162}}
+/* line 173, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003173}}
 .category-products {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  padding: 0 15px;
+}
+/* line 178, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003178}}
+.category-products .product-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+/* line 182, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003182}}
+.category-products .product-img-wrapper img {
+  width: 100%;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+/* line 187, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003187}}
+.category-products .product-img-wrapper .add-to-wishlist {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+/* line 198, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003198}}
+.category-products .product-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+/* line 204, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003204}}
+.category-products .product-wrapper:hover .product-img-wrapper .add-to-wishlist {
+  opacity: 1;
+  visibility: visible;
+  right: 15px;
+  bottom: 20px;
+}
+/* line 212, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003212}}
+.category-products .product-wrapper:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/* line 218, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003218}}
+.category-products .product-status {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+/* line 229, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003229}}
+.category-products .product-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #242424;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  margin-bottom: 5px;
+  display: block;
+  margin-top: 5px;
+}
+/* line 240, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003240}}
+.category-products .product-name:hover {
+  color: #993a3a;
+}
+/* line 244, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003244}}
+.category-products .product-detail-wrapper .new-price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+  margin-right: 5px;
+}
+/* line 253, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003253}}
+.category-products .product-detail-wrapper .old-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+/* line 263, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003263}}
+.category-products .product-detail-wrapper .discount {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #C31D1D;
+}
+/* line 275, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003275}}
+.pagination a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #242424;
+  border: 1px solid #ffffff;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  padding: 5px 20px;
+  margin: 0 5px;
+}
+/* line 291, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003291}}
+.pagination a.none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #CBCBCB;
+  cursor: no-drop;
+}
+/* line 295, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003295}}
+.pagination a.none:hover {
+  border: 1px solid #ffffff;
+}
+/* line 300, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003300}}
+.pagination a.active,
+.pagination a:hover {
+  border: 1px solid #ADADAD;
+}
+/* line 307, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003307}}
+.filter-group-wrapper {
+  margin-bottom: 30px;
+}
+/* line 310, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003310}}
+.filter-group-wrapper .btn-action {
+  height: 42px;
+  line-height: 42px;
+  left: 32px;
+  top: 241px;
+  background: #242424;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 1;
+  cursor: pointer;
+  border: none;
+}
+/* line 335, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003335}}
+.filter-group-wrapper .btn-action i {
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: 40px;
+}
+/* line 341, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003341}}
+.filter-group-wrapper .btn-action i:after {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 349, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003349}}
+.filter-group-wrapper .btn-action.closer i:after {
+  content: url(../../images/page/category/close.png);
+}
+/* line 355, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003355}}
+.filter-group-wrapper .btn-action.open i:after {
+  content: url(../../images/page/category/open.png);
+}
+/* line 360, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003360}}
+.filter-group-wrapper .btn-action:hover,
+.filter-group-wrapper .btn-action:focus {
+  -webkit-box-shadow: -2px 2px 10px -1px #000000;
+          box-shadow: -2px 2px 10px -1px #000000;
+  opacity: 1;
+}
+/* line 367, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003367}}
+.filter-group-wrapper .list-keyword {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 30px;
+  margin: 0;
+}
+/* line 372, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003372}}
+.filter-group-wrapper .list-keyword li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 39px;
+  background: #F7F7F7;
+  border-radius: 1px;
+  margin: 5px 10px;
+  border: 1px solid #F7F7F7;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 382, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003382}}
+.filter-group-wrapper .list-keyword li.btn-clear-all {
+  background: transparent;
+}
+/* line 385, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003385}}
+.filter-group-wrapper .list-keyword li.btn-clear-all:hover {
+  border: 1px solid #F7F7F7;
+}
+/* line 389, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003389}}
+.filter-group-wrapper .list-keyword li.btn-clear-all a {
+  text-decoration: underline;
+}
+/* line 392, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003392}}
+.filter-group-wrapper .list-keyword li.btn-clear-all a:before {
+  display: none;
+}
+/* line 396, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003396}}
+.filter-group-wrapper .list-keyword li.btn-clear-all a:hover {
+  color: #993a3a;
+}
+/* line 402, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003402}}
+.filter-group-wrapper .list-keyword li:hover {
+  border: 1px solid #242424;
+}
+/* line 406, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003406}}
+.filter-group-wrapper .list-keyword li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #242424;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 419, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003419}}
+.filter-group-wrapper .list-keyword li a:before {
+  content: url(../../images/page/category/clear-option.png);
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 425, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003425}}
+.filter-group-wrapper .list-keyword li a.color span {
+  font-size: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50px;
+  display: block;
+}
+/* line 437, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003437}}
+.filter-group-wrapper .select-sort-option .total-product {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999999;
+  line-height: 25px;
+}
+/* line 448, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003448}}
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #242424;
+  line-height: 25px;
+  margin-left: 15px;
+}
+/* line 460, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003460}}
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper label {
+  margin: 0;
+}
+/* line 464, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003464}}
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper select {
+  cursor: pointer;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  background-image: url(../../images/page/category/arr_down.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 13px;
+}
+/* line 481, E:\Themes\UI-Design\style\pages\_category.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Themes\/UI-Design\/style\/pages\/_category\.less}line{font-family:\00003481}}
+#category-page.active .category-sidebar {
+  padding: 0;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
 }

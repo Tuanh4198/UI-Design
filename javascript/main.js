@@ -1,6 +1,4 @@
 jQuery(document).ready(function($) {
-	console.log('object')
-
 	$(".autoplay").each(function() {
 		$(this).slick($(this).data());
 	});
