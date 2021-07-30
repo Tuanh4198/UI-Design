@@ -74,5 +74,4 @@ jQuery(document).ready(function($) {
 		});
 	})($);
 	// end Effect drop down
-
 });

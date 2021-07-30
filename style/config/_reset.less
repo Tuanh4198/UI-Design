@@ -13,18 +13,21 @@ html {
 //button,link
 button,
 a {
+	border: none;
 	.transition(all .3s ease);
+
+	&:focus,
 	&:hover {
 		text-decoration: none;
+		outline: none;
+		border: none;
 	}
 }
 
-._keyfocus {
-	* {
-		&:focus {
-			box-shadow: none;
-			outline: none;
-		}
+* {
+	&:focus {
+		box-shadow: none;
+		outline: none;
 	}
 }
 
@@ -72,3 +75,10 @@ table {
 @screen__xxl-m: 1440px;
 @screen__xxl-l: 1600px;
 @screen__xxl: 1920px;
+
+@media only screen and (min-width: 1600px){
+	.container {
+		max-width: 1600px;
+		padding: 0 30px;
+	}
+}
