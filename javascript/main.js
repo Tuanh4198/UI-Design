@@ -74,4 +74,16 @@ jQuery(document).ready(function($) {
 		});
 	})($);
 	// end Effect drop down
+
+	// tabs
+	$(function() {
+		$(".magic-tabs  ul li").on('click', function() {
+			var container_tab = $(this).closest('.cover-tab');
+			container_tab.find('.tab-content .content').removeClass('active-tab-content');
+			$(this).siblings().removeClass("action-tab-btn");
+			$(this).addClass('action-tab-btn');
+			container_tab.find('.tab-content .content').eq($(this).index()).addClass('active-tab-content');
+		});	
+	});
+	// end tabs
 });
