@@ -67,5 +67,12 @@ jQuery(document).ready(function($) {
 		});
 	})($);
 	// end Effect drop down
-
+	
+	// toggle button
+    $(".toggle-tab").click(function(event) {
+        event.preventDefault();
+        $(this).parent().toggleClass('toggle-visible');
+        $('.toggle-content').toggleClass('visible');
+    });
+    // end toggle button
 });
