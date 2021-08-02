@@ -108,6 +108,19 @@ table .col {
 .dflex:after {
   display: none;
 }
+.tab-content {
+  overflow: hidden;
+}
+.tab-content .content {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.tab-content .content.active-tab-content {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
 .title-wrapper {
   text-align: center;
   padding: 0 15px;
@@ -205,7 +218,8 @@ table .col {
   padding: 0;
 }
 .summer-collection .link-more {
-  display: inline-block;
+  display: block;
+  width: 100%;
   margin: 15px auto 0;
   font-style: normal;
   font-weight: 500;
@@ -221,10 +235,6 @@ table .col {
   letter-spacing: 1px;
 }
 .summer-collection img {
-  width: 100%;
-}
-.summer-collection .link-more {
-  display: block;
   width: 100%;
 }
 .summer-collection .thumbnail-slide {
@@ -255,6 +265,7 @@ table .col {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .summer-collection .main-slide {
   max-width: 1000px;
