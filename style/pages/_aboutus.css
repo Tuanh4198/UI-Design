@@ -180,6 +180,12 @@ p.desc {
   padding: 0 30px;
   margin-bottom: 30px;
 }
+.contact-us-block .breadcrumbs a {
+  color: #999999;
+}
+.contact-us-block .breadcrumbs a:hover {
+  color: #242424;
+}
 .contact-us-block .breadcrumbs span {
   display: inline-block;
   margin: 0 5px;

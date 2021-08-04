@@ -36,15 +36,20 @@
 	<!-- Content -->
 	<section>
 		<div class="contact-us-block">
-			<div class="breadcrumbs">
-				<action method="addCrumb">
-					<argument name="crumbName " xsi:type="string ">Trang chủ</argument>
-				</action>
-				<span>/</span>
-				<action method="addCrumb">
-					<argument name="crumbName " xsi:type="string ">Đồng phục</argument>
-				</action>
+			<div class="breadcrumbs-wrapper">
+				<div class="breadcrumbs">
+					<action method="addCrumb">
+						<argument name="crumbName" xsi:type="string">
+							<a href="#">Trang chủ</a>
+						</argument>
+					</action>
+					<span>/</span>
+					<action method="addCrumb">
+						<argument name="crumbName" xsi:type="string">Đồng phục</argument>
+					</action>
+				</div>
 			</div>
+			<!--  -->
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
