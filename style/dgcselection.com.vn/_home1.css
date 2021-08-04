@@ -905,3 +905,23 @@ footer {
   font-weight: 400;
   line-height: 17px;
 }
+.up-active {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 1;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #242424;
+  text-align: center;
+}
+.up-active:hover {
+  background-color: #313131;
+  border-color: #313131;
+}
