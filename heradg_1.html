@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./library/slick/slick.css" />
     <!-- font family -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- main style -->
     <link rel="stylesheet" href="./style/config/_config.css">
@@ -204,25 +205,38 @@
                                 <form class=" form-search ">
                                     <div class=" dflex align-items-center ">
                                         <button class=" btn btn-outline-success " type=" submit ">Search</button>
-                                        <input class=" form-control me-2 " type=" search " placeholder="Tìm kiếm " aria-label=" Search ">
+                                        <input class=" form-control me-2 " type=" search " placeholder="Tìm kiếm... " aria-label=" Search ">
                                     </div>
                                 </form>
                             </div>
                             <div class=" header-wishlist ">
                                 <span class=" action showlike "> 
                                     <a title=" Wishlist " href=" # " target=" _blank " class=" icon btn-heart ">
-                                        <i class=" fa fa-heart-o " aria-hidden=" true "></i>
+                                        <span class=" fa fa-heart-o " aria-hidden=" true "></span>
                                         <span class=" counter qty ">0</span>
                                     </a> 
                                 </span>
                             </div>
                             <div class=" header-account ">
-                                <div class=" toggle-tab ">
-                                    <span class="account-text ">Account</span>
+                                <div class="toggle-tab ">
+                                    <span class="account-text ">Tài khoản</span>
                                 </div>
-                                <ul class=" toggle-content ">
-                                    <li><a href=" # ">Login</a></li>
-                                    <li><a href=" # ">Register</a></li>
+                                <ul class=" toggle-content popup ">
+                                    <div class="modal-header ">
+                                        <button class="close btn-close ">Close</button>
+                                    </div>
+                                    <div class="modal-content ">
+                                        <div class="login-wrapper modal-content-item ">
+                                            <h3 class="title ">Đăng nhập</h3>
+                                            <p class="sub-title ">Đăng nhập vào tài khoản của bạn.</p>
+                                            <a href="# " class="action ">Đăng nhập</a>
+                                        </div>
+                                        <div class="register-wrapper modal-content-item ">
+                                            <h3 class="title ">Bạn là khách hàng mới</h3>
+                                            <p class="sub-title ">Bạn chưa có tài khoản, vui lòng đăng kí tài khoản tại đây.</p>
+                                            <a href="# " class="action ">Đăng Ký</a>
+                                        </div>
+                                    </div>
                                 </ul>
                             </div>
                             <div class="minicart ">
@@ -232,8 +246,62 @@
                                     </span>
                                     <span class="minicart-text ">
                                         <div class="text cart-title ">Cart</div>
-                                        <span class="total price ">0 VND</span>
+                                        <span class="total price ">0 &#8363;</span>
                                     </span>
+                                </div>
+                                <div class="minicart-content popup ">
+                                    <div class="modal-header ">
+                                        <h2 class="title ">Sản phẩm của bạn vừa được thêm vào giỏ hàng</h2>
+                                        <button class="close btn-close ">Close</button>
+                                    </div>
+                                    <div class="modal-content ">
+                                        <div class="product-list ">
+                                            <div class="product-wrapper ">
+                                                <div class="product-img-wrapper ">
+                                                    <a href="# " class="add-to-wishlist ">
+                                                        <img src="./images/product-minicart.jpg ">
+                                                    </a>
+                                                </div>
+                                                <div class="product-detail-wrapper ">
+                                                    <a href="# " class="product-name ">Áo kiểu cổ dập ly</a>
+                                                    <div class="product-price-wrapper ">
+                                                        <span class="new-price ">899.000 &#8363;</span>
+                                                        <span class="old-price ">1.09.000 &#8363;</span>
+                                                    </div>
+                                                    <div class="product-qty ">
+                                                        <span class="label ">Số lượng</span>
+                                                    </div>
+                                                    <button class="action ">Bỏ khỏi giỏ</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-wrapper ">
+                                                <div class="product-img-wrapper ">
+                                                    <a href="# " class="add-to-wishlist ">
+                                                        <img src="./images/product-minicart-2.jpg ">
+                                                    </a>
+                                                </div>
+                                                <div class="product-detail-wrapper ">
+                                                    <a href="# " class="product-name ">Áo kiểu cổ dập ly</a>
+                                                    <div class="product-price-wrapper ">
+                                                        <span class="new-price ">899.000 &#8363;</span>
+                                                        <span class="old-price ">1.09.000 &#8363;</span>
+                                                    </div>
+                                                    <div class="product-qty ">
+                                                        <span class="label ">Số lượng</span>
+                                                    </div>
+                                                    <button class="action ">Bỏ khỏi giỏ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="subtotal ">
+                                            <span class="label ">Tổng: <span class="count ">2 sản phẩm</span></span>
+                                            <span class="amount ">1.798.000 &#8363;</span>
+                                        </div>
+                                        <div class="actions ">
+                                            <a href="# " class="action checkout ">THANH TOÁN NGAY</a>
+                                            <p class="sub-title ">Gọi đặt mua <span>1800.1103</span> (7:30 - 22:00)</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -242,6 +310,75 @@
             </div>
         </div>
     </header>
+
+    <div class="viewed-products popup visible ">
+        <div class="view-product-header ">
+            <h2 class="title ">Sản phẩm đã xem</h2>
+            <button class="close btn-close ">Close</button>
+        </div>
+        <div class="product-list ">
+            <div class="product-wrapper ">
+                <div class="product-img-wrapper ">
+                    <a href="# " class="add-to-wishlist ">
+                        <img src="./images/product1.jpg ">
+                    </a>
+                </div>
+                <div class="product-detail-wrapper ">
+                    <a href="# " class="product-name ">Jumpsuit sát nách SJSBA004</a>
+                    <div class="product-price-wrapper ">
+                        <span class="price ">899.000 &#8363;</span>
+                    </div>
+                    <a href="# " class="action addtocart ">mua ngay</a>
+                </div>
+            </div>
+            <div class="product-wrapper ">
+                <div class="product-img-wrapper ">
+                    <a href="# " class="add-to-wishlist ">
+                        <img src="./images/product2.jpg ">
+                    </a>
+                </div>
+                <div class="product-detail-wrapper ">
+                    <a href="# " class="product-name ">Jumpsuit sát nách SJSBA004</a>
+                    <div class="product-price-wrapper ">
+                        <span class="price ">899.000 &#8363;</span>
+                    </div>
+                    <a href="# " class="action addtocart ">mua ngay</a>
+                </div>
+            </div>
+            <div class="product-wrapper ">
+                <div class="product-img-wrapper ">
+                    <a href="# " class="add-to-wishlist ">
+                        <img src="./images/product3.jpg ">
+                    </a>
+                </div>
+                <div class="product-detail-wrapper ">
+                    <a href="# " class="product-name ">Jumpsuit sát nách SJSBA004</a>
+                    <div class="product-price-wrapper ">
+                        <span class="price ">899.000 &#8363;</span>
+                    </div>
+                    <a href="# " class="action addtocart ">mua ngay</a>
+                </div>
+            </div>
+            <div class="product-wrapper ">
+                <div class="product-img-wrapper ">
+                    <a href="# " class="add-to-wishlist ">
+                        <img src="./images/product4.jpg ">
+                    </a>
+                </div>
+                <div class="product-detail-wrapper ">
+                    <a href="# " class="product-name ">Jumpsuit sát nách SJSBA004</a>
+                    <div class="product-price-wrapper ">
+                        <span class="price ">899.000 &#8363;</span>
+                    </div>
+                    <a href="# " class="action addtocart ">mua ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-product-action ">
+            <button class="add-all ">Thêm tất cả vào giỏ hàng</button>
+        </div>
+    </div>
     <!-- End header -->
 
     <!-- Content -->
@@ -352,13 +489,119 @@
     </section>
 
     <!-- Footer -->
-    <section>
-
-    </section>
+    <footer class="footer ">
+        <div class="footer-top ">
+            <div class="dflex ">
+                <div class="footer-links ">
+                    <div class="row ">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-link ">
+                            <div class="footer-link-content collapsible ">
+                                <h3 class="footer-title ">Khám phá HeraDG</h3>
+                                <ul class="link-list list-unstyled "> 
+                                    <li><a href="# ">Về chúng tôi</a></li> 
+                                    <li><a href="# ">Hệ thống showroom</a></li>
+                                    <li><a href="# ">Mở đại lý</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-link ">
+                            <div class="footer-link-content collapsible ">
+                                <h3 class="footer-title ">Sản phẩm</h3>
+                                <ul class="link-list list-unstyled "> 
+                                    <li><a href="# ">Áo</a></li> 
+                                    <li><a href="# ">Đầm</a></li>
+                                    <li><a href="# ">Jumpsuit</a></li> 
+                                    <li><a href="# ">Chân váy</a></li> 
+                                    <li><a href="# ">Quần</a></li> 
+                                    <li><a href="# ">Đồng phục</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-link ">
+                            <div class="footer-link-content collapsible ">
+                                <h3 class="footer-title ">Tin tức, blog </h3>
+                                <ul class="link-list list-unstyled "> 
+                                    <li><a href="# ">Tin tức</a></li> 
+                                    <li><a href="# ">Sự kiện</a></li>
+                                    <li><a href="# ">Phong cách sống</a></li> 
+                                    <li><a href="# ">Tin tuyển dụng</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-link ">
+                            <div class="footer-link-content collapsible ">
+                                <h3 class="footer-title ">Chính sách</h3>
+                                <ul class="link-list list-unstyled "> 
+                                    <li><a href="# ">Chính sách thanh toán</a></li> 
+                                    <li><a href="# ">Chính sách vận chuyển</a></li>
+                                    <li><a href="# ">Chính sách đổi trả</a></li>
+                                    <li><a href="# ">Chính sách bảo mật</a></li> 
+                                    <li><a href="# ">Hưỡng dẫn chọn size</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-subscribe ">
+                    <div class="footer-about ">
+                        <h3 class="title ">Hệ thống showroom</h3>
+                        <a href="# " class="action ">Tìm showroom gần bạn</a>
+                        <div class="contact-info dflex ">
+                            <div class="contact-item dflex phone ">
+                                <div class="contact-info-images ">
+                                    <img src="./images/phone.png " alt=" ">
+                                </div>
+                                <div class="contact-info-detail ">
+                                    <p class="label ">Hotline</p>
+                                    <p class="title ">0911.663.698</p>
+                                </div>
+                            </div>
+                            <div class="contact-item dflex email ">
+                                <div class="contact-info-images ">
+                                    <img src="./images/email.png " alt=" ">
+                                </div>
+                                <div class="contact-info-detail ">
+                                    <p class="label ">Email</p>
+                                    <p class="title ">cskh.heradg@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subscribe ">
+                        <h3 class="title ">Đăng ký nhận thông báo</h3>
+                        <p class="sub-title ">Đăng ký nhận thông tin cập nhật và ưu đãi qua email</p>
+                        <form action="method " class="form-subscribe ">
+                            <div class="block-title ">Email *</div>
+                            <div class="block-content dflex ">
+                                <input type="text " placeholder="Nhập địa chỉ email " class="input ">
+                                <button class="action ">Đăng ký</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom ">
+            <div class="container ">
+                <div class="dflex justify-content-between align-items-center ">
+                    <div class="footer-bottom-detail ">
+                        <h3 class="title ">CÔNG TY CP THỜI TRANG VÀ ĐẦU TƯ ĐỨC GIANG (FIDG)</h3>
+                        <ul class="more-info list-unstyled ">
+                            <li>Mã số doanh nghiệp: 0108971141</li>
+                            <li>Địa chỉ: Số 59 Đức Giang , P. Đức Giang , Q. Long Biên, TP. Hà Nội</li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom-images "><img src="./images/certifications-BCT.png " alt=" "></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright ">©HeraDG. All rights reserved.</div>
+    </footer>
     <!-- End Footer -->
 
     <!-- scroll top -->
     <span class=" up "><i class=" fa fa-chevron-up "></i></span>
+    <div class="popup-overlay "></div>
 </body>
 <!-- jquerry -->
 <script type=" text/javascript " src="./library/jquery.min.js "></script>
