@@ -3,6 +3,8 @@ jQuery(document).ready(function($) {
 		$(this).slick($(this).data());
 	});
 
+	new WOW().init();
+
 	// fixed menu
 	(function ($) {
 		let	menu = $('.fixed-main-menu');
@@ -53,6 +55,9 @@ jQuery(document).ready(function($) {
 		$('.dropdown .show-option').click(function(event) {
 			event.preventDefault();
 			$(this).parent().find('.fretboard').slideToggle();
+			($(this).parent().find('.show').text() == '-') ? 
+			($(this).parent().find('.show').removeClass('active').text('+')) : 
+			($(this).parent().find('.show').addClass('active').text('-'))
 		});
 	});
 	// end Effect accordion
@@ -62,8 +67,7 @@ jQuery(document).ready(function($) {
 		let box = $('body .inside');	
 		box.find('.drop-down').slideUp();
 		$(document).mouseup(e => {
-		    if (!box.is(e.target) && box.has(e.target).length === 0) 
-		    { 
+		    if (!box.is(e.target) && box.has(e.target).length === 0) { 
 		    	box.find('.drop-down').slideUp(); 
 		    }
 		});
