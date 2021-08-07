@@ -100,15 +100,23 @@ table .col {
   src: url('../../fonts/font-Inter/Inter-Regular.ttf');
 }
 /* responsive */
-@media screen and (min-width: 1440px) {
-  .container-fluid {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
 @media (min-width: 1200px) {
   body .container {
     max-width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  body .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1600px) {
+  body .container {
+    max-width: 1536px;
     padding-left: 0;
     padding-right: 0;
   }

@@ -91,4 +91,14 @@ jQuery(document).ready(function($) {
         $(this).parents('.minicart').toggleClass('active');
         $("html").toggleClass('open-minicart');
     });
+
+    // footer mobile
+    $(function() {
+        $('.collapsible .collapsible-tab').click(function(event) {
+            event.preventDefault();
+            $(this).parents('.collapsible').toggleClass('active');
+            $(this).parents('.collapsible').siblings().find('.collapsible-content').slideUp();
+            $(this).parents('.collapsible').find('.collapsible-content').slideToggle();
+        });
+    });
 });

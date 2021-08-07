@@ -139,6 +139,7 @@ footer {
                     border-width: 0;
                     padding: 0 13px;
                     flex: 1;
+                    background-color: transparent;
 
                     &::placeholder {
                         color: #E8EAEE;
@@ -160,6 +161,35 @@ footer {
                     &:hover {
                         background-color: #313131;
                     }
+                }
+            }
+        }
+    }
+
+    .collapsible{
+        .footer-title {
+            position: relative;
+        }
+
+        .collapsible-tab {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            text-align: right;
+            
+            &:before{
+                content:"\f107";
+                font-family: Fontawesome;
+            }
+        }
+
+        &.active{
+            .collapsible-tab {
+                &:before{
+                    content:"\f106";
                 }
             }
         }
@@ -202,6 +232,11 @@ footer {
             }
         }
     }
+
+    .footer-bottom-content{
+        justify-content: space-between;
+
+    }
 }
 
 .copyright {
@@ -215,7 +250,7 @@ footer {
 
 }
 
-.up-active{
+.up-active {
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -231,8 +266,142 @@ footer {
     border-color: #242424;
     text-align: center;
 
-    &:hover{
+    &:hover {
         background-color: #313131;
         border-color: #313131;
+    }
+}
+
+// responsive
+@media screen and (max-width: (@screen__xxl-m - 1)) and (max-width: @screen__xl-m) {
+    .footer-link {
+        .link-list {
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .footer {
+        .footer-links {
+            padding-left: 15px;
+        }
+
+        .footer-subscribe {
+            width: 450px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .contact-info {
+            .contact-item {
+                .contact-info-detail {
+                    .title {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: (@screen__xl-m - 1)) {
+    .footer {
+
+        .footer-links {
+            flex: 0 0 100%;
+        }
+
+        .footer-subscribe {
+            width: 100%;
+        }
+
+        .contact-info {
+            justify-content: center;
+        }
+
+        .subscribe {
+            .form-subscribe {
+
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+        }
+    }
+    .footer-bottom {
+        .footer-bottom-content{
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: (@screen__xm - 1)) {
+    .footer{
+        .footer-link{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: (@screen__ss - 1)){
+    .footer {
+        .collapsible {
+            .collapsible-tab{
+                display: block;
+            }
+
+            .collapsible-content{
+                display: none;
+            }
+        }
+
+        .footer-link{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        .contact-info {
+            .contact-item{
+                margin-bottom: 20px;
+                margin-right: 0;
+                min-width: 218px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: (@screen__xs - 1)){
+    .footer {
+        .subscribe {
+            .form-subscribe {
+                .block-content {
+                    .action{
+                        width: 85px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: (@screen__xxs - 1)){
+    .footer {
+        .subscribe {
+            .form-subscribe {
+                .block-content {
+                    input{
+                        max-width: calc(~"100% - 85px");
+                    }
+                }
+            }
+        }
     }
 }

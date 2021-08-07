@@ -1,12 +1,12 @@
 a {
 	color: #242424;
 
-	&:hover{
+	&:hover {
 		color: #999999;
 	}
 }
 
-header{
+header {
 	color: #242424;
 }
 
@@ -312,6 +312,29 @@ header{
 			.product-list {
 				height: calc(~"100% - 45px - 101px");
 				overflow-y: auto;
+				
+				&::-webkit-scrollbar {
+					width: 5px;
+				}
+			
+				&::-webkit-scrollbar-thumb {
+					background-color: #999999;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border-radius: 5px;
+
+					&:hover{
+						background-color: #242424;
+					}
+				}
+			
+				&::-webkit-scrollbar-track {
+					box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+					background-color: #242424;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border-radius: 5px;
+				}
 
 				.product-wrapper {
 					border-width: 0 0 1px;
@@ -328,6 +351,72 @@ header{
 							font-weight: 500;
 							line-height: 19px;
 							color: #242424;
+						}
+
+						.product-actions{
+							margin-top: 36px;
+							align-items: flex-end;
+							justify-content: space-between;
+						}
+
+						.product-qty{
+
+							.label{
+								margin-right: 12px;
+								color: #999999;
+							}
+						}
+
+
+						.custom-qty {
+							display: inline-block;
+
+							.qty-item {
+								border-width: 0;
+								padding: 0;
+								background-color: transparent;
+								cursor: pointer;
+
+								&:before {
+									font-size: 16px;
+								}
+
+								&.increase {
+									&:before {
+										content: "+"
+									}
+								}
+
+								&.reduced {
+									&:before {
+										content: "-"
+									}
+								}
+							}
+
+							.qty {
+								border-width: 0;
+								width: 20px;
+							}
+						}
+
+						.product-action {
+							background-color: transparent;
+							color: #999999;
+							padding: 0;
+							border-width: 0 0 1px;
+							border-style: solid;
+							border-color: #999999;
+							font-size: 13px;
+							font-weight: 500;
+							line-height: 16px;
+							height: 16px;
+
+
+							&:hover {
+								color: #242424;
+								border-color: transparent;
+							}
 						}
 					}
 
@@ -417,10 +506,10 @@ header{
 		}
 	}
 
-	&.active{
-		.showcart{
-			&:after{
-				content:"";
+	&.active {
+		.showcart {
+			&:after {
+				content: "";
 				position: fixed;
 				top: 0;
 				right: 0;
@@ -698,12 +787,53 @@ header{
 	.container {
 		-webkit-transition: all 0.3s ease;
 		transition: all 0.3s ease;
-		padding: 21px 0;
+		padding-top: 21px;
+		padding-bottom: 21px;
 		position: relative;
 	}
 }
 
-.fixed-main-menu{
+.header-bottom {
+	background-color: #f4f4f4;
+	padding: 25px 0;
+
+	.banner-header {
+		.title {
+			font-family: Oswald;
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 47px;
+			letter-spacing: -0.02em;
+		}
+
+		.action {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 19px;
+			text-align: center;
+			padding: 6px 28px;
+			background-color: #242424;
+			color: white;
+			display: inline-block;
+			margin-top: 6px;
+
+			&:hover {
+				background-color: #313131;
+			}
+		}
+	}
+
+	.banner-content {
+		max-width: 307px;
+		margin-left: 33px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 29px;
+
+	}
+}
+
+.fixed-main-menu {
 	&.fixed {
 		position: fixed;
 		top: 0;
@@ -715,15 +845,20 @@ header{
 		border-style: solid;
 		border-color: #E3E3E3;
 		transition: all .8s ease;
-	
+
 		.header-top {
 			display: none;
 		}
-	
+
 		.header-content {
 			.container {
-				padding: 10px 0;
+				padding-top: 10px;
+				padding-bottom: 10px;
 			}
+		}
+
+		.header-bottom {
+			display: none;
 		}
 	}
 }
@@ -771,6 +906,12 @@ header{
 			border-width: 0 0 1px;
 			border-style: solid;
 			border-color: #F6F6F6;
+
+			.product-img-wrapper {
+				.product-img {
+					border-radius: 5px;
+				}
+			}
 
 			.product-detail-wrapper {
 				flex: 1;
@@ -835,6 +976,12 @@ header{
 	}
 }
 
+.open-minicart{
+	body{
+		overflow: hidden;
+	}
+}
+
 // general
 .btn-close {
 	font-size: 0;
@@ -867,6 +1014,20 @@ header{
 
 		.product-detail-wrapper {
 			flex: 1;
+		}
+	}
+}
+
+
+// responsive
+@media screen and (max-width: (@screen__xxl-m - 1)){
+	.header {
+		.header-tool {
+			.header-tool-content{
+				.header-wishlist {
+					display: none;
+				}
+			}
 		}
 	}
 }
