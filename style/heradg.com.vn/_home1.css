@@ -1396,6 +1396,7 @@ header {
 .up-active:hover {
   background-color: #313131;
   border-color: #313131;
+  color: white;
 }
 @media screen and (max-width: 1439px) and (max-width: 1200px) {
   .footer-link .link-list a {
