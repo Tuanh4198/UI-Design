@@ -1215,15 +1215,11 @@ header {
   line-height: 52px;
   letter-spacing: -0.01em;
 }
-.social-profile .slider-content {
+.social-profile .content {
   margin-top: 13px;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-}
-.social-profile .social-item {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .social-profile .social-link {
   border-width: 1px;
@@ -1514,6 +1510,7 @@ header {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+    padding-right: 15px;
   }
   .footer .footer-subscribe {
     width: 100%;
@@ -1536,11 +1533,36 @@ header {
   }
 }
 @media screen and (max-width: 991px) {
+  .social-profile .social-item {
+    margin-bottom: 30px;
+  }
   .footer .footer-link {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 575px) {
+  .social-profile .title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+  }
+  .social-profile .content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E1E1E1;
+  }
+  .social-profile .social-item {
+    margin-bottom: 0;
+  }
+  .social-profile .social-item:last-child .social-link {
+    border-width: 0;
+  }
+  .social-profile .social-link {
+    border-width: 0 0 1px;
+    text-align: initial;
+    padding: 12px;
+  }
   .footer .collapsible .collapsible-tab {
     display: block;
   }
