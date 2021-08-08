@@ -1,4 +1,6 @@
 @import '../config/_config';
+@import '../heradg.com.vn/_header';
+@import '../heradg.com.vn/_footer';
 
 .title-wrapper {
 	text-align: center;
@@ -93,6 +95,7 @@
 }
 
 .exhibition-block {
+	margin-bottom: 30px;
 
 	img {
 		transition: .3s ease-in;
@@ -234,8 +237,17 @@
 .material-design {
 	margin-bottom: 55px;
 
+	img {
+		width: 100%;
+	}
+
 	.title {
 		margin-bottom: 20px;
+	}
+
+	div.title-wrapper {
+		margin-bottom: 0;
+		padding: 20px 0;
 	}
 
 	.btn-link-more {
@@ -319,5 +331,46 @@
 
 	.summer-collection.container {
 		max-width: 1150px;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.summer-collection {
+		.main-slide {
+			max-width: calc(~'100% - 100px');
+		}
+	}
+
+	.container {
+		.title-wrapper {
+			padding: 0;
+		}
+	}
+
+	.title-wrapper {
+		.title {
+			font-size: 20px;
+			line-height: 25px;
+		}
+
+		.desc {
+			font-size: 14px;
+
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.summer-collection {
+		.thumbnail-slide {
+			max-width: 30px;
+		}
+
+		.main-slide {
+			max-width: calc(~'100% - 45px');
+		}
 	}
 }
