@@ -1,0 +1,123 @@
+.hidden {
+  display: none !important;
+}
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.hidden-visibility {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.button-close {
+  background-image: none;
+  -moz-box-sizing: content-box;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+}
+.center-transform {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.dflex {
+  display: -webkit-box;
+  display: -ms-flex-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.dflex:before,
+.dflex:after {
+  display: none;
+}
+* {
+  outline: none !important;
+}
+button,
+a {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+button:hover,
+a:hover {
+  text-decoration: none;
+}
+._keyfocus *:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+table th {
+  text-align: left;
+}
+table .col {
+  width: auto;
+}
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('../../fonts/font-Inter/Inter-Regular.ttf');
+}
+/* responsive */
+@media (min-width: 1200px) {
+  body .container {
+    max-width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  body .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1600px) {
+  body .container {
+    max-width: 1536px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
