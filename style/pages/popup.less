@@ -1,4 +1,9 @@
 .modals-wrapper.modals-popups{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     .modal-popup {
         height: 100vh;
         opacity: 0;
@@ -8,6 +13,13 @@
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transform: scale(0) ;
+        .error{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            margin-top: 10px;
+            color: #ff0000;
+        }
         .modal-inner-wrap{
             position: relative;
             top: 50%;

@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
     })($);
     // end Effect drop down
 
-    // action convert content page shipping policy
+    // animation convert content page shipping policy
     $(document).ready(function() {
         let text_a = "Chính sách thanh toán";
         let text_b = "Chính sách vận chuyển";
@@ -134,7 +134,6 @@ jQuery(document).ready(function($) {
         });
     });
     //end
-
     // action convert account 
     $(document).ready(function() {
         let text_a = "THÔNG TIN TÀI KHOẢN";
@@ -189,11 +188,11 @@ jQuery(document).ready(function($) {
     });
     // load popup
     $(document).ready(function() {
-            // $(".modals-wrapper.modals-popups").load("popup-signin.html");
+            $(".modals-wrapper.modals-popups").load("popup-signin.html");
             // $(".modals-wrapper.modals-popups").load("reset-password.html");
             // $(".modals-wrapper.modals-popups").load("inform-change-password.html");
             // $(".modals-wrapper.modals-popups").load("registration.html");
-            $(".modals-wrapper.modals-popups").load("account-verification.html");
+            // $(".modals-wrapper.modals-popups").load("account-verification.html");
         })
         //end
 

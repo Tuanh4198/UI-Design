@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- animation -->
+    <link rel="stylesheet" href="./library/animate.css" />
+    <!-- font fontawesome -->
+    <link rel="stylesheet" href="./fonts/fontawesome/css/font-awesome.min.css" />
+    <!-- font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bs4 -->
+    <link rel="stylesheet" href="./library/css/bootstrap.min.css" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="./library/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./library/slick/slick.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="./style/pages/_checkout.css" />
+</head>
+
+<body class="checkout-page">
+    <!-- Header -->
+    <section class="fixed-main-menu">
+
+    </section>
+    <!-- End header -->
+
+    <!-- Content -->
+    <section style="overflow-x: hidden;">
+        <div class="container">
+            <div class="row">
+                <!-- content -->
+                <div class="col-md-7 col-12 cart-form-wrapper">
+                    <div class="cart-content-wrapper">
+                        <form action="" class="info-usser row">
+                            <!--  -->
+                            <h3 class="title col-12">Thông tin nhận hàng</h3>
+                            <!--  -->
+                            <input type="text" class="col-lg-6 col-12 field" placeholder="Họ và tên" name="" id="">
+                            <input type="text" class="col-lg-6 col-12 field" placeholder="Số điện thoại" name="" id="">
+                            <input type="text" class="col-12 field" placeholder="Địa chỉ (Ví dụ: 1607 Ngô Quyền)" name="" id="">
+                            <select class="col-xl-4 col-12 field" name="" id="">
+								<option value="">Chọn Tỉnh/Thành</option>
+							</select>
+                            <select class="col-xl-4 col-12 field" name="" id="">
+								<option value="">Chọn Quận/Huyện</option>
+							</select>
+                            <select class="col-xl-4 col-12 field" name="" id="">
+								<option value="">Chọn Phường/Xã</option>
+							</select>
+                            <textarea class="col-12 field" name="" id="" placeholder="Ghi chú thêm (Ví dụ: Giao hàng hành chính)"></textarea>
+                            <!--  -->
+                            <h3 class="title col-12">Chọn hình thức thanh toán</h3>
+                            <!--  -->
+                            <div class="payment-method col-12 d-flex justify-content-start align-items-center">
+                                <input type="radio" id="test1" name="radio-group" checked>
+                                <label for="test1">
+									<img src="./images/page/checkout_cart/Vector.png" alt="">
+									<span>Thanh toán khi nhận hàng</span>
+								</label>
+                            </div>
+                            <div class="payment-method col-12 d-flex justify-content-start align-items-center">
+                                <input type="radio" id="test2" name="radio-group">
+                                <label for="test2">
+									<img src="./images/page/checkout_cart/zalo.png" alt="">
+									<span>Ví điện tử Zalo Pay <br> Thẻ ATM / Internet Banking <br> Thẻ tín dụng (Credit card) / Thẻ ghi nợ (Debit card)</span>
+								</label>
+                            </div>
+                            <div class="payment-method col-12 d-flex justify-content-start align-items-center">
+                                <input type="radio" id="test3" name="radio-group">
+                                <label for="test3">
+									<img src="./images/page/checkout_cart/momo.png" alt="">
+									<span>Ví MOMO</span>
+								</label>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-submit">Đặt hàng</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- sidebar -->
+                <div class="col-md-5 col-12 cart-info-wrapper">
+                    <sidebar class="cart-info">
+                        <h4 class="title">Giỏ hàng của bạn</h4>
+                        <div class="mini-cart-wrapper">
+                            <ul class="list-products">
+                                <li>
+                                    <div class="product-wrapper row">
+                                        <div class="col-3">
+                                            <div class="product-img-wrapper">
+                                                <img src="./images/page/category/product_1.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="product-detail-wrapper">
+                                                <div class="product-detail">
+                                                    <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+                                                    <p class="product-option">Màu vàng | XS</p>
+                                                    <div class="product-price-wrapper">
+                                                        <span class="new-price">899.000 &#8363;</span>
+                                                        <span class="old-price">899.000 &#8363;</span>
+                                                        <span class="discount">-30%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-action d-flex">
+                                                    <div class="product-qty">
+                                                        <label>Số lượng</label>
+                                                        <div class="group-qty">
+                                                            <div class="quantity">
+                                                                <div class="quantity-nav">
+                                                                    <button class="quantity-button quantity-down btn-qty minus">-</button>
+                                                                    <input type="number" min="1" max="999" step="1" value="1" class="number">
+                                                                    <button class="quantity-button quantity-up btn-qty plus">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-wrapper row">
+                                        <div class="col-3">
+                                            <div class="product-img-wrapper">
+                                                <img src="./images/page/category/product_1.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="product-detail-wrapper">
+                                                <div class="product-detail">
+                                                    <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+                                                    <p class="product-option">Màu vàng | XS</p>
+                                                    <div class="product-price-wrapper">
+                                                        <span class="new-price">899.000 &#8363;</span>
+                                                        <span class="old-price">899.000 &#8363;</span>
+                                                        <span class="discount">-30%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-action d-flex">
+                                                    <div class="product-qty">
+                                                        <label>Số lượng</label>
+                                                        <div class="group-qty">
+                                                            <div class="quantity">
+                                                                <div class="quantity-nav">
+                                                                    <button class="quantity-button quantity-down btn-qty minus">-</button>
+                                                                    <input type="number" min="1" max="999" step="1" value="1" class="number">
+                                                                    <button class="quantity-button quantity-up btn-qty plus">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-wrapper row">
+                                        <div class="col-3">
+                                            <div class="product-img-wrapper">
+                                                <img src="./images/page/category/product_1.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="product-detail-wrapper">
+                                                <div class="product-detail">
+                                                    <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+                                                    <p class="product-option">Màu vàng | XS</p>
+                                                    <div class="product-price-wrapper">
+                                                        <span class="new-price">899.000 &#8363;</span>
+                                                        <span class="old-price">899.000 &#8363;</span>
+                                                        <span class="discount">-30%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-action d-flex">
+                                                    <div class="product-qty">
+                                                        <label>Số lượng</label>
+                                                        <div class="group-qty">
+                                                            <div class="quantity">
+                                                                <div class="quantity-nav">
+                                                                    <button class="quantity-button quantity-down btn-qty minus">-</button>
+                                                                    <input type="number" min="1" max="999" step="1" value="1" class="number">
+                                                                    <button class="quantity-button quantity-up btn-qty plus">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <i class="comment-mini-cart">Có <strong>5 người</strong> đang thêm cùng sản phẩm giống bạn vào giỏ hàng. Mua ngay trước khi các sản phẩm này hết hàng!</i>
+                        </div>
+                        <div class="mini-cart-info-wrapper">
+                            <form class="cart-coupon" action="">
+                                <input class="field" type="text" name="" placeholder="Mã giảm giá">
+                                <button type="submit" class="btn-submit coupon">Áp dụng</button>
+                            </form>
+                            <div class="order-info">
+                                <div class="d-flex justify-content-between align-content-center">
+                                    <span>Tạm tính</span>
+                                    <span>3.700.000 &#8363;</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-content-center">
+                                    <span>Mã giảm giá</span>
+                                    <span>0 &#8363;</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-content-center">
+                                    <span>Giảm giá khác</span>
+                                    <span>0 &#8363;</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-content-center">
+                                    <span>Phí giao hàng</span>
+                                    <span>0 &#8363;</span>
+                                </div>
+                                <br>
+                                <div class="d-flex justify-content-between align-content-center">
+                                    <span>Tổng công</span>
+                                    <strong>3.798.000 &#8363;</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </sidebar>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+
+    </section>
+    <!-- End Footer -->
+
+    <!-- scroll top -->
+    <span class="up"><i class="fa fa-chevron-up"></i></span>
+</body>
+<!-- jquerry -->
+<script type="text/javascript" src="./library/jquery.min.js"></script>
+<!-- bs4 -->
+<script type="text/javascript" src="./library/js/bootstrap.min.js"></script>
+<!-- slick -->
+<script type="text/javascript" src="./library/slick/slick.min.js"></script>
+<!-- main js -->
+<script type="text/javascript" src="./javascript/main.js"></script>
+<!-- custom js -->
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+    })
+</script>
+
+</html>
