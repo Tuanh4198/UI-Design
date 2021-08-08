@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
     $(".toggle-tab").click(function(event) {
         event.preventDefault();
         $(this).parent().toggleClass('toggle-visible');
-        $('.toggle-content').toggleClass('visible');
+        $(this).parent().find('.toggle-content').toggleClass('visible');
     });
 
     // close button 
@@ -100,5 +100,22 @@ jQuery(document).ready(function($) {
             $(this).parents('.collapsible').siblings().find('.collapsible-content').slideUp();
             $(this).parents('.collapsible').find('.collapsible-content').slideToggle();
         });
+    });
+
+    // nav-toggle
+    $(".nav-toggle").click(function(event) {
+        event.preventDefault();
+        $("html").toggleClass('nav-open');
+    });
+
+    $(".menu-close").click(function(event) {
+        event.preventDefault();
+        $("html").removeClass('nav-open');
+    });
+
+    // menu mobile collapse
+    $(".nav-mobile .collapse").click(function(event) {
+        event.preventDefault();
+        $(this).parent().find('.sub-menu').toggleClass('active');
     });
 });
