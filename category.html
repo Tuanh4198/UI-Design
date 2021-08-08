@@ -29,11 +29,61 @@
 	</section>
 	<!-- End header -->
 	
-	<!-- Content -->
+	<!-- Content -->      
 	<section class="container">
+		<div class="breadcrumbs-wrapper">
+			<div class="breadcrumbs">
+				<action method="addCrumb">
+					<argument name="crumbName" xsi:type="string">
+						<a href="#">Trang chủ</a>
+					</argument>
+				</action>
+				<span>/</span>
+				<action method="addCrumb">
+					<argument name="crumbName" xsi:type="string">Hàng mới về</argument>
+				</action>
+			</div>
+			<h2 class="title">
+				<span>Hàng mới về</span>
+			</h2>
+		</div>
+		<!--  -->
 		<div class="row">
+			<!-- key word filter -->
+			<div class="col-12">
+				<div class="filter-group-wrapper d-flex align-items-center justify-content-between">
+					<div class="btn-action-sidebar">
+						<button class="btn-action closer">Bộ lọc<i>ico</i></button>
+					</div>
+					<ul class="list-keyword d-flex align-items-center">
+						<li><a href="#">Áo</a></li>
+						<li><a href="#">Đầm</a></li>
+						<li><a href="#">500.000&#8363; - 1.000.000&#8363;</a></li>
+						<li><a href="#">Colorfull life</a></li>
+						<li><a href="#">S</a></li>
+						<li><a href="#">M</a></li>
+						<li><a href="#" class="color"> <span style="background-color:#FFA500">color cam</span></a></li>
+						<li class="btn-clear-all"><a href="#">Xóa tất cả</a></li>
+					</ul>
+					<div class="select-sort-option d-flex">
+						<div class="total-product">
+							<span>716 sản phẩm</span>
+						</div>
+						<div class="select-sort-option-wrapper">
+							<label for="select-option">Xếp theo: </label>
+							<select name="select-option" id="select-option">
+								<option value="">BÁN CHẠY</option>
+								<option value="">GIÁ THẤP NHẤT</option>
+								<option value="">MỚI NHẤT</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="category-page">
 			<!-- side bar -->
-			<sidebar class="category-sidebar">
+			<sidebar class="col- category-sidebar">
 				<div class="support-option">
 					<ul class="list-support-fiter dropdown">
 						<li>
@@ -53,7 +103,7 @@
 						</li>
 						<li>
 							<div class="show-option d-flex align-items-center justify-content-between">
-								<div class="name-option">Gía</div>
+								<div class="name-option">Giá</div>
 								<div class="show">-</div>
 							</div>
 							<div class="fretboard">
@@ -124,19 +174,52 @@
 				</div>
 			</sidebar>
 			<!-- grid product  -->
-			<div class="category-products">
-				  
+			<div class="col- category-products">
+				<!-- list product  -->
+				<div class="row">
+					<div class="col-xl-3 col-lg-4 col-6">
+						<div class="product-wrapper">
+							<div class="product-img-wrapper">
+								<div class="product-label">
+									<div class="label-content">
+										<span class="discount">-30%</span>
+									</div>
+								</div>
+								<a href="#" class="product-img">
+									<img class="product-img-first" src="./images/page/category/product_1.jpg"/>
+									<img class="product-img-second" src="./images/page/category/product_2.jpg"/>
+								</a>
+								<a href="#" class="add-to-wishlist">
+									<img src="./images/page/category/heart.png"/>
+								</a>
+							</div>
+							<div class="product-detail-wrapper">
+								<p class="product-status">Mới ra mắt</p>
+								<a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+								<div class="product-price-wrapper">
+									<span class="new-price">899.000 &#8363;</span>
+									<span class="old-price">899.000 &#8363;</span>
+									<span class="discount">-30%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- pagination -->
+				<ul class="pagination d-flex align-items-center justify-content-center">
+					<li><a href="#" class="prev none"><i class="fa fa-angle-left" aria-hidden="true"></i>Trang trước</a></li>
+					<li><a href="#" class="active">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#" class="next">Xem tiếp<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				</ul>
 			</div>
 		</div>
 	</section>
 
 	<!-- Footer -->
 	<section>
-		<div class="row">
-			<div class="col-lg-3 col-md-4 col-6">
-
-			</div>
-		</div>
+		
 	</section>
 	<!-- End Footer -->
 
@@ -153,6 +236,31 @@
 <script type="text/javascript" src="./javascript/main.js"></script>
 <!-- custom js -->
 <script type="text/javascript">
- 
+	jQuery(document).ready(function($) {
+		$('.btn-action').click(function(event) {
+			event.preventDefault();
+			if($(this).hasClass('closer')) {
+				$(this).removeClass('closer').addClass('open')
+			} else {
+				$(this).removeClass('open').addClass('closer')
+			}
+			$('#category-page').toggleClass('active');
+		});
+
+		$('.list-support-option li').click(function(event) {
+			event.preventDefault();
+			$(this).toggleClass('active');
+		})
+
+		$('.list-keyword li:not(.btn-clear-all)').click(function(event) {
+			event.preventDefault();
+			$(this).remove();
+		})
+
+		$('.list-keyword li.btn-clear-all').click(function(event) {
+			event.preventDefault();
+			$(this).parent().children().remove();
+		})
+	})
 </script>
 </html>

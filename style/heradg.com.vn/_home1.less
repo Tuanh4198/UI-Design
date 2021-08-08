@@ -32,6 +32,7 @@ button {
 .slick-next {
     width: 56px;
     height: 56px;
+    z-index: 2;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 1px solid #D2D2D2;
@@ -41,6 +42,15 @@ button {
         color: @base_color;
         opacity: 1;
         font-size: 28px;
+    }
+    &:hover,
+    &:focus {
+        background-color: #242424;
+        color: #ffffff;
+        border-color: #242424;
+        &:before {
+            color: #ffffff;
+        }
     }
 }
 .slick-prev {
@@ -83,6 +93,7 @@ button {
     }
 }
 .slider-home {
+    margin-bottom: 75px;
     .slick-slide {
         .item {
             
@@ -92,6 +103,12 @@ button {
             }
         }
     }
+    
+}
+.autoplay {
+    > .item {
+        display: none;
+    }
 }
 .lookbook-slogan {
     max-width: 1600px;
@@ -99,6 +116,7 @@ button {
     margin-right: auto;
     padding-left: 200px;
     padding-right: 200px;
+    margin-bottom: 83px;
     .container-slogan {
         position: relative;
         .slogan-main {
@@ -112,6 +130,7 @@ button {
                 font-size: 12px;
                 line-height: 15px;
                 color: @base_color;
+                margin-top: 11px;
             }
         }
         .slogan-left {
@@ -125,6 +144,7 @@ button {
             }
             .lookbook-phare {
                 max-width: 425px;
+                margin-bottom: 100px;
                 .title {
                     font-family: @fontbase;
                     font-weight: 600;
@@ -132,6 +152,7 @@ button {
                     line-height: 30px;
                     text-transform: uppercase;
                     color: @base_color;
+                    margin-bottom: 20px;
                 }
                 p {
                     font-weight: 400;
@@ -147,14 +168,32 @@ button {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        a {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            color: @base_color;
+            .fa {
+                cursor: pointer;
+                font-size: 24px;
+                font-size: 30px;
+            }
+        }
     }
     .prev-person {
-        left: -110px;
+        left: -157px;
+        .text {
+            margin-left: 13px;
+        }
     }
     .next-person {
-        right: -110px;
+        right: -157px;
         text-align: right;
-        
+        .text {
+            margin-right: 13px;
+        }
     }
 }
 // product tabs
@@ -196,6 +235,7 @@ button {
     }
 }
 .tab-content {
+    overflow: visible;
     .tab-pane {
         display: block;
         height: 0;
@@ -213,6 +253,7 @@ button {
         .item {
             padding-left: 15px;
             padding-right: 15px;
+            display: block !important;
         }
     }
 }
@@ -223,7 +264,7 @@ button {
     overflow: hidden;
     margin-bottom: 16px;
     img {
-        width: 100%;
+        // width: 100%;
         transition: .3s ease-in;
     }
 
@@ -410,10 +451,311 @@ button {
         right: auto;
     }
 }
-.colorful-life {
+.colorful-life,
+.colorful-life-product {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+}
+.colorful-life {
+    margin-top: 47px;
+    margin-bottom: 20px;
+    .colorful-life-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .colorful-left,
+    .colorful-right {
+        width: 50%;
+    }
+    .colorful-left {
+        padding-left: 15px;
+        padding-right: 15px;
+        .colorful-left-wrapper {
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            .phare {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px;
+                color: @base_color;
+                margin-bottom: 0;
+
+            }
+            .btn {
+                margin-top: 33px;
+
+                a {
+                    display: inline-block;
+                    padding: 0 10px;
+                    min-width: 160px;
+                    height: 42px;
+                    line-height: 40px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: @base_color;
+                    text-align: center;
+                    border: 1px solid #dedede;
+                }
+            }
+        }
+    }
+    .title {
+        font-family: 'EB Garamond', serif;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 63px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: @base_color;
+        margin-bottom: 8px;
+    }
+}
+.colorful-life-product {
+    margin-bottom: 107px;
+    .colorful-life-product-main {
+        .autoplay {
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: 31px;
+            .product-wrapper {
+                padding-left: 10px;
+                padding-right: 10px;
+
+            }
+            .slick-prev,
+            .slick-next {
+                opacity: 0;
+                visibility: hidden;
+                &:hover {
+                    background-color: @base_color;
+                    color: #ffffff;
+                    border-color: @base_color;
+                    &:before {
+                        color: #ffffff;
+
+                    }
+                }
+            }
+            &:hover {
+                .slick-prev,
+                .slick-next {
+                    opacity: 1;
+                    visibility: visible;
+
+                }
+                .slick-prev {
+                    left: -58px;
+                }
+                .slick-next {
+                    right: -58px;
+    
+                }
+            }
+            
+        }
+    }
+    .slick-dots {
+        bottom: -25px;
+    }
+}
+.event-product-categories {
+    background-color: #f7f5f2;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    .title {
+        font-family: 'EB Garamond', serif;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 63px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #242424;
+        margin-bottom: 22px;
+    }
+    .event-product-categories-main {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slick-slider {
+        .slick-prev,
+        .slick-next {
+            opacity: 0;
+            visibility: hidden;
+            &:hover {
+                background-color: @base_color;
+                color: #ffffff;
+                border-color: @base_color;
+                &:before {
+                    color: #ffffff;
+
+                }
+            }
+        }
+    }
+    
+    .slick-slider {
+        &:hover {
+            .slick-prev,
+            .slick-next {
+                opacity: 1;
+                visibility: visible;
+    
+            }
+            .slick-prev {
+                left: -58px;
+            }
+            .slick-next {
+                right: -58px;
+    
+            }
+        }
+    }
+    
+    .nav-tabs {
+        margin-bottom: 40px;
+        a {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: -0.02em;
+            padding: 0 24px;
+            height: 40px;
+            line-height: 38px;
+            border: 1px solid #e1e1e1;
+            transition: none;
+            &.active {
+                color: #ffffff;
+                background: #242424;
+                border: 1px solid #242424;
+                border-radius: 4px;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        li:not(:last-child) {
+            margin-right: 20px;
+        }
+        
+    }
+    .event-item {
+        .event-item-info {
+            display: flex;
+            flex-wrap: wrap;
+            
+            .event-img-wrapper {
+                width: 75%;
+                width: 67.6%;
+            }
+            .event-detail-wrapper {
+                width: 25%;
+                width: 32.4%;
+                background-color: #edeae6;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                text-align: center;
+            }
+            .event-detail-primary {
+                padding-left: 94px;
+                padding-right: 94px;
+                .event-name {
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 37px;
+                    text-transform: uppercase;
+                    color: @base_color;
+                    display: block;
+                    margin-bottom: 9px;
+                }
+                .event-description {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: @base_color;
+                    margin-bottom: 20px;
+                }
+                .event-item-actions {
+                    a {
+                        transition: none;
+                        display: inline-block;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        height: 40px;
+                        line-height: 38px;
+                        padding: 0 18px;
+                        color: #ffffff;
+                        background: @base_color;
+                        border: 1px solid @base_color;
+                        &:hover {
+                            background-color: #ffffff;
+                            color: @base_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.suggest-product-categories {
+    .suggest-product-categories-main {
+        padding-top: 104px;
+        padding-right: 200px;
+        padding-bottom: 100px;
+        .title {
+            font-family: 'EB Garamond', serif;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 63px;
+            text-align: center;
+            letter-spacing: -0.01em;
+            color: #242424;
+            margin-bottom: 22px;    
+        }
+    }
+    .nav-tabs {
+        a {
+            &:after {
+                background-color: #ffffff;
+            }
+            &.active {
+                &:after {
+                    background-color: @base_color;
+                }
+                
+            }
+        }
+    }
+    .slick-slider {
+        .slick-prev {
+            left: auto;
+            right: -71px;
+        }
+        .slick-next {
+            right: -146px;
+
+        }
+    }
+    .slick-list {
+        padding-left: 200px;
+
+    }
+}
+.news-blog {
+    background: #f7f7f7;
+    .news-blog-main {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
