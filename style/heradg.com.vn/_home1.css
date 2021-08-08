@@ -571,7 +571,7 @@ header {
   padding: 10px 0 0;
   position: static;
 }
-.navbar .menu-top .navbar-nav .nav-item {
+.navbar .menu-top .navbar-nav > .nav-item {
   margin-bottom: -21px;
   padding-bottom: 21px;
 }
@@ -633,10 +633,14 @@ header {
   margin-bottom: 15px;
   display: block;
 }
-.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-menu > li .menu-items .menu-item {
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-menu > li .mega-items .mega-item {
   font-size: 13px;
   line-height: 16px;
   text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-menu > li .mega-items .mega-item:last-child {
+  margin-bottom: 0;
 }
 .navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-menu > li:last-child:before {
   border: 0;
@@ -696,22 +700,7 @@ header {
 .navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-dots li.slick-active button:before {
   background-color: transparent;
 }
-.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-prev {
-  width: 43px;
-  height: 115px;
-  background-color: rgba(255, 255, 255, 0.7);
-  opacity: 1;
-  visibility: visible;
-  z-index: 1;
-  left: -22px;
-}
-.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-prev:before {
-  color: #242424;
-  opacity: 1;
-  font-family: Fontawesome;
-  font-size: 30px;
-  content: "\f104";
-}
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-prev,
 .navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-next {
   width: 43px;
   height: 115px;
@@ -719,26 +708,66 @@ header {
   opacity: 1;
   visibility: visible;
   z-index: 1;
-  right: -22px;
+  border-width: 0;
+  border-radius: 0;
 }
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-prev:before,
 .navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-next:before {
   color: #242424;
   opacity: 1;
   font-family: Fontawesome;
   font-size: 30px;
-  content: "\f105";
 }
-.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-prev.slick-disabled:before {
-  opacity: 0.25;
-}
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-prev.slick-disabled:before,
 .navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-next.slick-disabled:before {
   opacity: 0.25;
+}
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-prev {
+  left: -22px;
+}
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-prev:before {
+  content: "\f104";
+}
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-next {
+  right: -22px;
+}
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .slick-next:before {
+  content: "\f105";
 }
 .navbar .menu-top .navbar-nav .nav-item.mega:hover .content-mega {
   top: 100%;
   opacity: 1;
   visibility: visible;
   pointer-events: unset;
+}
+.navbar .menu-top .navbar-nav .nav-item.dropdown {
+  position: relative;
+}
+.navbar .menu-top .navbar-nav .nav-item.dropdown .dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  display: block;
+  border-width: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar .menu-top .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
+}
+.navbar .menu-top .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+  color: #999999;
+}
+.navbar .menu-top .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
 }
 .navbar .nav-mobile {
   position: fixed;
@@ -1056,11 +1085,17 @@ header {
   .nav-mobile .nav-mobile-title .btn-close:before {
     content: url('../../images/close-menu.png');
   }
+  .nav-mobile .nav-mobile-content {
+    overflow-y: auto;
+    max-height: calc(100% - 44px);
+  }
   .nav-mobile .nav-item {
     position: relative;
+    padding-left: 15px;
   }
   .nav-mobile .nav-link {
     text-transform: capitalize;
+    padding: 10px 0;
   }
   .nav-mobile .nav-link.active {
     font-weight: 600;
@@ -1077,6 +1112,9 @@ header {
   }
   .nav-mobile .sub-menu {
     display: none;
+  }
+  .nav-mobile .sub-menu.active {
+    display: block;
   }
   .nav-open .nav-toggle:after {
     content: "";

@@ -154,7 +154,6 @@ jQuery(document).ready(function($) {
         $('.collapsible .collapsible-tab').click(function(event) {
             event.preventDefault();
             $(this).parents('.collapsible').toggleClass('active');
-            $(this).parents('.collapsible').siblings().find('.collapsible-content').slideUp();
             $(this).parents('.collapsible').find('.collapsible-content').slideToggle();
         });
     });
@@ -173,6 +172,6 @@ jQuery(document).ready(function($) {
     // menu mobile collapse
     $(".nav-mobile .collapse").click(function(event) {
         event.preventDefault();
-        $(this).parent().find('.sub-menu').toggleClass('active');
+        $(this).parent().find('> .sub-menu').slideToggle();
     });
 });
