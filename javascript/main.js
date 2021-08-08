@@ -3,8 +3,6 @@ jQuery(document).ready(function($) {
 		$(this).slick($(this).data());
 	});
 
-	new WOW().init();
-
 	// fixed menu
 	(function ($) {
 		let	menu = $('.fixed-main-menu');
@@ -90,4 +88,40 @@ jQuery(document).ready(function($) {
 		});	
 	});
 	// end tabs
+
+	// spinner quantity
+	(function ($) {
+		$('.quantity').each(function() {
+			let spinner = $(this),
+			input = $('.quantity input[type="number"]'),
+			btnUp = $('.quantity .quantity-up'),
+			btnDown = $('.quantity .quantity-down'),
+			min = input.attr('min'),
+			max = input.attr('max');
+			let newVal;
+			btnUp.click(function() {
+				console.log('object');
+				let oldValue = parseFloat(input.val());
+				if (oldValue >= max) {
+					newVal = oldValue;
+				} else {
+					newVal = oldValue + 1;
+				}
+				spinner.find("input").val(newVal);
+				spinner.find("input").trigger("change");
+			});
+			btnDown.click(function() {
+				console.log('object');
+				let oldValue = parseFloat(input.val());
+				if (oldValue <= min) {
+					newVal = oldValue;
+				} else {
+					newVal = oldValue - 1;
+				}
+				spinner.find("input").val(newVal);
+				spinner.find("input").trigger("change");
+			});
+		});
+	})($);
+	// end spinner quantity
 });

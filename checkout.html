@@ -34,22 +34,22 @@
 		<div class="container" >
 			<div class="row">
 				<!-- content -->
-				<div class="col-sm-7">
+				<div class="col-md-7 col-12 cart-form-wrapper">
 					<div class="cart-content-wrapper">
 						<form action="" class="info-usser row">
 							<!--  -->
 							<h3 class="title col-12">Thông tin nhận hàng</h3>
 							<!--  -->
-							<input type="text" class="col-6 field" placeholder="Họ và tên" name="" id="">
-							<input type="text" class="col-6 field" placeholder="Số điện thoại" name="" id="">
+							<input type="text" class="col-lg-6 col-12 field" placeholder="Họ và tên" name="" id="">
+							<input type="text" class="col-lg-6 col-12 field" placeholder="Số điện thoại" name="" id="">
 							<input type="text" class="col-12 field" placeholder="Địa chỉ (Ví dụ: 1607 Ngô Quyền)" name="" id="">
-							<select class="col-4 field" name="" id="">
+							<select class="col-xl-4 col-12 field" name="" id="">
 								<option value="">Chọn Tỉnh/Thành</option>
 							</select>
-							<select class="col-4 field" name="" id="">
+							<select class="col-xl-4 col-12 field" name="" id="">
 								<option value="">Chọn Quận/Huyện</option>
 							</select>
-							<select class="col-4 field" name="" id="">
+							<select class="col-xl-4 col-12 field" name="" id="">
 								<option value="">Chọn Phường/Xã</option>
 							</select>
 							<textarea class="col-12 field" name="" id="" placeholder="Ghi chú thêm (Ví dụ: Giao hàng hành chính)"></textarea>
@@ -82,7 +82,7 @@
 					</div>
 				</div>
 				<!-- sidebar -->
-				<div class="col-sm-5 cart-info-wrapper">
+				<div class="col-md-5 col-12 cart-info-wrapper">
 					<sidebar class="cart-info">
 						<h4 class="title">Giỏ hàng của bạn</h4>
 						<div class="mini-cart-wrapper">
@@ -256,41 +256,7 @@
 <!-- custom js -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		// spinner quantity
-		(function ($) {
-			$('.quantity').each(function() {
-				let spinner = $(this),
-				input = $('.quantity input[type="number"]'),
-				btnUp = $('.quantity .quantity-up'),
-				btnDown = $('.quantity .quantity-down'),
-				min = input.attr('min'),
-				max = input.attr('max');
-				let newVal;
-				btnUp.click(function() {
-					console.log('object');
-					let oldValue = parseFloat(input.val());
-					if (oldValue >= max) {
-						newVal = oldValue;
-					} else {
-						newVal = oldValue + 1;
-					}
-					spinner.find("input").val(newVal);
-					spinner.find("input").trigger("change");
-				});
-				btnDown.click(function() {
-					console.log('object');
-					let oldValue = parseFloat(input.val());
-					if (oldValue <= min) {
-						newVal = oldValue;
-					} else {
-						newVal = oldValue - 1;
-					}
-					spinner.find("input").val(newVal);
-					spinner.find("input").trigger("change");
-				});
-			});
-		})($);
-		// end spinner quantity
+		
 	})
 </script>
 </html>

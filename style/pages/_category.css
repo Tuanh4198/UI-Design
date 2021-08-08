@@ -331,15 +331,15 @@ table .col {
   transition: 0.3s ease-in;
   left: 0;
 }
-.category-sidebar .list-support-option:not(.swatch) li:hover,
+.category-sidebar .list-support-option:not(.swatch) li:hover a {
+  color: #993a3a !important;
+}
 .category-sidebar .list-support-option:not(.swatch) li.active {
   padding-left: 25px;
 }
-.category-sidebar .list-support-option:not(.swatch) li:hover:before,
 .category-sidebar .list-support-option:not(.swatch) li.active:before {
   opacity: 1;
 }
-.category-sidebar .list-support-option:not(.swatch) li:hover a,
 .category-sidebar .list-support-option:not(.swatch) li.active a {
   color: #242424;
   text-decoration: none;
@@ -722,20 +722,50 @@ table .col {
   color: #242424;
   line-height: 25px;
   margin-left: 15px;
+  position: relative;
 }
 .filter-group-wrapper .select-sort-option .select-sort-option-wrapper label {
   margin: 0;
-}
-.filter-group-wrapper .select-sort-option .select-sort-option-wrapper select {
   cursor: pointer;
-  margin-left: 5px;
-  border: none;
-  outline: none;
   -webkit-appearance: none;
   background-image: url(../../images/page/category/arr_down.png);
   background-repeat: no-repeat;
   background-position: center right;
   padding-right: 13px;
+}
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper ul {
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0;
+  visibility: hidden;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 15px -5px #a1a1a1;
+          box-shadow: 0px 0px 15px -5px #a1a1a1;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper ul li {
+  cursor: pointer;
+}
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper ul li:not(:first-child) {
+  margin-top: 5px;
+}
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper ul li:hover {
+  color: #993a3a;
+}
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper:focus ul,
+.filter-group-wrapper .select-sort-option .select-sort-option-wrapper:hover ul {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
 }
 #category-page.active .category-sidebar {
   padding: 0;

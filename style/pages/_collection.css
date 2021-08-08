@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 body,
 html {
@@ -310,8 +311,15 @@ table .col {
 .material-design {
   margin-bottom: 55px;
 }
+.material-design img {
+  width: 100%;
+}
 .material-design .title {
   margin-bottom: 20px;
+}
+.material-design div.title-wrapper {
+  margin-bottom: 0;
+  padding: 20px 0;
 }
 .material-design .btn-link-more {
   margin-top: 20px;
@@ -381,5 +389,31 @@ table .col {
   }
   .summer-collection.container {
     max-width: 1150px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .summer-collection .main-slide {
+    max-width: calc(100% - 100px);
+  }
+  .container .title-wrapper {
+    padding: 0;
+  }
+  .title-wrapper .title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .title-wrapper .desc {
+    font-size: 14px;
+  }
+  .title-wrapper .desc br {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .summer-collection .thumbnail-slide {
+    max-width: 30px;
+  }
+  .summer-collection .main-slide {
+    max-width: calc(100% - 45px);
   }
 }
