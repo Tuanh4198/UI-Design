@@ -153,7 +153,7 @@
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<form action="" class="product-option-wrapper">
+					<form action="#" class="product-option-wrapper">
 						<h3 class="name-product">Áo kiểu cổ dập ly</h3>
 						<div class="product-short-desc">Mẫu thiết kế nằm trong Bộ sưu tập Colorful Life của HeraDG.</div>
 						<ul class="list-option-wrapper">
@@ -184,9 +184,9 @@
 						<div class="add-to-cart-wrapper">
 							<div class="choose-size d-flex align-items-center justify-content-between">
   								<a href="#" class="tool-tip" data-toggle="tooltip" title="Tìm cỡ của bạn!"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Tìm cỡ của bạn</a>
-								<a href="#" class="tutorial-link">Hướng dẫn về kích cỡ</a>
+								<a href="#" class="tutorial-link" data-toggle="modal" data-target="#choose_size_modal">Hướng dẫn về kích cỡ</a>
 							</div>
-							<button class="btn btn-block btn-add-cart">Thêm vào giỏ hàng</button>
+							<button class="btn btn-block btn-add-cart" data-toggle="modal" data-target="#mini_cart_detail" type="button">Thêm vào giỏ hàng</button>
 							<p class="time-open-shop">Gọi đặt mua <span>1800.1103</span> (7:30 - 22:00)</p>
 							<div class="showroom-wrapper">
 								<p>Sản phẩm này đang được bày bán tại 6 showroom.</p>
@@ -730,6 +730,336 @@
 			</div>
 		</div>
 		<!--  -->
+		<div class="modal" id="choose_size_modal">
+			<div class="modal-dialog">
+				<form action="#" method="" class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body"> 
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="img-wrapper">
+									<img src="images/page/category/product_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-sm-8">
+								<div class="form-choose-size-wrapper">
+									<h3 class="title">Bạn đang không biết chọn size nào cho sản phẩm này?</h3>
+									<div class="short-desc">HeraDG sẽ tính tìm kích cỡ vừa vặn nhất dựa trên các số đo của riêng bạn</div>
+									<div class="form row">
+										<div class="col-12">
+											<label for="" class="control-label">SỐ ĐO</label>
+										</div>
+										<div class="col-sm-6">
+											<div class="field-wrapper">
+												<input type="text" class="field" placeholder="Nhập chiều cao">
+												<span>CM</span>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="field-wrapper">
+												<input type="text" class="field" placeholder="Nhập cân nặng">
+												<span>KG</span>
+											</div>
+										</div>
+										<div class="col-12">
+											<label for="" class="control-label">ĐỘ VỪA BẠN MUỐN</label>
+											<div class="radio-group-wrapper">
+												<div class="radio-group">
+													<input type="radio" id="mc" name="size" value="Mặc chật">
+													<label for="mc">Mặc chật</label>
+												</div>
+												<div class="radio-group">
+													<input type="radio" id="mv" name="size" value="Mặc vừa">
+													<label for="mv">Mặc vừa</label>
+												</div>
+												<div class="radio-group">
+													<input type="radio" id="mr" name="size" value="Mặc rộng">
+													<label for="mr">Mặc rộng</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-result-size" style="display: none;">
+									<h3 class="title">Dựa vào thông tin bạn cung cấp, chúng tôi khuyện bạn nên chọn size:</h3>
+									<div class="short-desc"><strong>L</strong> Có vẻ phù hợp nhất nhất với bạn</div>
+									<div class="label-line">
+										<label>Hoặc size</label>
+									</div>
+									<ul class="list-size">
+										<li><strong>M</strong> Nếu bạn muốn mặc chật hơn</li>
+										<li><strong>XL</strong> Nếu bạn muốn mặc rộng hơn</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" id="btn-choose-size" class="btn btn-block btn-submit">Giúp tôi tìm cỡ này</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--  -->
+		<div class="modal" id="mini_cart_detail">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="title-modal-header">
+							Sản phẩm của bạn vừa được thêm vào giỏ hàng
+						</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="mini-cart-wrapper">
+							<ul class="list-products">
+								<li>
+									<div class="product-wrapper row">
+										<div class="col-3">
+											<div class="product-img-wrapper">
+												<img src="./images/page/category/product_1.jpg"/>
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="product-detail-wrapper">
+												<div class="product-detail">
+													<a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+													<p class="product-option">Màu vàng | XS</p>
+													<div class="product-price-wrapper">
+														<span class="new-price">899.000 &#8363;</span>
+														<span class="old-price">899.000 &#8363;</span>
+														<span class="discount">-30%</span>
+													</div>
+												</div>
+												<div class="product-action d-flex">
+													<div class="product-qty"> 
+														<label>Số lượng</label>
+														<div class="group-qty">
+															<div class="quantity">
+																<div class="quantity-nav">
+																	<button class="quantity-button quantity-down btn-qty minus">-</button>
+																	<input type="number" min="1" max="999" step="1" value="1" class="number">
+																	<button class="quantity-button quantity-up btn-qty plus">+</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-wrapper row">
+										<div class="col-3">
+											<div class="product-img-wrapper">
+												<img src="./images/page/category/product_1.jpg"/>
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="product-detail-wrapper">
+												<div class="product-detail">
+													<a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+													<p class="product-option">Màu vàng | XS</p>
+													<div class="product-price-wrapper">
+														<span class="new-price">899.000 &#8363;</span>
+														<span class="old-price">899.000 &#8363;</span>
+														<span class="discount">-30%</span>
+													</div>
+												</div>
+												<div class="product-action d-flex">
+													<div class="product-qty"> 
+														<label>Số lượng</label>
+														<div class="group-qty">
+															<div class="quantity">
+																<div class="quantity-nav">
+																	<button class="quantity-button quantity-down btn-qty minus">-</button>
+																	<input type="number" min="1" max="999" step="1" value="1" class="number">
+																	<button class="quantity-button quantity-up btn-qty plus">+</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-wrapper row">
+										<div class="col-3">
+											<div class="product-img-wrapper">
+												<img src="./images/page/category/product_1.jpg"/>
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="product-detail-wrapper">
+												<div class="product-detail">
+													<a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+													<p class="product-option">Màu vàng | XS</p>
+													<div class="product-price-wrapper">
+														<span class="new-price">899.000 &#8363;</span>
+														<span class="old-price">899.000 &#8363;</span>
+														<span class="discount">-30%</span>
+													</div>
+												</div>
+												<div class="product-action d-flex">
+													<div class="product-qty"> 
+														<label>Số lượng</label>
+														<div class="group-qty">
+															<div class="quantity">
+																<div class="quantity-nav">
+																	<button class="quantity-button quantity-down btn-qty minus">-</button>
+																	<input type="number" min="1" max="999" step="1" value="1" class="number">
+																	<button class="quantity-button quantity-up btn-qty plus">+</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-wrapper row">
+										<div class="col-3">
+											<div class="product-img-wrapper">
+												<img src="./images/page/category/product_1.jpg"/>
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="product-detail-wrapper">
+												<div class="product-detail">
+													<a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+													<p class="product-option">Màu vàng | XS</p>
+													<div class="product-price-wrapper">
+														<span class="new-price">899.000 &#8363;</span>
+														<span class="old-price">899.000 &#8363;</span>
+														<span class="discount">-30%</span>
+													</div>
+												</div>
+												<div class="product-action d-flex">
+													<div class="product-qty"> 
+														<label>Số lượng</label>
+														<div class="group-qty">
+															<div class="quantity">
+																<div class="quantity-nav">
+																	<button class="quantity-button quantity-down btn-qty minus">-</button>
+																	<input type="number" min="1" max="999" step="1" value="1" class="number">
+																	<button class="quantity-button quantity-up btn-qty plus">+</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-wrapper row">
+										<div class="col-3">
+											<div class="product-img-wrapper">
+												<img src="./images/page/category/product_1.jpg"/>
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="product-detail-wrapper">
+												<div class="product-detail">
+													<a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+													<p class="product-option">Màu vàng | XS</p>
+													<div class="product-price-wrapper">
+														<span class="new-price">899.000 &#8363;</span>
+														<span class="old-price">899.000 &#8363;</span>
+														<span class="discount">-30%</span>
+													</div>
+												</div>
+												<div class="product-action d-flex">
+													<div class="product-qty"> 
+														<label>Số lượng</label>
+														<div class="group-qty">
+															<div class="quantity">
+																<div class="quantity-nav">
+																	<button class="quantity-button quantity-down btn-qty minus">-</button>
+																	<input type="number" min="1" max="999" step="1" value="1" class="number">
+																	<button class="quantity-button quantity-up btn-qty plus">+</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-wrapper row">
+										<div class="col-3">
+											<div class="product-img-wrapper">
+												<img src="./images/page/category/product_1.jpg"/>
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="product-detail-wrapper">
+												<div class="product-detail">
+													<a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
+													<p class="product-option">Màu vàng | XS</p>
+													<div class="product-price-wrapper">
+														<span class="new-price">899.000 &#8363;</span>
+														<span class="old-price">899.000 &#8363;</span>
+														<span class="discount">-30%</span>
+													</div>
+												</div>
+												<div class="product-action d-flex">
+													<div class="product-qty"> 
+														<label>Số lượng</label>
+														<div class="group-qty">
+															<div class="quantity">
+																<div class="quantity-nav">
+																	<button class="quantity-button quantity-down btn-qty minus">-</button>
+																	<input type="number" min="1" max="999" step="1" value="1" class="number">
+																	<button class="quantity-button quantity-up btn-qty plus">+</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<a href="#" class="btn-delete-product">Bỏ khỏi giỏ</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul> 
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<div class="total-wraper">
+							<div class="total-prodecut">
+								<label>Tổng</label>
+								<span>2 sản phẩm</span>
+							</div>
+							<div class="total-price">1.789.000 &#8363;</div>
+						</div>
+						<button type="button" class="btn btn-block btn-checkout">Giúp tôi tìm cỡ này</button>
+						<p class="time-open-shop">Gọi đặt mua <span>1800.1103</span> (7:30 - 22:00)</p>
+					</div>
+				</form>
+			</div>
+		</div>
 	</section>
 
 	<!-- Footer -->
@@ -756,12 +1086,29 @@
 	$(document).ready(function(){
 		$('.show-drop-down-list').click(function(event) {
 			event.preventDefault();
+		})
+
+		$('.show-drop-down-list').click(function(event) {
+			event.preventDefault();
 			$('.drop-down-list').slideToggle();
 		})
 
 		$('.list-option li').click(function(event) {
 			event.preventDefault();
 			$(this).toggleClass('active');
+		})
+
+		$('#btn-choose-size').click(function(event) {
+			event.preventDefault();
+			if($(this).hasClass('btn-submit')) {
+				$(this).removeClass('btn-submit').addClass('btn-back').text("TÌM LẠI KÍCH CỠ");
+				$('.form-choose-size-wrapper').hide();
+				$('.form-result-size').show();
+			} else {
+				$(this).removeClass('btn-back').addClass('btn-submit').text("Giúp tôi tìm cỡ này");
+				$('.form-choose-size-wrapper').show();
+				$('.form-result-size').hide();
+			}
 		})
 
 		$(function() {
