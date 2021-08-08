@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="./library/slick/slick.css" />
     <!-- main style -->
     <link rel="stylesheet" href="./style/config/_reset.css">
-    <link rel="stylesheet" href="./style/heradg.com.vn/_header.css">
-    <link rel="stylesheet" href="./style/heradg.com.vn/_footer.css">
+    <!-- <link rel="stylesheet" href="./style/heradg.com.vn/_header.css"> // cái này import vào file less, đừng link như này -->
+    <!-- <link rel="stylesheet" href="./style/heradg.com.vn/_footer.css"> -->// cái này import vào file less, đừng link như này
     <link rel="stylesheet" href="./style/heradg.com.vn/_home1.css">
     <link rel="stylesheet" href="./style/pages/_category.css">
 </head>
@@ -38,7 +38,7 @@
     <header id="header" class="header fixed-main-menu">
         <div class="header-top">
             <div class="container">
-                <div class="dflex justify-content-between">
+                <div class="dflex header-top-content">
                     <ul class="header-custom-links list-unstyled">
                         <li class="header-custom-link"><a href="#">Hệ thống showroom</a></li>
                         <li class="header-custom-link">
@@ -365,12 +365,14 @@
                                                             <span class=" old-price ">1.09.000 &#8363;</span>
                                                         </div>
                                                         <div class=" product-actions dflex ">
-                                                            <div class=" product-qty ">
+                                                            <div class="group-qty ">
                                                                 <span class=" label ">Số lượng</span>
-                                                                <div class=" quantity custom-qty ">
-                                                                    <button type=" button " class=" quantity-down reduced qty-item "></button>
-                                                                    <input type=" number " min=" 1 " max=" 20 " value=" 1 " title=" Quantity " id=" qtyProduct " class=" qty ">
-                                                                    <button type=" button " class=" quantity-up increase qty-item "></button>
+                                                                <div class="quantity ">
+                                                                    <div class="quantity-nav ">
+                                                                        <button class="quantity-button quantity-down btn-qty minus ">-</button>
+                                                                        <input type="number " min="1 " max="999 " step="1 " value="1 " class="number ">
+                                                                        <button class="quantity-button quantity-up btn-qty plus ">+</button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <button class=" product-action ">Bỏ khỏi giỏ</button>
@@ -390,12 +392,14 @@
                                                             <span class=" old-price ">1.09.000 &#8363;</span>
                                                         </div>
                                                         <div class=" product-actions dflex ">
-                                                            <div class=" product-qty ">
+                                                            <div class="group-qty ">
                                                                 <span class=" label ">Số lượng</span>
-                                                                <div class=" quantity custom-qty ">
-                                                                    <button type=" button " class=" quantity-down reduced qty-item "></button>
-                                                                    <input type=" number " min=" 1 " max=" 20 " value=" 1 " title=" Quantity " id=" qtyProduct " class=" qty ">
-                                                                    <button type=" button " class=" quantity-up increase qty-item "></button>
+                                                                <div class="quantity ">
+                                                                    <div class="quantity-nav ">
+                                                                        <button class="quantity-button quantity-down btn-qty minus ">-</button>
+                                                                        <input type="number " min="1 " max="999 " step="1 " value="1 " class="number ">
+                                                                        <button class="quantity-button quantity-up btn-qty plus ">+</button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <button class=" product-action ">Bỏ khỏi giỏ</button>

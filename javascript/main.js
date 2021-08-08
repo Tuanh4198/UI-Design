@@ -98,7 +98,6 @@ jQuery(document).ready(function($) {
                 max = input.attr('max');
             let newVal;
             btnUp.click(function() {
-                console.log('object');
                 let oldValue = parseFloat(input.val());
                 if (oldValue >= max) {
                     newVal = oldValue;
@@ -109,7 +108,6 @@ jQuery(document).ready(function($) {
                 spinner.find("input").trigger("change");
             });
             btnDown.click(function() {
-                console.log('object');
                 let oldValue = parseFloat(input.val());
                 if (oldValue <= min) {
                     newVal = oldValue;
@@ -118,6 +116,7 @@ jQuery(document).ready(function($) {
                 }
                 spinner.find("input").val(newVal);
                 spinner.find("input").trigger("change");
+                console.log(newVal)
             });
         });
     })($);
