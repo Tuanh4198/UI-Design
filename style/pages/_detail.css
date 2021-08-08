@@ -107,10 +107,18 @@ table .col {
     padding-right: 0;
   }
 }
+@media (min-width: 1440px) {
+  body .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media (min-width: 1600px) {
   body .container {
     max-width: 1536px;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .breadcrumbs-wrapper {
