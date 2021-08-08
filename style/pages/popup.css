@@ -1,0 +1,503 @@
+.modals-wrapper.modals-popups .modal-popup {
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transform: scale(0);
+}
+.modals-wrapper.modals-popups .modal-popup .modal-inner-wrap {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  max-width: 500px;
+  background: #F9F9F9;
+  padding: 68px 64px 50px 64px;
+  transform: translate(-50%, -50%);
+}
+.modals-wrapper.modals-popups .modal-popup._show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transform: scale(1);
+}
+.modals-wrapper.modals-popups .modal-popup .field.password .control,
+.modals-wrapper.modals-popups .modal-popup .field.enter-the-password .control {
+  position: relative;
+}
+.modals-wrapper.modals-popups .modal-popup .field.password .showpass,
+.modals-wrapper.modals-popups .modal-popup .field.enter-the-password .showpass {
+  position: absolute;
+  top: 19px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.modals-wrapper.modals-popups .modal-popup .field.password .input-text,
+.modals-wrapper.modals-popups .modal-popup .field.enter-the-password .input-text {
+  padding-right: 60px;
+}
+.modals-wrapper.modals-popups .modal-popup .modals-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.modals-wrapper.modals-popups .modal-popup .modal-header {
+  padding: 0;
+  border: none;
+}
+.modals-wrapper.modals-popups .modal-popup .modal-content {
+  border: none;
+  background-color: #F9F9F9;
+}
+.modals-wrapper.modals-popups .modal-popup .block-title {
+  text-align: center;
+}
+.modals-wrapper.modals-popups .modal-popup .block-title #block-title-heading {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+.modals-wrapper.modals-popups .modal-popup .block-title .actions-toolbar {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.modals-wrapper.modals-popups .modal-popup .input-text {
+  height: 52px;
+  width: 100%;
+  border: 1px solid #242424;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  padding: 0 16px;
+}
+.modals-wrapper.modals-popups .modal-popup .input-text:focus-visible {
+  outline: none;
+}
+.modals-wrapper.modals-popups button.action {
+  background-color: #242424;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  width: 100%;
+  padding: 15px 0;
+}
+.modals-wrapper.modals-popups button.action:hover {
+  background-color: #313131;
+}
+.modals-wrapper.modals-popups .action-close {
+  background-color: transparent;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  color: #242424;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+.modals-wrapper.modals-popups .action-close:hover {
+  color: #313131;
+  background-color: transparent;
+}
+.modals-wrapper.modals-popups .action-close span {
+  font-size: 0;
+}
+.modals-wrapper.modals-popups .action-close::before {
+  content: "\f101";
+  font-family: flaticon;
+}
+.modals-wrapper.modals-popups #block-title-heading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.modals-wrapper.modals-popups .label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.modals-wrapper.modals-popups .label .icon {
+  color: #C31D1D;
+  padding-left: 5px;
+}
+.modals-wrapper.modals-popups .block-title .details.primary {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .block-title .actions-toolbar {
+  padding: 0 40px;
+  margin-bottom: 32px;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .block-title .actions-toolbar a {
+  color: #C31D1D;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .block-title .actions-toolbar a:hover {
+  color: #ff0000;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .field.email {
+  margin-bottom: 16px;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .field.password {
+  margin-bottom: 25px;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .field.choice {
+  display: inline-block;
+  margin-bottom: 31px;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .secondary {
+  display: inline-block;
+  float: right;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .secondary .link {
+  color: #242424;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .secondary .link:hover {
+  color: #ff0000;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .action-login {
+  margin-bottom: 31px;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .action-login:hover {
+  background-color: #313131;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar > p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar > p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #E9E9EC;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar > p span {
+  background-color: #fff;
+  position: relative;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook {
+  background-color: #4267B2;
+  color: #fff;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook .icon {
+  font-size: 24px;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook .text {
+  padding-left: 25px;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google {
+  border: 1px solid #CECED0;
+  color: #242424;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google .text {
+  padding-left: 25px;
+}
+.modals-wrapper.modals-popups .popup-reset-password .block-title {
+  margin-bottom: 12px;
+}
+.modals-wrapper.modals-popups .popup-reset-password .form-reset-password .field.email {
+  margin-bottom: 17px;
+}
+.modals-wrapper.modals-popups .popup-reset-password .form-reset-password .actions-toolbar .primary {
+  margin-bottom: 34px;
+}
+.modals-wrapper.modals-popups .popup-reset-password .form-reset-password .actions-toolbar > p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.modals-wrapper.modals-popups .popup-reset-password .form-reset-password .actions-toolbar > p a {
+  color: #C31D1D;
+}
+.modals-wrapper.modals-popups .popup-reset-password .form-reset-password .actions-toolbar > p a:hover {
+  color: #ff0000;
+}
+.modals-wrapper.modals-popups .popup-inform-change-password .block-inform-change-password .block-title {
+  margin-bottom: 28px;
+}
+.modals-wrapper.modals-popups .popup-inform-change-password .block-inform-change-password .block-content .email {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.modals-wrapper.modals-popups .popup-registration .block-title {
+  margin-bottom: 32px;
+}
+.modals-wrapper.modals-popups .popup-registration .block-title .actions-toolbar {
+  padding: 0 40px;
+}
+.modals-wrapper.modals-popups .popup-registration .block-title .actions-toolbar a {
+  color: #C31D1D;
+}
+.modals-wrapper.modals-popups .popup-registration .block-title .actions-toolbar a:hover {
+  color: #ff0000;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .fieldset > .field {
+  margin-bottom: 16px;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .primary {
+  margin-bottom: 24px;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar > p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar > p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #E9E9EC;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar > p span {
+  background-color: #fff;
+  position: relative;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook {
+  background-color: #4267B2;
+  color: #fff;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook .icon {
+  font-size: 24px;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook .text {
+  padding-left: 25px;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.google {
+  border: 1px solid #CECED0;
+  color: #242424;
+}
+.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.google .text {
+  padding-left: 25px;
+}
+@media only screen and (max-width: 575px) {
+  .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap {
+    height: 100vh;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap {
+    padding: 68px 32px 0 32px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .modals-wrapper.modals-popups .modal-popup.popup-signin .block-title .actions-toolbar,
+  .modals-wrapper.modals-popups .modal-popup.popup-registration .block-title .actions-toolbar {
+    padding: 0;
+  }
+  .modals-wrapper.modals-popups .modal-popup.popup-signin .actions-toolbar .box-account .action.facebook .text,
+  .modals-wrapper.modals-popups .modal-popup.popup-registration .actions-toolbar .box-account .action.facebook .text {
+    padding-left: 10px;
+  }
+  .modals-wrapper.modals-popups .modal-popup.popup-signin .actions-toolbar .box-account .action.google .text,
+  .modals-wrapper.modals-popups .modal-popup.popup-registration .actions-toolbar .box-account .action.google .text {
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .modals-wrapper.modals-popups .modal-popup.popup-signin .actions-toolbar .box-account,
+  .modals-wrapper.modals-popups .modal-popup.popup-registration .actions-toolbar .box-account {
+    flex-wrap: wrap;
+  }
+  .modals-wrapper.modals-popups .modal-popup.popup-signin .actions-toolbar .box-account .action,
+  .modals-wrapper.modals-popups .modal-popup.popup-registration .actions-toolbar .box-account .action {
+    width: 100%;
+    justify-content: center;
+  }
+  .modals-wrapper.modals-popups .modal-popup.popup-signin .actions-toolbar .box-account .action.facebook,
+  .modals-wrapper.modals-popups .modal-popup.popup-registration .actions-toolbar .box-account .action.facebook {
+    margin-bottom: 15px;
+  }
+  .modals-wrapper.modals-popups .modal-popup.popup-signin .field.choice,
+  .modals-wrapper.modals-popups .modal-popup.popup-registration .field.choice {
+    margin-bottom: 10px;
+  }
+  .modals-wrapper.modals-popups .modal-popup.popup-signin .secondary,
+  .modals-wrapper.modals-popups .modal-popup.popup-registration .secondary {
+    display: block;
+    float: none;
+    margin-bottom: 25px;
+  }
+}
+.header .header-custom-links .header-custom-link {
+  display: inline-block;
+}
+.hidden {
+  display: none !important;
+}
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.hidden-visibility {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.button-close {
+  background-image: none;
+  -moz-box-sizing: content-box;
+  border: 0;
+  box-shadow: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+}
+.center-transform {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.dflex {
+  display: -webkit-box;
+  display: -ms-flex-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dflex:before,
+.dflex:after {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-family: 'Inter', sans-serif;
+}
+button,
+a {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+button:hover,
+a:hover {
+  text-decoration: none;
+}
+._keyfocus *:focus {
+  box-shadow: none;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+table th {
+  text-align: left;
+}
+table .col {
+  width: auto;
+}

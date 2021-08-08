@@ -1,0 +1,74 @@
+<aside role="dialog" class="modal-popup popup-signin _inner-scroll _show">
+    <div class="modals-overlay"></div>
+    <div class="modal-inner-wrap">
+        <header class="modal-header">
+            <button class="action-close" type="button">
+                <span>Close</span>
+            </button>
+        </header>
+        <div class="modal-content">
+            <div class="block-authentication">
+                <div class="block block-customer-login">
+                    <div class="block-title">
+                        <strong id="block-title-heading">Đăng nhập</strong>
+                        <div class="actions-toolbar">
+                            <div class="primary">
+                                <div class="action details primary">
+                                    <span>Bạn chưa có Tài khoản? Vui lòng đăng ký Tài khoản mới </span><a href="#">tại đây</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-role="checkout-messages" class="messages"></div>
+                    <div class="block-content">
+                        <form class="form form-login" method="post" id="login-form">
+                            <div class="fieldset login">
+                                <div class="field email required">
+                                    <label class="label" for="customer-email"><span>Email<span class="icon">*</span></span></label>
+                                    <div class="control">
+                                        <input name="username" id="customer-email" type="email" class="input-text" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="field password required">
+                                    <label for="pass" class="label"><span>Password<span class="icon">*</span></span></label>
+                                    <div class="control">
+                                        <input name="password" type="password" class="input-text" id="pass" autocomplete="off">
+                                        <input type="button" class="showpass" onclick="showPass()" value="SHOW">
+                                    </div>
+                                </div>
+                                <div class="field choice save-infor">
+                                    <input type="checkbox" name="is_save-infor" id="is_save-infor" class="checkbox">
+                                    <label for="is_save-infor" class="label">
+                                        <span>Lưu thông tin đăng nhập</span>
+                                    </label>
+                                </div>
+                                <div class="secondary">
+                                    <a href="" class="link action">
+                                        <span>Lấy lại  mật khẩu</span>
+                                    </a>
+                                </div>
+                                <div class="actions-toolbar">
+                                    <input name="context" type="hidden">
+                                    <div class="primary">
+                                        <button type="submit" class="action action-login">
+                                            <span>Đăng nhập</span>
+                                        </button>
+                                    </div>
+                                    <p> <span>Hoặc</span></p>
+                                    <div class="box-account">
+                                        <a href="#" class="action facebook">
+                                            <span class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></span><span class="text">Facebook</span>
+                                        </a>
+                                        <a href="#" class="action google">
+                                            <img src="./images/page/account/logogoogle.png" alt=""><span class="text">Google</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>

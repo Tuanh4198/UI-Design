@@ -1,0 +1,842 @@
+body.page-account .blog-top,
+body.page-order-tracking .blog-top {
+  padding: 38px 0 34px 0;
+}
+body.page-account .blog-top .account,
+body.page-order-tracking .blog-top .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+body.page-account .blog-top .account img,
+body.page-order-tracking .blog-top .account img {
+  min-width: 40px;
+  max-height: 40px;
+  margin-right: 12px;
+}
+body.page-account .blog-top .account .name,
+body.page-order-tracking .blog-top .account .name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+body.page-account .blog-top .account .email,
+body.page-order-tracking .blog-top .account .email {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+body.page-account .blog-top .action,
+body.page-order-tracking .blog-top .action {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body.page-account .blog-top .action .action-exit,
+body.page-order-tracking .blog-top .action .action-exit {
+  width: 135px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1px solid #E8E8E8;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.page-account .blog-top .action .action-exit .icon::before,
+body.page-order-tracking .blog-top .action .action-exit .icon::before {
+  content: "\f102";
+  font-family: "flaticon";
+}
+body.page-account .blog-top .action .action-exit .icon,
+body.page-order-tracking .blog-top .action .action-exit .icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-weight: 700;
+}
+body.page-account .blog-top .action .action-exit:hover,
+body.page-order-tracking .blog-top .action .action-exit:hover {
+  background-color: #222222;
+  color: #ffffff;
+  border-color: #ffffff;
+  cursor: pointer;
+}
+body.page-account .blog-menu #account,
+body.page-order-tracking .blog-menu #account {
+  display: none;
+}
+body.page-account .blog-menu .list_menu,
+body.page-order-tracking .blog-menu .list_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+body.page-account .blog-menu .list_menu .item-news-list,
+body.page-order-tracking .blog-menu .list_menu .item-news-list {
+  width: 25%;
+}
+body.page-account .blog-menu .list_menu .item-news-list a,
+body.page-order-tracking .blog-menu .list_menu .item-news-list a {
+  color: #242424;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid #E8E8E8;
+  padding-bottom: 9px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+body.page-account .blog-menu .list_menu .item-news-list a.active,
+body.page-order-tracking .blog-menu .list_menu .item-news-list a.active {
+  border-color: #242424;
+}
+body.page-account .blog-bottom,
+body.page-order-tracking .blog-bottom {
+  background-color: #F9F9F9;
+}
+body.page-account .blog-bottom h2,
+body.page-order-tracking .blog-bottom h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: center;
+  padding-top: 40px;
+}
+body.page-account .blog-bottom .detail,
+body.page-order-tracking .blog-bottom .detail {
+  max-width: 768px;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 12px;
+}
+body.page-account .blog-bottom .form,
+body.page-order-tracking .blog-bottom .form {
+  max-width: 768px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+body.page-account .blog-bottom .form #review_field,
+body.page-order-tracking .blog-bottom .form #review_field {
+  padding: 16px;
+  width: 100%;
+  border: 1px solid #E8E8E8;
+}
+body.page-account .blog-bottom .form #review_field:focus-visible,
+body.page-order-tracking .blog-bottom .form #review_field:focus-visible {
+  outline: none;
+  border-color: #242424;
+}
+body.page-account .blog-bottom .form select,
+body.page-order-tracking .blog-bottom .form select {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  padding-right: 30px;
+  border: 1px solid #E8E8E8;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+body.page-account .blog-bottom .form select:focus-visible,
+body.page-order-tracking .blog-bottom .form select:focus-visible {
+  outline: none;
+}
+body.page-account .blog-bottom .form .field,
+body.page-order-tracking .blog-bottom .form .field {
+  margin-bottom: 24px;
+}
+body.page-account .blog-bottom .form .label,
+body.page-order-tracking .blog-bottom .form .label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+body.page-account .blog-bottom .form .address-detail,
+body.page-order-tracking .blog-bottom .form .address-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+body.page-account .blog-bottom .form .address-detail > .field,
+body.page-order-tracking .blog-bottom .form .address-detail > .field {
+  width: 31.25%;
+}
+body.page-account .blog-bottom .form .address-detail .control,
+body.page-order-tracking .blog-bottom .form .address-detail .control {
+  position: relative;
+}
+body.page-account .blog-bottom .form .address-detail .control::before,
+body.page-order-tracking .blog-bottom .form .address-detail .control::before {
+  content: "\f107";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+body.page-account .blog-bottom .form .control,
+body.page-order-tracking .blog-bottom .form .control {
+  position: relative;
+}
+body.page-account .blog-bottom .form .control .icon::before,
+body.page-order-tracking .blog-bottom .form .control .icon::before {
+  content: "\f107";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 23px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body.page-account .blog-bottom .form input,
+body.page-order-tracking .blog-bottom .form input {
+  height: 52px;
+  width: 100%;
+  border: 1px solid #E8E8E8;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+body.page-account .blog-bottom .form input:focus-visible,
+body.page-order-tracking .blog-bottom .form input:focus-visible {
+  border-color: #242424;
+  outline: none;
+}
+body.page-account .blog-bottom .form.form-send-comment .actions .primary,
+body.page-order-tracking .blog-bottom .form.form-send-comment .actions .primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+body.page-account .blog-bottom .form.form-send-comment .actions button,
+body.page-order-tracking .blog-bottom .form.form-send-comment .actions button {
+  background-color: #242424;
+  color: #ffffff;
+  border: 1px solid #242424;
+}
+body.page-account .blog-bottom .form.form-send-comment .actions button:hover,
+body.page-order-tracking .blog-bottom .form.form-send-comment .actions button:hover {
+  background-color: #555555;
+}
+body.page-account .blog-bottom .actions,
+body.page-order-tracking .blog-bottom .actions {
+  padding-bottom: 40px;
+}
+body.page-account .blog-bottom .actions .primary,
+body.page-order-tracking .blog-bottom .actions .primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+body.page-account .blog-bottom .actions button,
+body.page-order-tracking .blog-bottom .actions button {
+  width: 240px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+}
+body.page-account .blog-bottom .actions button.convert-pass,
+body.page-order-tracking .blog-bottom .actions button.convert-pass {
+  border: 1px solid #E8E8E8;
+  background: #ffffff;
+  color: #242424;
+}
+body.page-account .blog-bottom .actions button.convert-pass span,
+body.page-order-tracking .blog-bottom .actions button.convert-pass span {
+  border-bottom: 1px solid #242424;
+}
+body.page-account .blog-bottom .actions button.convert-pass:hover,
+body.page-order-tracking .blog-bottom .actions button.convert-pass:hover {
+  color: #555;
+}
+body.page-account .blog-bottom .actions button.convert-pass:hover span,
+body.page-order-tracking .blog-bottom .actions button.convert-pass:hover span {
+  border-color: #555;
+}
+body.page-account .blog-bottom .actions button.action-login,
+body.page-order-tracking .blog-bottom .actions button.action-login {
+  background-color: #242424;
+  color: #ffffff;
+  border: 1px solid #242424;
+}
+body.page-account .blog-bottom .actions button.action-login:hover,
+body.page-order-tracking .blog-bottom .actions button.action-login:hover {
+  background: #555;
+}
+body.page-account .blog-bottom .items,
+body.page-order-tracking .blog-bottom .items {
+  max-width: 1161px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+body.page-account .blog-bottom .items .row,
+body.page-order-tracking .blog-bottom .items .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+body.page-account .blog-bottom .items [class*="col-"],
+body.page-order-tracking .blog-bottom .items [class*="col-"] {
+  padding: 0 5px;
+}
+body.page-account .blog-bottom .items .item .image,
+body.page-order-tracking .blog-bottom .items .item .image {
+  position: relative;
+  margin-bottom: 13px;
+}
+body.page-account .blog-bottom .items .item .image img,
+body.page-order-tracking .blog-bottom .items .item .image img {
+  width: 100%;
+}
+body.page-account .blog-bottom .items .item .image .discount,
+body.page-order-tracking .blog-bottom .items .item .image .discount {
+  position: absolute;
+  width: 67px;
+  height: 22px;
+  background-color: #C31D1D;
+  color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+body.page-account .blog-bottom .items .item .image .discount span,
+body.page-order-tracking .blog-bottom .items .item .image .discount span {
+  margin-right: 10px;
+}
+body.page-account .blog-bottom .items .item .image .remove,
+body.page-order-tracking .blog-bottom .items .item .image .remove {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border: none;
+}
+body.page-account .blog-bottom .items .item .image .remove:hover,
+body.page-order-tracking .blog-bottom .items .item .image .remove:hover {
+  background-color: #242424;
+  color: #ffffff;
+  cursor: pointer;
+}
+body.page-account .blog-bottom .items .item .image .remove:focus-visible,
+body.page-order-tracking .blog-bottom .items .item .image .remove:focus-visible {
+  outline: none;
+}
+body.page-account .blog-bottom .items .item .content .name,
+body.page-order-tracking .blog-bottom .items .item .content .name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+body.page-account .blog-bottom .items .item .content .price-after,
+body.page-order-tracking .blog-bottom .items .item .content .price-after {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+body.page-account .blog-bottom .items .item .content .price-before,
+body.page-order-tracking .blog-bottom .items .item .content .price-before {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  margin-right: 8px;
+}
+body.page-account .blog-bottom .items .item .content .currency-unit,
+body.page-order-tracking .blog-bottom .items .item .content .currency-unit {
+  text-decoration: underline;
+}
+body.page-account .blog-bottom .items .item .content .discount,
+body.page-order-tracking .blog-bottom .items .item .content .discount {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #c31d1d;
+}
+body.page-account .blog-bottom .items .item .content .price,
+body.page-order-tracking .blog-bottom .items .item .content .price {
+  margin-bottom: 6px;
+}
+body.page-account .blog-bottom .items .item .content .color,
+body.page-order-tracking .blog-bottom .items .item .content .color {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+body.page-account .blog-bottom .items .item .content #size-option,
+body.page-order-tracking .blog-bottom .items .item .content #size-option {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 8px;
+}
+body.page-account .blog-bottom .items .item .content #size-option:focus-visible,
+body.page-order-tracking .blog-bottom .items .item .content #size-option:focus-visible {
+  outline: none;
+}
+body.page-account .blog-bottom .items .item .actions .action,
+body.page-order-tracking .blog-bottom .items .item .actions .action {
+  background-color: #242424;
+  width: 100%;
+  height: 48px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+body.page-account .blog-bottom .items .item .actions .action:hover,
+body.page-order-tracking .blog-bottom .items .item .actions .action:hover {
+  background-color: #555555;
+}
+body.page-account .blog-bottom .items .item .actions .icon::before,
+body.page-order-tracking .blog-bottom .items .item .actions .icon::before {
+  content: "\f291";
+  margin-right: 8px;
+  font-family: FontAwesome;
+}
+body.page-account .blog-bottom .list-cart,
+body.page-order-tracking .blog-bottom .list-cart {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+body.page-account .blog-bottom .cart,
+body.page-order-tracking .blog-bottom .cart {
+  margin-bottom: 24px;
+}
+body.page-account .blog-bottom .cart,
+body.page-order-tracking .blog-bottom .cart,
+body.page-account .blog-bottom .cancel-cart,
+body.page-order-tracking .blog-bottom .cancel-cart {
+  background-color: #ffffff;
+  border: 1px solid #E9E9EC;
+}
+body.page-account .blog-bottom .header,
+body.page-order-tracking .blog-bottom .header {
+  padding: 10px 16px;
+  border-bottom: 1px solid #E9E9EC;
+}
+body.page-account .blog-bottom .header .product-code,
+body.page-order-tracking .blog-bottom .header .product-code {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #C31D1D;
+  margin-bottom: 2px;
+}
+body.page-account .blog-bottom .header .date,
+body.page-order-tracking .blog-bottom .header .date {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+body.page-account .blog-bottom .header ._right,
+body.page-order-tracking .blog-bottom .header ._right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+body.page-account .blog-bottom .header .status,
+body.page-order-tracking .blog-bottom .header .status {
+  margin-right: 8px;
+  background-color: #DDFFFD;
+  color: #0C968C;
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+body.page-account .blog-bottom .header .status.cancel,
+body.page-order-tracking .blog-bottom .header .status.cancel {
+  margin-right: 0;
+  background-color: #F7F7F7;
+  color: #858FA0;
+}
+body.page-account .blog-bottom .content .product,
+body.page-order-tracking .blog-bottom .content .product {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 1px solid #E9E9EC;
+}
+body.page-account .blog-bottom .content .product img,
+body.page-order-tracking .blog-bottom .content .product img {
+  width: 64px;
+}
+body.page-account .blog-bottom .content .product .info,
+body.page-order-tracking .blog-bottom .content .product .info {
+  margin-left: 16px;
+}
+body.page-account .blog-bottom .content .product .info .name,
+body.page-order-tracking .blog-bottom .content .product .info .name {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+body.page-account .blog-bottom .content .product .info > p,
+body.page-order-tracking .blog-bottom .content .product .info > p {
+  font-size: 13px;
+  line-height: 15px;
+  color: #999999;
+  margin-bottom: 8px;
+}
+body.page-account .blog-bottom .content .product .info > p .color,
+body.page-order-tracking .blog-bottom .content .product .info > p .color {
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid #999999;
+}
+body.page-account .blog-bottom .content .product .info .amount,
+body.page-order-tracking .blog-bottom .content .product .info .amount {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #999999;
+}
+body.page-account .blog-bottom .total > p,
+body.page-order-tracking .blog-bottom .total > p {
+  text-align: right;
+  padding: 13px 16px;
+}
+body.page-account .blog-bottom .total .label,
+body.page-order-tracking .blog-bottom .total .label {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+body.page-account .blog-bottom .total .total-amount,
+body.page-order-tracking .blog-bottom .total .total-amount {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #C31D1D;
+}
+body.page-account .blog-bottom .total .currency-unit,
+body.page-order-tracking .blog-bottom .total .currency-unit {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 1600px) {
+  body .container,
+  body .container-lg,
+  body .container-md,
+  body .container-sm,
+  body .container-xl,
+  body .container-xxl {
+    max-width: 1311px;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body.page-account .blog-menu #account,
+  body.page-order-tracking .blog-menu #account {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+  }
+  body.page-account .blog-menu #account:focus-visible,
+  body.page-order-tracking .blog-menu #account:focus-visible {
+    outline: none;
+  }
+  body.page-account .blog-menu .select-mobile,
+  body.page-order-tracking .blog-menu .select-mobile {
+    padding: 17px 0;
+  }
+  body.page-account .blog-menu .list_menu,
+  body.page-order-tracking .blog-menu .list_menu {
+    display: none;
+  }
+  body.page-account .blog-bottom .header ._right .warehouse,
+  body.page-order-tracking .blog-bottom .header ._right .warehouse {
+    display: none;
+  }
+  body.page-account .blog-bottom .header .status,
+  body.page-order-tracking .blog-bottom .header .status {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 575px) {
+  body.page-account .blog-top .action .action-exit,
+  body.page-order-tracking .blog-top .action .action-exit {
+    width: 100px;
+  }
+  body.page-account .blog-bottom h2,
+  body.page-order-tracking .blog-bottom h2 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 16px;
+  }
+  body.page-account .blog-bottom .detail,
+  body.page-order-tracking .blog-bottom .detail {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+  body.page-account .blog-bottom .actions-toolbar button,
+  body.page-order-tracking .blog-bottom .actions-toolbar button {
+    width: 40%;
+  }
+  body.page-account .blog-bottom .form,
+  body.page-order-tracking .blog-bottom .form {
+    padding-top: 16px;
+  }
+  body.page-account .blog-bottom .form .address-detail,
+  body.page-order-tracking .blog-bottom .form .address-detail {
+    flex-wrap: wrap;
+  }
+  body.page-account .blog-bottom .form .address-detail > .field,
+  body.page-order-tracking .blog-bottom .form .address-detail > .field {
+    width: 100%;
+  }
+  body.page-account .blog-bottom .form .field,
+  body.page-order-tracking .blog-bottom .form .field {
+    margin-bottom: 16px;
+  }
+  body.page-account .blog-bottom .form input,
+  body.page-order-tracking .blog-bottom .form input {
+    height: 44px;
+  }
+  body.page-account .blog-bottom .form select,
+  body.page-order-tracking .blog-bottom .form select {
+    height: 44px;
+  }
+  body.page-account .blog-bottom .form button,
+  body.page-order-tracking .blog-bottom .form button {
+    width: 40%;
+  }
+  body.page-account .blog-bottom .form.form-send-comment .actions button,
+  body.page-order-tracking .blog-bottom .form.form-send-comment .actions button {
+    width: 100%;
+  }
+  body.page-account .blog-bottom .actions,
+  body.page-order-tracking .blog-bottom .actions {
+    padding-bottom: 25px;
+  }
+  body.page-account .blog-bottom .items,
+  body.page-order-tracking .blog-bottom .items {
+    margin-top: 16px;
+  }
+  body.page-account .blog-bottom .items .item .content .name,
+  body.page-order-tracking .blog-bottom .items .item .content .name {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  body.page-account .blog-bottom .items .item .content .price-after,
+  body.page-order-tracking .blog-bottom .items .item .content .price-after,
+  body.page-account .blog-bottom .items .item .content .price-before,
+  body.page-order-tracking .blog-bottom .items .item .content .price-before,
+  body.page-account .blog-bottom .items .item .content .discount,
+  body.page-order-tracking .blog-bottom .items .item .content .discount {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  body.page-account .blog-bottom .items .item .content .color,
+  body.page-order-tracking .blog-bottom .items .item .content .color {
+    display: none;
+  }
+  body.page-account .blog-bottom .items .item .content #size-option,
+  body.page-order-tracking .blog-bottom .items .item .content #size-option {
+    height: 40px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  body.page-account .blog-bottom .items .item .actions .action,
+  body.page-order-tracking .blog-bottom .items .item .actions .action {
+    height: 40px;
+  }
+  body.page-account .blog-bottom .list-cart,
+  body.page-order-tracking .blog-bottom .list-cart {
+    padding-top: 16px;
+    padding-bottom: 28px;
+  }
+  body.page-account .blog-bottom .content .product .info .name,
+  body.page-order-tracking .blog-bottom .content .product .info .name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  body.page-account .blog-bottom .content .product .info > p,
+  body.page-order-tracking .blog-bottom .content .product .info > p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+  }
+}
+.header .header-custom-links .header-custom-link {
+  display: inline-block;
+}
+.hidden {
+  display: none !important;
+}
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.hidden-visibility {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.button-close {
+  background-image: none;
+  -moz-box-sizing: content-box;
+  border: 0;
+  box-shadow: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+}
+.center-transform {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.dflex {
+  display: -webkit-box;
+  display: -ms-flex-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dflex:before,
+.dflex:after {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-family: 'Inter', sans-serif;
+}
+button,
+a {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+button:hover,
+a:hover {
+  text-decoration: none;
+}
+._keyfocus *:focus {
+  box-shadow: none;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+table th {
+  text-align: left;
+}
+table .col {
+  width: auto;
+}
