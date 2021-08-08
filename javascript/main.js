@@ -4,15 +4,15 @@ jQuery(document).ready(function($) {
     });
 
     // fixed menu
-    (function($) {
-        let menu = $('.fixed-main-menu');
-        body = $('body,html');
-        menuPosition = menu.offset().top;
-        $(window).scroll(() => {
-            let startpage = body.scrollTop();
-            (startpage > menuPosition) ? (menu.addClass('fixed')) : (menu.removeClass('fixed'))
-        });
-    })($);
+    // (function($) {
+    //     let menu = $('.fixed-main-menu');
+    //     body = $('body,html');
+    //     menuPosition = menu.offset().top;
+    //     $(window).scroll(() => {
+    //         let startpage = body.scrollTop();
+    //         (startpage > menuPosition) ? (menu.addClass('fixed')) : (menu.removeClass('fixed'))
+    //     });
+    // })($);
     // end fixed menu
 
     // load top
@@ -98,7 +98,6 @@ jQuery(document).ready(function($) {
                 max = input.attr('max');
             let newVal;
             btnUp.click(function() {
-                console.log('object');
                 let oldValue = parseFloat(input.val());
                 if (oldValue >= max) {
                     newVal = oldValue;
@@ -109,7 +108,6 @@ jQuery(document).ready(function($) {
                 spinner.find("input").trigger("change");
             });
             btnDown.click(function() {
-                console.log('object');
                 let oldValue = parseFloat(input.val());
                 if (oldValue <= min) {
                     newVal = oldValue;
