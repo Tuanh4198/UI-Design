@@ -1,6 +1,4 @@
 jQuery(document).ready(function($) {
-    console.log('object')
-
     $(".autoplay").each(function() {
         $(this).slick($(this).data());
     });
@@ -42,8 +40,20 @@ jQuery(document).ready(function($) {
     $(function() {
         $('.accordion .show-option').click(function(event) {
             event.preventDefault();
-            $(this).parent().siblings().find('.fretboard').slideUp();
+            $(this).parent().find('.fretboard').slideUp();
             $(this).parent().find('.fretboard').slideToggle();
+        });
+    });
+    // end Effect accordion
+
+    // Effect dropdown list
+    $(function() {
+        $('.dropdown .show-option').click(function(event) {
+            event.preventDefault();
+            $(this).parent().find('.fretboard').slideToggle();
+            ($(this).parent().find('.show').text() == '-') ?
+            ($(this).parent().find('.show').removeClass('active').text('+')) :
+            ($(this).parent().find('.show').addClass('active').text('-'))
         });
     });
     // end Effect accordion
@@ -65,57 +75,51 @@ jQuery(document).ready(function($) {
     })($);
     // end Effect drop down
 
-    // toggle button
-    $(".toggle-tab").click(function(event) {
-        event.preventDefault();
-        $(this).parent().toggleClass('toggle-visible');
-        $(this).parent().find('.toggle-content').toggleClass('visible');
-    });
-
-    // close button 
-    $(".btn-close").click(function(event) {
-        event.preventDefault();
-        $(this).parents('.popup').toggleClass('visible');
-    });
-
-    // minicart
-    $(".minicart .showcart ").click(function(event) {
-        event.preventDefault();
-        $(this).parent().toggleClass('active');
-        $(this).parent().find('.minicart-content').toggleClass('visible');
-        $("html").toggleClass('open-minicart');
-    });
-
-    $(".minicart .btn-close").click(function(event) {
-        event.preventDefault();
-        $(this).parents('.minicart').toggleClass('active');
-        $("html").toggleClass('open-minicart');
-    });
-
-    // footer mobile
+    // tabs
     $(function() {
-        $('.collapsible .collapsible-tab').click(function(event) {
-            event.preventDefault();
-            $(this).parents('.collapsible').toggleClass('active');
-            $(this).parents('.collapsible').siblings().find('.collapsible-content').slideUp();
-            $(this).parents('.collapsible').find('.collapsible-content').slideToggle();
+        $(".magic-tabs  ul li").on('click', function() {
+            var container_tab = $(this).closest('.cover-tab');
+            container_tab.find('.tab-content .content').removeClass('active-tab-content');
+            $(this).siblings().removeClass("action-tab-btn");
+            $(this).addClass('action-tab-btn');
+            container_tab.find('.tab-content .content').eq($(this).index()).addClass('active-tab-content');
         });
     });
+    // end tabs
 
-    // nav-toggle
-    $(".nav-toggle").click(function(event) {
-        event.preventDefault();
-        $("html").toggleClass('nav-open');
-    });
-
-    $(".menu-close").click(function(event) {
-        event.preventDefault();
-        $("html").removeClass('nav-open');
-    });
-
-    // menu mobile collapse
-    $(".nav-mobile .collapse").click(function(event) {
-        event.preventDefault();
-        $(this).parent().find('.sub-menu').toggleClass('active');
-    });
+    // spinner quantity
+    (function($) {
+        $('.quantity').each(function() {
+            let spinner = $(this),
+                input = $('.quantity input[type="number"]'),
+                btnUp = $('.quantity .quantity-up'),
+                btnDown = $('.quantity .quantity-down'),
+                min = input.attr('min'),
+                max = input.attr('max');
+            let newVal;
+            btnUp.click(function() {
+                console.log('object');
+                let oldValue = parseFloat(input.val());
+                if (oldValue >= max) {
+                    newVal = oldValue;
+                } else {
+                    newVal = oldValue + 1;
+                }
+                spinner.find("input").val(newVal);
+                spinner.find("input").trigger("change");
+            });
+            btnDown.click(function() {
+                console.log('object');
+                let oldValue = parseFloat(input.val());
+                if (oldValue <= min) {
+                    newVal = oldValue;
+                } else {
+                    newVal = oldValue - 1;
+                }
+                spinner.find("input").val(newVal);
+                spinner.find("input").trigger("change");
+            });
+        });
+    })($);
+    // end spinner quantity
 });

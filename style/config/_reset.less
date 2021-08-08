@@ -1,24 +1,34 @@
 @import './_mixin.less';
 
 * {
-	outline: none !important;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+body,
+html {
+	font-family: 'Inter', sans-serif;
 }
 
 //button,link
 button,
 a {
+	border: none;
 	.transition(all .3s ease);
+
+	&:focus,
 	&:hover {
 		text-decoration: none;
+		outline: none;
+		border: none;
 	}
 }
 
-._keyfocus {
-	* {
-		&:focus {
-			box-shadow: none;
-			outline: none;
-		}
+* {
+	&:focus {
+		box-shadow: none;
+		outline: none;
 	}
 }
 
@@ -41,6 +51,7 @@ h6,
 ul {
 	padding: 0;
 	list-style: none;
+	margin: 0;
 }
 
 table {
@@ -52,9 +63,6 @@ table {
 		width: auto;
 	}
 }
-
-@fontbase: 'Inter', sans-serif;
-@fontawesome: Fontawesome;
 
 @screen__xxs: 320px;
 @screen__xs-m: 360px;
@@ -70,39 +78,9 @@ table {
 @screen__xxl-l: 1600px;
 @screen__xxl: 1920px;
 
-
-@font-face {
-    font-family: 'Inter', sans-serif;
-    src: url('../../fonts/font-Inter/Inter-Regular.ttf');
-}
-
-
-/* responsive */
-@media (min-width: 1200px) {
-	body .container {
-		max-width: 1170px;
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-}
-
-@media (min-width: 1440px){
-	body{
-		.container {
-			max-width: 100%;
-			padding-left: 15px;
-			padding-right: 15px;
-		}
-	}
-}
-
-@media (min-width: 1600px){
-	body{
-		.container {
-			max-width: 1536px;
-			padding-left: 0;
-			padding-right: 0;
-		}
+@media only screen and (min-width: 1600px){
+	.container {
+		max-width: 1600px;
+		padding: 0 30px;
 	}
 }
