@@ -4,6 +4,11 @@
 	margin: 0;
 	padding: 0;
 	user-select: none;
+
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
 }
 
 body,
@@ -16,19 +21,13 @@ button,
 a {
 	border: none;
 	.transition(all .3s ease);
+	text-decoration: none;
 
 	&:focus,
 	&:hover {
 		text-decoration: none;
 		outline: none;
 		border: none;
-	}
-}
-
-* {
-	&:focus {
-		box-shadow: none;
-		outline: none;
 	}
 }
 
