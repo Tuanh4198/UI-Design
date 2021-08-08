@@ -751,11 +751,263 @@ button {
 }
 .news-blog {
     background: #f7f7f7;
+    padding-top: 96px;
+    padding-bottom: 129px;
+
     .news-blog-main {
         max-width: 1440px;
+        max-width: 1336px;
         margin-left: auto;
         margin-right: auto;
+        >.row {
+            margin-left: -53px;
+            margin-right: -53px;
+            .col-latest-blog,
+            .col-news {
+                padding-left: 53px;
+                padding-right: 53px;
+            }
+        }
+    }
+    .title {
+        
+        h2 {
+            font-family: 'EB Garamond', serif;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 63px;
+            
+            letter-spacing: -0.01em;
+            color: #242424;
+            margin-bottom: 33px;
+            .text {
+                color: #c31d1d;
+            }
+        }
+    }
+    .col-latest-blog {
+        flex: 0 0 68.8%;
+        max-width: 68.8%;
+        >.row {
+            margin-left: -53px;
+            margin-right: -53px;
+            .col-item-blog {
+                padding-left: 53px;
+                padding-right: 53px;
+            }
+        }
+        .image {
+            margin-bottom: 8px;
+        }
+        .category-blog {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #c31d1d;
+            margin-bottom: 14px;
+        }
+        .blog-item-details {
+            .title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                letter-spacing: -0.01em;
+                margin-bottom: 50px;
+                a {
+                    color: @base_color;    
+                }
+            }
+        }
+        .btn-view-more {
+            text-align: center;
+            a {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                color: @base_color;
+            }
+        }
+
+    }
+    .col-news {
+        flex: 0 0 31.2%;
+        max-width: 31.2%;
+        .col-item-news {
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .news-item-info {
+            display: flex;
+            flex-wrap: wrap;
+            .image {
+                width: 42%;
+                padding-right: 20px;
+            }
+            .news-item-details {
+                width: 58%;
+
+            }
+        }
+        .category-blog {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: uppercase;
+            color: #c31d1d;
+            margin-bottom: 7px;
+        }
+        .title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: -0.01em;
+            height: 69px;
+            overflow: hidden;
+            margin-bottom: 17px;
+
+            a {
+                
+                color: @base_color;
+            }
+        }
+        .btn-view-more {
+            a {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                color: @base_color;
+            }
+        }
+        
     }
 }
+.hera-charity {
+    padding-top: 68px;
+    .hera-charity-content {
+        // max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        >.title {
+            font-family: 'EB Garamond', serif;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 63px;
+            letter-spacing: -0.01em;
+            color: #242424;
+            margin-bottom: 56px;
+            text-align: center;
+            span {
+                color: #d01313;
+            }
+        }
+    }
+    
+    .hera-charity-primary {
+        display: flex;
+        flex-wrap: wrap;
+        .image {
+            width: 53.3%;
+        }
+        .hera-charity-info {
+            width: 46.7%;
+            padding-left: 125px;
+            margin-top: 33px;
+            .hera-charity-info-wrapper {
+                max-width: 427px;
+            }
+            .title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: @base_color;
+                margin-bottom: 18px;
+            }
+            .phares {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: @base_color;
+                max-width: 411px;
+                margin-bottom: 28px;
+            }
+            .charity-sum {
+                display: table;
+                width: 100%;
+                margin-bottom: 21px;
+                li {
+                    display: table-row;
+                    
+                }
+                .col-left-charity,
+                .col-right-charity {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                    border-top: 1px solid #F2F2F2;
+                }
+                .col-left-charity {
+                    padding-right: 28px;
+                    max-width: 65px;
+                    span {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 29px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: @base_color;
+                    }
+                }
+                .col-right-charity {
+                    .container-text1 {
+                        max-width: 163px;
+                    }
+                    .container-text2 {
+                        max-width: 200px;
+                    }
+                    .container-text3 {
+                        max-width: 163px;
+                    }
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: @base_color;
+                        display: block;
+                    }
+                }
+            }
+            .actions {
+                a {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-decoration-line: underline;
+                    color: @base_color;
+                }
+            }
+
+        }
+    }
+
+}
+
 
 
