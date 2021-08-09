@@ -483,7 +483,17 @@
                 <div class="col-sm-6">
                     <div class="product-image-main">
                         <div class="main-slide">
-                            <ul class="autoplay slider-for" data-fade='true' data-as-Nav-For='.slider-nav' data-dots='false' data-arrows='false' data-autoplay="false" data-slides-To-Show='1' data-slides-To-Scroll='1'>
+                            <ul class="autoplay slider-for" 
+								data-vertical='true'
+								data-as-Nav-For='.slider-nav' 
+								data-dots='false' 
+								data-arrows='false' 
+								data-autoplay="false" 
+								data-speed='1000'
+								data-autoplay-speed='2000'
+								data-slides-To-Show='1' 
+								data-slides-To-Scroll='1'
+							>
                                 <a href="#" class="item">
                                     <img src="./images/page/detail/slide_lg.jpg">
                                 </a>
@@ -1571,6 +1581,17 @@
                 $('.form-result-size').hide();
             }
         })
+
+        $(function() {
+			$(".main-slide .slider-for").on('wheel', (function(e) {
+				e.preventDefault();
+				if (e.originalEvent.deltaY < 0) {
+					$(this).slick('slickPrev');
+				} else {
+					$(this).slick('slickNext');
+				}
+			}));
+        });
 
         $(function() {
             let $slider = $('.autoplay.slider-for');

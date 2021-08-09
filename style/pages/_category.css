@@ -2049,9 +2049,7 @@ header {
 }
 .filter-group-wrapper .btn-action:hover,
 .filter-group-wrapper .btn-action:focus {
-  -webkit-box-shadow: -2px 2px 10px -1px #000000;
-          box-shadow: -2px 2px 10px -1px #000000;
-  opacity: 1;
+  background: #242424d6;
   border: none;
   outline: none;
 }
@@ -2079,21 +2077,17 @@ header {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   white-space: nowrap;
+  cursor: pointer;
 }
 .filter-group-wrapper .list-keyword li.btn-clear-all {
   background: transparent;
 }
-.filter-group-wrapper .list-keyword li.btn-clear-all:hover {
-  border: 1px solid #F7F7F7;
-}
 .filter-group-wrapper .list-keyword li.btn-clear-all a {
+  display: block;
   text-decoration: underline;
 }
 .filter-group-wrapper .list-keyword li.btn-clear-all a:before {
   display: none;
-}
-.filter-group-wrapper .list-keyword li.btn-clear-all a:hover {
-  color: #993a3a;
 }
 .filter-group-wrapper .list-keyword li:hover {
   border: 1px solid #242424;

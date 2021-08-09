@@ -448,8 +448,14 @@
 							<p class="form-desc">
 								Chúng tôi sẽ gọi lại cho bạn ngay trong thời gian từ <strong>8h - 21h</strong>. Ngoài khung giờ trên chúng tôi xin phép liên hệ qua <strong>zalo</strong> hoặc gọi lúc <strong>8h hôm sau</strong>
 							</p>
-							<input type="text" placeholder="Họ và tên" class="field">
-							<input type="text" placeholder="Số điện thoại" class="field">
+							<div class="field-group">
+								<input type="text" class="field">
+								<label for="">Họ và tên</label>
+							</div>
+							<div class="field-group">
+								<input type="text" class="field">
+								<label for="">Số điện thoại</label>
+							</div>
 							<button type="submit" class="btn btn-block btn-submit-form-contact">Gọi cho tôi ngay</button>
 						</form>
 					</div>
@@ -635,8 +641,14 @@
 							<p class="form-desc">
 								Chúng tôi sẽ gọi lại cho bạn ngay trong thời gian từ <strong>8h - 21h</strong>. Ngoài khung giờ trên chúng tôi xin phép liên hệ qua <strong>zalo</strong> hoặc gọi lúc <strong>8h hôm sau</strong>
 							</p>
-							<input type="text" placeholder="Họ và tên" class="field">
-							<input type="text" placeholder="Số điện thoại" class="field">
+							<div class="field-group">
+								<input type="text" class="field">
+								<label for="">Họ và tên</label>
+							</div>
+							<div class="field-group">
+								<input type="text" class="field">
+								<label for="">Số điện thoại</label>
+							</div>
 							<button type="submit" class="btn btn-block btn-submit-form-contact">Gọi cho tôi ngay</button>
 						</form>
 					</div>
@@ -788,7 +800,17 @@
 <!-- custom js -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		
+		$(".field-group .field").each(function() {
+			$(this).change(function(){
+				console.log($(this).val());
+
+				if($(this).val()) {
+					$(this).addClass("active");
+				} else {
+					$(this).removeClass("active");
+				}
+			});
+		})
 	})
 </script>
 </html>
