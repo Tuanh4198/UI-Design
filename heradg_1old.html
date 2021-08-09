@@ -1,3 +1,6 @@
+Skip to content Search or jump to… Pull requests Issues Marketplace Explore @Zoe-997 Tuanh4198 / UI-Design 1 0 0 Code Issues Pull requests 1 Actions Projects Wiki Security Insights UI-Design/heradg_1.html @alothemes alothemes update homepage Latest commit
+585056c 2 days ago History 3 contributors @Tuanh4198@alothemes@Zoe-997 3281 lines (3041 sloc) 205 KB
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,8 +21,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- bs4 -->
     <link rel="stylesheet" href="./library/css/bootstrap.min.css" />
     <!-- slick slider -->
@@ -27,554 +28,95 @@
     <link rel="stylesheet" href="./library/slick/slick.css" />
     <!-- main style -->
     <link rel="stylesheet" href="./style/config/_reset.css">
+    <link rel="stylesheet" href="./style/heradg.com.vn/_header.css">
+    <link rel="stylesheet" href="./style/heradg.com.vn/_footer.css">
     <link rel="stylesheet" href="./style/heradg.com.vn/_home1.css">
-    <link rel="stylesheet" href="./style/pages/_category.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header id="header" class="header fixed-main-menu">
+    <header class="header">
         <div class="header-top">
-            <div class="container">
-                <div class="dflex header-top-content">
+            <div class="container-fluid">
+                <div class="dflex justify-content-between">
                     <ul class="header-custom-links list-unstyled">
                         <li class="header-custom-link"><a href="#">Hệ thống showroom</a></li>
-                        <li class="header-custom-link">
-                            <a href="tel: 19000091">Hotline <strong>1900 0091</strong></a></li>
-                        <li class=" header-custom-link "><a href=" # ">Theo dõi đơn hàng</a></li>
+                        <li class="header-custom-link"><a href="#">Mua hàng online (08h30-17h30 từ T2-T7)</a></li>
+                        <li class="header-custom-link"><a href="#">CSKH (08h30 - 17h30 từ T2-T7) 1900 0091</a></li>
                     </ul>
-                    <ul class=" header-custom-links list-unstyled ">
-                        <li class=" header-custom-link "><a href=" # ">Khám phá thời trang nam</a></li>
-                        <li class=" header-custom-link ">
-                            <a href=" # "><img src="./images/dgcselection 1.png" alt=" "></a>
+                    <ul class="header-custom-links list-unstyled">
+                        <li class="header-custom-link">
+                            <a href="#"></a>Khám phá thời trang nam</li>
+                        <li class="header-custom-link">
+                            <a href="#"><img src="./images/dgcselection 1.png" alt=""></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class=" header-content ">
-            <div class=" container ">
-                <div class=" dflex align-items-center ">
-                    <h1 class=" logo ">
-                        <span class=" nav-toggle ">
-                            <span></span>
-                        <span></span>
-                        <span></span>
-                        </span>
-                        <a href=" # "><img src=" ./images/logo.png " alt=" "></a>
+        <div class="header-content">
+            <div class="container-fluid">
+                <div class="dflex">
+                    <h1 class="logo">
+                        <a href="#"><img src="./images/logo.png" alt=""></a>
                     </h1>
-                    <nav class=" navbar navbar-expand-lg navbar-light ">
-                        <div class=" container-fluid ">
-                            <div class=" menu-top ">
-                                <ul class=" navbar-nav me-auto mb-2 mb-lg-0 ">
-                                    <li class=" nav-item home ">
-                                        <a class=" nav-link active " aria-current=" page " href=" # ">Home</a>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						  </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Hàng mới về</a>
                                     </li>
-                                    <li class=" nav-item dropdown ">
-                                        <a class=" nav-link dropdown-toggle " aria-current=" page " href=" # ">về
-                                            heradg</a>
-                                        <ul class=" dropdown-menu ">
-                                            <li><a class=" dropdown-item " href=" # ">Action</a></li>
-                                            <li><a class=" dropdown-item " href=" # ">Another action</a></li>
-                                            <li><a class=" dropdown-item " href=" # ">Something else here</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hàng bán chạy</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                                         </ul>
                                     </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link " aria-current=" page " href=" # ">Hàng mới về</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Ưu đãi</a>
                                     </li>
-                                    <li class=" nav-item mega ">
-                                        <a class=" nav-link dropdown-toggle " href=" # " id="
-                                navbarDropdown " role=" button " data-bs-toggle=" dropdown " aria-expanded=" false ">Bộ
-                                            sưu tập</a>
-                                        <div class=" content-mega dflex ">
-                                            <ul class=" mega-menu dflex " aria-labelledby=" navbarMega ">
-                                                <li class=" nav-item ">
-                                                    <span class=" title ">Sản phẩm</span>
-                                                    <ul class=" mega-items ">
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">HÀNG
-                                                                MỚI VỀ</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">HÀNG
-                                                                BÁN CHẠY</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">GỢI Ý
-                                                                CHO BẠN</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">SẢN
-                                                                PHẨM ƯU ĐÃI</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class=" nav-item ">
-                                                    <span class=" title ">Danh mục</span>
-                                                    <ul class=" mega-items ">
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">ÁO SƠ
-                                                                MI</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">ÁO
-                                                                KHOÁC</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">ÁO
-                                                                POLO</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">QUẦN
-                                                                ÂU</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">QUẦN
-                                                                KAKI</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">QUẦN
-                                                                SOOC</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">THẮT
-                                                                LƯNG</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">CÀ
-                                                                VẠT</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class=" nav-item ">
-                                                    <span class=" title ">Bộ sưu tập</span>
-                                                    <ul class=" mega-items ">
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">TOUCH
-                                                                THE SKY</a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">THE
-                                                                OFFICE LOOK </a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">THE
-                                                                ELEGANT MAN </a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">DGC
-                                                                DYNAMIC </a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">THE
-                                                                ACTIVITIES </a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">STREET
-                                                                LOOK OUTFIT </a></li>
-                                                        <li class=" mega-item "><a class=" mega-link " href=" # ">ÁO
-                                                                PHAO JAC-NANO 2020 </a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            <div class=" mega-block-right ">
-                                                <div class=" autoplay " data-dots='true' data-arrow='true' data-infinite='false' data-speed='300' data-autoplay='false' data-slides-To-Show='3' data-slides-To-Scroll='1'>
-                                                    <div class=" product-wrapper ">
-                                                        <div class=" product-img-wrapper ">
-                                                            <a href=" # " class=" product-img ">
-                                                                <img class=" product-img-first " src="
-                                ./images/product-menu.jpg ">
-                                                                <img class=" product-img-second " src="
-                                ./images/product-menu-2.jpg ">
-                                                            </a>
-                                                        </div>
-                                                        <div class=" product-detail-wrapper ">
-                                                            <a href=" # " class=" product-name ">Quần kaki nam dáng slim
-                                                                SJ123871</a>
-                                                            <div class=" product-price-wrapper ">
-                                                                <span class=" new-price ">899.000 &#8363;</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=" product-wrapper ">
-                                                        <div class=" product-img-wrapper ">
-                                                            <a href=" # " class=" product-img ">
-                                                                <img class=" product-img-first " src="
-                                ./images/product-menu-2.jpg ">
-                                                                <img class=" product-img-second " src="
-                                ./images/product-menu-3.jpg ">
-                                                            </a>
-                                                        </div>
-                                                        <div class=" product-detail-wrapper ">
-                                                            <a href=" # " class=" product-name ">Quần kaki nam dáng slim
-                                                                SJ123871</a>
-                                                            <div class=" product-price-wrapper ">
-                                                                <span class=" new-price ">899.000 &#8363;</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=" product-wrapper ">
-                                                        <div class=" product-img-wrapper ">
-                                                            <a href=" # " class=" product-img ">
-                                                                <img class=" product-img-first " src="
-                                ./images/product-menu-3.jpg ">
-                                                                <img class=" product-img-second " src="
-                                ./images/product-menu.jpg ">
-                                                            </a>
-                                                        </div>
-                                                        <div class=" product-detail-wrapper ">
-                                                            <a href=" # " class=" product-name ">Quần kaki nam dáng slim
-                                                                SJ123871</a>
-                                                            <div class=" product-price-wrapper ">
-                                                                <span class=" new-price ">899.000 &#8363;</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=" product-wrapper ">
-                                                        <div class=" product-img-wrapper ">
-                                                            <a href=" # " class=" product-img ">
-                                                                <img class=" product-img-first " src="
-                                ./images/product-menu.jpg ">
-                                                                <img class=" product-img-second " src="
-                                ./images/product-menu-2.jpg ">
-                                                            </a>
-                                                        </div>
-                                                        <div class=" product-detail-wrapper ">
-                                                            <a href=" # " class=" product-name ">Quần kaki nam dáng slim
-                                                                SJ123871</a>
-                                                            <div class=" product-price-wrapper ">
-                                                                <span class=" new-price ">899.000 &#8363;</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class=" nav-item dropdown ">
-                                        <a class=" nav-link dropdown-toggle " href=" # " id="
-                                navbarDropdown " role=" button " data-bs-toggle=" dropdown " aria-expanded=" false ">Sản phẩm</a>
-                                        <ul class=" dropdown-menu ">
-                                            <li><a class=" dropdown-item " href=" # ">Action</a></li>
-                                            <li><a class=" dropdown-item " href=" # ">Another action</a></li>
-                                            <li><a class=" dropdown-item " href=" # ">Something else here</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bộ sưu tập</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                                         </ul>
                                     </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link disabled " href=" # " tabindex=" -1 " aria-disabled="
-                                true ">Ưu đãi</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">đồng phục</a>
                                     </li>
-                                    <li class=" nav-item dropdown ">
-                                        <a class=" nav-link dropdown-toggle " href=" # " id="
-                                navbarDropdown " role=" button " data-bs-toggle=" dropdown " aria-expanded=" false ">Blog, Tin tức</a>
-                                        <ul class=" dropdown-menu ">
-                                            <li><a class=" dropdown-item " href=" # ">Action</a></li>
-                                            <li><a class=" dropdown-item " href=" # ">Another action</a></li>
-                                            <li><a class=" dropdown-item " href=" # ">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link disabled " href=" # " tabindex=" -1 " aria-disabled="
-                                true ">đồng phục</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">khác</a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class=" nav-mobile ">
-                                <span class=" nav-mobile-title ">Menu <button
-                                        class=" menu-close close btn-close "></button></span>
-                                <ul class=" nav-mobile-content ">
-                                    <li class=" nav-item home ">
-                                        <a class=" nav-link active " href=" # ">Home</a>
-                                    </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link " href=" # ">về heradg</a>
-                                        <span class=" collapse "></span>
-                                    </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link " href=" # ">Hàng mới về</a>
-                                    </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link " href=" # ">Bộ sưu tập</a>
-                                        <span class=" collapse "></span>
-                                        <ul class=" sub-menu ">
-                                            <li class=" nav-item ">
-                                                <a class=" nav-link " href=" # ">Sản phẩm</a>
-                                                <span class=" collapse "></span>
-                                                <ul class=" sub-menu ">
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">hàng mới
-                                                            về</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">hàng bán
-                                                            chạy</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Gợi ý cho
-                                                            bạn</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Sản phẩm ưu
-                                                            đãi</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class=" nav-item ">
-                                                <a class=" nav-link " href=" # ">Danh mục</a>
-                                                <span class=" collapse "></span>
-                                                <ul class=" sub-menu ">
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Áo sơ mi</a>
-                                                    </li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Áo khoác</a>
-                                                    </li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Áo polo</a>
-                                                    </li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Quần âu</a>
-                                                    </li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">quần
-                                                            kaki</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">quần
-                                                            sooc</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">thắt
-                                                            lưng</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">cà vạt</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class=" nav-item ">
-                                                <a class=" nav-link " href=" # ">Bộ sưu tập</a>
-                                                <span class=" collapse "></span>
-                                                <ul class=" sub-menu ">
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Touch the
-                                                            sky</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">The office
-                                                            look </a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">The elegant
-                                                            man</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Dgc
-                                                            dynamic</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">The
-                                                            activities</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Street look
-                                                            outfit</a></li>
-                                                    <li class=" nav-item "><a class=" nav-link " href=" # ">Áo phao
-                                                            jac-nano 2020</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link " href=" # ">Sản phẩm</a>
-                                        <span class=" collapse "></span>
-                                        <ul class=" sub-menu ">
-                                            <li class=" nav-item "><a class=" nav-link " href=" # ">Action</a></li>
-                                            <li class=" nav-item "><a class=" nav-link " href=" # ">Another action</a>
-                                            </li>
-                                            <li class=" nav-item "><a class=" nav-link " href=" # ">Something else
-                                                    here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link " href=" # ">Ưu đãi</a>
-                                    </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link " href=" # ">Blog, Tin tức</a>
-                                        <span class=" collapse "></span>
-                                        <ul class=" sub-menu ">
-                                            <li class=" nav-item "><a class=" nav-link " href=" # ">Action</a></li>
-                                            <li class=" nav-item "><a class=" nav-link " href=" # ">Another action</a>
-                                            </li>
-                                            <li class=" nav-item "><a class=" nav-link " href=" # ">Something else
-                                                    here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=" nav-item ">
-                                        <a class=" nav-link " href=" # ">đồng phục</a>
-                                    </li>
-                                </ul>
+                                <form class="dflex">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
                             </div>
                         </div>
                     </nav>
-                    <div class=" header-tool ">
-                        <div class=" dflex align-items-center header-tool-content justify-content-end ">
-                            <div class=" header-search ">
-                                <span class=" title-search toggle-tab ">search</span>
-                                <form class=" form-search toggle-content ">
-                                    <div class=" dflex align-items-center ">
-                                        <button class=" btn btn-outline-success " type=" submit ">Search</button>
-                                        <input class=" form-control me-2 " type=" search " placeholder=" Tìm kiếm... " aria-label=" Search ">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class=" header-wishlist ">
-                                <span class=" action showlike ">
-                                    <a title=" Wishlist " href=" # " target=" _blank " class=" icon btn-heart ">
-                                        <span class=" fa fa-heart-o " aria-hidden=" true "></span>
-                                <span class=" counter qty ">0</span>
-                                </a>
-                                </span>
-                            </div>
-                            <div class=" header-account ">
-                                <div class=" toggle-tab ">
-                                    <span class=" account-text ">Tài khoản</span>
-                                </div>
-                                <ul class=" toggle-content popup ">
-                                    <div class=" modal-header ">
-                                        <button class=" close btn-close ">Close</button>
-                                    </div>
-                                    <div class=" modal-content ">
-                                        <div class=" login-wrapper modal-content-item ">
-                                            <h3 class=" title ">Đăng nhập</h3>
-                                            <p class=" sub-title ">Đăng nhập vào tài khoản của bạn.</p>
-                                            <a href=" # " class=" action ">Đăng nhập</a>
-                                        </div>
-                                        <div class=" register-wrapper modal-content-item ">
-                                            <h3 class=" title ">Bạn là khách hàng mới</h3>
-                                            <p class=" sub-title ">Bạn chưa có tài khoản, vui lòng đăng kí tài khoản tại đây.
-                                            </p>
-                                            <a href=" # " class=" action ">Đăng Ký</a>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-                            <div class=" minicart ">
-                                <div class=" action showcart ">
-                                    <span class=" counter qty empty ">
-                                        <span class=" counter-number ">0</span>
-                                    </span>
-                                    <span class=" minicart-text ">
-                                        <div class=" text cart-title ">Cart</div>
-                                        <span class=" total price ">0 &#8363;</span>
-                                    </span>
-                                </div>
-                                <div class=" minicart-content popup ">
-                                    <div class=" modal-header ">
-                                        <h2 class=" title ">Sản phẩm của bạn vừa được thêm vào giỏ hàng</h2>
-                                        <button class=" close btn-close ">Close</button>
-                                    </div>
-                                    <div class=" modal-content ">
-                                        <div class=" product-list ">
-                                            <div class=" product-wrapper ">
-                                                <div class=" product-img-wrapper ">
-                                                    <a href=" # " class=" product-img ">
-                                                        <img class=" product-img " src="
-                                ./images/product-minicart.jpg ">
-                                                    </a>
-                                                </div>
-                                                <div class=" product-detail-wrapper ">
-                                                    <a href=" # " class=" product-name ">Áo kiểu cổ dập ly</a>
-                                                    <div class=" product-price-wrapper ">
-                                                        <span class=" new-price ">899.000 &#8363;</span>
-                                                        <span class=" old-price ">1.09.000 &#8363;</span>
-                                                    </div>
-                                                    <div class=" product-actions dflex ">
-                                                        <div class=" group-qty ">
-                                                            <span class=" label ">Số lượng</span>
-                                                            <div class=" quantity ">
-                                                                <div class=" quantity-nav ">
-                                                                    <button class=" quantity-button quantity-down
-                                btn-qty minus ">-</button>
-                                                                    <input type=" number " min=" 1 " max="
-                                999 " step=" 1 " value=" 1 " class=" number ">
-                                                                    <button class=" quantity-button quantity-up
-                                btn-qty plus ">+</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class=" product-action ">Bỏ khỏi giỏ</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" product-wrapper ">
-                                                <div class=" product-img-wrapper ">
-                                                    <a href=" # " class=" product-img ">
-                                                        <img class=" product-img " src="
-                                ./images/product-minicart-2.jpg ">
-                                                    </a>
-                                                </div>
-                                                <div class=" product-detail-wrapper ">
-                                                    <a href=" # " class=" product-name ">Áo kiểu cổ dập ly</a>
-                                                    <div class=" product-price-wrapper ">
-                                                        <span class=" new-price ">899.000 &#8363;</span>
-                                                        <span class=" old-price ">1.09.000 &#8363;</span>
-                                                    </div>
-                                                    <div class=" product-actions dflex ">
-                                                        <div class=" group-qty ">
-                                                            <span class=" label ">Số lượng</span>
-                                                            <div class=" quantity ">
-                                                                <div class=" quantity-nav ">
-                                                                    <button class=" quantity-button quantity-down
-                                btn-qty minus ">-</button>
-                                                                    <input type=" number " min=" 1 " max="
-                                999 " step=" 1 " value=" 1 " class=" number ">
-                                                                    <button class=" quantity-button quantity-up
-                                btn-qty plus ">+</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class=" product-action ">Bỏ khỏi giỏ</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=" subtotal ">
-                                            <span class=" label ">Tổng: <span class=" count ">2 sản phẩm</span></span>
-                                            <span class=" amount ">1.798.000 &#8363;</span>
-                                        </div>
-                                        <div class=" actions ">
-                                            <a href=" # " class=" action checkout ">THANH TOÁN NGAY</a>
-                                            <p class=" sub-title ">Gọi đặt mua <span>1800.1103</span> (7:30 - 22:00)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=" header-bottom ">
-            <div class=" container ">
-                <div class=" dflex justify-content-center ">
-                    <div class=" banner-header ">
-                        <h2 class=" title ">GIẢM GIÁ LÊN ĐẾN 20%</h2>
-                        <a href=" # " class=" action ">Shop now</a>
-                    </div>
-                    <p class=" banner-content ">Áp dụng cho tất cả các sản phẩm được mua trực tiếp tại hệ thống showroom của HeraDG.</p>
                 </div>
             </div>
         </div>
     </header>
-
-    <div class=" viewed-products popup visible ">
-        <div class=" view-product-header ">
-            <h2 class=" title ">Sản phẩm đã xem</h2>
-            <button class=" close btn-close ">Close</button>
-        </div>
-        <div class=" product-list ">
-            <div class=" product-wrapper ">
-                <div class=" product-img-wrapper ">
-                    <a href=" # " class=" product-img ">
-                        <img class=" product-img-first " src=" ./images/product1.jpg ">
-                        <img class=" product-img-second " src=" ./images/product2.jpg ">
-                    </a>
-                </div>
-                <div class=" product-detail-wrapper ">
-                    <a href=" # " class=" product-name ">Jumpsuit sát nách SJSBA004</a>
-                    <div class=" product-price-wrapper ">
-                        <span class=" price ">899.000 &#8363;</span>
-                    </div>
-                    <a href=" # " class=" action addtocart ">mua ngay</a>
-                </div>
-            </div>
-            <div class=" product-wrapper ">
-                <div class=" product-img-wrapper ">
-                    <a href=" # " class=" product-img ">
-                        <img class=" product-img-first " src=" ./images/product2.jpg ">
-                        <img class=" product-img-second " src=" ./images/product3.jpg ">
-                    </a>
-                </div>
-                <div class=" product-detail-wrapper ">
-                    <a href=" # " class=" product-name ">Jumpsuit sát nách SJSBA004</a>
-                    <div class=" product-price-wrapper ">
-                        <span class=" price ">899.000 &#8363;</span>
-                    </div>
-                    <a href=" # " class=" action addtocart ">mua ngay</a>
-                </div>
-            </div>
-            <div class=" product-wrapper ">
-                <div class=" product-img-wrapper ">
-                    <a href=" # " class=" product-img ">
-                        <img class=" product-img-first " src=" ./images/product3.jpg ">
-                        <img class=" product-img-second " src=" ./images/product4.jpg ">
-                    </a>
-                </div>
-                <div class=" product-detail-wrapper ">
-                    <a href=" # " class=" product-name ">Jumpsuit sát nách SJSBA004</a>
-                    <div class=" product-price-wrapper ">
-                        <span class=" price ">899.000 &#8363;</span>
-                    </div>
-                    <a href=" # " class=" action addtocart ">mua ngay</a>
-                </div>
-            </div>
-            <div class=" product-wrapper ">
-                <div class=" product-img-wrapper ">
-                    <a href=" # " class=" product-img ">
-                        <img class=" product-img-first " src=" ./images/product4.jpg ">
-                        <img class=" product-img-second " src=" ./images/product1.jpg ">
-                    </a>
-                </div>
-                <div class=" product-detail-wrapper ">
-                    <a href=" # " class=" product-name ">Jumpsuit sát nách SJSBA004</a>
-                    <div class=" product-price-wrapper ">
-                        <span class=" price ">899.000 &#8363;</span>
-                    </div>
-                    <a href=" # " class=" action addtocart ">mua ngay</a>
-                </div>
-            </div>
-        </div>
-
-        <div class=" view-product-action ">
-            <button class=" add-all ">Thêm tất cả vào giỏ hàng</button>
-        </div>
-    </div>
     <!-- End header -->
 
     <!-- Content -->
@@ -1750,7 +1292,7 @@
                     </div>
                 </div>
                 <div class="colorful-right">
-                    <a href="#"><img src="./images/homeheradg/color-full.jpg" alt="image"></a>
+                    <a href="#"><img src="../../images/homeheradg/color-full.jpg" alt="image"></a>
                 </div>
             </div>
         </div>
@@ -3748,151 +3290,26 @@
     </section>
 
     <!-- Footer -->
-    <footer class=" footer ">
-        <div class=" social-profile ">
-            <div class="container ">
-                <h2 class=" title ">Tham gia với chúng tôi</h2>
-                <div class="content ">
-                    <div class="row ">
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 social-item ">
-                            <a href=" " class=" social-link "><img src=" ./images/facebook.png " alt=" "><span>Like Facebook Page</span></a>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 social-item ">
-                            <a href=" " class=" social-link "><img src=" ./images/instagram.png " alt=" "><span>Instagram @heradg</span></a>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 social-item ">
-                            <a href=" " class=" social-link "><img src=" ./images/youtube.png " alt=" "><span>Youtube HeraDG</span></a>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 social-item ">
-                            <a href=" " class=" social-link "><img src=" ./images/tiktok.png " alt=" "><span>Tiktok HeraDG</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=" footer-top ">
-            <div class=" dflex ">
-                <div class=" footer-links ">
-                    <div class=" row ">
-                        <div class=" col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-link ">
-                            <div class=" footer-link-content collapsible ">
-                                <h3 class=" footer-title ">Khám phá HeraDG <span class=" collapsible-tab "></span></h3>
-                                <ul class=" link-list list-unstyled collapsible-content ">
-                                    <li><a href=" # ">Về chúng tôi</a></li>
-                                    <li><a href=" # ">Hệ thống showroom</a></li>
-                                    <li><a href=" # ">Mở đại lý</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class=" col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-link ">
-                            <div class=" footer-link-content collapsible ">
-                                <h3 class=" footer-title ">Sản phẩm <span class=" collapsible-tab "></span></h3>
-                                <ul class=" link-list list-unstyled collapsible-content ">
-                                    <li><a href=" # ">Áo</a></li>
-                                    <li><a href=" # ">Đầm</a></li>
-                                    <li><a href=" # ">Jumpsuit</a></li>
-                                    <li><a href=" # ">Chân váy</a></li>
-                                    <li><a href=" # ">Quần</a></li>
-                                    <li><a href=" # ">Đồng phục</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class=" col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-link ">
-                            <div class=" footer-link-content collapsible ">
-                                <h3 class=" footer-title ">Tin tức, blog <span class=" collapsible-tab "></span> </h3>
-                                <ul class=" link-list list-unstyled collapsible-content ">
-                                    <li><a href=" # ">Tin tức</a></li>
-                                    <li><a href=" # ">Sự kiện</a></li>
-                                    <li><a href=" # ">Phong cách sống</a></li>
-                                    <li><a href=" # ">Tin tuyển dụng</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class=" col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 footer-link ">
-                            <div class=" footer-link-content collapsible ">
-                                <h3 class=" footer-title ">Chính sách <span class=" collapsible-tab "></span></h3>
-                                <ul class=" link-list list-unstyled collapsible-content ">
-                                    <li><a href=" # ">Chính sách thanh toán</a></li>
-                                    <li><a href=" # ">Chính sách vận chuyển</a></li>
-                                    <li><a href=" # ">Chính sách đổi trả</a></li>
-                                    <li><a href=" # ">Chính sách bảo mật</a></li>
-                                    <li><a href=" # ">Hưỡng dẫn chọn size</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" footer-subscribe ">
-                    <div class=" footer-about ">
-                        <h3 class=" title ">Hệ thống showroom</h3>
-                        <a href=" # " class=" action ">Tìm showroom gần bạn</a>
-                        <div class=" contact-info dflex ">
-                            <div class=" contact-item dflex phone ">
-                                <div class=" contact-info-images ">
-                                    <img src=" ./images/phone.png " alt=" ">
-                                </div>
-                                <div class=" contact-info-detail ">
-                                    <p class=" label ">Hotline</p>
-                                    <p class=" title ">0911.663.698</p>
-                                </div>
-                            </div>
-                            <div class=" contact-item dflex email ">
-                                <div class=" contact-info-images ">
-                                    <img src=" ./images/email.png " alt=" ">
-                                </div>
-                                <div class=" contact-info-detail ">
-                                    <p class=" label ">Email</p>
-                                    <p class=" title ">cskh.heradg@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" subscribe ">
-                        <h3 class=" title ">Đăng ký nhận thông báo</h3>
-                        <p class=" sub-title ">Đăng ký nhận thông tin cập nhật và ưu đãi qua email</p>
-                        <form action=" method " class=" form-subscribe ">
-                            <div class=" block-title ">Email *</div>
-                            <div class=" block-content dflex ">
-                                <input type=" text " placeholder=" Nhập địa chỉ email " class=" input ">
-                                <button class=" action ">Đăng ký</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=" footer-bottom ">
-            <div class=" container ">
-                <div class=" footer-bottom-content dflex align-items-center ">
-                    <div class=" footer-bottom-detail ">
-                        <h3 class=" title ">CÔNG TY CP THỜI TRANG VÀ ĐẦU TƯ ĐỨC GIANG (FIDG)</h3>
-                        <ul class=" more-info list-unstyled ">
-                            <li>Mã số doanh nghiệp: 0108971141</li>
-                            <li>Địa chỉ: Số 59 Đức Giang , P. Đức Giang , Q. Long Biên, TP. Hà Nội</li>
-                        </ul>
-                    </div>
-                    <div class=" footer-bottom-images "><img src=" ./images/certifications-BCT.png " alt=" "></div>
-                </div>
-            </div>
-        </div>
-        <div class=" copyright ">©HeraDG. All rights reserved.</div>
-    </footer>
+    <section>
+
+    </section>
     <!-- End Footer -->
 
     <!-- scroll top -->
-    <span class=" up "><i class=" fa fa-chevron-up "></i></span>
+    <span class="up"><i class="fa fa-chevron-up"></i></span>
 </body>
 <!-- jquerry -->
-<script type=" text/javascript " src=" ./library/jquery.min.js "></script>
+<script type="text/javascript" src="./library/jquery.min.js"></script>
 <!-- bs4 -->
-<script type=" text/javascript " src=" ./library/js/bootstrap.min.js "></script>
-<script type=" text/javascript " src=" ./library/js/bootstrap.js "></script>
+<script type="text/javascript" src="./library/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./library/js/bootstrap.js"></script>
 <!-- slick -->
-<script type=" text/javascript " src=" ./library/slick/slick.min.js "></script>
+<script type="text/javascript" src="./library/slick/slick.min.js"></script>
 <!-- main js -->
-<script type=" text/javascript " src=" ./javascript/main.js "></script>
+<script type="text/javascript" src="./javascript/main.js"></script>
 <!-- custom js -->
-<script type=" text/javascript ">
+<script type="text/javascript">
 </script>
 
 </html>
+© 2021 GitHub, Inc. Terms Privacy Security Status Docs Contact GitHub Pricing API Training Blog About Loading complete
