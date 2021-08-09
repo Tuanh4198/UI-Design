@@ -1299,6 +1299,14 @@ header {
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: transparent;
+  color: #242424;
+  padding-bottom: 5px;
+}
+.footer-link .link-list a:hover {
+  border-color: #242424;
 }
 .footer {
   color: #242424;
@@ -1307,12 +1315,12 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 48px 0 48px 80px;
+  padding: 48px 32px;
 }
 .footer .footer-subscribe {
   width: 554px;
   background-color: #F7F7F7;
-  padding: 40px 50px;
+  padding: 40px 32px;
   text-align: center;
 }
 .footer .footer-subscribe .title {
