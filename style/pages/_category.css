@@ -1282,6 +1282,9 @@ header {
   padding: 40px 50px;
   text-align: center;
 }
+.hidden {
+  display: none !important;
+}
 .footer .footer-subscribe .title {
   font-size: 12px;
   font-weight: 600;
@@ -1566,6 +1569,71 @@ header {
   }
   .footer .subscribe .form-subscribe .block-content input {
     max-width: calc(100% - 85px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body,
+html {
+  font-family: 'Inter', sans-serif;
+}
+button,
+a {
+  border: none;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+button:focus,
+a:focus,
+button:hover,
+a:hover {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+*:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+table th {
+  text-align: left;
+}
+table .col {
+  width: auto;
+}
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    padding: 0 30px;
   }
 }
 .breadcrumbs-wrapper {

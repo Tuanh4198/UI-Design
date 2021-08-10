@@ -238,6 +238,59 @@ jQuery(document).ready(function($) {
 		})
 	})
 	//end
+
+	// toggle button
+	$(".toggle-tab").click(function(event) {
+		event.preventDefault();
+		$(this).parent().toggleClass('toggle-visible');
+		$(this).parent().find('.toggle-content').toggleClass('visible');
+	});
+
+	// close button 
+	$(".btn-close").click(function(event) {
+		event.preventDefault();
+		$(this).parents('.popup').toggleClass('visible');
+	});
+
+	// minicart
+	$(".minicart .showcart ").click(function(event) {
+		event.preventDefault();
+		$(this).parent().toggleClass('active');
+		$(this).parent().find('.minicart-content').toggleClass('visible');
+		$("html").toggleClass('open-minicart');
+	});
+
+	$(".minicart .btn-close").click(function(event) {
+		event.preventDefault();
+		$(this).parents('.minicart').toggleClass('active');
+		$("html").toggleClass('open-minicart');
+	});
+
+	// footer mobile
+	$(function() {
+		$('.collapsible .collapsible-tab').click(function(event) {
+			event.preventDefault();
+			$(this).parents('.collapsible').toggleClass('active');
+			$(this).parents('.collapsible').find('.collapsible-content').slideToggle();
+		});
+	});
+
+	// nav-toggle
+	$(".nav-toggle").click(function(event) {
+		event.preventDefault();
+		$("html").toggleClass('nav-open');
+	});
+
+	$(".menu-close").click(function(event) {
+		event.preventDefault();
+		$("html").removeClass('nav-open');
+	});
+
+	// menu mobile collapse
+	$(".nav-mobile .collapse").click(function(event) {
+		event.preventDefault();
+		$(this).parent().find('> .sub-menu').slideToggle();
+	});
 });
 
 // show pass
