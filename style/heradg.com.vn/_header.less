@@ -301,7 +301,7 @@ header {
 			margin: 0;
 			border-width: 0;
 			position: relative;
-			
+
 			.title {
 				width: calc(~"100% - 20px");
 				font-size: 16px;
@@ -375,7 +375,7 @@ header {
 							justify-content: space-between;
 						}
 
-						.group-qty  {
+						.group-qty {
 
 							.label {
 								margin-right: 12px;
@@ -387,7 +387,7 @@ header {
 						.quantity-nav {
 							display: inline-block;
 
-							.quantity-button{
+							.quantity-button {
 								border-width: 0;
 								padding: 0;
 								background-color: transparent;
@@ -400,7 +400,7 @@ header {
 								}
 							}
 
-							.number  {
+							.number {
 								border-width: 0;
 								width: 25px;
 								display: inline-block;
@@ -537,10 +537,11 @@ header {
 
 	.menu-top {
 		.navbar-nav {
-			.nav-item {
+			>.nav-item{
 				margin-bottom: -21px;
 				padding-bottom: 21px;
-
+			}
+			.nav-item {
 				.nav-link {
 					font-size: 14px;
 					text-transform: uppercase;
@@ -607,11 +608,16 @@ header {
 									display: block;
 								}
 
-								.menu-items {
-									.menu-item {
+								.mega-items {
+									.mega-item {
 										font-size: 13px;
 										line-height: 16px;
 										text-transform: uppercase;
+										margin-bottom: 13px;
+
+										&:last-child{
+											margin-bottom: 0;
+										}
 									}
 								}
 
@@ -690,24 +696,7 @@ header {
 								}
 							}
 
-							.slick-prev {
-								width: 43px;
-								height: 115px;
-								background-color: rgba(255, 255, 255, 0.7);
-								opacity: 1;
-								visibility: visible;
-								z-index: 1;
-								left: -22px;
-
-								&:before {
-									color: #242424;
-									opacity: 1;
-									font-family: Fontawesome;
-									font-size: 30px;
-									content: "\f104";
-								}
-							}
-
+							.slick-prev,
 							.slick-next {
 								width: 43px;
 								height: 115px;
@@ -715,26 +704,36 @@ header {
 								opacity: 1;
 								visibility: visible;
 								z-index: 1;
-								right: -22px;
+								border-width: 0;
+								border-radius: 0;
 
 								&:before {
 									color: #242424;
 									opacity: 1;
 									font-family: Fontawesome;
 									font-size: 30px;
+								}
+
+								&.slick-disabled {
+									&:before {
+										opacity: 0.25;
+									}
+								}
+							}
+
+							.slick-prev {
+								left: -22px;
+
+								&:before {
+									content: "\f104";
+								}
+							}
+
+							.slick-next {
+								right: -22px;
+
+								&:before {
 									content: "\f105";
-								}
-							}
-
-							.slick-prev.slick-disabled {
-								&:before {
-									opacity: 0.25;
-								}
-							}
-
-							.slick-next.slick-disabled {
-								&:before {
-									opacity: 0.25;
 								}
 							}
 						}
@@ -746,6 +745,40 @@ header {
 							opacity: 1;
 							visibility: visible;
 							pointer-events: unset;
+						}
+					}
+				}
+
+				&.dropdown {
+					position: relative;
+
+					.dropdown-menu {
+						position: absolute;
+						top: calc(~"100% + 10px");
+						left: 0;
+						display: block;
+						border-width: 0;
+						border-radius: 0;
+						box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+						transition: all .3s ease;
+						opacity: 0;
+						visibility: hidden;
+
+						.dropdown-item{
+							font-size: 14px;
+							
+							&:hover{
+								background-color: transparent;
+								color: #999999
+							}
+						}
+					}
+
+					&:hover {
+						.dropdown-menu {
+							opacity: 1;
+							visibility: visible;
+							top: 100%;
 						}
 					}
 				}
@@ -1142,12 +1175,19 @@ header {
 			}
 		}
 
+		.nav-mobile-content {
+			overflow-y: auto;
+			max-height: calc(~"100% - 44px");
+		}
+
 		.nav-item {
 			position: relative;
+			padding-left: 15px;
 		}
 
 		.nav-link {
 			text-transform: capitalize;
+			padding: 10px 0;
 
 			&.active {
 				font-weight: 600;
@@ -1168,6 +1208,10 @@ header {
 
 		.sub-menu {
 			display: none;
+
+			&.active {
+				display: block;
+			}
 		}
 	}
 
@@ -1279,12 +1323,12 @@ header {
 			}
 		}
 
-		.toggle-content{
+		.toggle-content {
 			left: 0;
 			width: calc(~"100% - 30px");
 			margin: 0 auto;
 
-			&.visible{
+			&.visible {
 				top: 100%;
 			}
 		}
@@ -1292,8 +1336,8 @@ header {
 
 	.minicart {
 		.minicart-content {
-			.modal-header{
-				.btn-close{
+			.modal-header {
+				.btn-close {
 					right: 0;
 					top: 0;
 					transform: translateY(0);
@@ -1303,14 +1347,14 @@ header {
 			.modal-content {
 				.product-list {
 					.product-wrapper {
-						.product-img-wrapper{
+						.product-img-wrapper {
 							max-width: 90px;
 						}
 
-						.product-detail-wrapper{
+						.product-detail-wrapper {
 							padding-left: 15px;
 
-							.product-actions{
+							.product-actions {
 								margin-top: 20px;
 							}
 						}
