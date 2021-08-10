@@ -589,7 +589,7 @@ header {
 }
 .navbar .menu-top .navbar-nav .nav-item.mega .content-mega {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   background-color: white;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
@@ -601,6 +601,8 @@ header {
   pointer-events: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  height: 0;
+  overflow: hidden;
 }
 .navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-menu {
   -webkit-box-flex: 1;
@@ -735,7 +737,7 @@ header {
   content: "\f105";
 }
 .navbar .menu-top .navbar-nav .nav-item.mega:hover .content-mega {
-  top: 100%;
+  height: auto;
   opacity: 1;
   visibility: visible;
   pointer-events: unset;
@@ -745,17 +747,21 @@ header {
 }
 .navbar .menu-top .navbar-nav .nav-item.dropdown .dropdown-menu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% - 2px);
   left: 0;
   display: block;
   border-width: 0;
   border-radius: 0;
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  padding: 0;
 }
 .navbar .menu-top .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
   font-size: 14px;
@@ -767,7 +773,9 @@ header {
 .navbar .menu-top .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  top: 100%;
+  height: auto;
+  pointer-events: unset;
+  padding: 10px 0;
 }
 .navbar .nav-mobile {
   position: fixed;
