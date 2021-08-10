@@ -72,6 +72,11 @@
       -ms-user-select: none;
           user-select: none;
 }
+*:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
 body,
 html {
   font-family: 'Inter', sans-serif;
@@ -83,6 +88,7 @@ a {
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  text-decoration: none;
 }
 button:focus,
 a:focus,
@@ -91,11 +97,6 @@ a:hover {
   text-decoration: none;
   outline: none;
   border: none;
-}
-*:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
 }
 p,
 h1,
@@ -338,7 +339,7 @@ header {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #C31D1D;
+  background-color: #242424;
   color: white;
   font-size: 12px;
   line-height: 20px;
