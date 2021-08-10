@@ -1,4 +1,6 @@
 @import '../config/_config';
+@import '../heradg.com.vn/_header';
+@import '../heradg.com.vn/_footer';
 
 .checkout-page {
 	.field {
@@ -7,6 +9,13 @@
 		padding: 15px 0px;
 		height: 55px;
 		line-height: 25px;
+		transition: all 0.3s ease-in;
+
+		&:focus,
+		&:hover,
+		&:active {
+			border-bottom: 1px @base_color solid;
+		}
 	}
 }
 
@@ -318,9 +327,13 @@
 		margin: 0;
 		justify-content: space-between;
 
+		&.row {
+			margin: 0 -6px;
+		}
+
 		[class*="col-"] {
-			padding-left: 0;
-			padding-right: 0;
+			padding-left: 6px;
+			padding-right: 6px;
 			display: inline-block;
 		}
 
@@ -340,6 +353,7 @@
 		}
 
 		.field {
+			width: 100%;
 			margin-bottom: 25px;
 			font-style: normal;
 			font-weight: normal;
@@ -387,6 +401,11 @@
 			padding: 20px;
 			border: 1px #EFEFEF solid;
 			margin-top: 15px;
+			transition: all 0.3s ease-in;
+
+			&:hover {
+				border: 1px @base_color solid;
+			}
 	
 			label {
 				margin-bottom: 0;
@@ -577,19 +596,23 @@
 		th {
 			height: 40px;
 			background: #F7F7F7;
-			border: .5px solid #E9E9EC;
+			border: .5px solid #E9E9EC !important;
 			box-sizing: border-box;
 			font-style: normal;
 			font-weight: 600;
 			font-size: 14px;
 			line-height: 29px;
 			color: @base_color;
+
+			b {
+				font-weight: 600;
+			}
 		}
 
 		td {
 			height: 40px;
 			background: #FFFFFF;
-			border: .5px solid #E9E9EC;
+			border: .5px solid #E9E9EC !important;
 			box-sizing: border-box;
 			font-style: normal;
 			font-weight: normal;
@@ -605,7 +628,7 @@
 
 		th {
 			height: 40px;
-			border: .5px solid #E9E9EC;
+			border: .5px solid #E9E9EC !important;
 			box-sizing: border-box;
 			font-style: normal;
 			font-weight: normal;
@@ -616,7 +639,7 @@
 
 		td {
 			height: 40px;
-			border: .5px solid #E9E9EC;
+			border: .5px solid #E9E9EC !important;
 			box-sizing: border-box;
 			font-style: normal;
 			font-weight: normal;
@@ -630,10 +653,20 @@
 			tr {
 				&:nth-of-type(odd) {
 					background: #FFFFFF;
+
+					> * {
+						background: #FFFFFF;
+						box-shadow: none;
+					}
 				}
 
 				&:nth-child(2n) {
 					background: #F7F7F7;
+					
+					> * {
+						background: #F7F7F7;
+						box-shadow: none;
+					}
 				}
 			}
 		}
@@ -679,6 +712,10 @@
 			}
 		}
 	}
+}
+
+section.checkout {
+	margin-bottom: 55px;
 }
 
 @media only screen and (max-width: 1200px) {

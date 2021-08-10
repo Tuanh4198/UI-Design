@@ -51,9 +51,6 @@ jQuery(document).ready(function($) {
         $('.dropdown .show-option').click(function(event) {
             event.preventDefault();
             $(this).parent().find('.fretboard').slideToggle();
-            ($(this).parent().find('.show').text() == '-') ?
-            ($(this).parent().find('.show').removeClass('active').text('+')) :
-            ($(this).parent().find('.show').addClass('active').text('-'))
         });
     });
     // end Effect accordion
@@ -75,14 +72,64 @@ jQuery(document).ready(function($) {
     })($);
     // end Effect drop down
 
-    // tabs
-    $(function() {
-        $(".magic-tabs  ul li").on('click', function() {
-            var container_tab = $(this).closest('.cover-tab');
-            container_tab.find('.tab-content .content').removeClass('active-tab-content');
-            $(this).siblings().removeClass("action-tab-btn");
-            $(this).addClass('action-tab-btn');
-            container_tab.find('.tab-content .content').eq($(this).index()).addClass('active-tab-content');
+    // animation convert content page shipping policy
+    $(document).ready(function() {
+        let text_a = "Chính sách thanh toán";
+        let text_b = "Chính sách vận chuyển";
+        let text_c = "Chính sách đổi trả";
+        let text_d = "Chính sách bảo mật";
+        let text_e = "Hướng dẫn chọn size";
+        let path = $(".page-policy").find("#box-content");
+        $(".page-policy").find("#box-content").load("policy-payment.html");
+        $(".page-policy").on('click', '.toolbar-policy .item', function(e) {
+            e.preventDefault();
+            $(".page-policy").find(".toolbar-policy .item").removeClass("active");
+            $(this).toggleClass("active");
+            let textpc = $(this).attr('alt');
+            switch (textpc) {
+                case text_a:
+                    path.load("policy-payment.html");
+                    break;
+                case text_b:
+                    path.load("policy-shipping.html");
+                    break;
+                case text_c:
+                    path.load("policy-payment.html");
+                    break;
+                case text_d:
+                    path.load("policy-payment.html");
+                    break;
+                case text_e:
+                    path.load("policy-payment.html");
+                    break;
+                default:
+                    path.load("policy-payment.html");
+                    break;
+            }
+        })
+
+        $('#policy').change(function() {
+            let text = $('#policy').val();
+            switch (text) {
+                case text_a:
+                    path.load("policy-payment.html");
+                    break;
+                case text_b:
+                    path.load("policy-shipping.html");
+                    break;
+                case text_c:
+                    path.load("policy-payment.html");
+                    break;
+                case text_d:
+                    path.load("policy-payment.html");
+                    break;
+                case text_e:
+                    path.load("policy-payment.html");
+                    break;
+                default:
+                    path.load("policy-payment.html");
+                    break;
+            }
         });
     });
     // end tabs
@@ -116,62 +163,154 @@ jQuery(document).ready(function($) {
                 }
                 spinner.find("input").val(newVal);
                 spinner.find("input").trigger("change");
-                console.log(newVal)
             });
+		});
+	});
+    //end
+
+    // action convert account 
+    $(document).ready(function() {
+        let text_a = "THÔNG TIN TÀI KHOẢN";
+        let text_b = "THEO DÕI ĐƠN HÀNG";
+        let text_c = "SẢN PHẨM YÊU THÍCH";
+        let text_d = "GỬI GÓP Ý";
+        let path = $(".page-account").find("#box-content");
+        $(".page-account").find("#box-content").load("info-account.html");
+        $(".page-account").on('click', '.menu-account .item', function(e) {
+            e.preventDefault();
+            $(".page-account").find(".menu-account .item").removeClass("active");
+            $(this).toggleClass("active");
+            let textpc = $(this).attr('alt');
+            switch (textpc) {
+                case text_a:
+                    path.load("info-account.html");
+                    break;
+                case text_b:
+                    path.load("order-tracking-list.html");
+                    break;
+                case text_c:
+                    path.load("my-wishlist.html");
+                    break;
+                case text_d:
+                    path.load("send-comment.html");
+                    break;
+                default:
+                    path.load("info-account.html");
+                    break;
+            }
+        })
+        $('#account').change(function() {
+            let text = $('#account').val();
+            switch (text) {
+                case text_a:
+                    path.load("info-account.html");
+                    break;
+                case text_b:
+                    path.load("order-tracking-list.html");
+                    break;
+                case text_c:
+                    path.load("my-wishlist.html");
+                    break;
+                case text_d:
+                    path.load("send-comment.html");
+                    break;
+                default:
+                    path.load("info-account.html");
+                    break;
+            }
         });
-    })($);
-    // end spinner quantity
-
-    // toggle button
-    $(".toggle-tab").click(function(event) {
-        event.preventDefault();
-        $(this).parent().toggleClass('toggle-visible');
-        $(this).parent().find('.toggle-content').toggleClass('visible');
     });
 
-    // close button 
-    $(".btn-close").click(function(event) {
-        event.preventDefault();
-        $(this).parents('.popup').toggleClass('visible');
-    });
+    // load popup
+    $(document).ready(function() {
+		$(".modals-wrapper.modals-popups").load("popup-signin.html");
+		// $(".modals-wrapper.modals-popups").load("reset-password.html");
+		// $(".modals-wrapper.modals-popups").load("inform-change-password.html");
+		// $(".modals-wrapper.modals-popups").load("registration.html");
+		// $(".modals-wrapper.modals-popups").load("account-verification.html");
+	})
+	//end
 
-    // minicart
-    $(".minicart .showcart ").click(function(event) {
-        event.preventDefault();
-        $(this).parent().toggleClass('active');
-        $(this).parent().find('.minicart-content').toggleClass('visible');
-        $("html").toggleClass('open-minicart');
-    });
+    //toggle popup
+    $(document).ready(function() {
+		$(".modals-wrapper").on('click', '.action-close', function(e) {
+			$(".modals-wrapper").find(".modal-popup").removeClass("_show");
+		})
+	})
+	//end
 
-    $(".minicart .btn-close").click(function(event) {
-        event.preventDefault();
-        $(this).parents('.minicart').toggleClass('active');
-        $("html").toggleClass('open-minicart');
-    });
+	// toggle button
+	$(".toggle-tab").click(function(event) {
+		event.preventDefault();
+		$(this).parent().toggleClass('toggle-visible');
+		$(this).parent().find('.toggle-content').toggleClass('visible');
+	});
 
-    // footer mobile
-    $(function() {
-        $('.collapsible .collapsible-tab').click(function(event) {
-            event.preventDefault();
-            $(this).parents('.collapsible').toggleClass('active');
-            $(this).parents('.collapsible').find('.collapsible-content').slideToggle();
-        });
-    });
+	// close button 
+	$(".btn-close").click(function(event) {
+		event.preventDefault();
+		$(this).parents('.popup').toggleClass('visible');
+	});
 
-    // nav-toggle
-    $(".nav-toggle").click(function(event) {
-        event.preventDefault();
-        $("html").toggleClass('nav-open');
-    });
+	// minicart
+	$(".minicart .showcart ").click(function(event) {
+		event.preventDefault();
+		$(this).parent().toggleClass('active');
+		$(this).parent().find('.minicart-content').toggleClass('visible');
+		$("html").toggleClass('open-minicart');
+	});
 
-    $(".menu-close").click(function(event) {
-        event.preventDefault();
-        $("html").removeClass('nav-open');
-    });
+	$(".minicart .btn-close").click(function(event) {
+		event.preventDefault();
+		$(this).parents('.minicart').toggleClass('active');
+		$("html").toggleClass('open-minicart');
+	});
 
-    // menu mobile collapse
-    $(".nav-mobile .collapse").click(function(event) {
-        event.preventDefault();
-        $(this).parent().find('> .sub-menu').slideToggle();
-    });
+	// footer mobile
+	$(function() {
+		$('.collapsible .collapsible-tab').click(function(event) {
+			event.preventDefault();
+			$(this).parents('.collapsible').toggleClass('active');
+			$(this).parents('.collapsible').find('.collapsible-content').slideToggle();
+		});
+	});
+
+	// nav-toggle
+	$(".nav-toggle").click(function(event) {
+		event.preventDefault();
+		$("html").toggleClass('nav-open');
+	});
+
+	$(".menu-close").click(function(event) {
+		event.preventDefault();
+		$("html").removeClass('nav-open');
+	});
+
+	// menu mobile collapse
+	$(".nav-mobile .collapse").click(function(event) {
+		event.preventDefault();
+		$(this).parent().find('> .sub-menu').slideToggle();
+	});
 });
+
+// show pass
+function showPass() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+// end
+
+// show pass
+function showPass2() {
+    var y = document.getElementById("pass2");
+    if (y.type === "password") {
+        y.type = "text";
+    } else {
+        y.type = "password";
+    }
+}
+// end
