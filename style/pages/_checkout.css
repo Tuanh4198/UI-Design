@@ -1508,6 +1508,12 @@ header {
   padding: 15px 0px;
   height: 55px;
   line-height: 25px;
+  transition: all 0.3s ease-in;
+}
+.checkout-page .field:focus,
+.checkout-page .field:hover,
+.checkout-page .field:active {
+  border-bottom: 1px #242424 solid;
 }
 .table {
   white-space: nowrap;
@@ -1769,9 +1775,12 @@ header {
   margin: 0;
   justify-content: space-between;
 }
+.cart-content-wrapper .info-usser.row {
+  margin: 0 -6px;
+}
 .cart-content-wrapper .info-usser [class*="col-"] {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 6px;
+  padding-right: 6px;
   display: inline-block;
 }
 .cart-content-wrapper .info-usser .col-6 {
@@ -1787,6 +1796,7 @@ header {
   max-width: calc((100% - 48px)/4);
 }
 .cart-content-wrapper .info-usser .field {
+  width: 100%;
   margin-bottom: 25px;
   font-style: normal;
   font-weight: normal;
@@ -1828,6 +1838,10 @@ header {
   padding: 20px;
   border: 1px #EFEFEF solid;
   margin-top: 15px;
+  transition: all 0.3s ease-in;
+}
+.cart-content-wrapper .info-usser .payment-method:hover {
+  border: 1px #242424 solid;
 }
 .cart-content-wrapper .info-usser .payment-method label {
   margin-bottom: 0;
@@ -1989,7 +2003,7 @@ header {
 .order-success-wrapper .table-product th {
   height: 40px;
   background: #F7F7F7;
-  border: 0.5px solid #E9E9EC;
+  border: 0.5px solid #E9E9EC !important;
   box-sizing: border-box;
   font-style: normal;
   font-weight: 600;
@@ -1997,10 +2011,13 @@ header {
   line-height: 29px;
   color: #242424;
 }
+.order-success-wrapper .table-product th b {
+  font-weight: 600;
+}
 .order-success-wrapper .table-product td {
   height: 40px;
   background: #FFFFFF;
-  border: 0.5px solid #E9E9EC;
+  border: 0.5px solid #E9E9EC !important;
   box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
@@ -2014,7 +2031,7 @@ header {
 }
 .order-success-wrapper .table-info-order th {
   height: 40px;
-  border: 0.5px solid #E9E9EC;
+  border: 0.5px solid #E9E9EC !important;
   box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
@@ -2024,7 +2041,7 @@ header {
 }
 .order-success-wrapper .table-info-order td {
   height: 40px;
-  border: 0.5px solid #E9E9EC;
+  border: 0.5px solid #E9E9EC !important;
   box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
@@ -2036,8 +2053,16 @@ header {
 .order-success-wrapper .table-info-order tbody tr:nth-of-type(odd) {
   background: #FFFFFF;
 }
+.order-success-wrapper .table-info-order tbody tr:nth-of-type(odd) > * {
+  background: #FFFFFF;
+  box-shadow: none;
+}
 .order-success-wrapper .table-info-order tbody tr:nth-child(2n) {
   background: #F7F7F7;
+}
+.order-success-wrapper .table-info-order tbody tr:nth-child(2n) > * {
+  background: #F7F7F7;
+  box-shadow: none;
 }
 .order-success-wrapper .customer-info-wrapper {
   margin-top: 40px;
