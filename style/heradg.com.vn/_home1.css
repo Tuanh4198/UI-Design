@@ -1,70 +1,4 @@
 @import '_header.css';
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-*:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-}
-body,
-html {
-  font-family: 'Inter', sans-serif;
-}
-button,
-a {
-  border: none;
-  transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  text-decoration: none;
-}
-button:focus,
-a:focus,
-button:hover,
-a:hover {
-  text-decoration: none;
-  outline: none;
-  border: none;
-}
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin-bottom: 0;
-}
-ul {
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-table th {
-  text-align: left;
-}
-table .col {
-  width: auto;
-}
-@media only screen and (min-width: 1600px) {
-  .container {
-    max-width: 1600px;
-    padding: 0 30px;
-  }
-}
 .hidden {
   display: none !important;
 }
@@ -131,7 +65,74 @@ table .col {
   opacity: 1;
   visibility: visible;
 }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+*:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+body,
+html {
+  font-family: 'Inter', sans-serif;
+}
+button,
+a {
+  border: none;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  text-decoration: none;
+}
+button:focus,
+a:focus,
+button:hover,
+a:hover {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+table th {
+  text-align: left;
+}
+table .col {
+  width: auto;
+}
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    padding: 0 30px;
+  }
+}
 .social-profile {
+  margin-top: 32px;
   text-align: center;
 }
 .social-profile .title {
@@ -167,8 +168,9 @@ table .col {
   letter-spacing: -0.02em;
 }
 .social-profile .social-link:hover {
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  background-color: #242424;
+  border-color: #242424;
+  color: white;
 }
 .footer-title {
   font-size: 16px;
