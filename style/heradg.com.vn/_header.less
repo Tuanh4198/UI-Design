@@ -761,6 +761,7 @@ header {
 						border-radius: 0;
 						-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 						box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+						background-color: white;
 						-webkit-transition: all 0.3s ease;
 						transition: all 0.3s ease;
 						opacity: 0;
@@ -934,6 +935,17 @@ header {
 
 		.header-bottom {
 			display: none;
+		}
+
+		.navbar {
+			.menu-top {
+				.navbar-nav {
+					> .nav-item{
+						padding-bottom: 10px;
+						margin-bottom: -10px;
+					}
+				}
+			}
 		}
 	}
 }
