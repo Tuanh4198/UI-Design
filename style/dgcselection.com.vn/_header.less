@@ -58,7 +58,7 @@ header {
     border-radius: 6px;
     border-color: #E8E8E8;
     padding: 0 12px;
-    max-width: 130px;
+    max-width: 250px;
 
     .btn {
         font-size: 0;
@@ -92,6 +92,7 @@ header {
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-right: 0;
+        background-color: transparent;
 
         &:focus {
             outline: none;
@@ -102,8 +103,42 @@ header {
 }
 
 .header-search {
+    position: relative;
+
     .title-search {
-        display: none;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        cursor: pointer;
+
+
+        &:before {
+            content: url(../../images/search.png);
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+
+    .form-search {
+        position: absolute;
+        top: calc(~"100% + 30px");
+        right: 0;
+        width: 250px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease;
+        background-color: white;
+
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+            top: calc(~"100% + 10px");
+        }
     }
 }
 
