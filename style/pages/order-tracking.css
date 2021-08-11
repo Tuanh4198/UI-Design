@@ -55,6 +55,9 @@ body .seciton-order-tracking .blog-bottom .form-order-tracking .field input {
 body .seciton-order-tracking .blog-bottom .form-order-tracking .field input:focus-visible {
   outline: none;
 }
+body .seciton-order-tracking .blog-bottom .form-order-tracking .field input:focus {
+  border-color: #242424;
+}
 body .seciton-order-tracking .blog-bottom .form-order-tracking .actions-toolbar {
   margin-top: 16px;
 }

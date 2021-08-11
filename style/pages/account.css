@@ -303,7 +303,7 @@ body.page-order-tracking .blog-bottom .form.form-send-comment .actions button {
 }
 body.page-account .blog-bottom .form.form-send-comment .actions button:hover,
 body.page-order-tracking .blog-bottom .form.form-send-comment .actions button:hover {
-  background-color: #555555;
+  background-color: #313131;
 }
 body.page-account .blog-bottom .actions,
 body.page-order-tracking .blog-bottom .actions {
@@ -358,7 +358,7 @@ body.page-order-tracking .blog-bottom .actions button.action-login {
 }
 body.page-account .blog-bottom .actions button.action-login:hover,
 body.page-order-tracking .blog-bottom .actions button.action-login:hover {
-  background: #555;
+  background: #313131;
 }
 body.page-account .blog-bottom .items,
 body.page-order-tracking .blog-bottom .items {
@@ -552,7 +552,7 @@ body.page-order-tracking .blog-bottom .items .item .actions .action {
 }
 body.page-account .blog-bottom .items .item .actions .action:hover,
 body.page-order-tracking .blog-bottom .items .item .actions .action:hover {
-  background-color: #555555;
+  background-color: #313131;
 }
 body.page-account .blog-bottom .items .item .actions .icon::before,
 body.page-order-tracking .blog-bottom .items .item .actions .icon::before {
