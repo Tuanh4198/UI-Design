@@ -1668,7 +1668,7 @@ p.desc {
   line-height: 30px;
 }
 .contact-us-block {
-  background-image: url(../../images/page/about_us/bg_1.jpg);
+  background-image: url(../../images/page/about_us/bg_1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1684,10 +1684,13 @@ p.desc {
   background-attachment: scroll;
   margin-bottom: 35px;
   background-position: center bottom;
-  background-image: url(../../images/page/about_us/bg_3.jpg);
+  background-image: url(../../images/page/about_us/bg_3.svg);
 }
 .contact-us-block.block-bottom .form-contact {
   background-color: transparent;
+}
+.contact-us-block.block-bottom img {
+  width: 100%;
 }
 .contact-us-block .breadcrumbs {
   font-style: normal;
@@ -1751,29 +1754,39 @@ p.desc {
 .contact-us-block .form-contact .field-group {
   position: relative;
   margin-bottom: 15px;
+  z-index: 0;
+  background-color: #fff;
 }
 .contact-us-block .form-contact .field-group label {
   position: absolute;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 37px;
+  line-height: 22px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 20px;
-  z-index: 1;
+  z-index: 0;
   margin: 0;
   padding: 0 5px;
   background-color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.contact-us-block .form-contact .field-group.active label,
+.contact-us-block .form-contact .field-group:focus label,
+.contact-us-block .form-contact .field-group:hover label,
+.contact-us-block .form-contact .field-group:active label {
+  top: 0;
+  z-index: 2;
+}
 .contact-us-block .form-contact .field {
   width: 100%;
   height: 56px;
   line-height: 56px;
-  background: #FFFFFF;
+  background: transparent;
+  z-index: 1;
   border: 1px solid #D8D8D8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1785,6 +1798,7 @@ p.desc {
   line-height: 37px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  position: relative;
 }
 .contact-us-block .form-contact .field.active,
 .contact-us-block .form-contact .field:focus,
@@ -1797,6 +1811,7 @@ p.desc {
 .contact-us-block .form-contact .field:hover + label,
 .contact-us-block .form-contact .field:active + label {
   top: 0;
+  z-index: 2;
 }
 .contact-us-block .form-contact .field::-webkit-input-placeholder {
   font-style: normal;
@@ -1846,7 +1861,7 @@ p.desc {
   background: #242424db;
 }
 .why-choose-us-block {
-  background-image: url(../../images/page/about_us/bg_2.jpg);
+  background-image: url(../../images/page/about_us/bg_2.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1979,6 +1994,18 @@ p.desc {
 .post-wrapper .img-post:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+.post-wrapper .content-post p {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  max-height: 100px;
+  overflow: hidden;
 }
 .post-wrapper h3.title {
   margin-top: 15px;
@@ -2128,5 +2155,62 @@ p.desc {
   section .container {
     max-width: 1140px;
     padding: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  h3.title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .contact-us-block .form-contact .title-form {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .category-tab .main-slide {
+    max-width: calc(100% - 100px);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact-us-block .form-contact {
+    padding: 15px;
+    margin-top: 30px;
+  }
+  .post-wrapper [class*="col-"] {
+    padding: 0 15px;
+  }
+  .post-wrapper .row {
+    margin: 0 -15px;
+  }
+  .category-tab .magic-tabs ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    padding-bottom: 10px;
+  }
+  .banner-exhibition .content-wrapper {
+    width: 106%;
+  }
+  .why-choose-us-block .commit-list li span {
+    font-size: 35px;
+  }
+  .banner-exhibition img {
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .why-choose-us-block .slogan-us {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .category-tab .thumbnail-slide {
+    max-width: 35px;
+  }
+  .category-tab .main-slide {
+    max-width: calc(100% - 50px);
+  }
+}
+@media only screen and (max-width: 575px) {
+  .post-wrapper [class*="col-"] {
+    margin-bottom: 30px;
   }
 }
