@@ -10,7 +10,7 @@ header {
     color: #242424;
 }
 
-.dropdown-toggle {
+.haschild-toggle {
     &::after {
         content: "\f107";
         font-family: FontAwesome;
@@ -259,7 +259,7 @@ header {
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: #242424;
+            background-color: #C31D1D;
             color: white;
             font-size: 12px;
             line-height: 20px;
@@ -544,10 +544,13 @@ header {
 
             .nav-item {
                 .nav-link {
+                    text-transform: unset;
                     color: #242424;
                     font-size: 15px;
                     font-weight: 500;
                     line-height: 18px;
+
+
                     &.active {
                         color: #C31D1D;
                     }
@@ -560,7 +563,7 @@ header {
                 &.mega {
                     .content-mega {
                         position: absolute;
-                        top: calc(100% + 10px);
+                        top: 100%;
                         background-color: white;
                         -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
                         box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
@@ -572,6 +575,8 @@ header {
                         pointer-events: none;
                         -webkit-transition: all 0.3s ease;
                         transition: all 0.3s ease;
+                        height: 0;
+                        overflow: hidden;
 
                         .mega-menu {
                             -webkit-box-flex: 1;
@@ -739,7 +744,7 @@ header {
 
                     &:hover {
                         .content-mega {
-                            top: 100%;
+                            height: auto;
                             opacity: 1;
                             visibility: visible;
                             pointer-events: unset;
@@ -752,15 +757,22 @@ header {
 
                     .dropdown-menu {
                         position: absolute;
-                        top: calc(~"100% + 10px");
+                        top: calc(~"100% - 2px");
                         left: 0;
                         display: block;
                         border-width: 0;
                         border-radius: 0;
-                        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-                        transition: all .3s ease;
+                        -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+                        background-color: white;
+                        -webkit-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
                         opacity: 0;
                         visibility: hidden;
+                        height: 0;
+                        overflow: hidden;
+                        pointer-events: none;
+                        padding: 0;
 
                         .dropdown-item {
                             font-size: 14px;
@@ -776,7 +788,9 @@ header {
                         .dropdown-menu {
                             opacity: 1;
                             visibility: visible;
-                            top: 100%;
+                            height: auto;
+                            pointer-events: unset;
+                            padding: 10px 0;
                         }
                     }
                 }
@@ -924,6 +938,17 @@ header {
 
         .header-bottom {
             display: none;
+        }
+
+        .navbar {
+            .menu-top {
+                .navbar-nav {
+                    >.nav-item {
+                        padding-bottom: 10px;
+                        margin-bottom: -10px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1403,3 +1428,5 @@ header {
 // 		}
 // 	}
 // }
+
+// @media screen and (max-width: (@screen__xs - 1)) {}
