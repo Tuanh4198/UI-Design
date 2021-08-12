@@ -303,7 +303,7 @@ body.page-order-tracking .blog-bottom .form.form-send-comment .actions button {
 }
 body.page-account .blog-bottom .form.form-send-comment .actions button:hover,
 body.page-order-tracking .blog-bottom .form.form-send-comment .actions button:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 body.page-account .blog-bottom .actions,
 body.page-order-tracking .blog-bottom .actions {
@@ -358,7 +358,7 @@ body.page-order-tracking .blog-bottom .actions button.action-login {
 }
 body.page-account .blog-bottom .actions button.action-login:hover,
 body.page-order-tracking .blog-bottom .actions button.action-login:hover {
-  background: #313131;
+  background: #505050;
 }
 body.page-account .blog-bottom .items,
 body.page-order-tracking .blog-bottom .items {
@@ -552,13 +552,12 @@ body.page-order-tracking .blog-bottom .items .item .actions .action {
 }
 body.page-account .blog-bottom .items .item .actions .action:hover,
 body.page-order-tracking .blog-bottom .items .item .actions .action:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
-body.page-account .blog-bottom .items .item .actions .icon::before,
-body.page-order-tracking .blog-bottom .items .item .actions .icon::before {
-  content: "\f291";
-  margin-right: 8px;
-  font-family: FontAwesome;
+body.page-account .blog-bottom .items .item .actions .action .icon,
+body.page-order-tracking .blog-bottom .items .item .actions .action .icon {
+  margin-right: 8.5px;
+  margin-bottom: 5px;
 }
 body.page-account .blog-bottom .list-cart,
 body.page-order-tracking .blog-bottom .list-cart {
