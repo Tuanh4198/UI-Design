@@ -294,7 +294,7 @@ header {
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: #C31D1D;
+            background-color: #242424;
             color: white;
             font-size: 12px;
             line-height: 20px;
@@ -990,17 +990,46 @@ header {
 }
 
 .viewed-products {
-    width: 100%;
-    max-width: 380px;
-    position: fixed;
-    top: 25vh;
-    right: 0;
-    transform: translateX(100%);
-    border-radius: 5px 0 0 5px;
-    background-color: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    transition: all .5s ease;
-    z-index: 10;
+    .viewed-product-tab {
+        position: fixed;
+        top: 40vh;
+        right: -71px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 16px;
+        padding: 8px 18px;
+        background-color: #242424;
+        color: white;
+        transform: rotate(-90deg);
+        border-width: 0;
+        transition: all .3s ease;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+
+        &:before{
+            display: none;
+        }
+
+        &:hover {
+            background-color: #313131;
+        }
+    }
+
+    .viewed-products-content  {
+        width: 100%;
+        max-width: 380px;
+        position: fixed;
+        top: 25vh;
+        right: 0;
+        transform: translateX(100%);
+        border-radius: 5px 0 0 5px;
+        background-color: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: all .5s ease;
+        z-index: 10;
+    }
 
 
     .view-product-header {
@@ -1103,7 +1132,13 @@ header {
     }
 
     &.visible {
-        transform: translateX(0);
+        .viewed-product-tab{
+            right: -120px;
+        }
+
+        .viewed-products-content{
+            transform: translateX(0);
+        }
     }
 }
 

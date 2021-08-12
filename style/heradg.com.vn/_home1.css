@@ -210,6 +210,7 @@ header {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-right: 0;
+  background-color: transparent;
 }
 .form-search input:focus {
   outline: none;
@@ -899,7 +900,32 @@ header {
   padding-bottom: 10px;
   margin-bottom: -10px;
 }
-.viewed-products {
+.viewed-products .viewed-product-tab {
+  position: fixed;
+  top: 25vh;
+  right: -71px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 8px 18px;
+  background-color: #242424;
+  color: white;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-width: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}
+.viewed-products .viewed-product-tab:before {
+  display: none;
+}
+.viewed-products .viewed-product-tab:hover {
+  background-color: #313131;
+}
+.viewed-products .viewed-products-content {
   width: 100%;
   max-width: 380px;
   position: fixed;
@@ -996,7 +1022,10 @@ header {
 .viewed-products .view-product-action .add-all:hover {
   background-color: #313131;
 }
-.viewed-products.visible {
+.viewed-products.visible .viewed-product-tab {
+  right: -120px;
+}
+.viewed-products.visible .viewed-products-content {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
