@@ -10,7 +10,7 @@ header {
     color: #242424;
 }
 
-.dropdown-toggle {
+.haschild-toggle {
     &::after {
         content: "\f107";
         font-family: FontAwesome;
@@ -58,7 +58,7 @@ header {
     border-radius: 6px;
     border-color: #E8E8E8;
     padding: 0 12px;
-    max-width: 130px;
+    max-width: 250px;
 
     .btn {
         font-size: 0;
@@ -92,6 +92,7 @@ header {
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-right: 0;
+        background-color: transparent;
 
         &:focus {
             outline: none;
@@ -102,8 +103,42 @@ header {
 }
 
 .header-search {
+    position: relative;
+
     .title-search {
-        display: none;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        cursor: pointer;
+
+
+        &:before {
+            content: url(../../images/search.png);
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+
+    .form-search {
+        position: absolute;
+        top: calc(~"100% + 30px");
+        right: 0;
+        width: 250px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease;
+        background-color: white;
+
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+            top: calc(~"100% + 10px");
+        }
     }
 }
 
@@ -544,10 +579,13 @@ header {
 
             .nav-item {
                 .nav-link {
+                    text-transform: unset;
                     color: #242424;
                     font-size: 15px;
                     font-weight: 500;
                     line-height: 18px;
+
+
                     &.active {
                         color: #C31D1D;
                     }
@@ -560,11 +598,11 @@ header {
                 &.mega {
                     .content-mega {
                         position: absolute;
-                        top: calc(100% + 10px);
+                        top: 100%;
                         background-color: white;
                         -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
                         box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-                        z-index: 1;
+                        z-index: 10;
                         left: 0;
                         right: 0;
                         opacity: 0;
@@ -572,6 +610,8 @@ header {
                         pointer-events: none;
                         -webkit-transition: all 0.3s ease;
                         transition: all 0.3s ease;
+                        height: 0;
+                        overflow: hidden;
 
                         .mega-menu {
                             -webkit-box-flex: 1;
@@ -739,7 +779,7 @@ header {
 
                     &:hover {
                         .content-mega {
-                            top: 100%;
+                            height: auto;
                             opacity: 1;
                             visibility: visible;
                             pointer-events: unset;
@@ -752,15 +792,23 @@ header {
 
                     .dropdown-menu {
                         position: absolute;
-                        top: calc(~"100% + 10px");
+                        top: calc(~"100% - 2px");
                         left: 0;
                         display: block;
                         border-width: 0;
                         border-radius: 0;
-                        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-                        transition: all .3s ease;
+                        -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+                        background-color: white;
+                        -webkit-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
                         opacity: 0;
                         visibility: hidden;
+                        height: 0;
+                        overflow: hidden;
+                        pointer-events: none;
+                        padding: 0;
+                        z-index: 10;
 
                         .dropdown-item {
                             font-size: 14px;
@@ -776,7 +824,9 @@ header {
                         .dropdown-menu {
                             opacity: 1;
                             visibility: visible;
-                            top: 100%;
+                            height: auto;
+                            pointer-events: unset;
+                            padding: 10px 0;
                         }
                     }
                 }
@@ -925,21 +975,61 @@ header {
         .header-bottom {
             display: none;
         }
+
+        .navbar {
+            .menu-top {
+                .navbar-nav {
+                    >.nav-item {
+                        padding-bottom: 10px;
+                        margin-bottom: -10px;
+                    }
+                }
+            }
+        }
     }
 }
 
 .viewed-products {
-    width: 100%;
-    max-width: 380px;
-    position: fixed;
-    top: 25vh;
-    right: 0;
-    transform: translateX(100%);
-    border-radius: 5px 0 0 5px;
-    background-color: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    transition: all .5s ease;
-    z-index: 10;
+    .viewed-product-tab {
+        position: fixed;
+        top: 40vh;
+        right: -71px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 16px;
+        padding: 8px 18px;
+        background-color: #242424;
+        color: white;
+        transform: rotate(-90deg);
+        border-width: 0;
+        transition: all .3s ease;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+
+        &:before{
+            display: none;
+        }
+
+        &:hover {
+            background-color: #313131;
+        }
+    }
+
+    .viewed-products-content  {
+        width: 100%;
+        max-width: 380px;
+        position: fixed;
+        top: 25vh;
+        right: 0;
+        transform: translateX(100%);
+        border-radius: 5px 0 0 5px;
+        background-color: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: all .5s ease;
+        z-index: 10;
+    }
 
 
     .view-product-header {
@@ -1042,7 +1132,13 @@ header {
     }
 
     &.visible {
-        transform: translateX(0);
+        .viewed-product-tab{
+            right: -120px;
+        }
+
+        .viewed-products-content{
+            transform: translateX(0);
+        }
     }
 }
 
@@ -1403,3 +1499,5 @@ header {
 // 		}
 // 	}
 // }
+
+// @media screen and (max-width: (@screen__xs - 1)) {}
