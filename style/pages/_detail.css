@@ -2996,6 +2996,12 @@ header {
 .footer .subscribe {
   margin-top: 24px;
 }
+.footer .subscribe .title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  text-transform: unset;
+}
 .footer .subscribe .sub-title {
   font-size: 14px;
   font-weight: 400;
@@ -3085,7 +3091,7 @@ header {
   border-color: #F5F6F8;
 }
 .footer-bottom {
-  padding: 24px 0;
+  padding: 24px 32px;
   border-width: 1px 0 0;
   border-style: solid;
   border-color: #F5F6F8;
