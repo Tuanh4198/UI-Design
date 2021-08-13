@@ -1965,6 +1965,42 @@ header {
   align-items: center;
   color: #242424;
 }
+.checkout-page .cart-content-wrapper .info-usser .drop-down-field {
+  position: relative;
+}
+.checkout-page .cart-content-wrapper .info-usser .drop-down-field .field:hover + .list-option {
+  opacity: 1;
+  visibility: visible;
+}
+.checkout-page .cart-content-wrapper .info-usser .drop-down-field:hover .list-option {
+  opacity: 1;
+  visibility: visible;
+}
+.checkout-page .cart-content-wrapper .info-usser .drop-down-field .list-option {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+}
+.checkout-page .cart-content-wrapper .info-usser .drop-down-field .list-option li {
+  font-size: 14px;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  padding: 0 15px;
+  color: #242424;
+}
+.checkout-page .cart-content-wrapper .info-usser .drop-down-field .list-option li:hover {
+  background-color: #242424;
+  color: white;
+}
 .checkout-page .cart-content-wrapper .btn-submit {
   height: 56px;
   line-height: 56px;

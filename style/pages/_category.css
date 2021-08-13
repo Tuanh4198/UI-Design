@@ -1739,9 +1739,9 @@ header {
   opacity: 0;
 }
 .product-wrapper:hover .product-img-second {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+  opacity: 1 !important;
 }
 .product-wrapper .product-name {
   font-style: normal;

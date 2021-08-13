@@ -378,6 +378,54 @@
 					color: @base_color;
 				}
 			}
+
+			.drop-down-field {
+				position: relative;
+
+				.field {
+					&:hover {
+						+ .list-option {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+
+				&:hover {
+					.list-option {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+
+				.list-option {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					background-color: white;
+					z-index: 1;
+					opacity: 0;
+					visibility: hidden;
+					padding: 10px 0;
+
+					li {
+						font-size: 14px;
+						height: 30px;
+						width: 100%;
+						line-height: 30px;
+						padding: 0 15px;
+						color: @base_color;
+
+						&:hover {
+							background-color: @base_color;
+							color: white;
+						}
+					}
+				}
+			}
 		}
 	
 		.btn-submit {
