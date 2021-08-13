@@ -1318,7 +1318,7 @@ table .col {
   margin-top: 20px;
 }
 .cart-content-wrapper .btn-submit:hover {
-  background: #505050;
+  background: #313131;
   border: none;
 }
 .cart-content-wrapper .info-usser .payment-method {
@@ -1496,7 +1496,7 @@ table .col {
   border: none;
 }
 .order-success-wrapper .order-success-header .btn-see-more:hover {
-  background: #505050;
+  background: #313131;
   border: none;
 }
 .order-success-wrapper .table-product {
