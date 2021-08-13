@@ -1,7 +1,14 @@
 @import '../config/_config.less';
 @import './_header.less';
 @import './_footer.less';
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    min-width: 0;
+    min-height: 0;
 
+}
 html {
     overflow-x: hidden;
 }
@@ -95,6 +102,62 @@ button {
 }
 .slider-home {
     margin-bottom: 75px;
+    &.slick-slider {
+        .slick-prev,
+        .slick-next {
+            background: #FFFFFF;
+            opacity: 0;
+            visibility: hidden;
+            &:hover,
+            &:focus {
+                &:before {
+                    color: @base_color;
+                }
+            }
+
+        }
+        &:hover {
+            .slick-prev,
+            .slick-next {
+                opacity: 0.5;
+                visibility: visible;
+            }
+            .slick-prev {
+                left: 24px;
+            }
+            .slick-next {
+                right: 24px;
+            }
+        }
+        .slick-dots {
+            bottom: 22px;
+            li {
+                width: 90px;
+                height: 3px;
+                button {
+                    width: 90px;
+                    height: 3px;
+                    &:before {
+                        width: 90px;
+                        height: 3px;
+                        border-radius: 0;
+                        background: rgba(255, 255, 255, 0.5);
+                        border-color: rgba(255, 255, 255, 0.5);    
+                    }
+                }
+                &.slick-active {
+                    button {
+                        &:before {
+                            background: rgba(255, 255, 255);
+                            border-color: rgba(255, 255, 255);    
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
     .slick-slide {
         .item {
             
@@ -455,6 +518,9 @@ button {
 .colorful-life,
 .colorful-life-product {
     max-width: 1440px;
+    max-width: 1470px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -579,6 +645,9 @@ button {
     }
     .event-product-categories-main {
         max-width: 1440px;
+        max-width: 1470px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -756,8 +825,11 @@ button {
     padding-bottom: 129px;
 
     .news-blog-main {
-        max-width: 1440px;
+        
         max-width: 1336px;
+        max-width: 1366px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
         >.row {
@@ -897,6 +969,7 @@ button {
 }
 .hera-charity {
     padding-top: 68px;
+    padding-bottom: 70px;
     .hera-charity-content {
         // max-width: 1600px;
         margin-left: auto;
@@ -1005,6 +1078,989 @@ button {
                 }
             }
 
+        }
+    }
+
+}
+.hera-service {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    .hera-service-content {
+        max-width: 1230px;
+        max-width: 1260px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        .subtitle {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: @base_color;
+            span {
+                text-transform: uppercase;
+                color: #d01313;
+            }
+        }
+        .title {
+            font-family: EB Garamond;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 63px;
+            text-align: center;
+            letter-spacing: -0.01em;
+            color: @base_color;
+            margin-bottom: 30px;
+            span {
+                color: #d01313;
+            }
+        }
+        .pharse {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: @base_color;
+        }
+    }
+    .col-item-service {
+        margin-bottom: 16px;
+    }
+    .item-service {
+        position: relative;
+        border: 1px solid #F3F3F3;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        min-height: 222px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+        .image {
+            margin-bottom: 21px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 12px;
+            background-color: #F2F2F2;
+        }
+        &:hover {
+            border-color: @base_color;
+            &:after {
+                background-color: @base_color;
+            }
+        }
+        &:hover {
+            .pharse {
+                span {
+                    border-bottom: 1px solid @base_color;
+                }
+            }
+        }
+    }
+
+}
+.autoplay {
+    > .item {
+        display: none !important;
+    }
+}
+.testimonial {
+    background-image: url("../../images/homeheradg/bg-testimonial.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 74px;
+    padding-bottom: 66px;
+    .slick-slider {
+        margin-left: -66px;
+        margin-right: -66px;
+    }
+    .slick-list {
+        padding-left: 230px;
+        padding-right: 230px;
+        .testimonial-item {
+            padding-left: 66px;
+            padding-right: 66px;
+            text-align: center;
+            .pharse {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                
+                color: #b8b6b4;
+                margin-bottom: 11px;
+            }
+            .title {
+                font-family: EB Garamond;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 52px;
+                text-align: center;
+                letter-spacing: -0.01em;
+                color: #b8b6b4;
+                margin-bottom: 43px;
+            }
+            .testimonial-review {
+                margin-bottom: 13px;
+                .fa {
+                    color: #F08643;
+                    font-size: 12px;
+                }
+            }
+            .author-info {
+                .author {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    color: #b8b6b4;
+                    padding-right: 12px;
+                    margin-right: 8px;
+                    display: inline-block;
+                    position: relative;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 16px;
+                        border-right: 1px solid #cfcfcf;
+                        top: calc(~"50% - 8px");
+                        right: 0;
+                    }
+                }
+                .text {
+                    
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #999999;
+                }
+            }
+        }
+        .slick-slide {
+            &.slick-active {
+                .testimonial-item {
+                    .pharse {
+                        color: @base_color;
+                    }
+                    .title {
+                        color: @base_color;
+                    }
+                    .author-info {
+                        .author {
+                            color: @base_color;    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.autoplay {
+    >.item {
+        &.product-wrapper,
+        &.event-wrapper {
+            display: none !important;
+        }
+    }
+    >.testimonial-item {
+        display: none;
+    }
+}
+.product-recommended {
+    background-image: url("../../images/homeheradg/bg-recommended.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .product-recommended-content {
+        max-width: 1440px;
+        max-width: 1470px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .product-recommended-primary {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .block-left-recommended {
+            width: 25%;
+            width: 33.2%;
+            padding-right: 55px;
+            .brand {
+                margin-bottom: 15px;
+            }
+            >.title {
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 36px;
+                color: #ffffff;
+                margin-bottom: 8px;
+            }
+            .pharse {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: #ffffff;
+                margin-bottom: 25px;
+            }
+            .btn-sugest {
+                a {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: @base_color;
+                    background-color: #ffffff;
+                    display: inline-block;
+                    min-width: 236px;
+                    padding: 11px 18px;
+
+                }
+            }
+        }
+        .block-right-recommended {
+            width: 75%;
+            width: 66.8%;
+            .autoplay {
+                > .item {
+                    display: none !important;
+                }
+            }
+            .product-items {
+                margin-left: -12px;
+                margin-right: -12px;
+                .slick-slide {
+                    .product-wrapper {
+                        display: block !important;
+                    }
+                }
+                .product-wrapper {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    margin-bottom: 0;
+                    
+                    .product-wrapper-info {
+                        position: relative;
+                        border-radius: 4px;
+                        overflow: hidden;
+                    }
+                    .product-img-wrapper {
+                        margin-bottom: 0;
+                        img {
+                            border-radius: 4px;
+                        }
+                    }
+                    .product-detail-wrapper {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(180deg, #262626 0%, #171717 100%);
+                        opacity: 0.76;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        .product-name {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #ffffff;
+                            margin-bottom: 2px;
+                            margin-top: 11px;
+                        }
+                        .product-price-wrapper {
+                            margin-bottom: 13px;
+                        }
+                        .new-price {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #A09F9F;
+                        }
+                    }
+                }
+            }
+            .slick-next,
+            .slick-prev {
+                display: none !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1470px) {
+    .hera-charity {
+        .hera-charity-primary {
+            .hera-charity-info {
+                padding-left: 95px;
+
+            }
+        }
+    }
+    .lookbook-slogan {
+        .container-slogan {
+            .slogan-right {
+                padding-left: 30px;
+                .lookbook-phare {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        
+    }
+    .event-product-categories {
+        .event-item {
+            .event-item-info {
+                .event-img-wrapper {
+                    width: 62%;
+
+                }
+                .event-detail-wrapper {
+                    width: 38%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .hera-charity {
+        .hera-charity-primary {
+            .hera-charity-info {
+                padding-left: 40px;
+                padding-right: 15px;
+                margin-top: 0;
+            }
+        }
+    }
+    .event-product-categories {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+    }
+    .event-product-categories {
+        .event-item {
+            .event-item-info {
+                .event-detail-primary {
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                }
+            }
+        } 
+    }
+    .news-blog {
+        .news-blog-main {
+            > .row {
+                margin-left: -30px;
+                margin-right: -30px;
+                .col-latest-blog,
+                .col-news {
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                }
+            }
+        }
+        .col-latest-blog {
+            > .row {
+                margin-left: -30px;
+                margin-right: -30px;
+                .col-item-blog {
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+
+                }
+            }
+            
+        }
+    }   
+}
+@media only screen and (max-width: 991px) {
+    .product-recommended {
+        .product-recommended-primary {
+            .block-left-recommended {
+                >.title {
+                    font-size: 22px;
+                }
+                .btn-sugest {
+                    a {
+                        font-size: 14px;
+                        min-width: 160px;
+                        padding: 7px 18px;
+                    }
+                }
+            }
+        }
+    }
+    .testimonial {
+        .slick-list {
+            .testimonial-item {
+                .title {
+                    font-size: 26px;
+
+                }
+            }
+        }
+    }
+    .hera-charity {
+        .hera-charity-primary {
+            .image {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .hera-charity-info {
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+    .news-blog {
+        .news-blog-main {
+            > .row {
+                margin-left: -15px;
+                margin-right: -15px;
+                .col-latest-blog,
+                .col-news {
+                    padding-left: 15px;
+                    padding-right: 15px;
+
+                }
+            }
+        }
+        .col-latest-blog {
+            > .row {
+                margin-left: -15px;
+                margin-right: -15px;
+                .col-item-blog {
+                    padding-left: 15px;
+                    padding-right: 15px;
+
+                }
+            }
+            
+        }
+        .title {
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
+    .event-product-categories,
+    .colorful-life {
+        .title {
+            font-size: 36px;
+        }
+    }
+    .new-product-categories {
+        .new-product-categories-main {
+            > .title {
+                font-size: 36px;
+            }
+        }
+    }
+    .suggest-product-categories {
+        .suggest-product-categories-main {
+            .title {
+                font-size: 36px;
+            }
+        }
+        .slick-list {
+            padding-left: 145px;
+
+        }
+    }
+    .slider-home {
+        &.slick-slider {
+            .slick-dots {
+                
+                li {
+                    width: 45px;
+                    button {
+                        width: 45px;
+                        &:before {
+                            width: 45px;    
+                        }    
+                    }
+                }
+                
+            }
+        }
+    }
+    .lookbook-slogan {
+        .container-slogan {
+            .slogan-left {
+                width: 100%;
+                margin-bottom: 30px;
+                img {
+                    width: 100%;
+                }
+            }
+            .slogan-right {
+                padding-left: 0;
+                width: 100%;
+                .image-title {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .lookbook-phare {
+                    max-width: none;
+                }
+            }
+        }
+    }
+    .new-product-categories {
+        .new-product-categories-main {
+            padding-top: 65px;
+            padding-bottom: 70px;
+        }
+        .slick-list {
+            padding-right: 145px;
+        }
+    }
+    .colorful-life {
+        .colorful-left {
+            padding-left: 0;
+
+            .colorful-left-wrapper {
+                .phare {
+                    font-size: 15px;
+
+                }
+            }
+        }
+    }
+    .event-product-categories {
+        .event-item {
+            .event-item-info {
+                .event-detail-primary {
+                    .event-name {
+                        font-size: 25px;
+                    }
+                    .event-description {
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+        .nav-tabs {
+            margin-bottom: 30px;
+            li {
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .product-recommended {
+        .product-recommended-primary {
+            .block-left-recommended {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .block-right-recommended {
+                width: 100%;
+            }
+        }
+    }
+    .hera-service {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .hera-service-content {
+            .title {
+                font-size: 28px;
+            }
+        }
+        
+    }
+    .testimonial {
+        padding-left: 15px;
+        padding-right: 15px;
+        .slick-list {
+            padding-left: 0;
+            padding-right: 0;
+            .testimonial-item {
+                .pharse {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+    }
+    .hera-charity {
+        .hera-charity-content {
+            > .title {
+                font-size: 28px;
+                line-height: 35px;
+                margin-bottom: 33px;
+
+            }
+        }
+        .hera-charity-primary {
+            .hera-charity-info {
+                .title {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .news-blog {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .col-latest-blog,
+        .col-news {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .col-latest-blog {
+            margin-bottom: 20px;
+
+        }
+        .col-news {
+            .news-item-info {
+                .image {
+                    width: 25%;
+                }
+                .news-item-details {
+                    width: 75%;
+
+                }
+            }
+        }
+        .title {
+            h2 {
+                font-size: 28px;
+                line-height: 35px;
+            }
+        }
+    }
+    .suggest-product-categories {
+        .slick-list {
+            padding-left: 80px;
+        }
+        .suggest-product-categories-main {
+            padding-right: 140px;
+            padding-top: 45px;
+            padding-bottom: 45px;
+            .title {
+                font-size: 28px;
+            }
+        }
+        .slick-slider {
+            .slick-prev {
+                right: -40px;
+            }
+            .slick-next {
+                right: -85px;
+            }
+        }
+        
+    }
+    
+    .event-product-categories {
+        padding-top: 55px;
+        padding-bottom: 60px;
+        .title {
+            font-size: 28px;
+        }
+        .nav-tabs {
+            a {
+                font-size: 13px;
+            }
+        }
+        .event-item {
+            .event-item-info {
+                .event-img-wrapper {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                }
+                .event-detail-wrapper {
+                    width: 100%;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    .event-detail-primary {
+                        width: 100%;
+                        .event-name {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    
+
+    .colorful-life {
+        .colorful-left {
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 30px;
+        }
+        .colorful-right {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .colorful-life-product {
+        margin-bottom: 70px;
+    }
+    .lookbook-slogan {
+        padding-left: 175px;
+        padding-right: 175px;
+        .container-slogan {
+            .slogan-right {
+                .lookbook-phare {
+                    .title {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .product-wrapper {
+        .product-label {
+            .discount {
+                font-size: 11px;
+            }
+            .label-content {
+                min-width: 39px;
+                height: 20px;
+                line-height: 17px;
+                &:before {
+                    border-width: 0 0 20px 12px;
+                }
+            }
+        }
+    }
+    
+    .new-product-categories {
+        .new-product-categories-main {
+            padding-left: 140px;
+            padding-top: 45px;
+            padding-bottom: 50px;
+            > .title {
+                font-size: 28px;
+
+            }
+        }
+        .slick-list {
+            padding-right: 80px;
+        }
+        .slick-prev {
+            left: -85px;
+        }
+        .slick-next {
+            left: -40px;
+        }
+    }
+    .colorful-life {
+        .title {
+            font-size: 28px;
+        }
+    }
+    .slick-prev, 
+    .slick-next {
+        width: 35px;
+        height: 35px;
+        &:before {
+            font-size: 18px;
+        }
+    }
+    .nav-tabs li:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 639px) {
+
+}
+@media only screen and (max-width: 575px) {
+    .news-blog {
+        .col-latest-blog {
+            .image {
+                img {
+                    width: 100%;
+                }
+            }
+            .blog-item-details {
+                .title {
+                    margin-bottom: 15px;
+                }
+            }
+            > .row {
+                .col-item-blog {
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .new-product-categories {
+        .nav-tabs {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            li {
+                flex: 0 0 78px;
+                max-width: 78px;
+    
+            }
+        }
+    }
+    .suggest-product-categories {
+        .nav-tabs {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            li {
+                flex: 0 0 78px;
+                max-width: 78px;
+    
+            }
+        }
+    }
+    .lookbook-slogan {
+        padding-left: 30px;
+        padding-right: 30px;
+        .prev-person,
+        .next-person {
+            .text {
+                display: none;
+            }
+        }
+        .prev-person {
+            left: -20px;
+        }
+        .next-person {
+            right: -20px;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .testimonial {
+        .slick-list {
+            .testimonial-item {
+                .title {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .hera-charity {
+        .hera-charity-primary {
+            .hera-charity-info {
+                padding-left: 15px;
+                padding-right: 15px;
+                .charity-sum {
+                    .col-left-charity {
+                        max-width: 85px;
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+    .news-blog {
+        .col-news {
+            .title {
+                height: 46px;
+            }
+        }
+    }
+    .suggest-product-categories {
+        .suggest-product-categories-main {
+            padding-right: 100px;
+        }
+        .slick-slider {
+            .slick-prev {
+                right: -30px;
+            }
+            .slick-next {
+                right: -73px;
+
+            }
+        }
+    }
+    .slider-home {
+        &.slick-slider {
+            .slick-dots {
+                
+                li {
+                    width: 30px;
+                    button {
+                        width: 30px;
+                        &:before {
+                            width: 30px;    
+                        }    
+                    }
+                }
+                
+            }
+        }
+    }
+    .colorful-life {
+        .colorful-left {
+            .colorful-left-wrapper {
+                .phare {
+                    font-size: 14px;
+
+                }
+            }
+        }
+    }
+    .new-product-categories {
+        .new-product-categories-main {
+            padding-left: 100px;
+        }
+        .slick-prev {
+            left: -73px;
+        }
+        .slick-next {
+            left: -30px;
+        }
+    }   
+}
+@media only screen and (max-width: 360px) {
+    .event-product-categories {
+        .nav-tabs {
+            li {
+                width: 100%;
+                text-align: center;
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
         }
     }
 

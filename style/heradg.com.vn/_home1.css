@@ -1638,6 +1638,16 @@ header {
     max-width: calc(100% - 85px);
   }
 }
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+* {
+  min-width: 0;
+  min-height: 0;
+}
 html {
   overflow-x: hidden;
 }
@@ -1727,6 +1737,51 @@ button {
 }
 .slider-home {
   margin-bottom: 75px;
+}
+.slider-home.slick-slider .slick-prev,
+.slider-home.slick-slider .slick-next {
+  background: #FFFFFF;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider-home.slick-slider .slick-prev:hover:before,
+.slider-home.slick-slider .slick-next:hover:before,
+.slider-home.slick-slider .slick-prev:focus:before,
+.slider-home.slick-slider .slick-next:focus:before {
+  color: #242424;
+}
+.slider-home.slick-slider:hover .slick-prev,
+.slider-home.slick-slider:hover .slick-next {
+  opacity: 0.5;
+  visibility: visible;
+}
+.slider-home.slick-slider:hover .slick-prev {
+  left: 24px;
+}
+.slider-home.slick-slider:hover .slick-next {
+  right: 24px;
+}
+.slider-home.slick-slider .slick-dots {
+  bottom: 22px;
+}
+.slider-home.slick-slider .slick-dots li {
+  width: 90px;
+  height: 3px;
+}
+.slider-home.slick-slider .slick-dots li button {
+  width: 90px;
+  height: 3px;
+}
+.slider-home.slick-slider .slick-dots li button:before {
+  width: 90px;
+  height: 3px;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.slider-home.slick-slider .slick-dots li.slick-active button:before {
+  background: rgba(255, 255, 255);
+  border-color: rgba(255, 255, 255);
 }
 .slider-home .slick-slide .item img {
   width: 100%;
@@ -2065,6 +2120,9 @@ button {
 .colorful-life,
 .colorful-life-product {
   max-width: 1440px;
+  max-width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2186,6 +2244,9 @@ button {
 }
 .event-product-categories .event-product-categories-main {
   max-width: 1440px;
+  max-width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2342,8 +2403,10 @@ button {
   padding-bottom: 129px;
 }
 .news-blog .news-blog-main {
-  max-width: 1440px;
   max-width: 1336px;
+  max-width: 1366px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2478,6 +2541,7 @@ button {
 }
 .hera-charity {
   padding-top: 68px;
+  padding-bottom: 70px;
 }
 .hera-charity .hera-charity-content {
   margin-left: auto;
@@ -2584,4 +2648,742 @@ button {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #242424;
+}
+.hera-service {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.hera-service .hera-service-content {
+  max-width: 1230px;
+  max-width: 1260px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hera-service .hera-service-content .subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #242424;
+}
+.hera-service .hera-service-content .subtitle span {
+  text-transform: uppercase;
+  color: #d01313;
+}
+.hera-service .hera-service-content .title {
+  font-family: EB Garamond;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin-bottom: 30px;
+}
+.hera-service .hera-service-content .title span {
+  color: #d01313;
+}
+.hera-service .hera-service-content .pharse {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #242424;
+}
+.hera-service .col-item-service {
+  margin-bottom: 16px;
+}
+.hera-service .item-service {
+  position: relative;
+  border: 1px solid #F3F3F3;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  min-height: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hera-service .item-service .image {
+  margin-bottom: 21px;
+}
+.hera-service .item-service:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-color: #F2F2F2;
+}
+.hera-service .item-service:hover {
+  border-color: #242424;
+}
+.hera-service .item-service:hover:after {
+  background-color: #242424;
+}
+.hera-service .item-service:hover .pharse span {
+  border-bottom: 1px solid #242424;
+}
+.autoplay > .item {
+  display: none !important;
+}
+.testimonial {
+  background-image: url("../../images/homeheradg/bg-testimonial.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 74px;
+  padding-bottom: 66px;
+}
+.testimonial .slick-slider {
+  margin-left: -66px;
+  margin-right: -66px;
+}
+.testimonial .slick-list {
+  padding-left: 230px;
+  padding-right: 230px;
+}
+.testimonial .slick-list .testimonial-item {
+  padding-left: 66px;
+  padding-right: 66px;
+  text-align: center;
+}
+.testimonial .slick-list .testimonial-item .pharse {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b8b6b4;
+  margin-bottom: 11px;
+}
+.testimonial .slick-list .testimonial-item .title {
+  font-family: EB Garamond;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #b8b6b4;
+  margin-bottom: 43px;
+}
+.testimonial .slick-list .testimonial-item .testimonial-review {
+  margin-bottom: 13px;
+}
+.testimonial .slick-list .testimonial-item .testimonial-review .fa {
+  color: #F08643;
+  font-size: 12px;
+}
+.testimonial .slick-list .testimonial-item .author-info .author {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #b8b6b4;
+  padding-right: 12px;
+  margin-right: 8px;
+  display: inline-block;
+  position: relative;
+}
+.testimonial .slick-list .testimonial-item .author-info .author:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 16px;
+  border-right: 1px solid #cfcfcf;
+  top: calc(50% - 8px);
+  right: 0;
+}
+.testimonial .slick-list .testimonial-item .author-info .text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #999999;
+}
+.testimonial .slick-list .slick-slide.slick-active .testimonial-item .pharse {
+  color: #242424;
+}
+.testimonial .slick-list .slick-slide.slick-active .testimonial-item .title {
+  color: #242424;
+}
+.testimonial .slick-list .slick-slide.slick-active .testimonial-item .author-info .author {
+  color: #242424;
+}
+.autoplay > .item.product-wrapper,
+.autoplay > .item.event-wrapper {
+  display: none !important;
+}
+.autoplay > .testimonial-item {
+  display: none;
+}
+.product-recommended {
+  background-image: url("../../images/homeheradg/bg-recommended.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.product-recommended .product-recommended-content {
+  max-width: 1440px;
+  max-width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.product-recommended .product-recommended-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-recommended .product-recommended-primary .block-left-recommended {
+  width: 25%;
+  width: 33.2%;
+  padding-right: 55px;
+}
+.product-recommended .product-recommended-primary .block-left-recommended .brand {
+  margin-bottom: 15px;
+}
+.product-recommended .product-recommended-primary .block-left-recommended > .title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.product-recommended .product-recommended-primary .block-left-recommended .pharse {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.product-recommended .product-recommended-primary .block-left-recommended .btn-sugest a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #242424;
+  background-color: #ffffff;
+  display: inline-block;
+  min-width: 236px;
+  padding: 11px 18px;
+}
+.product-recommended .product-recommended-primary .block-right-recommended {
+  width: 75%;
+  width: 66.8%;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .autoplay > .item {
+  display: none !important;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .slick-slide .product-wrapper {
+  display: block !important;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 0;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper .product-wrapper-info {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper .product-img-wrapper {
+  margin-bottom: 0;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper .product-img-wrapper img {
+  border-radius: 4px;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper .product-detail-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#262626), to(#171717));
+  background: linear-gradient(180deg, #262626 0%, #171717 100%);
+  opacity: 0.76;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper .product-detail-wrapper .product-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 2px;
+  margin-top: 11px;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper .product-detail-wrapper .product-price-wrapper {
+  margin-bottom: 13px;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper .product-detail-wrapper .new-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #A09F9F;
+}
+.product-recommended .product-recommended-primary .block-right-recommended .slick-next,
+.product-recommended .product-recommended-primary .block-right-recommended .slick-prev {
+  display: none !important;
+}
+@media only screen and (max-width: 1470px) {
+  .hera-charity .hera-charity-primary .hera-charity-info {
+    padding-left: 95px;
+  }
+  .lookbook-slogan .container-slogan .slogan-right {
+    padding-left: 30px;
+  }
+  .lookbook-slogan .container-slogan .slogan-right .lookbook-phare {
+    margin-bottom: 40px;
+  }
+  .event-product-categories .event-item .event-item-info .event-img-wrapper {
+    width: 62%;
+  }
+  .event-product-categories .event-item .event-item-info .event-detail-wrapper {
+    width: 38%;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .hera-charity .hera-charity-primary .hera-charity-info {
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-top: 0;
+  }
+  .event-product-categories {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .event-product-categories .event-item .event-item-info .event-detail-primary {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .news-blog .news-blog-main > .row {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  .news-blog .news-blog-main > .row .col-latest-blog,
+  .news-blog .news-blog-main > .row .col-news {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .news-blog .col-latest-blog > .row {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  .news-blog .col-latest-blog > .row .col-item-blog {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .product-recommended .product-recommended-primary .block-left-recommended > .title {
+    font-size: 22px;
+  }
+  .product-recommended .product-recommended-primary .block-left-recommended .btn-sugest a {
+    font-size: 14px;
+    min-width: 160px;
+    padding: 7px 18px;
+  }
+  .testimonial .slick-list .testimonial-item .title {
+    font-size: 26px;
+  }
+  .hera-charity .hera-charity-primary .image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .hera-charity .hera-charity-primary .hera-charity-info {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .news-blog .news-blog-main > .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .news-blog .news-blog-main > .row .col-latest-blog,
+  .news-blog .news-blog-main > .row .col-news {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .news-blog .col-latest-blog > .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .news-blog .col-latest-blog > .row .col-item-blog {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .news-blog .title h2 {
+    font-size: 36px;
+  }
+  .event-product-categories .title,
+  .colorful-life .title {
+    font-size: 36px;
+  }
+  .new-product-categories .new-product-categories-main > .title {
+    font-size: 36px;
+  }
+  .suggest-product-categories .suggest-product-categories-main .title {
+    font-size: 36px;
+  }
+  .suggest-product-categories .slick-list {
+    padding-left: 145px;
+  }
+  .slider-home.slick-slider .slick-dots li {
+    width: 45px;
+  }
+  .slider-home.slick-slider .slick-dots li button {
+    width: 45px;
+  }
+  .slider-home.slick-slider .slick-dots li button:before {
+    width: 45px;
+  }
+  .lookbook-slogan .container-slogan .slogan-left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .lookbook-slogan .container-slogan .slogan-left img {
+    width: 100%;
+  }
+  .lookbook-slogan .container-slogan .slogan-right {
+    padding-left: 0;
+    width: 100%;
+  }
+  .lookbook-slogan .container-slogan .slogan-right .image-title {
+    width: 100%;
+  }
+  .lookbook-slogan .container-slogan .slogan-right .image-title img {
+    width: 100%;
+  }
+  .lookbook-slogan .container-slogan .slogan-right .lookbook-phare {
+    max-width: none;
+  }
+  .new-product-categories .new-product-categories-main {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+  .new-product-categories .slick-list {
+    padding-right: 145px;
+  }
+  .colorful-life .colorful-left {
+    padding-left: 0;
+  }
+  .colorful-life .colorful-left .colorful-left-wrapper .phare {
+    font-size: 15px;
+  }
+  .event-product-categories .event-item .event-item-info .event-detail-primary .event-name {
+    font-size: 25px;
+  }
+  .event-product-categories .event-item .event-item-info .event-detail-primary .event-description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .event-product-categories .nav-tabs {
+    margin-bottom: 30px;
+  }
+  .event-product-categories .nav-tabs li {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .product-recommended .product-recommended-primary .block-left-recommended {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .product-recommended .product-recommended-primary .block-right-recommended {
+    width: 100%;
+  }
+  .hera-service {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .hera-service .hera-service-content .title {
+    font-size: 28px;
+  }
+  .testimonial {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .testimonial .slick-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .testimonial .slick-list .testimonial-item .pharse {
+    font-size: 14px;
+  }
+  .hera-charity .hera-charity-content > .title {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 33px;
+  }
+  .hera-charity .hera-charity-primary .hera-charity-info .title {
+    font-size: 18px;
+  }
+  .news-blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .news-blog .col-latest-blog,
+  .news-blog .col-news {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .news-blog .col-latest-blog {
+    margin-bottom: 20px;
+  }
+  .news-blog .col-news .news-item-info .image {
+    width: 25%;
+  }
+  .news-blog .col-news .news-item-info .news-item-details {
+    width: 75%;
+  }
+  .news-blog .title h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .suggest-product-categories .slick-list {
+    padding-left: 80px;
+  }
+  .suggest-product-categories .suggest-product-categories-main {
+    padding-right: 140px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .suggest-product-categories .suggest-product-categories-main .title {
+    font-size: 28px;
+  }
+  .suggest-product-categories .slick-slider .slick-prev {
+    right: -40px;
+  }
+  .suggest-product-categories .slick-slider .slick-next {
+    right: -85px;
+  }
+  .event-product-categories {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+  .event-product-categories .title {
+    font-size: 28px;
+  }
+  .event-product-categories .nav-tabs a {
+    font-size: 13px;
+  }
+  .event-product-categories .event-item .event-item-info .event-img-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .event-product-categories .event-item .event-item-info .event-detail-wrapper {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .event-product-categories .event-item .event-item-info .event-detail-wrapper .event-detail-primary {
+    width: 100%;
+  }
+  .event-product-categories .event-item .event-item-info .event-detail-wrapper .event-detail-primary .event-name {
+    font-size: 20px;
+  }
+  .colorful-life .colorful-left {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .colorful-life .colorful-right {
+    width: 100%;
+  }
+  .colorful-life .colorful-right img {
+    width: 100%;
+  }
+  .colorful-life-product {
+    margin-bottom: 70px;
+  }
+  .lookbook-slogan {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+  .lookbook-slogan .container-slogan .slogan-right .lookbook-phare .title {
+    font-size: 16px;
+  }
+  .product-wrapper .product-label .discount {
+    font-size: 11px;
+  }
+  .product-wrapper .product-label .label-content {
+    min-width: 39px;
+    height: 20px;
+    line-height: 17px;
+  }
+  .product-wrapper .product-label .label-content:before {
+    border-width: 0 0 20px 12px;
+  }
+  .new-product-categories .new-product-categories-main {
+    padding-left: 140px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+  .new-product-categories .new-product-categories-main > .title {
+    font-size: 28px;
+  }
+  .new-product-categories .slick-list {
+    padding-right: 80px;
+  }
+  .new-product-categories .slick-prev {
+    left: -85px;
+  }
+  .new-product-categories .slick-next {
+    left: -40px;
+  }
+  .colorful-life .title {
+    font-size: 28px;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 35px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 18px;
+  }
+  .nav-tabs li:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .news-blog .col-latest-blog .image img {
+    width: 100%;
+  }
+  .news-blog .col-latest-blog .blog-item-details .title {
+    margin-bottom: 15px;
+  }
+  .news-blog .col-latest-blog > .row .col-item-blog:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .new-product-categories .nav-tabs {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow-x: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .new-product-categories .nav-tabs li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 78px;
+            flex: 0 0 78px;
+    max-width: 78px;
+  }
+  .suggest-product-categories .nav-tabs {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow-x: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .suggest-product-categories .nav-tabs li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 78px;
+            flex: 0 0 78px;
+    max-width: 78px;
+  }
+  .lookbook-slogan {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .lookbook-slogan .prev-person .text,
+  .lookbook-slogan .next-person .text {
+    display: none;
+  }
+  .lookbook-slogan .prev-person {
+    left: -20px;
+  }
+  .lookbook-slogan .next-person {
+    right: -20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .testimonial .slick-list .testimonial-item .title {
+    font-size: 22px;
+  }
+  .hera-charity .hera-charity-primary .hera-charity-info {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hera-charity .hera-charity-primary .hera-charity-info .charity-sum .col-left-charity {
+    max-width: 85px;
+  }
+  .news-blog .col-news .title {
+    height: 46px;
+  }
+  .suggest-product-categories .suggest-product-categories-main {
+    padding-right: 100px;
+  }
+  .suggest-product-categories .slick-slider .slick-prev {
+    right: -30px;
+  }
+  .suggest-product-categories .slick-slider .slick-next {
+    right: -73px;
+  }
+  .slider-home.slick-slider .slick-dots li {
+    width: 30px;
+  }
+  .slider-home.slick-slider .slick-dots li button {
+    width: 30px;
+  }
+  .slider-home.slick-slider .slick-dots li button:before {
+    width: 30px;
+  }
+  .colorful-life .colorful-left .colorful-left-wrapper .phare {
+    font-size: 14px;
+  }
+  .new-product-categories .new-product-categories-main {
+    padding-left: 100px;
+  }
+  .new-product-categories .slick-prev {
+    left: -73px;
+  }
+  .new-product-categories .slick-next {
+    left: -30px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-product-categories .nav-tabs li {
+    width: 100%;
+    text-align: center;
+  }
+  .event-product-categories .nav-tabs li:not(:last-child) {
+    margin-right: 0;
+  }
 }
