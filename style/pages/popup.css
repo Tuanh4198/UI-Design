@@ -9,12 +9,10 @@
   height: 100vh;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 .modals-wrapper.modals-popups .modal-popup .error {
   font-size: 12px;
@@ -25,23 +23,27 @@
 }
 .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap {
   position: relative;
-  top: 50%;
-  left: 50%;
+  top: 200%;
   max-width: 500px;
-  background: #F9F9F9;
-  padding: 68px 64px 50px 64px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.modals-wrapper.modals-popups .modal-popup._show {
-  opacity: 1;
-  visibility: visible;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  margin: 0 auto;
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+}
+.modals-wrapper.modals-popups .modal-popup .modal-content {
+  padding: 68px 64px 50px 64px;
+  background: #F9F9F9;
+}
+.modals-wrapper.modals-popups .modal-popup._show {
+  opacity: 1;
+  visibility: visible;
+}
+.modals-wrapper.modals-popups .modal-popup._show .modal-inner-wrap {
+  top: 50%;
 }
 .modals-wrapper.modals-popups .modal-popup .field.password .control,
 .modals-wrapper.modals-popups .modal-popup .field.enter-the-password .control {
@@ -73,6 +75,8 @@
 .modals-wrapper.modals-popups .modal-popup .modal-header {
   padding: 0;
   border: none;
+  position: relative;
+  z-index: 10;
 }
 .modals-wrapper.modals-popups .modal-popup .modal-content {
   border: none;
@@ -116,7 +120,7 @@
   padding: 15px 0;
 }
 .modals-wrapper.modals-popups button.action:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 .modals-wrapper.modals-popups .action-close {
   background-color: transparent;
@@ -129,7 +133,7 @@
   height: 16px;
 }
 .modals-wrapper.modals-popups .action-close:hover {
-  color: #313131;
+  color: #505050;
   background-color: transparent;
 }
 .modals-wrapper.modals-popups .action-close span {
@@ -168,6 +172,7 @@
 }
 .modals-wrapper.modals-popups .popup-signin.modal-popup .block-title .actions-toolbar a:hover {
   color: #ff0000;
+  text-decoration: underline;
 }
 .modals-wrapper.modals-popups .popup-signin.modal-popup .field.email {
   margin-bottom: 16px;
@@ -178,6 +183,10 @@
 .modals-wrapper.modals-popups .popup-signin.modal-popup .field.choice {
   display: inline-block;
   margin-bottom: 31px;
+  position: relative;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .field.choice .checkbox {
+  vertical-align: middle;
 }
 .modals-wrapper.modals-popups .popup-signin.modal-popup .secondary {
   display: inline-block;
@@ -196,7 +205,7 @@
   margin-bottom: 31px;
 }
 .modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .action-login:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 .modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar > p {
   font-size: 14px;
@@ -248,6 +257,9 @@
   background-color: #4267B2;
   color: #fff;
 }
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook:hover {
+  background-color: #0055ff;
+}
 .modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook .icon {
   font-size: 24px;
 }
@@ -257,6 +269,10 @@
 .modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google {
   border: 1px solid #CECED0;
   color: #242424;
+}
+.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google:hover {
+  background-color: #242424;
+  color: #ffffff;
 }
 .modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google .text {
   padding-left: 25px;
@@ -281,6 +297,7 @@
 }
 .modals-wrapper.modals-popups .popup-reset-password .form-reset-password .actions-toolbar > p a:hover {
   color: #ff0000;
+  text-decoration: underline;
 }
 .modals-wrapper.modals-popups .popup-inform-change-password .block-inform-change-password .block-title {
   margin-bottom: 28px;
@@ -303,6 +320,7 @@
 }
 .modals-wrapper.modals-popups .popup-registration .block-title .actions-toolbar a:hover {
   color: #ff0000;
+  text-decoration: underline;
 }
 .modals-wrapper.modals-popups .popup-registration .block-content .fieldset > .field {
   margin-bottom: 16px;

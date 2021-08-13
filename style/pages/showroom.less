@@ -41,7 +41,35 @@ body{
                     border-radius: 10px;
                     background-color: #F5F5F5;
                 }
-
+                [type="radio"]{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    min-width: 20px;
+                    min-height: 20px;
+                    border-radius: 50%;
+                    border:1px solid#242424;
+                    position: relative;
+                    cursor: pointer;
+                    &::before{
+                        content: "";
+                        min-width: 15px;
+                        min-height: 15px;
+                        border-radius: 50%;
+                        background-color: #242424;
+                        display: inline-block;
+                        opacity: 0;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    &:checked{
+                        &::before{
+                            opacity: 1;
+                        }
+                    }
+                }
                 &::-webkit-scrollbar
                 {
                     width: 6px;
@@ -73,22 +101,6 @@ body{
                     display: -webkit-flex;
                     display: flex;
                     align-items: center;
-                    .icon::before{
-                        content: "\f1db";
-                        font-family: FontAwesome;
-                        font-size: 22px;
-                    }
-                    &.active{
-                        .icon::before{
-                            content: "\f28e";
-                            font-family: FontAwesome;
-                        }
-                        .content{
-                            .address{
-                                color: #C31D1D; 
-                            }
-                        }
-                    }
                     .content{
                         margin-left: 22px;
                         a{

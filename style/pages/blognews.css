@@ -112,9 +112,15 @@ body .blog-news .blog-bottom .new .content .category {
   color: #C31D1D;
   font-weight: 500;
 }
+body .blog-news .blog-bottom .new .content .category:hover {
+  color: #ff0000;
+}
 body .blog-news .blog-bottom .new .content .name {
   color: #242424;
   font-weight: 500;
+}
+body .blog-news .blog-bottom .new .content .name:hover {
+  color: #999;
 }
 body .blog-news .blog-bottom .new .content .detail {
   display: none;

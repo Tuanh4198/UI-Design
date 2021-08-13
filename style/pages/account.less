@@ -71,6 +71,7 @@ body{
                 display: -ms-flexbox;
                 display: -webkit-flex;
                 display: flex;
+                border-bottom: 2px solid #E8E8E8;
                 .item-news-list{
                     width: 25%;
                     a{
@@ -79,7 +80,7 @@ body{
                         line-height: 17px;
                         font-weight: 500;
                         text-decoration: none;
-                        border-bottom: 2px solid #E8E8E8;
+                        position: relative;
                         padding-bottom: 9px;
                         width: 100%;
                         display: -webkit-box;
@@ -88,7 +89,27 @@ body{
                         display: flex;
                         justify-content: center;
                         &.active{
-                            border-color: #242424;
+                            &::before{
+                                width: 100%;
+                            }
+                        }
+                        &:hover{
+                            &::before{
+                                width: 100%;
+                            }
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            bottom: -2px;
+                            width: 0;
+                            height: 2px;
+                            left: 0;
+                            transition: all 0.3s ease;
+                            -moz-transition: all 0.3s ease;
+                            -webkit-transition: all 0.3s ease;
+                            -o-transition: all 0.3s ease;
+                            background-color: #242424;
                         }
                     }
                 }
@@ -114,6 +135,69 @@ body{
                 margin-top: 12px;
                
             }
+            .control{
+                position: relative;
+                .select{
+                    position: relative;
+                    cursor: pointer;
+                    height: 52px;
+                    width: 100%;
+                    border: 1px solid #E8E8E8;
+                    padding: 0 16px;
+                    font-size: 14px;
+                    line-height: 17px;
+                    font-weight: 400;
+                    background-color: #ffffff;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    align-items: center;
+                    &::before{
+                        content: "\f107";
+                        font-family: FontAwesome;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 15px;
+                    }
+                    &.active{
+                        border-color: #242424;
+                    }
+                }
+                .options{
+                    position: absolute;
+                    top: 53px;
+                    left: 0;
+                    z-index: 3;
+                    background-color: #ffffff;
+                    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+                    -moz-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+                    -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+                    width: 100%;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: scale(0.5);
+                    transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -webkit-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    .option{
+                        padding: 16px;
+                        &:hover{
+                            background-color: #242424;
+                            color: #ffffff;
+                            cursor: pointer;
+                        }
+                    }
+                    &.open{
+                        transform: scale(1);
+                        opacity: 1;
+                        visibility: visible;
+
+                    }
+                }
+            }
             .form {
                 max-width: 768px;
                 display: block;
@@ -126,23 +210,6 @@ body{
                     &:focus-visible{
                         outline: none;
                         border-color: #242424;
-                    }
-                }
-                select{
-                    width: 100%;
-                    height: 52px;
-                    padding: 0 16px;
-                    padding-right: 30px;
-                    border: 1px solid #E8E8E8;
-                    font-size: 14px;
-                    line-height: 17px;
-                    font-weight: 400;
-                    -moz-appearance:none; /* Firefox */
-                    -webkit-appearance:none; /* Safari and Chrome */
-                    appearance:none;
-                   
-                    &:focus-visible{
-                        outline: none;
                     }
                 }
                 .field {
@@ -165,18 +232,7 @@ body{
                     & > .field {
                         width: 31.25%;
                     }
-                    .control{
-                        position: relative;
-                        &::before{
-                            content: "\f107";
-                            font-family: FontAwesome;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            right: 15px;
-    
-                        }
-                    }
+                   
                 }
                 .control{
                     position: relative;
@@ -216,7 +272,7 @@ body{
                             color: #ffffff;
                             border: 1px solid #242424;
                             &:hover{
-                                background-color: #555555;
+                                background-color: #505050;
                             }
                         }
                     }
@@ -251,9 +307,10 @@ body{
                             border-bottom: 1px solid #242424;
                         }
                         &:hover{
-                            color: #555;
+                            color: #ffffff;
+                            background-color: #242424;
                             span{
-                                border-color: #555;
+                                border-color: transparent;
                             }
                         }
                     }
@@ -262,7 +319,7 @@ body{
                         color: #ffffff;
                         border: 1px solid #242424;
                         &:hover{
-                            background: #555;
+                            background: #505050;
                         }
                     }
                 }
@@ -279,18 +336,51 @@ body{
                 [class*="col-"]{
                     padding: 0 5px;
                 }
-                .item{
+                .item{  
+                    &:hover{
+                        .image{
+                            img{
+                                cursor: pointer;
+                                &.product-img-first{
+                                    transform: scale(1.2);
+                                    opacity: 0;
+                                }
+                                &.product-img-second{
+                                    transform: scale(1);
+                                    opacity: 1;
+                                }
+                            }
+                            .remove{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }        
                     .image{
                         position: relative;
                         margin-bottom: 13px;
+                        overflow: hidden;
                         img{
                             width: 100%;
+                            transition: all 0.5s ease;
+                            -moz-transition: all 0.5s ease;
+                            -webkit-transition: all 0.5s ease;
+                            -o-transition: all 0.5s ease;
+                            &.product-img-second{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                transform: scale(0.5);
+                                opacity: 0;
+                            }
                         }
                         .discount{
                             position: absolute;
                             width: 67px;
                             height: 22px;
-                            background-color: #C31D1D;
+                            background-color: #242424;
                             color: #ffffff;
                             clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
                             font-size: 14px;
@@ -326,6 +416,12 @@ body{
                             align-items: center;
                             font-size: 16px;
                             border: none;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all 0.3s ease;
+                            -moz-transition: all 0.3s ease;
+                            -webkit-transition: all 0.3s ease;
+                            -o-transition: all 0.3s ease;
                             &:hover{
                                 background-color: #242424;
                                 color: #ffffff;
@@ -336,6 +432,7 @@ body{
                             }
                         }
                     }
+                  
                     .content{
                         .name{
                             font-size: 16px;
@@ -389,21 +486,19 @@ body{
                         }
                     }
                     .actions{
+                        margin-top: 8px;
                         .action {
                             background-color: #242424;
                             width: 100%;
-                            height: 48px;
+                            height: 52px;
                             color: #ffffff;
                             text-transform: uppercase;
                             &:hover{
-                                background-color: #555555;
+                                background-color: #505050;
                             }
-                        }
-                        .icon{
-                            &::before{
-                                content: "\f291";
-                                margin-right: 8px;
-                                font-family: FontAwesome;
+                            .icon{
+                                margin-right: 8.5px;
+                                margin-bottom: 5px;
                             }
                         }
                     }
@@ -665,7 +760,7 @@ body{
                     }
                     .actions{
                         .action{
-                            height: 40px;
+                            height: 52px;
                         }
                     } 
                 } 

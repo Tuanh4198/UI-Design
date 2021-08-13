@@ -157,7 +157,7 @@ body .blog-children .blog-bottom .box-top .content-left .share > a {
   color: #242424;
 }
 body .blog-children .blog-bottom .box-top .content-left .share > a:hover {
-  background-color: #1877F1;
+  background-color: #242424;
   color: #fff;
   cursor: pointer;
   border-color: #fff;
@@ -203,6 +203,9 @@ body .blog-children .blog-bottom .box-top .content-left #review-form #fname::pla
 body .blog-children .blog-bottom .box-top .content-left #review-form #fname:focus-visible {
   outline: none;
 }
+body .blog-children .blog-bottom .box-top .content-left #review-form #fname:focus {
+  border-color: #242424;
+}
 body .blog-children .blog-bottom .box-top .content-left #review-form #review_field {
   width: 100%;
   border-color: #DFDFDF;
@@ -236,6 +239,9 @@ body .blog-children .blog-bottom .box-top .content-left #review-form #review_fie
 body .blog-children .blog-bottom .box-top .content-left #review-form #review_field:focus-visible {
   outline: none;
 }
+body .blog-children .blog-bottom .box-top .content-left #review-form #review_field:focus {
+  border-color: #242424;
+}
 body .blog-children .blog-bottom .box-top .content-left #review-form .control {
   margin-bottom: 16px;
 }
@@ -248,9 +254,10 @@ body .blog-children .blog-bottom .box-top .content-left #review-form [type="subm
   color: #fff;
   float: right;
   margin-bottom: 32px;
+  border: none;
 }
 body .blog-children .blog-bottom .box-top .content-left #review-form [type="submit"]:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 body .blog-children .blog-bottom .box-top .content-left > .comment {
   padding-bottom: 64px;

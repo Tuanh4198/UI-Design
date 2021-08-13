@@ -21,14 +21,17 @@
     <link rel="stylesheet" href="./library/slick/slick.css" />
     <!-- main style -->
     <link rel="stylesheet" href="./style/pages/_category.css" />
-    <link rel="stylesheet" href="./style/pages/policy.css" />
+    <link rel="stylesheet" href="./style/pages/account.css" />
+
+    <!-- link flat icon -->
+    <link rel="stylesheet" href="./images/page/flaticon/font/flaticon.css" />
     <!-- link font EB Garamond-->
     <link rel=" preconnect " href="https://fonts.googleapis.com ">
     <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap " rel="stylesheet ">
 </head>
 
-<body class="page-policy">
+<body class="page-account">
     <!-- Header -->
     <header id="header" class="header fixed-main-menu">
         <div class="header-top">
@@ -389,7 +392,7 @@
                                                 <div class=" product-img-wrapper ">
                                                     <a href=" # " class=" product-img ">
                                                         <img class=" product-img " src="
-                                ./images/product-minicart-2.jpg ">
+                                                    ./images/product-minicart-2.jpg ">
                                                     </a>
                                                 </div>
                                                 <div class=" product-detail-wrapper ">
@@ -437,99 +440,234 @@
     <!-- End header -->
 
     <!-- Content -->
-
-    <section class="section-policy">
+    <section class="section-account">
         <div class="blog-top ">
-            <div class="container ">
-                <div class="breadcrumbs ">
-                    <action method="addCrumb ">
-                        <argument name="crumbName " xsi:type="string ">Trang chủ</argument>
-                    </action>
-                    <span>/</span>
-                    <action method="addCrumb ">
-                        <argument name="crumbName " xsi:type="string ">Chính sách</argument>
-                    </action>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="account">
+                            <img src="./images/page/account/Ellipse 50.png" alt="">
+                            <div class="info">
+                                <div class="name">Đào Anh Lâm</div>
+                                <div class="email">lamdao218@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="action">
+                            <button type="submit" class="action-exit">
+                                <span class="icon"></span><span>Thoát</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="title ">
-                    <div class="content ">
-                        <span>Chính sách</span>
+            </div>
+        </div>
+        <div class="blog-menu">
+            <div class="menu-account account">
+                <div class="container">
+                    <div class="list_menu">
+                        <div class="item-news-list">
+                            <a href="#" alt="THÔNG TIN TÀI KHOẢN" class="item">
+                                <span>THÔNG TIN TÀI KHOẢN</span>
+                            </a>
+                        </div>
+                        <div class="item-news-list">
+                            <a href="#" alt="THEO DÕI ĐƠN HÀNG" class="item">
+                                <span>THEO DÕI ĐƠN HÀNG</span>
+                            </a>
+                        </div>
+                        <div class="item-news-list">
+                            <a href="#" alt="SẢN PHẨM YÊU THÍCH" class="item active">
+                                <span>SẢN PHẨM YÊU THÍCH</span>
+                            </a>
+                        </div>
+                        <div class="item-news-list">
+                            <a href="#" alt="GỬI GÓP Ý" class="item">
+                                <span>GỬI GÓP Ý</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="select-mobile">
+                        <select class="account-options mobile" id="account"> 
+                            <option value="THÔNG TIN TÀI KHOẢN">THÔNG TIN TÀI KHOẢN</option> 
+                            <option value="THEO DÕI ĐƠN HÀNG">THEO DÕI ĐƠN HÀNG</option> 
+                            <option value="SẢN PHẨM YÊU THÍCH" selected="selected">SẢN PHẨM YÊU THÍCH</option> 
+                            <option value="GỬI GÓP Ý">GỬI GÓP Ý</option> 
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
         <div class="blog-bottom">
             <div class="container">
-                <div class="toolbar-policy policy">
-                    <label class="policy-label" for="policy">Chính sách</label>
-                    <div class="list_menu">
-                        <div class="item-news-list">
-                            <a href="#" alt="Chính sách thanh toán" class="item">
-                                <span>Chính sách thanh toán</span>
-                            </a>
-                        </div>
-                        <div class="item-news-list">
-                            <a href="#" alt="Chính sách vận chuyển" class="item active">
-                                <span>Chính sách vận chuyển</span>
-                            </a>
-                        </div>
-                        <div class="item-news-list">
-                            <a href="#" alt="Chính sách đổi trả" class="item">
-                                <span>Chính sách đổi trả</span>
-                            </a>
-                        </div>
-                        <div class="item-news-list">
-                            <a href="#" alt="Chính sách bảo mật" class="item">
-                                <span>Chính sách bảo mật</span>
-                            </a>
-                        </div>
-                        <div class="item-news-list">
-                            <a href="#" alt="Hướng dẫn chọn size" class="item">
-                                <span>Hướng dẫn chọn size</span>
-                            </a>
-                        </div>
-                    </div>
-                    <select class="policy-options mobile" id="policy"> 
-                        <option value="Chính sách thanh toán" selected="selected">Chính sách thanh toán</option> 
-                        <option value="Chính sách vận chuyển">Chính sách vận chuyển</option> 
-                        <option value="Chính sách đổi trả">Chính sách đổi trả</option> 
-                        <option value="Chính sách bảo mật"> Chính sách bảo mật</option> 
-                        <option value="Hướng dẫn chọn size">Hướng dẫn chọn size </option> 
-                    </select>
-                </div>
                 <div id="box-content">
-                    <div class="contains">
-                        <div class="title">Chính sách vận chuyển</div>
-                        <div class="content">
-                            <p class="text-large">Thời gian giao hàng</p>
-                            <p>HeraDG hiểu được mong muốn nhận hàng sớm của quý khách, tuy nhiên, thời gian giao hàng của HeraDG còn phụ thuộc vào đơn vị vận chuyển của chúng tôi. Thông thường, thời gian giao hàng thường mất 0.5 – 7 ngày làm việc (không
-                                bao gồm thứ Bảy, Chủ Nhật và Ngày nghỉ lễ). Quý khách có thể tham khảo bảng thời gian vận chuyển dưới đây của chúng tôi. Xin vui lòng lưu ý rằng Eva de Eva bảo lưu quyền thay đổi thời gian giao hàng mà không cần báo trước
-                                trong trường hợp chịu ảnh hưởng của thiên tai hoặc các sự kiện đặc biệt khác.</p>
-                            <ul class="level0">
-                                <li>Nội thành Hà Nội: Không quá 12 giờ</li>
-                                <li>Ngoại thành Hà Nội: 2 ngày làm việc</li>
-                                <li>Các thành phố lớn: 2 – 4 ngày làm việc</li>
-                                <li>Các tỉnh khác, huyện, xã, vùng sâu vùng xa: 2 - 7 ngày làm việc</li>
-                            </ul>
-                            <p>Các khu vực nội thành Hà Nội bao gồm: Quận Tây Hồ, Quận Đống Đa, Quận Hoàn Kiếm, Quận Hai Bà Trưng</p>
-                            <p>Trong trường hợp quý khách chọn hình thức thanh toán bằng thẻ tín dụng (credit card) hoặc chuyển khoản ngân hàng, thời gian xử lý đơn hàng sẽ được tính kể từ khi Eva de Eva nhận được khoản thanh toán hoàn tất của quý khách.</p>
-                            <p>Đơn hàng của quý khách sẽ chỉ được giao tối đa 2 lần. Trong trường hợp lần giao thứ nhất không thành công, khi đó nhân viên giao hàng sẽ liên hệ với quý khách để xác nhận ngày giao hàng lần 2 sau 1- 2 ngày làm việc kế tiếp.
-                                Chúng tôi sẽ cố gắng liên hệ giao hàng cho quý khách trong vòng 02 ngày làm việc (thông qua tin nhắn hoặc gọi trực tiếp). Trong trường hợp vẫn không thể liên lạc lại được hoặc không nhận được bất kì phản hồi nào từ phía
-                                quý khách, đơn hàng sẽ bị hủy nếu quý khách lựa chọn hình thức thanh toán COD (nhờ thu hộ) hoặc sẽ được lưu giữ tại kho hàng của chúng tôi hoặc bên vận chuyển nếu quý khách đã thanh toán đơn hàng rồi trong vòng 24 giờ.</p>
-                            <p class="container-border">Quý khách được xem hàng trước khi nhận hàng và thanh toán. Trong trường hợp bạn gặp vấn đề phát sinh, bạn liên hệ ngay đến Sale Online 1800 1732 của chúng tôi để được hỗ trợ kịp thời.</p>
-                            <p class="text-large">Cước phí vận chuyển tại nhà</p>
-                            <p>Để đảm bảo đơn hàng được chuyển đến tay bạn sớm nhất, chúng tôi khuyến khích bạn đặt hàng trước 15h00 mỗi ngày.</p>
-                            <ul class="level0 container-border">
-                                <li>Miễn phí vận chuyển cho đơn hàng từ 699.000đ cho tất cả các đơn hàng.</li>
-                                <li>Những đơn hàng dưới 699.000đ có phí vận chuyển 20.000đ áp dụng trên toàn quốc.</li>
-                            </ul>
-                            <p class="text-large">Tra cứu đơn hàng đã đặt</p>
-                            <div>Để tra cứu trạng thái đơn hàng đã đặt, quý khách vui lòng liên hệ Bộ phận Bán hàng Online 1800 1732 (Thời gian làm việc 8:30 - 17:30 từ Thứ 2 đến Thứ 7) để được hỗ trợ nhanh nhất.</div>
+                    <h2 class="title">Sản phẩm yêu thích</h2>
+                    <div class="items">
+                        <div class="row">
+
+                            <div class="col-6 col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <div class="image">
+                                        <img class="product-img-first" src="./images/page/account/img1.png" alt="">
+                                        <img class="product-img-second" src="./images/page/account/img2.png" alt="">
+                                        <div class="discount"><span>- 30%</span></div>
+                                        <button class="remove"><i class="fa fa-trash-o"></i></button>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#" class="name">Jumpsuit sát nách SJSBA004</a>
+                                        <div class="price">
+                                            <span class="price-after">899.000 <span class="currency-unit">đ</span></span>
+                                            <span class="price-before">899.000 <span class="currency-unit">đ</span></span>
+                                            <span class="discount">-30%</span>
+                                        </div>
+                                        <div class="color">
+                                            <span class="text">Màu: </span><span class="is-color">Xanh</span>
+                                        </div>
+                                        <div class="size control">
+                                            <div class="select">Chọn size</div>
+                                            <div class="size options">
+                                                <div class="option" value="Chọn size" selected="selected">Chọn size</div>
+                                                <div class="option" value="Size M" selected="selected">Size M</div>
+                                                <div class="option" value="Size L" selected="selected">Size M</div>
+                                                <div class="option" value="Size M" selected="selected">Size M</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="primary">
+                                            <button type="submit" class="action action-confirm">
+                                                <span class="icon"><img src="./images/cart.png" alt=""></span>
+                                                <span class="text">Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <div class="image">
+                                        <img class="product-img-first" src="./images/page/account/img2.png" alt="">
+                                        <img class="product-img-second" src="./images/page/account/img1.png" alt="">
+                                        <div class="discount"><span>- 30%</span></div>
+                                        <button class="remove"><i class="fa fa-trash-o"></i></button>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#" class="name">Jumpsuit sát nách SJSBA004</a>
+                                        <div class="price">
+                                            <span class="price-after">899.000 <span class="currency-unit">đ</span></span>
+                                            <span class="price-before">899.000 <span class="currency-unit">đ</span></span>
+                                            <span class="discount">-30%</span>
+                                        </div>
+                                        <div class="color">
+                                            <span class="text">Màu: </span><span class="is-color">Xanh</span>
+                                        </div>
+                                        <div class="size control">
+                                            <div class="select">Chọn size</div>
+                                            <div class="size options">
+                                                <div class="option" value="Chọn size" selected="selected">Chọn size</div>
+                                                <div class="option" value="Size M" selected="selected">Size M</div>
+                                                <div class="option" value="Size L" selected="selected">Size M</div>
+                                                <div class="option" value="Size M" selected="selected">Size M</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="primary">
+                                            <button type="submit" class="action action-confirm">
+                                                <span class="icon"><img src="./images/cart.png" alt=""></span>
+                                                <span class="text">Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <div class="image">
+                                        <img class="product-img-first" src="./images/page/account/img3.png" alt="">
+                                        <img class="product-img-second" src="./images/page/account/img4.png" alt="">
+                                        <div class="discount"><span>- 30%</span></div>
+                                        <button class="remove"><i class="fa fa-trash-o"></i></button>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#" class="name">Jumpsuit sát nách SJSBA004</a>
+                                        <div class="price">
+                                            <span class="price-after">899.000 <span class="currency-unit">đ</span></span>
+                                            <span class="price-before">899.000 <span class="currency-unit">đ</span></span>
+                                            <span class="discount">-30%</span>
+                                        </div>
+                                        <div class="color">
+                                            <span class="text">Màu: </span><span class="is-color">Xanh</span>
+                                        </div>
+                                        <div class="size control">
+                                            <div class="select">Chọn size</div>
+                                            <div class="size options">
+                                                <div class="option" value="Chọn size" selected="selected">Chọn size</div>
+                                                <div class="option" value="Size M" selected="selected">Size M</div>
+                                                <div class="option" value="Size L" selected="selected">Size M</div>
+                                                <div class="option" value="Size M" selected="selected">Size M</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="primary">
+                                            <button type="submit" class="action action-confirm">
+                                                <span class="icon"><img src="./images/cart.png" alt=""></span>
+                                                <span class="text">Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <div class="image">
+                                        <img class="product-img-first" src="./images/page/account/img4.png" alt="">
+                                        <img class="product-img-second" src="./images/page/account/img3.png" alt="">
+                                        <div class="discount"><span>- 30%</span></div>
+                                        <button class="remove"><i class="fa fa-trash-o"></i></button>
+                                    </div>
+                                    <div class="content">
+                                        <a href="#" class="name">Jumpsuit sát nách SJSBA004</a>
+                                        <div class="price">
+                                            <span class="price-after">899.000 <span class="currency-unit">đ</span></span>
+                                            <span class="price-before">899.000 <span class="currency-unit">đ</span></span>
+                                            <span class="discount">-30%</span>
+                                        </div>
+                                        <div class="color">
+                                            <span class="text">Màu: </span><span class="is-color">Xanh</span>
+                                        </div>
+                                        <div class="size control">
+                                            <div class="select">Chọn size</div>
+                                            <div class="size options">
+                                                <div class="option" value="Chọn size" selected="selected">Chọn size</div>
+                                                <div class="option" value="Size M" selected="selected">Size M</div>
+                                                <div class="option" value="Size L" selected="selected">Size M</div>
+                                                <div class="option" value="Size M" selected="selected">Size M</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="primary">
+                                            <button type="submit" class="action action-confirm">
+                                                <span class="icon"><img src="./images/cart.png" alt=""></span>
+                                                <span class="text">Mua ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- EndContent -->
 
     <!-- Footer -->
     <footer class=" footer ">
@@ -676,6 +814,13 @@
 <script type="text/javascript " src="./javascript/main.js "></script>
 <!-- custom js -->
 <script type="text/javascript ">
+    jQuery(document).ready(function($) {
+        $(".select").click(function(e) {
+            e.preventDefault();
+            $(this).toggleClass("active");
+            $(this).next().toggleClass("open");
+        })
+    })
 </script>
 
 </html>

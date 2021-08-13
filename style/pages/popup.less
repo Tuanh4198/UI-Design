@@ -8,11 +8,10 @@
         height: 100vh;
         opacity: 0;
         visibility: hidden;
-        transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transform: scale(0) ;
+        transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
         .error{
             font-size: 12px;
             font-weight: 400;
@@ -22,21 +21,26 @@
         }
         .modal-inner-wrap{
             position: relative;
-            top: 50%;
-            left: 50%;
+            top: 200%;
             max-width: 500px;
-            background: #F9F9F9;
-            padding: 68px 64px 50px 64px;
-            transform: translate(-50%, -50%);
-        }
-        &._show{
-            opacity: 1;
-            visibility: visible;
+            transform: translateY( -50%);
+            display:block;
+            margin: 0 auto;
             transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
-            transform: scale(1); 
+        }
+        .modal-content{
+            padding: 68px 64px 50px 64px;
+            background: #F9F9F9;
+        }
+        &._show{
+            opacity: 1;
+            visibility: visible;
+            .modal-inner-wrap{
+                top: 50%;
+            }
         }
         .field.password,
         .field.enter-the-password{
@@ -68,6 +72,8 @@
         .modal-header{
             padding: 0;
             border: none;
+            position: relative;
+            z-index: 10;
         }
         .modal-content{
             border: none;
@@ -111,7 +117,7 @@
         width: 100%;
         padding: 15px 0;
         &:hover{
-            background-color: #313131;
+            background-color: #505050;
         }
     }
     .action-close{
@@ -124,7 +130,7 @@
         width: 16px;
         height: 16px;
         &:hover{
-            color: #313131;
+            color: #505050;
             background-color: transparent;
         }
         span{
@@ -167,6 +173,7 @@
                         color: #C31D1D;
                         &:hover{
                             color: #ff0000;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -181,7 +188,12 @@
                 &.choice {
                     display: inline-block;
                     margin-bottom: 31px;
+                    position: relative;
+                    .checkbox{
+                        vertical-align: middle;
+                    }
                 }
+
             }
             .secondary{
                 display: inline-block;
@@ -201,7 +213,7 @@
                 
                     margin-bottom: 31px;
                     &:hover{
-                        background-color: #313131;
+                        background-color: #505050;
                     }
                 }
                 & > p{
@@ -248,7 +260,9 @@
                         &.facebook{
                             background-color: #4267B2;
                             color: #fff;
-                         
+                            &:hover{
+                                background-color: #0055ff;
+                            }
                             .icon{
                                 font-size: 24px;
                             }
@@ -259,6 +273,10 @@
                         &.google{
                             border: 1px solid #CECED0;
                             color: #242424;
+                            &:hover{
+                                background-color: #242424;
+                                color: #ffffff;
+                            }
                             .text{
                                 padding-left: 25px;
                             }
@@ -291,6 +309,7 @@
                         color:#C31D1D;
                         &:hover{
                             color: #ff0000;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -322,6 +341,7 @@
                     color: #C31D1D;
                     &:hover{
                         color: #ff0000;
+                        text-decoration: underline;
                     }
                 }
             }

@@ -58,7 +58,8 @@ body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a {
 body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a span {
   border-bottom: 1px solid transparent;
 }
-body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a.active span {
+body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a.active span,
+body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a:hover span {
   border-color: #242424;
 }
 body .section-policy .blog-bottom .container .toolbar-policy .policy-options.mobile {
