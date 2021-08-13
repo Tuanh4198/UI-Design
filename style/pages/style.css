@@ -5862,6 +5862,12 @@ body .blog-children .breadcrumbs {
 body .blog-children .breadcrumbs span {
   padding: 0 5px;
 }
+body .blog-children .box-container {
+  padding: 0 32px;
+}
+body .blog-children .box-container {
+  padding: 0 32px;
+}
 body .blog-children .new .title a {
   color: #242424;
 }
@@ -6477,7 +6483,10 @@ body .seciton-blog .breadcrumbs {
 body .seciton-blog .breadcrumbs span {
   padding: 0 5px;
 }
-body .seciton-blog .container > .title {
+body .seciton-blog .box-container {
+  padding: 0 32px;
+}
+body .seciton-blog .box-container > .title {
   font-size: 40px;
   font-weight: bold;
   line-height: 52.5px;
@@ -6485,7 +6494,7 @@ body .seciton-blog .container > .title {
   font-family: 'EB Garamond', serif;
   padding-bottom: 12px;
 }
-body .seciton-blog .container > .title .color-red {
+body .seciton-blog .box-container > .title .color-red {
   color: #C31D1D;
 }
 body .seciton-blog .blog-menu {
@@ -6975,7 +6984,7 @@ body .seciton-blog .blog-bottom .blog-content .news-bottom .box-right .banner-2 
   body .seciton-blog .breadcrumbs {
     display: none;
   }
-  body .seciton-blog .container > .title {
+  body .seciton-blog .box-container > .title {
     font-size: 24px;
     line-height: 31.32px;
     padding-top: 20px;
@@ -7101,7 +7110,10 @@ body .blog-news .breadcrumbs {
 body .blog-news .breadcrumbs span {
   padding: 0 5px;
 }
-body .blog-news .container > .title {
+body .blog-news .box-container {
+  padding: 0 32px;
+}
+body .blog-news .box-container > .title {
   font-size: 40px;
   font-weight: bold;
   line-height: 52.5px;
@@ -7109,10 +7121,11 @@ body .blog-news .container > .title {
   font-family: 'EB Garamond', serif;
   padding-bottom: 12px;
 }
-body .blog-news .container > .title .color-red {
+body .blog-news .box-container > .title .color-red {
   color: #C31D1D;
 }
 body .blog-news .blog-menu {
+  border-top: 1px solid #EFEFEF;
   border-bottom: 1px solid #EFEFEF;
 }
 body .blog-news .blog-menu .container {
@@ -7404,7 +7417,7 @@ body .blog-news .blog-bottom .blog-content .banner-2 a img {
   body .blog-news .breadcrumbs {
     display: none;
   }
-  body .blog-news .container > .title {
+  body .blog-news .box-container > .title {
     font-size: 24px;
     line-height: 31.32px;
     padding-top: 20px;
@@ -7546,7 +7559,7 @@ body .blog-news .blog-bottom .blog-content .banner-2 a img {
   cursor: pointer;
 }
 .page-news-pass .seciton-news-pass .block-content .actions-toolbar .action-confirm:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 @media only screen and (max-width: 575px) {
   .page-news-pass .seciton-news-pass .block-title-heading {
@@ -7882,6 +7895,32 @@ body .section-policy .blog-bottom .container #box-content .content .container-bo
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
+.modals-wrapper.modals-popups .modal-popup .facebook {
+  background-color: #4267B2;
+  color: #fff;
+}
+.modals-wrapper.modals-popups .modal-popup .facebook:hover {
+  background-color: #0055ff;
+  border-color: #0055ff;
+}
+.modals-wrapper.modals-popups .modal-popup .facebook .icon {
+  font-size: 24px;
+}
+.modals-wrapper.modals-popups .modal-popup .facebook .text {
+  padding-left: 25px;
+}
+.modals-wrapper.modals-popups .modal-popup .google {
+  border: 1px solid #CECED0;
+  color: #242424;
+}
+.modals-wrapper.modals-popups .modal-popup .google:hover {
+  background-color: #242424;
+  color: #ffffff;
+  border-color: #242424;
+}
+.modals-wrapper.modals-popups .modal-popup .google .text {
+  padding-left: 25px;
+}
 .modals-wrapper.modals-popups .modal-popup .modal-content {
   padding: 68px 64px 50px 64px;
   background: #F9F9F9;
@@ -8098,30 +8137,6 @@ body .section-policy .blog-bottom .container #box-content .content .container-bo
   display: flex;
   align-items: center;
 }
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook {
-  background-color: #4267B2;
-  color: #fff;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook:hover {
-  background-color: #0055ff;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook .icon {
-  font-size: 24px;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook .text {
-  padding-left: 25px;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google {
-  border: 1px solid #CECED0;
-  color: #242424;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google:hover {
-  background-color: #242424;
-  color: #ffffff;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google .text {
-  padding-left: 25px;
-}
 .modals-wrapper.modals-popups .popup-reset-password .block-title {
   margin-bottom: 12px;
 }
@@ -8216,31 +8231,17 @@ body .section-policy .blog-bottom .container #box-content .content .container-bo
   display: flex;
   align-items: center;
 }
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook {
-  background-color: #4267B2;
-  color: #fff;
-}
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook .icon {
-  font-size: 24px;
-}
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook .text {
-  padding-left: 25px;
-}
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.google {
-  border: 1px solid #CECED0;
-  color: #242424;
-}
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.google .text {
-  padding-left: 25px;
-}
 @media only screen and (max-width: 575px) {
   .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap {
     height: 100vh;
     max-width: 100%;
   }
+  .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap .modal-content {
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 480px) {
-  .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap {
+  .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap .modal-content {
     padding: 68px 32px 0 32px;
   }
 }

@@ -31,6 +31,32 @@
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
         }
+        .facebook{
+            background-color: #4267B2;
+            color: #fff;
+            &:hover{
+                background-color: #0055ff;
+                border-color: #0055ff;
+            }
+            .icon{
+                font-size: 24px;
+            }
+            .text{
+                padding-left: 25px;
+            }
+        }
+        .google{
+            border: 1px solid #CECED0;
+            color: #242424;
+            &:hover{
+                background-color: #242424;
+                color: #ffffff;
+                border-color: #242424;
+            }
+            .text{
+                padding-left: 25px;
+            }
+        }
         .modal-content{
             padding: 68px 64px 50px 64px;
             background: #F9F9F9;
@@ -257,30 +283,7 @@
                         display: -webkit-flex;
                         display: flex;
                         align-items: center;
-                        &.facebook{
-                            background-color: #4267B2;
-                            color: #fff;
-                            &:hover{
-                                background-color: #0055ff;
-                            }
-                            .icon{
-                                font-size: 24px;
-                            }
-                            .text{
-                                padding-left: 25px;
-                            }
-                        }
-                        &.google{
-                            border: 1px solid #CECED0;
-                            color: #242424;
-                            &:hover{
-                                background-color: #242424;
-                                color: #ffffff;
-                            }
-                            .text{
-                                padding-left: 25px;
-                            }
-                        }
+                        
                     }
                 }
             }
@@ -397,24 +400,6 @@
                         display: -webkit-flex;
                         display: flex;
                         align-items: center;
-                        &.facebook{
-                            background-color: #4267B2;
-                            color: #fff;
-                         
-                            .icon{
-                                font-size: 24px;
-                            }
-                            .text{
-                                padding-left: 25px;
-                            }
-                        }
-                        &.google{
-                            border: 1px solid #CECED0;
-                            color: #242424;
-                            .text{
-                                padding-left: 25px;
-                            }
-                        }
                     }
                 }
             }
@@ -428,6 +413,9 @@
             .modal-inner-wrap{
                 height: 100vh;
                 max-width: 100%;
+                .modal-content{
+                    height: 100%;
+                }
             }
         }
     }
@@ -436,7 +424,9 @@
     .modals-wrapper.modals-popups {
         .modal-popup {
             .modal-inner-wrap{
-                padding: 68px 32px 0 32px;
+                .modal-content{
+                    padding: 68px 32px 0 32px;
+                }
             }
         }
     }
