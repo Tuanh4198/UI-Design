@@ -798,7 +798,7 @@
 			margin-bottom: 20px;
 
 			&:hover {
-				background: rgb(36 36 36 / 60%);
+				background: rgba(36,36,36,0.6);
 				letter-spacing: 1px;
 			}
 
@@ -913,11 +913,35 @@
 			}
 		}
 
-		.title-wrapper {
-			h4.title {
-				font-size: 24px;
-				line-height: 30px;
-			}
+	.modal-content {
+		height: 100%;
+		border-radius: 0;
+		padding: 35px 30px 30px;
+		background-color: white;
+	}
+
+	.btn-checkout {
+		height: 51px;
+		background: @base_color;
+		font-style: normal;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		text-align: center;
+		border: none;
+		border-radius: 0;
+		transition: all 0.3s ease;
+		margin-bottom: 20px;
+
+		&:hover {
+			background: rgba(36,36,36,0.6);
+			letter-spacing: 1px;
+		}
 
 			.btn-slide i {
 				display: none !important;
