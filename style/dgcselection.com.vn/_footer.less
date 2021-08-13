@@ -1,47 +1,39 @@
 .social-profile {
-    margin-top: 32px;
-    text-align: center;
+    margin-top: 106px;
 
-    .title {
-        font-family: EB Garamond;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 52px;
-        letter-spacing: -0.01em;
-    }
+    .social-item {
+        display: inline-block;
+        margin-right: 20px;
 
-    .content {
-        margin-top: 13px;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     .social-link {
-        border-width: 1px;
-        border-style: solid;
-        border-color: #E1E1E1;
         display: block;
-        padding: 15px 24px;
         transition: all .3s ease;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+
 
         img {
             display: inline-block;
+            vertical-align: baseline;
         }
 
         span {
-            margin-left: 6px;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: -0.02em;
+            margin-right: 9px;
+            font-size: 16px;
+            font-weight: 600;
 
         }
 
         &:hover {
-            background-color: #242424;
-            border-color: #242424;
-            color: white;
+            img {
+                opacity: .5;
+            }
         }
     }
 }
@@ -54,11 +46,11 @@
 
 .footer-link {
     .link-list {
-        margin-top: 25px;
+        margin-top: 23px;
         margin-bottom: 0;
 
         li {
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         a {
@@ -84,14 +76,13 @@
 
     .footer-links {
         flex: 1;
-        padding: 48px 32px;
+        padding: 64px 69px;
     }
 
     .footer-subscribe {
-        width: 554px;
+        width: 600px;
         background-color: #F7F7F7;
-        padding: 40px 32px;
-        text-align: center;
+        padding: 40px 96px;
 
         .title {
             font-size: 12px;
@@ -103,27 +94,33 @@
     }
 
     .footer-about {
-        .action {
-            font-size: 14px;
+        margin-top: 32px;
+
+        .title {
             font-weight: 500;
-            line-height: 30px;
-            background-color: #242424;
-            color: white;
-            padding: 5px 32px;
+        }
+
+        .action {
+            padding: 13px 32px;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+            background-color: white;
+            color: #242424;
+            border-radius: 30px;
+
         }
     }
 
     .contact-info {
-        border-width: 1px 0;
-        border-style: solid;
-        border-color: #CECECE;
-        padding: 25px 0;
         margin-top: 24px;
 
         .contact-item {
-            margin-right: 30px;
+            margin-right: 24px;
 
             .contact-info-images {
                 height: 42px;
@@ -132,6 +129,7 @@
                 border-radius: 6px;
                 background-color: white;
                 text-align: center;
+                border-radius: 50%;
             }
 
             .contact-info-detail {
@@ -144,13 +142,16 @@
                     line-height: 21px;
                     letter-spacing: 0.04em;
                     text-transform: uppercase;
+                    color: #817E7D;
                 }
 
                 .title {
                     font-size: 16px;
                     line-height: 21px;
                     text-transform: unset;
-                    color: #C31D1D;
+                    font-weight: 400;
+                    letter-spacing: 0.04em;
+
                 }
             }
 
@@ -161,7 +162,7 @@
     }
 
     .subscribe {
-        margin-top: 24px;
+        margin-top: 32px;
 
         .title {
             font-size: 16px;
@@ -171,10 +172,10 @@
         }
 
         .sub-title {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
-            line-height: 20px;
-            margin-top: 6px;
+            line-height: 28px;
+
         }
 
         .form-subscribe {
@@ -189,21 +190,20 @@
             }
 
             .block-content {
-                border-width: 1px;
-                border-style: solid;
-                border-color: #242424;
-                margin-top: 19px;
+                margin-top: 16px;
 
                 input {
                     height: 40px;
                     line-height: 40px;
-                    border-width: 0;
-                    padding: 0 13px;
+                    padding: 0 20px;
                     flex: 1;
-                    background-color: transparent;
+                    background-color: white;
+                    border-radius: 30px;
+                    border-width: 0;
+                    margin-right: 16px;
 
                     &::placeholder {
-                        color: #E8EAEE;
+                        color: #817E7D;
                     }
                 }
 
@@ -213,15 +213,11 @@
                     line-height: 30px;
                     text-align: center;
                     padding: 5px 0;
-                    width: 137px;
-                    background-color: #242424;
-                    color: white;
+                    width: 118px;
+                    background-color: white;
+                    color: #242424;
                     border-width: 0;
-                    border-radius: 0;
-
-                    &:hover {
-                        background-color: #313131;
-                    }
+                    border-radius: 30px;
                 }
             }
         }
@@ -257,23 +253,16 @@
     }
 }
 
-.footer-top {
-    margin-top: 48px;
-    border-width: 1px 0 0;
-    border-style: solid;
-    border-color: #F5F6F8;
-}
-
 .footer-bottom {
-    padding: 24px 32px;
+    padding: 25px 69px;
     border-width: 1px 0 0;
     border-style: solid;
-    border-color: #F5F6F8;
+    border-color: #E6E6E6;
 
     .footer-bottom-detail {
         .title {
             font-size: 14px;
-            font-weight: 700;
+            font-weight: 500;
             line-height: 23px;
         }
 
@@ -335,8 +324,8 @@
     text-align: center;
 
     &:hover {
-        background-color: #313131;
-        border-color: #313131;
+        background-color: #505050;
+        border-color: #505050;
         color: white;
     }
 }
