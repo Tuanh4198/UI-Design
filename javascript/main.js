@@ -72,7 +72,6 @@ jQuery(document).ready(function($) {
     })($);
     // end Effect drop down
 
-
     // spinner quantity
     (function($) {
         $('.quantity').each(function() {
