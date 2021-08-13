@@ -33,6 +33,32 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
+.modals-wrapper.modals-popups .modal-popup .facebook {
+  background-color: #4267B2;
+  color: #fff;
+}
+.modals-wrapper.modals-popups .modal-popup .facebook:hover {
+  background-color: #0055ff;
+  border-color: #0055ff;
+}
+.modals-wrapper.modals-popups .modal-popup .facebook .icon {
+  font-size: 24px;
+}
+.modals-wrapper.modals-popups .modal-popup .facebook .text {
+  padding-left: 25px;
+}
+.modals-wrapper.modals-popups .modal-popup .google {
+  border: 1px solid #CECED0;
+  color: #242424;
+}
+.modals-wrapper.modals-popups .modal-popup .google:hover {
+  background-color: #242424;
+  color: #ffffff;
+  border-color: #242424;
+}
+.modals-wrapper.modals-popups .modal-popup .google .text {
+  padding-left: 25px;
+}
 .modals-wrapper.modals-popups .modal-popup .modal-content {
   padding: 68px 64px 50px 64px;
   background: #F9F9F9;
@@ -249,30 +275,6 @@
   display: flex;
   align-items: center;
 }
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook {
-  background-color: #4267B2;
-  color: #fff;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook:hover {
-  background-color: #0055ff;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook .icon {
-  font-size: 24px;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.facebook .text {
-  padding-left: 25px;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google {
-  border: 1px solid #CECED0;
-  color: #242424;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google:hover {
-  background-color: #242424;
-  color: #ffffff;
-}
-.modals-wrapper.modals-popups .popup-signin.modal-popup .actions-toolbar .box-account .action.google .text {
-  padding-left: 25px;
-}
 .modals-wrapper.modals-popups .popup-reset-password .block-title {
   margin-bottom: 12px;
 }
@@ -367,31 +369,17 @@
   display: flex;
   align-items: center;
 }
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook {
-  background-color: #4267B2;
-  color: #fff;
-}
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook .icon {
-  font-size: 24px;
-}
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.facebook .text {
-  padding-left: 25px;
-}
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.google {
-  border: 1px solid #CECED0;
-  color: #242424;
-}
-.modals-wrapper.modals-popups .popup-registration .block-content .actions-toolbar .box-account .action.google .text {
-  padding-left: 25px;
-}
 @media only screen and (max-width: 575px) {
   .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap {
     height: 100vh;
     max-width: 100%;
   }
+  .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap .modal-content {
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 480px) {
-  .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap {
+  .modals-wrapper.modals-popups .modal-popup .modal-inner-wrap .modal-content {
     padding: 68px 32px 0 32px;
   }
 }

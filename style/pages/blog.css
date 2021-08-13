@@ -17,7 +17,10 @@ body .seciton-blog .breadcrumbs {
 body .seciton-blog .breadcrumbs span {
   padding: 0 5px;
 }
-body .seciton-blog .container > .title {
+body .seciton-blog .box-container {
+  padding: 0 32px;
+}
+body .seciton-blog .box-container > .title {
   font-size: 40px;
   font-weight: bold;
   line-height: 52.5px;
@@ -25,7 +28,7 @@ body .seciton-blog .container > .title {
   font-family: 'EB Garamond', serif;
   padding-bottom: 12px;
 }
-body .seciton-blog .container > .title .color-red {
+body .seciton-blog .box-container > .title .color-red {
   color: #C31D1D;
 }
 body .seciton-blog .blog-menu {
@@ -515,7 +518,7 @@ body .seciton-blog .blog-bottom .blog-content .news-bottom .box-right .banner-2 
   body .seciton-blog .breadcrumbs {
     display: none;
   }
-  body .seciton-blog .container > .title {
+  body .seciton-blog .box-container > .title {
     font-size: 24px;
     line-height: 31.32px;
     padding-top: 20px;

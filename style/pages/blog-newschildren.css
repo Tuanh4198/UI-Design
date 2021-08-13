@@ -11,6 +11,12 @@ body .blog-children .breadcrumbs {
 body .blog-children .breadcrumbs span {
   padding: 0 5px;
 }
+body .blog-children .box-container {
+  padding: 0 32px;
+}
+body .blog-children .box-container {
+  padding: 0 32px;
+}
 body .blog-children .new .title a {
   color: #242424;
 }
