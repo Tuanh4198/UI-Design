@@ -2,6 +2,7 @@
 @import '../layout/product.less';
 @import './_header.less';
 @import './_footer.less';
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -135,9 +136,12 @@ button {
             li {
                 width: 90px;
                 height: 3px;
+                
                 button {
                     width: 90px;
                     height: 3px;
+                    border-radius: 0;
+                    
                     &:before {
                         width: 90px;
                         height: 3px;
@@ -149,8 +153,8 @@ button {
                 &.slick-active {
                     button {
                         &:before {
-                            background: rgba(255, 255, 255,1);
-                            border-color: rgba(255, 255, 255,1);    
+                            background: rgba(255, 255, 255);
+                            border-color: rgba(255, 255, 255);    
                         }
                     }
                 }
@@ -2064,5 +2068,4 @@ button {
             }
         }
     }
-
 }
