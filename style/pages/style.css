@@ -461,7 +461,7 @@ header {
   margin-top: 15px;
 }
 .header-account .toggle-content .modal-content .modal-content-item .action:hover {
-  background-color: #313131;
+  background-color: #505050;
   color: white;
 }
 .header-account .toggle-content .modal-content .login-wrapper .action {
@@ -469,7 +469,7 @@ header {
   color: white;
 }
 .header-account .toggle-content .modal-content .login-wrapper .action:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 .header-account .toggle-content .modal-content .register-wrapper {
   padding-top: 20px;
@@ -701,7 +701,7 @@ header {
   padding: 18px 0;
 }
 .minicart .minicart-content .modal-content .actions .action:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 .minicart .minicart-content .modal-content .actions .sub-title {
   font-size: 12px;
@@ -1059,7 +1059,7 @@ header {
   margin-top: 6px;
 }
 .header-bottom .banner-header .action:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 .header-bottom .banner-content {
   max-width: 307px;
@@ -1114,7 +1114,7 @@ header {
   display: none;
 }
 .viewed-products .viewed-product-tab:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 .viewed-products .viewed-products-content {
   width: 100%;
@@ -1211,7 +1211,7 @@ header {
   line-height: 24px;
 }
 .viewed-products .view-product-action .add-all:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 .viewed-products.visible .viewed-product-tab {
   right: -120px;
@@ -1462,6 +1462,29 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .header-bottom .header-bottom-content {
+    position: relative;
+    padding-bottom: 47px;
+  }
+  .header-bottom .banner-header {
+    min-width: 100%;
+  }
+  .header-bottom .banner-header .title {
+    font-size: 25px;
+  }
+  .header-bottom .banner-header .action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .header-bottom .banner-content {
+    margin-left: 0;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 6px;
+  }
 }
 @media screen and (max-width: 575px) {
   .header-search .title-search {
@@ -1551,29 +1574,6 @@ header {
   }
   .header-top {
     display: none;
-  }
-  .header-bottom .header-bottom-content {
-    position: relative;
-    padding-bottom: 47px;
-  }
-  .header-bottom .banner-header {
-    min-width: 100%;
-  }
-  .header-bottom .banner-header .title {
-    font-size: 25px;
-  }
-  .header-bottom .banner-header .action {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  .header-bottom .banner-content {
-    margin-left: 0;
-    max-width: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    margin-top: 6px;
   }
   .header .logo img {
     max-width: 125px;
@@ -1695,6 +1695,9 @@ header {
   display: inline-block;
   margin-top: 10px;
 }
+.footer .footer-about .action:hover {
+  background-color: #505050;
+}
 .footer .contact-info {
   border-width: 1px 0;
   border-style: solid;
@@ -1802,7 +1805,7 @@ header {
   border-radius: 0;
 }
 .footer .subscribe .form-subscribe .block-content .action:hover {
-  background-color: #313131;
+  background-color: #505050;
 }
 .footer .collapsible .footer-title {
   position: relative;
@@ -1892,8 +1895,8 @@ header {
   text-align: center;
 }
 .up-active:hover {
-  background-color: #313131;
-  border-color: #313131;
+  background-color: #505050;
+  border-color: #505050;
   color: white;
 }
 @media screen and (max-width: 1439px) and (max-width: 1200px) {
