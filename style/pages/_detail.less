@@ -5,10 +5,20 @@
 @import '../heradg.com.vn/_footer';
 
 .detail-page {
+	border-bottom: 2px solid #F5F6F8;
 	.product-wrapper {
 		margin-bottom: 0;
 	}
-
+	.breadcrumbs-wrapper{
+		padding: 15px 32px 8px 32px;
+		.breadcrumbs,
+		a{
+			font-size: 13px;
+			line-height: 15px;
+			font-weight: 400;
+			color: #999999;
+		}
+	}
 	.title-wrapper {
 		display: flex;
 		align-items: center;
@@ -243,6 +253,7 @@
 					border: 2px solid #FFFFFF;
 					box-sizing: border-box;
 					padding: 2px;
+					padding-bottom: 1px;
 					transition: .3s ease-in;
 					cursor: pointer;
 
@@ -893,7 +904,14 @@
 		}
 	}
 }
-
+@media only screen and (max-width: 1199px){
+	.detail-page {
+		.breadcrumbs-wrapper{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
 @media only screen and (min-width: 1600px){
 	.detail-page {
 		.product_detail {

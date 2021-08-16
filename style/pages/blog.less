@@ -95,9 +95,11 @@ body{
                 justify-content: flex-end;
                 .title{
                     font-size: 14px;
-                    font-weight: 500px;
+                    font-weight: 500;
                     color:#999999;
                     text-transform: uppercase;
+                    padding-top: 24px;
+                    padding-bottom: 21px;
                 }
             }
         }
@@ -221,7 +223,7 @@ body{
                             }
                         }
                         .news {
-                            flex: 1;
+                            width: 29%;
                             padding-left: 24px;
                             .new {
                                 padding-bottom: 25px;
@@ -444,7 +446,14 @@ body{
         }
     }
 }
-
+@media only screen and (min-width: 1600px){
+    .seciton-blog {
+        .container{
+            max-width: 1600px;
+            padding: 0 30px;
+        }
+    }
+}
 @media only screen and (max-width:1199px){
     body {
         .seciton-blog {
@@ -463,6 +472,7 @@ body{
                                 display: -webkit-flex;
                                 display: flex;
                                 justify-content: space-between;
+                                width: 100%;
                                 .new{
                                     width: ~"calc(50% - 6px)";
                                 }
@@ -478,7 +488,7 @@ body{
                         }
                     }
                 }
-            }
+            } 
         }
     }
 }
@@ -600,6 +610,7 @@ body{
                     .title {
                         font-size: 12px;
                         line-height: 14.52px;
+                        padding: 16px 0 13px 0;
                     }
                 }
             } 

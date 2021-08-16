@@ -392,7 +392,7 @@ header {
 					margin-top: 15px;
 
 					&:hover {
-						background-color: #313131;
+						background-color: #505050;
 						color: white;
 					}
 				}
@@ -406,7 +406,7 @@ header {
 					color: white;
 
 					&:hover {
-						background-color: #313131;
+						background-color: #505050;
 					}
 				}
 			}
@@ -679,7 +679,7 @@ header {
 					padding: 18px 0;
 
 					&:hover {
-						background-color: #313131;
+						background-color: #505050;
 					}
 				}
 
@@ -1127,7 +1127,7 @@ header {
 			margin-top: 6px;
 
 			&:hover {
-				background-color: #313131;
+				background-color: #505050;
 			}
 		}
 	}
@@ -1193,13 +1193,13 @@ header {
 		width: auto;
 		height: auto;
 		border-radius: 0;
-
+		z-index: 10;
 		&:before {
 			display: none;
 		}
 
 		&:hover {
-			background-color: #313131;
+			background-color: #505050;
 		}
 	}
 
@@ -1286,6 +1286,13 @@ header {
 						text-decoration: none;
 					}
 				}
+				.inform{
+					color: #858585;
+					font-size: 14px;
+					line-height: 17px;
+					float: right;
+					margin-top: 5px;
+				}
 			}
 
 			&:last-child {
@@ -1312,7 +1319,7 @@ header {
 
 
 			&:hover {
-				background-color: #313131;
+				background-color: #505050;
 			}
 		}
 	}
@@ -1545,7 +1552,11 @@ header {
 
 			.btn-close {
 				background-image: url('../../images/close-menu.png');
+				&::before{
+					display: none;
+				}
 			}
+			
 		}
 
 		.nav-mobile-content {

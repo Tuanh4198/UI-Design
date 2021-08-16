@@ -14,7 +14,8 @@ body{
                 padding: 0 5px;
             }
         }
-        .container{
+        .box-container{
+            padding: 0 30px;
             & > .title{
                 font-size: 40px;
                 font-weight: bold;
@@ -33,7 +34,6 @@ body{
                 display: -webkit-flex;
                 display: flex;
                 flex-wrap: wrap;
-                max-width: 950px;
                 .toolbar-policy {
                     max-width: 200px;
                     & > .policy-label{
@@ -105,15 +105,12 @@ body{
         }
     }
 }
-
-@media only screen and (max-width:991px){
+@media only screen and (max-width:1199px){
     body {
         .section-policy {
-            .blog-bottom{
-                .container{
-                    max-width: 720px
-                }
-            } 
+            .box-container{
+                padding: 0 15px;
+            }
         }
     }
 }
@@ -122,7 +119,6 @@ body{
         .section-policy {
             .blog-bottom{
                 .container{
-                    max-width: 540px;
                     .toolbar-policy {
                         margin-bottom: 30px;
                         width: 100%;
@@ -155,13 +151,14 @@ body{
         }
     }
 }
+
 @media only screen and (max-width:575px){
     body {
         .section-policy {
             .breadcrumbs{
                 display: none;
             }
-            .container > .title {
+            .box-container > .title {
                 font-size: 24px;
                 line-height: 31px;
                 padding: 20px 0 16px 0;

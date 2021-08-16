@@ -17,19 +17,29 @@ html {
 }
 
 //button,link
-button,
-a {
-	border: none;
-	.transition(all .3s ease);
-	text-decoration: none;
-
-	&:focus,
-	&:hover {
-		text-decoration: none;
-		outline: none;
+body{
+	button,
+	a ,
+	.btn-check:focus+.btn,
+	.btn:focus{
 		border: none;
+		.transition(all .3s ease);
+		text-decoration: none;
+	
+		&:focus,
+		&:hover,
+		&:focus-visible,
+		&:active,
+		&:visited {
+			text-decoration: none;
+			outline: none;
+			box-shadow: none;
+			-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+		}
 	}
 }
+
 
 p,
 h1,
@@ -82,4 +92,19 @@ table {
 		max-width: 1600px;
 		padding: 0 30px;
 	}
+}
+@media only screen and (max-width: 1599px) {
+    body {
+        .container {
+            max-width: 100%;
+			padding: 0 32px;
+        }
+    }
+}
+@media only screen and (max-width: 1199px){
+	body {
+        .container {
+			padding: 0 15px;
+        }
+    }
 }

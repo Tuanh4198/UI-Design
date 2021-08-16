@@ -381,7 +381,7 @@
 
 			.drop-down-field {
 				position: relative;
-
+				cursor: pointer;
 				.field {
 					&:hover {
 						+ .list-option {
@@ -410,7 +410,9 @@
 					opacity: 0;
 					visibility: hidden;
 					padding: 10px 0;
-
+					box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+					-moz-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+					-webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
 					li {
 						font-size: 14px;
 						height: 30px;

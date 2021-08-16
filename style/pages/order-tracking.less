@@ -14,7 +14,8 @@ body{
                 padding: 0 5px;
             }
         }
-        .container{
+        .box-container{
+            padding: 0 30px;
             & > .title{
                 font-size: 40px;
                 font-weight: bold;
@@ -73,8 +74,9 @@ body{
                         font-size: 14px;
                         line-height: 17px;
                         cursor: pointer;
+                        border: none;
                         &:hover{
-                            background-color: #313131;
+                            background-color: #505050;
                         }
                     }
                 }
@@ -82,13 +84,23 @@ body{
         }
     }
 }
+@media only screen and (max-width:1199px){
+    body {
+        .seciton-order-tracking{
+            .box-container{
+                padding: 0 15px;
+            }
+        } 
+    }
+}
 @media only screen and (max-width:575px){
     body {
         .seciton-order-tracking {
+            padding-bottom: 50px;
             .breadcrumbs{
                 display: none;
             }
-            .container {
+            .box-container {
                 & > .title{
                     font-size: 24px;
                     line-height: 31.32px;
