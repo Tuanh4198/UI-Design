@@ -168,28 +168,16 @@ jQuery(document).ready(function($) {
     });
 });
 
-// show pass
-function showPass() {
-    var x = document.getElementById("pass");
-    if (x.type === "password") {
-        x.type = "text";
-        $('#pass').next().val("HIDE");
-    } else {
-        x.type = "password";
-        $('#pass').next().val("SHOW");
-    }
-}
-// end
-
-// show pass
-function showPass2() {
-    var y = document.getElementById("pass2");
-    if (y.type === "password") {
-        y.type = "text";
-        $('#pass2').next().val("HIDE");
-    } else {
-        y.type = "password";
-        $('#pass2').next().val("SHOW");
-    }
-}
-// end
+$(".convert-type").each(function() {
+        $(this).click(function() {
+            var input = $($(this).next());
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+                $(this).val("HIDE");
+            } else {
+                input.attr("type", "password");
+                $(this).val("SHOW");
+            }
+        });
+    })
+    // end

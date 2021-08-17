@@ -531,6 +531,7 @@
             <div class="container">
                 <div class="toolbar-policy policy">
                     <label class="policy-label" for="policy">Chính sách</label>
+                    <div class="item-choose-mobile">Chính sách thanh toán</div>
                     <div class="list_menu">
                         <div class="item-news-list">
                             <a href="#" alt="Chính sách thanh toán" class="item active">
@@ -558,13 +559,6 @@
                             </a>
                         </div>
                     </div>
-                    <select class="policy-options mobile" id="policy"> 
-                        <option value="Chính sách thanh toán" selected="selected">Chính sách thanh toán</option> 
-                        <option value="Chính sách vận chuyển">Chính sách vận chuyển</option> 
-                        <option value="Chính sách đổi trả">Chính sách đổi trả</option> 
-                        <option value="Chính sách bảo mật"> Chính sách bảo mật</option> 
-                        <option value="Hướng dẫn chọn size">Hướng dẫn chọn size </option> 
-                    </select>
                 </div>
                 <div id="box-content">
                     <div class="contains">
@@ -737,6 +731,12 @@
 <script type="text/javascript " src="./javascript/main.js "></script>
 <!-- custom js -->
 <script type="text/javascript ">
+    jQuery(document).ready(function($) {
+        $(".item-choose-mobile").click(function(e) {
+            e.preventDefault();
+            $(".page-policy").find(".toolbar-policy ").toggleClass("active");
+        })
+    })
 </script>
 
 </html>

@@ -96,11 +96,85 @@ body .blog-news .blog-menu .menu-right {
   align-items: center;
   justify-content: flex-end;
 }
-body .blog-news .blog-menu .menu-right .title {
+body .blog-news .blog-menu .menu-right .title-categories {
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   color: #999999;
   text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 21px;
+  cursor: pointer;
+}
+body .blog-news .blog-menu .menu-right .blog-categories {
+  position: relative;
+}
+body .blog-news .blog-menu .menu-right .box-categories {
+  position: absolute;
+  background-color: #ffffff;
+  top: 150%;
+  right: 0;
+  min-width: 850px;
+  padding: 24px 32px 32px 32px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+body .blog-news .blog-menu .menu-right .box-categories.active {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+body .blog-news .blog-menu .menu-right .close-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+body .blog-news .blog-menu .menu-right .close-menu::before {
+  content: "\f101";
+  font-family: flaticon;
+  cursor: pointer;
+}
+body .blog-news .blog-menu .menu-right .title-mega-menu {
+  font-size: 12px;
+  color: #242424;
+  line-height: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+body .blog-news .blog-menu .menu-right .content-mega-menu {
+  display: -webkit-box;
+  display: -ms-flex-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .blog-news .blog-menu .menu-right .content-mega-menu:before,
+body .blog-news .blog-menu .menu-right .content-mega-menu:after {
+  display: none;
+}
+body .blog-news .blog-menu .menu-right p.title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 18px;
+  padding: 0;
+}
+body .blog-news .blog-menu .menu-right .lv1 > li {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+}
+body .blog-news .blog-menu .menu-right .lv1 > li:not(:last-child) {
+  margin-bottom: 16px;
 }
 body .blog-news .blog-bottom .new .content a {
   display: block;

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./library/slick/slick.css" />
     <!-- main style -->
     <link rel="stylesheet" href="./style/pages/_category.css" />
+    <link rel="stylesheet" href="./images/page/flaticon/font/flaticon.css" />
     <!-- <link rel="stylesheet" href="./style/pages/blognews.css" /> -->
     <link rel="stylesheet" href="./style/pages/style.css" />
     <!-- link font EB Garamond-->
@@ -545,12 +546,63 @@
                         </div>
                     </div>
                     <div class="menu-right ">
-                        <div class="blog-categories ">
-                            <div class="title ">
+                        <div class="blog-categories">
+                            <div class="title-categories">
                                 <span class="text ">Tất cả <span class="text-delete">chuyên mục</span></span>
                                 <span class="icont ">
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                            </span>
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="box-categories">
+                                <div class="close-menu"></div>
+                                <div class="title-mega-menu">Tất cả chuyên mục</div>
+                                <ul class="content-mega-menu lv0">
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Giải trí</p>
+                                            <li><a href="#">Giới sao</a></li>
+                                            <li><a href="#">Nhạc hay</a></li>
+                                            <li><a href="#">Dân sinh</a></li>
+                                            <li><a href="#">Phim</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Thể thao</p>
+                                            <li><a href="#">Quần vợt</a></li>
+                                            <li><a href="#">Olympics 2020</a></li>
+                                            <li><a href="#">Tennis</a></li>
+                                            <li><a href="#">Hậu trường</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Giáo dục</p>
+                                            <li><a href="#">Tuyển sinh</a></li>
+                                            <li><a href="#">Điểm thi</a></li>
+                                            <li><a href="#">Du học</a></li>
+                                            <li><a href="#">Học tiếng anh</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Sức khỏe</p>
+                                            <li><a href="#">Tin tức</a></li>
+                                            <li><a href="#">Tư vấn</a></li>
+                                            <li><a href="#">Dinh dưỡng</a></li>
+                                            <li><a href="#">Khỏe đẹp</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Đời sống</p>
+                                            <li><a href="#">Tổ ấm</a></li>
+                                            <li><a href="#">Bài học sống</a></li>
+                                            <li><a href="#">Nhà</a></li>
+                                            <li><a href="#">Tiêu dùng</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -984,6 +1036,16 @@
 <script type="text/javascript " src="./javascript/main.js "></script>
 <!-- custom js -->
 <script type="text/javascript ">
+    jQuery(document).ready(function($) {
+        $(".blog-news").find(".blog-categories .title-categories").click(function(e) {
+            e.preventDefault();
+            $(this).next().toggleClass("active");
+        })
+        $(".blog-news").find(".close-menu").click(function(e) {
+            e.preventDefault();
+            $(this).parent().removeClass("active");
+        })
+    })
 </script>
 
 </html>

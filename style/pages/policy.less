@@ -1,6 +1,9 @@
 body{
     &.page-policy{
         color: #242424;
+        .item-choose-mobile{
+            display: none;
+        }
     }
     .section-policy{
         padding-bottom: 40px;
@@ -128,16 +131,63 @@ body{
                         display: -webkit-flex;
                         display: flex;
                         justify-content: center;
-                        .policy-label,
-                        .list_menu{
+                        position: relative;
+                        .policy-label{
                             display: none;
                         }
-                        .policy-options.mobile{
+                        .item-choose-mobile{
                             display: block;
-                            border: none;
-                            background-color: transparent;
-                            &:focus-visible{
-                                outline: none;
+                            &::after{
+                                content: "\f0d7";
+                                font-family: "FontAwesome";
+                                padding-left: 8px;
+                            }
+                        }
+                        .list_menu{
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            transform: translateX(-50%) scale(0.5);
+                            z-index: 10;
+                            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+                            -moz-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+                            -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all 0.3s ease;
+                            -moz-transition: all 0.3s ease;
+                            -webkit-transition: all 0.3s ease;
+                            -o-transition: all 0.3s ease;
+                            background-color: #ffffff;
+                            .item-news-list{
+                                margin-bottom: 0;
+                                padding: 16px 23px;
+                                width: 200px;
+                                a,a.active{
+                                    span{
+                                        border: none;
+                                    }
+                                }
+                                &:hover{
+                                    background-color: #242424;
+                                    a{
+                                        color: #ffffff;
+                                    }
+                                }
+
+                            }
+
+                        }
+                        &.active{
+                            .list_menu{
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateX(-50%) scale(1);
+                            }
+                            .item-choose-mobile{
+                                &::after{
+                                    content: "\f0d8";
+                                }
                             }
                         }
                     }
