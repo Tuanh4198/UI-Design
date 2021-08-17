@@ -89,6 +89,9 @@ button {
                 border-radius: 50%;
                 border: 1px solid #808080;
                 vertical-align: middle;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
 
@@ -112,7 +115,10 @@ button {
 
             img {
                 width: 100%;
+            }
 
+            .img-mobile{
+                display: none;
             }
         }
     }
@@ -433,18 +439,19 @@ button {
 
 }
 
-.new-product {
-    padding-left: 89px;
+.new-product { 
     margin-top: 64px;
 
     >.title {
         font-size: 30px;
         font-weight: 600;
         line-height: 38px;
+        padding-left: 89px;
     }
 
     >.content {
         margin-top: 16px;
+        padding-left: 73px;
 
         .item {
             padding-left: 16px;
@@ -454,10 +461,6 @@ button {
 
         .slick-list {
             padding-right: 200px;
-
-            .slick-track {
-                margin: 0 -16px;
-            }
         }
     }
 
@@ -484,6 +487,11 @@ button {
 
     .slick-next {
         right: 89px;
+    }
+
+    .slick-dots{
+        bottom: -10px;
+        display: none !important;
     }
 }
 
@@ -543,6 +551,15 @@ button {
 
     >.content {
         margin-top: 32px;
+    }
+
+    .selection-items{
+        margin: 0 -12px;
+    }
+
+    .selection-item{
+        width: 50%;
+        padding: 0 12px;
     }
 
     .seclection-item-child {
@@ -684,6 +701,10 @@ button {
         &:hover {
             background-color: white;
         }
+    }
+
+    .slick-dots{
+        display: none !important;
     }
 
 }
@@ -845,7 +866,14 @@ button {
     }
 
     .new-product{
-        padding-left: 16px;
+        >.title{
+            padding-left: 16px;
+        }
+
+        > .content{
+            padding-left: 0;
+        }
+
         .slick-next{
             right: 16px;
         }
@@ -864,6 +892,15 @@ button {
     .style-children{
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .new-collection {
+        .collection-detail{
+            .title{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
     }
 }
 
@@ -886,7 +923,6 @@ button {
     }
 
     .new-product {
-        padding-right: 16px;
         > .title{
             font-size: 24px;
             line-height: 32px;
@@ -897,9 +933,15 @@ button {
                 padding-right: 0;
             }
         }
+
+        .slick-dots{
+            display: block !important;
+        }
     }
 
     .new-collection {
+        margin-top: 50px;
+
         .collection-images{
             width: 100%;
         }
@@ -907,11 +949,6 @@ button {
         .collection-detail{
             margin-top: 16px;
             padding-left: 16px;
-
-            .title{
-                font-size: 24px;
-                line-height: 32px;
-            }
 
             .description{
                 margin-top: 6px;
@@ -922,14 +959,17 @@ button {
             }
         }
     }
+    
 
     .brand-selection {
         margin-top: 40px;
+        padding: 0;
 
         > .title{
             font-size: 24px;
             line-height: 32px;
             text-align: initial;
+            padding: 0 16px;
         }
 
         .seclection-item-child{
@@ -938,6 +978,8 @@ button {
 
         .selection-item{
             margin-bottom: 16px;
+            width: 100%;
+            padding: 0;
 
             &:last-child{
                 margin-bottom: 0;
@@ -951,10 +993,11 @@ button {
         > .title{
             font-size: 24px;
             line-height: 32px;
+            padding: 0 16px;
         }
 
         > .content{
-            padding-left: 36px;
+            padding-left: 40px;
 
             .item {
                 padding-left: 12px;
@@ -982,11 +1025,20 @@ button {
                     }
                 }
             }
+
+            .slick-list{
+                padding-right: 100px;
+            }
         }
 
         .slick-prev{
             left: 35px;
-        }           
+        }   
+        
+        .slick-dots{
+            display: block !important;
+            right: 16px;
+        }
     }
 
     .style-children {
@@ -1011,11 +1063,33 @@ button {
 
         .style-children-detail{
             margin-top: 24px;
+
+            .number{
+                max-width: 100%;
+            }
         }
     }
 }
 
 @media screen and (max-width: (@screen__ss - 1)){
+    .slider-home{
+        .slick-prev, 
+        .slick-next{
+            display: none !important;
+        }
+
+        .slick-dots{
+            bottom: 16px;
+        }
+
+        .img-larger{
+            display: none;
+        }
+
+        .img-mobile{
+            display: block;
+        }
+    }
     .style-children {
         padding: 40px 0;
 
@@ -1066,10 +1140,57 @@ button {
             text-align: center;
         }
 
+        > .content {
+            .item{
+                padding: 0;
+
+                .product-detail-wrapper{
+                    padding: 8px;
+                    text-align: center;
+                }
+            }
+        }
+
         .slick-prev,
         .slick-next{
-            display: none;
+            display: none !important;
         }
     }
 
+    .blog-slider {
+
+        >.title{
+            font-size: 20px;
+        }
+
+        > .content{
+            padding-left: 36px;
+
+            .slick-list{
+                padding-right: 70px;
+            }
+        }
+
+        .slick-prev, 
+        .slick-next{
+            display: none !important;
+        }
+    }
+
+}
+
+@media screen and (max-width: (@screen__xs-m - 1)){
+    .blog-slider {
+        > .content{
+            padding-left: 28px;
+
+            .slick-list{
+                padding-right: 0;
+            }
+        }
+
+        .nav-tabs{
+            margin-bottom: 16px;
+        }
+    }
 }

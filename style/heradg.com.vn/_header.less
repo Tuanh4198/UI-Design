@@ -451,7 +451,7 @@ header {
 			width: 20px;
 			height: 20px;
 			border-radius: 50%;
-			background-color: #C31D1D;
+			background-color: #242424;
 			color: white;
 			font-size: 12px;
 			line-height: 20px;
@@ -516,6 +516,7 @@ header {
 			.product-list {
 				height: calc(~"100% - 45px - 101px");
 				overflow-y: auto;
+				padding-right: 5px;
 
 				&::-webkit-scrollbar {
 					width: 5px;
@@ -568,13 +569,20 @@ header {
 						}
 
 						.group-qty {
-
 							.label {
 								margin-right: 12px;
 								color: #999999;
 							}
+
+							.quantity{
+								display: inline-block;
+							}
 						}
 
+						.product-price-wrapper{
+							margin-top: 8px;
+							margin-bottom: 0;
+						}
 
 						.quantity-nav {
 							display: inline-block;
@@ -586,9 +594,16 @@ header {
 								cursor: pointer;
 								display: inline-block;
 								vertical-align: middle;
+								font-weight: 400;
+								font-size: 16px;
+								color: #999999;
 
 								&:before {
 									font-size: 16px;
+								}
+
+								&:hover{
+									color: #242424;
 								}
 							}
 
@@ -598,6 +613,64 @@ header {
 								display: inline-block;
 								vertical-align: middle;
 								text-align: center;
+							}
+						}
+
+						.product-options{
+							margin-top: 12px;
+
+							.product-option{
+								display: inline-block;
+								padding-right: 16px;
+								border-color: #999999;
+								position: relative;
+
+								&:before{
+									content:"";
+									height: 12px;
+									width: 1px;
+									background-color: #999999;
+									position: absolute;
+									top: 50%;
+									transform: translateY(-50%);
+									right: 8px;
+								}
+
+								&:last-child{
+									padding-right: 0;
+									&:before{
+										.hidden-visibility;
+									}
+								}
+
+								.option-item{
+									font-size: 13px;
+									font-weight: 500;
+									line-height: 16px;
+									color: #999999;
+								}
+							}
+						}
+
+						.product-label{
+							position: static;
+							display: inline-block;
+							margin-left: 5px;
+
+							.label-content{
+								background-color: transparent;
+								min-width: auto;
+								
+								.discount{
+									color: #C31D1D;
+									font-size: 16px;
+									font-weight: 400;
+									line-height: 24px;									
+								}
+
+								&:before{
+									.hidden-visibility;
+								}
 							}
 						}
 

@@ -502,7 +502,7 @@ header {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #C31D1D;
+  background-color: #242424;
   color: white;
   font-size: 12px;
   line-height: 20px;
@@ -563,6 +563,7 @@ header {
 .minicart .minicart-content .modal-content .product-list {
   height: calc(100% - 45px - 101px);
   overflow-y: auto;
+  padding-right: 5px;
 }
 .minicart .minicart-content .modal-content .product-list::-webkit-scrollbar {
   width: 5px;
@@ -612,6 +613,13 @@ header {
   margin-right: 12px;
   color: #999999;
 }
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .group-qty .quantity {
+  display: inline-block;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-price-wrapper {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
 .minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .quantity-nav {
   display: inline-block;
 }
@@ -622,9 +630,15 @@ header {
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
 }
 .minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .quantity-nav .quantity-button:before {
   font-size: 16px;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .quantity-nav .quantity-button:hover {
+  color: #242424;
 }
 .minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .quantity-nav .number {
   border-width: 0;
@@ -632,6 +646,70 @@ header {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-options {
+  margin-top: 12px;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-options .product-option {
+  display: inline-block;
+  padding-right: 16px;
+  border-color: #999999;
+  position: relative;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-options .product-option:before {
+  content: "";
+  height: 12px;
+  width: 1px;
+  background-color: #999999;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 8px;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-options .product-option:last-child {
+  padding-right: 0;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-options .product-option:last-child:before {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-options .product-option .option-item {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #999999;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-label {
+  position: static;
+  display: inline-block;
+  margin-left: 5px;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-label .label-content {
+  background-color: transparent;
+  min-width: auto;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-label .label-content .discount {
+  color: #C31D1D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-label .label-content:before {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 .minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-action {
   background-color: transparent;
@@ -9751,6 +9829,10 @@ button {
   border-radius: 50%;
   border: 1px solid #808080;
   vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .slick-dots li.slick-active button:before {
   width: 10px;

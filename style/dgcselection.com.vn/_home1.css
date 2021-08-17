@@ -2185,7 +2185,7 @@ header {
     border-width: 1px 0 0;
     border-style: solid;
     border-color: #E6E6E6;
-    padding: 24px 0;
+    padding: 20px 0;
     margin-top: 33px;
     text-align: center;
   }
@@ -2214,14 +2214,19 @@ header {
   }
   .social-profile .social-item {
     margin-bottom: 0;
+    margin-right: 43px;
   }
   .social-profile .social-item:last-child .social-link {
     border-width: 0;
   }
   .social-profile .social-link {
-    border-width: 0 0 1px;
     text-align: initial;
-    padding: 12px;
+    font-size: 0;
+    line-height: initial;
+  }
+  .social-profile .social-link span {
+    font-size: 14px;
+    margin-right: 0;
   }
   .footer .collapsible .collapsible-tab {
     display: block;
@@ -2234,12 +2239,6 @@ header {
   }
 }
 @media screen and (max-width: 479px) {
-  .social-profile .social-link {
-    font-size: 0;
-  }
-  .social-profile .social-link span {
-    font-size: 14px;
-  }
   .footer .subscribe .form-subscribe .block-content .action {
     width: 118px;
   }
@@ -2350,6 +2349,10 @@ button {
   border-radius: 50%;
   border: 1px solid #808080;
   vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .slick-dots li.slick-active button:before {
   width: 10px;
@@ -2362,6 +2365,9 @@ button {
 }
 .slider-home .slick-slide .item img {
   width: 100%;
+}
+.slider-home .slick-slide .item .img-mobile {
+  display: none;
 }
 .slider-home .slick-dots {
   bottom: 24px;
@@ -2617,16 +2623,17 @@ button {
   margin-right: 5px;
 }
 .new-product {
-  padding-left: 89px;
   margin-top: 64px;
 }
 .new-product > .title {
   font-size: 30px;
   font-weight: 600;
   line-height: 38px;
+  padding-left: 89px;
 }
 .new-product > .content {
   margin-top: 16px;
+  padding-left: 73px;
 }
 .new-product > .content .item {
   padding-left: 16px;
@@ -2635,9 +2642,6 @@ button {
 }
 .new-product > .content .slick-list {
   padding-right: 200px;
-}
-.new-product > .content .slick-list .slick-track {
-  margin: 0 -16px;
 }
 .new-product .slick-prev,
 .new-product .slick-next {
@@ -2658,6 +2662,10 @@ button {
 }
 .new-product .slick-next {
   right: 89px;
+}
+.new-product .slick-dots {
+  bottom: -10px;
+  display: none !important;
 }
 .new-collection {
   margin-top: 65px;
@@ -2711,6 +2719,13 @@ button {
 }
 .brand-selection > .content {
   margin-top: 32px;
+}
+.brand-selection .selection-items {
+  margin: 0 -12px;
+}
+.brand-selection .selection-item {
+  width: 50%;
+  padding: 0 12px;
 }
 .brand-selection .seclection-item-child {
   position: relative;
@@ -2824,6 +2839,9 @@ button {
 .blog-slider .slick-prev:hover,
 .blog-slider .slick-next:hover {
   background-color: white;
+}
+.blog-slider .slick-dots {
+  display: none !important;
 }
 .style-children {
   background-color: #0F1F3D;
@@ -2963,8 +2981,11 @@ button {
     font-weight: 600;
     line-height: 38px;
   }
-  .new-product {
+  .new-product > .title {
     padding-left: 16px;
+  }
+  .new-product > .content {
+    padding-left: 0;
   }
   .new-product .slick-next {
     right: 16px;
@@ -2981,6 +3002,10 @@ button {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .new-collection .collection-detail .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 @media screen and (max-width: 767px) {
   .history-brand .history-brand-content .title {
@@ -2993,9 +3018,6 @@ button {
   .history-brand .history-brand-content .action {
     margin-top: 24px;
   }
-  .new-product {
-    padding-right: 16px;
-  }
   .new-product > .title {
     font-size: 24px;
     line-height: 32px;
@@ -3003,16 +3025,18 @@ button {
   .new-product > .content .slick-list {
     padding-right: 0;
   }
+  .new-product .slick-dots {
+    display: block !important;
+  }
+  .new-collection {
+    margin-top: 50px;
+  }
   .new-collection .collection-images {
     width: 100%;
   }
   .new-collection .collection-detail {
     margin-top: 16px;
     padding-left: 16px;
-  }
-  .new-collection .collection-detail .title {
-    font-size: 24px;
-    line-height: 32px;
   }
   .new-collection .collection-detail .description {
     margin-top: 6px;
@@ -3022,17 +3046,21 @@ button {
   }
   .brand-selection {
     margin-top: 40px;
+    padding: 0;
   }
   .brand-selection > .title {
     font-size: 24px;
     line-height: 32px;
     text-align: initial;
+    padding: 0 16px;
   }
   .brand-selection .seclection-item-child {
     margin-bottom: 16px;
   }
   .brand-selection .selection-item {
     margin-bottom: 16px;
+    width: 100%;
+    padding: 0;
   }
   .brand-selection .selection-item:last-child {
     margin-bottom: 0;
@@ -3043,9 +3071,10 @@ button {
   .blog-slider > .title {
     font-size: 24px;
     line-height: 32px;
+    padding: 0 16px;
   }
   .blog-slider > .content {
-    padding-left: 36px;
+    padding-left: 40px;
   }
   .blog-slider > .content .item {
     padding-left: 12px;
@@ -3069,8 +3098,15 @@ button {
     line-height: 19px;
     margin-top: 16px;
   }
+  .blog-slider > .content .slick-list {
+    padding-right: 100px;
+  }
   .blog-slider .slick-prev {
     left: 35px;
+  }
+  .blog-slider .slick-dots {
+    display: block !important;
+    right: 16px;
   }
   .style-children {
     padding: 40px 16px;
@@ -3090,8 +3126,24 @@ button {
   .style-children .style-children-detail {
     margin-top: 24px;
   }
+  .style-children .style-children-detail .number {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 575px) {
+  .slider-home .slick-prev,
+  .slider-home .slick-next {
+    display: none !important;
+  }
+  .slider-home .slick-dots {
+    bottom: 16px;
+  }
+  .slider-home .img-larger {
+    display: none;
+  }
+  .slider-home .img-mobile {
+    display: block;
+  }
   .style-children {
     padding: 40px 0;
   }
@@ -3130,8 +3182,39 @@ button {
   .new-product > .title {
     text-align: center;
   }
+  .new-product > .content .item {
+    padding: 0;
+  }
+  .new-product > .content .item .product-detail-wrapper {
+    padding: 8px;
+    text-align: center;
+  }
   .new-product .slick-prev,
   .new-product .slick-next {
-    display: none;
+    display: none !important;
+  }
+  .blog-slider > .title {
+    font-size: 20px;
+  }
+  .blog-slider > .content {
+    padding-left: 36px;
+  }
+  .blog-slider > .content .slick-list {
+    padding-right: 70px;
+  }
+  .blog-slider .slick-prev,
+  .blog-slider .slick-next {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 359px) {
+  .blog-slider > .content {
+    padding-left: 28px;
+  }
+  .blog-slider > .content .slick-list {
+    padding-right: 0;
+  }
+  .blog-slider .nav-tabs {
+    margin-bottom: 16px;
   }
 }
