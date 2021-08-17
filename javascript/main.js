@@ -3,6 +3,10 @@ jQuery(document).ready(function($) {
         $(this).slick($(this).data());
     });
 
+	$(".select2").each(function() {
+        $(this).select2();
+    });
+
     // fixed menu
     (function($) {
         let menu = $('.fixed-main-menu');
@@ -108,11 +112,11 @@ jQuery(document).ready(function($) {
 
     //toggle popup
     $(document).ready(function() {
-            $(".modals-wrapper").on('click', '.action-close', function(e) {
-                $(".modals-wrapper").find(".modal-popup").removeClass("_show");
-            })
-        })
-        //end
+		$(".modals-wrapper").on('click', '.action-close', function(e) {
+			$(".modals-wrapper").find(".modal-popup").removeClass("_show");
+		})
+	})
+	//end
 
     // toggle button
     $(".toggle-tab").click(function(event) {

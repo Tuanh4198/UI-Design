@@ -170,6 +170,57 @@
 }
 
 .category-page {
+	.block-banner-category {
+		margin-left: 0;
+		margin-right: 0;
+
+		.banner-category {
+			position: relative;
+			overflow: hidden;
+			padding: 0;
+
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+
+		img {
+			width: 100%;
+			transition: all 0.3s ease-in;
+		}
+
+		.context-wrapper {
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			width: 70%;
+
+			.title {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 24px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				margin-bottom: 7px;
+			}
+
+			.content {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 18px;
+				color: #FFFFFF;
+			}
+		}
+	}
+
 	.breadcrumbs-wrapper {
 		margin-bottom: 25px;
 		margin-top: 15px;
