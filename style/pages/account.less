@@ -74,6 +74,13 @@ body{
                 border-bottom: 2px solid #E8E8E8;
                 .item-news-list{
                     width: 25%;
+                    &.active{
+                        a{
+                            &::before{
+                                width: 100%;
+                            }
+                        }
+                    }
                     a{
                         color: #242424;
                         font-size: 14px;
@@ -88,11 +95,6 @@ body{
                         display: -webkit-flex;
                         display: flex;
                         justify-content: center;
-                        &.active{
-                            &::before{
-                                width: 100%;
-                            }
-                        }
                         &:hover{
                             &::before{
                                 width: 100%;
@@ -117,6 +119,12 @@ body{
         }
         .blog-bottom{
             background-color:  #F9F9F9;
+            .tabcontent{
+                display: none;
+                &.active{
+                    display: block;
+                }
+            }
             h2{
                 font-size: 26px;
                 font-weight: 600;
