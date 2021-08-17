@@ -89,6 +89,9 @@ button {
                 border-radius: 50%;
                 border: 1px solid #808080;
                 vertical-align: middle;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
 
@@ -112,7 +115,10 @@ button {
 
             img {
                 width: 100%;
+            }
 
+            .img-mobile{
+                display: none;
             }
         }
     }
@@ -433,18 +439,19 @@ button {
 
 }
 
-.new-product {
-    padding-left: 89px;
+.new-product { 
     margin-top: 64px;
 
     >.title {
         font-size: 30px;
         font-weight: 600;
         line-height: 38px;
+        padding-left: 89px;
     }
 
     >.content {
         margin-top: 16px;
+        padding-left: 73px;
 
         .item {
             padding-left: 16px;
@@ -454,10 +461,6 @@ button {
 
         .slick-list {
             padding-right: 200px;
-
-            .slick-track {
-                margin: 0 -16px;
-            }
         }
     }
 
@@ -479,11 +482,16 @@ button {
     }
 
     .slick-prev {
-        right: 174px;
+        right: 125px;
     }
 
     .slick-next {
         right: 89px;
+    }
+
+    .slick-dots{
+        bottom: -10px;
+        display: none !important;
     }
 }
 
@@ -545,6 +553,15 @@ button {
         margin-top: 32px;
     }
 
+    .selection-items{
+        margin: 0 -12px;
+    }
+
+    .selection-item{
+        width: 50%;
+        padding: 0 12px;
+    }
+
     .seclection-item-child {
         position: relative;
         margin-bottom: 24px;
@@ -597,6 +614,7 @@ button {
     padding-top: 72px;
     padding-bottom: 139px;
     background-color: #E7E7E7;
+    margin-top: 104px;
 
     >.title {
         text-align: center;
@@ -618,12 +636,13 @@ button {
                 padding: 26px 23px;
                 background-color: white;
 
-                .category {
+                .categories{
                     font-size: 11px;
                     font-weight: 600;
                     line-height: 13px;
                     text-transform: uppercase;
                     display: inline-block;
+                    color: #00174F;
                 }
 
                 .name {
@@ -682,6 +701,10 @@ button {
         &:hover {
             background-color: white;
         }
+    }
+
+    .slick-dots{
+        display: none !important;
     }
 
 }
@@ -750,6 +773,7 @@ button {
             font-weight: 600;
             line-height: 30px;
             max-width: 427px;
+            text-transform: uppercase;
         }
 
         .detail-description {
@@ -762,6 +786,7 @@ button {
 
         .number {
             max-width: 432px;
+            margin-top: 28px;
 
             .number-item {
                 border-width: 1px 0 0;
@@ -802,354 +827,370 @@ button {
     }
 }
 
-.suggest-product-categories {
-    .suggest-product-categories-main {
-        padding-top: 104px;
-        padding-right: 200px;
-        padding-bottom: 100px;
-
-        .title {
-            font-family: 'EB Garamond', serif;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 63px;
-            text-align: center;
-            letter-spacing: -0.01em;
-            color: #242424;
-            margin-bottom: 22px;
+// responsive
+@media screen and (max-width: (@screen__xxl-m - 1)){
+    .new-collection {
+        .collection-images{
+            width: 60%;
+        }
+        .collection-detail{
+            padding-left: 50px;
         }
     }
 
-    .nav-tabs {
-        a {
-            &:after {
-                background-color: #ffffff;
-            }
-
-            &.active {
-                &:after {
-                    background-color: @base_color;
-                }
-
-            }
-        }
-    }
-
-    .slick-slider {
-        .slick-prev {
-            left: auto;
-            right: -71px;
+    .style-children {
+        .style-children-images{
+            width: 60%;
         }
 
-        .slick-next {
-            right: -146px;
-
+        .style-children-detail{
+            padding-left: 40px;
         }
-    }
-
-    .slick-list {
-        padding-left: 200px;
-
     }
 }
 
-.news-blog {
-    background: #f7f7f7;
-    padding-top: 96px;
-    padding-bottom: 129px;
+@media screen and (max-width: (@screen__xl-m - 1)){
+    .brand-selection {
+        padding: 0 16px;
 
-    .news-blog-main {
-        max-width: 1440px;
-        max-width: 1336px;
-        margin-left: auto;
-        margin-right: auto;
+        .selection-item-detail{
+            left: 24px;
+            bottom: 24px;
 
-        >.row {
-            margin-left: -53px;
-            margin-right: -53px;
-
-            .col-latest-blog,
-            .col-news {
-                padding-left: 53px;
-                padding-right: 53px;
-            }
-        }
-    }
-
-    .title {
-
-        h2 {
-            font-family: 'EB Garamond', serif;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 63px;
-
-            letter-spacing: -0.01em;
-            color: #242424;
-            margin-bottom: 33px;
-
-            .text {
-                color: #c31d1d;
-            }
-        }
-    }
-
-    .col-latest-blog {
-        flex: 0 0 68.8%;
-        max-width: 68.8%;
-
-        >.row {
-            margin-left: -53px;
-            margin-right: -53px;
-
-            .col-item-blog {
-                padding-left: 53px;
-                padding-right: 53px;
-            }
-        }
-
-        .image {
-            margin-bottom: 8px;
-        }
-
-        .category-blog {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 11px;
-            line-height: 13px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #c31d1d;
-            margin-bottom: 14px;
-        }
-
-        .blog-item-details {
-            .title {
-                font-style: normal;
+            .item-title{
+                font-size: 24px;
                 font-weight: 600;
-                font-size: 20px;
-                line-height: 28px;
-                text-align: center;
-                letter-spacing: -0.01em;
-                margin-bottom: 50px;
-
-                a {
-                    color: @base_color;
-                }
+                line-height: 38px;
             }
         }
-
-        .btn-view-more {
-            text-align: center;
-
-            a {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 15px;
-                line-height: 18px;
-                text-decoration-line: underline;
-                color: @base_color;
-            }
-        }
-
     }
 
-    .col-news {
-        flex: 0 0 31.2%;
-        max-width: 31.2%;
+    .new-product{
+        >.title{
+            padding-left: 16px;
+        }
 
-        .col-item-news {
-            margin-bottom: 24px;
+        > .content{
+            padding-left: 0;
+        }
 
-            &:last-child {
+        .slick-next{
+            right: 16px;
+        }
+
+        .slick-prev{
+            right: 55px;
+        }
+    }
+
+    .blog-slider{
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: (@screen__xm - 1)){
+    .style-children{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .new-collection {
+        .collection-detail{
+            .title{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: (@screen__m - 1)){
+    .history-brand {
+        .history-brand-content {
+            .title{
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            .description{
+                margin-top: 10px;
+            }
+
+            .action{
+                margin-top: 24px;
+            }
+        }
+    }
+
+    .new-product {
+        > .title{
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        > .content {
+            .slick-list{
+                padding-right: 0;
+            }
+        }
+
+        .slick-dots{
+            display: block !important;
+        }
+    }
+
+    .new-collection {
+        margin-top: 50px;
+
+        .collection-images{
+            width: 100%;
+        }
+
+        .collection-detail{
+            margin-top: 16px;
+            padding-left: 16px;
+
+            .description{
+                margin-top: 6px;
+            }
+
+            .action{
+                margin-top: 16px;
+            }
+        }
+    }
+    
+
+    .brand-selection {
+        margin-top: 40px;
+        padding: 0;
+
+        > .title{
+            font-size: 24px;
+            line-height: 32px;
+            text-align: initial;
+            padding: 0 16px;
+        }
+
+        .seclection-item-child{
+            margin-bottom: 16px;
+        }
+
+        .selection-item{
+            margin-bottom: 16px;
+            width: 100%;
+            padding: 0;
+
+            &:last-child{
                 margin-bottom: 0;
             }
         }
+    }
 
-        .news-item-info {
-            display: flex;
-            flex-wrap: wrap;
+    .blog-slider {
+        padding: 40px 0;
 
-            .image {
-                width: 42%;
-                padding-right: 20px;
-            }
-
-            .news-item-details {
-                width: 58%;
-
-            }
+        > .title{
+            font-size: 24px;
+            line-height: 32px;
+            padding: 0 16px;
         }
 
-        .category-blog {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 11px;
-            line-height: 13px;
-            text-transform: uppercase;
-            color: #c31d1d;
-            margin-bottom: 7px;
-        }
+        > .content{
+            padding-left: 40px;
 
-        .title {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 23px;
-            letter-spacing: -0.01em;
-            height: 69px;
-            overflow: hidden;
-            margin-bottom: 17px;
+            .item {
+                padding-left: 12px;
+                padding-right: 12px;
 
-            a {
+                .blog-detail {
+                    padding: 16px;
 
-                color: @base_color;
+                    .categories{
+                        font-size: 9px;
+                        line-height: 11px;
+                    }
+
+                    .name{
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-top: 8px;
+                    }
+
+                    .action{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 19px;
+                        margin-top: 16px;
+                    }
+                }
             }
-        }
 
-        .btn-view-more {
-            a {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 15px;
-                line-height: 18px;
-                text-decoration-line: underline;
-                color: @base_color;
+            .slick-list{
+                padding-right: 100px;
             }
         }
 
+        .slick-prev{
+            left: 35px;
+        }   
+        
+        .slick-dots{
+            display: block !important;
+            right: 16px;
+        }
+    }
+
+    .style-children {
+        padding: 40px 16px;
+
+        > .title{
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .style-children-images{
+            width: 100%;
+
+            .images-detail {
+                .logo,
+                .image-title{
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        .style-children-detail{
+            margin-top: 24px;
+
+            .number{
+                max-width: 100%;
+            }
+        }
     }
 }
 
-.hera-charity {
-    padding-top: 68px;
+@media screen and (max-width: (@screen__ss - 1)){
+    .slider-home{
+        .slick-prev, 
+        .slick-next{
+            display: none !important;
+        }
 
-    .hera-charity-content {
-        // max-width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
+        .slick-dots{
+            bottom: 16px;
+        }
 
-        >.title {
-            font-family: 'EB Garamond', serif;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 63px;
-            letter-spacing: -0.01em;
-            color: #242424;
-            margin-bottom: 56px;
+        .img-larger{
+            display: none;
+        }
+
+        .img-mobile{
+            display: block;
+        }
+    }
+    .style-children {
+        padding: 40px 0;
+
+        >.title{
+            padding: 0 24px;
+        }
+
+        .style-children-detail{
+            padding-left: 20px;
+
+            .detail-title{
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            .detail-description{
+                margin-top: 8px;
+                font-size: 11px;
+                line-height: 15px;
+            }
+
+            .number {
+                margin-top: 16px;
+
+                .number-item {
+                    padding: 16px 0;
+
+                    .count{
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+
+                    .number-title{
+                        font-size: 11px;
+                        line-height: 13px;
+                    }
+                }
+            }
+
+            .action{
+                display: none;
+            }
+        }
+    }
+
+    .new-product {
+        > .title{
             text-align: center;
+        }
 
-            span {
-                color: #d01313;
+        > .content {
+            .item{
+                padding: 0;
+
+                .product-detail-wrapper{
+                    padding: 8px;
+                    text-align: center;
+                }
             }
+        }
+
+        .slick-prev,
+        .slick-next{
+            display: none !important;
         }
     }
 
-    .hera-charity-primary {
-        display: flex;
-        flex-wrap: wrap;
+    .blog-slider {
 
-        .image {
-            width: 53.3%;
+        >.title{
+            font-size: 20px;
         }
 
-        .hera-charity-info {
-            width: 46.7%;
-            padding-left: 125px;
-            margin-top: 33px;
+        > .content{
+            padding-left: 36px;
 
-            .hera-charity-info-wrapper {
-                max-width: 427px;
+            .slick-list{
+                padding-right: 70px;
             }
+        }
 
-            .title {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 30px;
-                text-transform: uppercase;
-                color: @base_color;
-                margin-bottom: 18px;
-            }
-
-            .phares {
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 19px;
-                color: @base_color;
-                max-width: 411px;
-                margin-bottom: 28px;
-            }
-
-            .charity-sum {
-                display: table;
-                width: 100%;
-                margin-bottom: 21px;
-
-                li {
-                    display: table-row;
-
-                }
-
-                .col-left-charity,
-                .col-right-charity {
-                    display: table-cell;
-                    vertical-align: middle;
-                    padding-top: 24px;
-                    padding-bottom: 24px;
-                    border-top: 1px solid #F2F2F2;
-                }
-
-                .col-left-charity {
-                    padding-right: 28px;
-                    max-width: 65px;
-
-                    span {
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 24px;
-                        line-height: 29px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        color: @base_color;
-                    }
-                }
-
-                .col-right-charity {
-                    .container-text1 {
-                        max-width: 163px;
-                    }
-
-                    .container-text2 {
-                        max-width: 200px;
-                    }
-
-                    .container-text3 {
-                        max-width: 163px;
-                    }
-
-                    span {
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 17px;
-                        color: @base_color;
-                        display: block;
-                    }
-                }
-            }
-
-            .actions {
-                a {
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 19px;
-                    text-decoration-line: underline;
-                    color: @base_color;
-                }
-            }
-
+        .slick-prev, 
+        .slick-next{
+            display: none !important;
         }
     }
 
+}
+
+@media screen and (max-width: (@screen__xs-m - 1)){
+    .blog-slider {
+        > .content{
+            padding-left: 28px;
+
+            .slick-list{
+                padding-right: 0;
+            }
+        }
+
+        .nav-tabs{
+            margin-bottom: 16px;
+        }
+    }
 }
