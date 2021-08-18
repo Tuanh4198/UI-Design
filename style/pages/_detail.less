@@ -486,7 +486,7 @@
 		}
 
 		.modal-header {
-			padding: 15px 15px 0;
+			padding: 0;
 			border-bottom: none;
 			justify-content:flex-end;
 
@@ -496,6 +496,15 @@
 				font-weight: 300;
 				line-height: 25px;
 				color: @base_color;
+				padding: 0;
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				line-height: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 1;
 
 				&:hover {
 					color: #505050;
@@ -504,7 +513,7 @@
 		}
 
 		.modal-body {
-			padding: 5px 30px 40px;
+			padding: 40px 30px 40px;
 		}
 
 		.modal-footer {
@@ -516,7 +525,7 @@
 				height: 51px;
 				background: @base_color;
 				font-style: normal;
-				font-weight: 500;
+				font-weight: 300;
 				text-transform: uppercase;
 				font-size: 14px;
 				display: flex;
@@ -542,7 +551,7 @@
 			}
 
 			.btn-back {
-				background: white;
+				background: #FAFAFA;
 				color: @base_color;
 				text-decoration: underline;
 				
@@ -894,26 +903,23 @@
 	.detail-page {
 		.product_detail {
 			.support-option {
-				width: 80%;
+				width: 90%;
 			}
 
 			.product-option-wrapper {
-				width: 80%;
+				width: 90%;
 				float: right;
 			}
 		}
 	}
 }
-@media only screen and (max-width: 1199px){
-	.detail-page {
-		.breadcrumbs-wrapper{
-			padding-left: 15px;
-			padding-right: 15px;
-		}
-	}
-}
+
 @media only screen and (min-width: 1600px){
 	.detail-page {
+		.container {
+			min-width: 1540px;
+		}
+
 		.product_detail {
 			max-width: 1280px;
 			margin: auto;
@@ -927,6 +933,15 @@
 				width: 75%;
 				float: right;
 			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px){
+	.detail-page {
+		.breadcrumbs-wrapper{
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 }
@@ -1001,11 +1016,7 @@
 				margin-bottom: 30px
 			}
 		}
-	}
-}
 
-@media only screen and (max-width: 991px){
-	.detail-page {
 		.related-product {
 			.slick-list {
 				margin: 0;
@@ -1013,6 +1024,16 @@
 
 			.product-wrapper {
 				padding: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.detail-page {
+		.title-wrapper {
+			h4.title {
+				font-size: 24px;
 			}
 		}
 	}

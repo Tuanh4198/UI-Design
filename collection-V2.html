@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
+    <title>Collection</title>
     <!-- animation -->
     <link rel="stylesheet" href="./library/animate.css" />
     <!-- font fontawesome -->
@@ -14,13 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- fonts gstatic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- bs4 -->
     <link rel="stylesheet" href="./library/css/bootstrap.min.css" />
     <!-- slick slider -->
     <link rel="stylesheet" href="./library/slick/slick-theme.css" />
     <link rel="stylesheet" href="./library/slick/slick.css" />
     <!-- main style -->
-    <!-- <link rel="stylesheet" href="./style/pages/_category.css" /> -->
+    <!-- <link rel="stylesheet" href="./style/pages/_collection.css" /> -->
     <link rel="stylesheet" href="./style/pages/style.css" />
 </head>
 
@@ -502,438 +506,215 @@
     <!-- End header -->
 
     <!-- Content -->
-    <section class="container category-page">
-        <div class="breadcrumbs-wrapper">
-            <div class="breadcrumbs">
-                <action method="addCrumb">
-                    <argument name="crumbName" xsi:type="string">
-                        <a href="#">Trang chủ</a>
-                    </argument>
-                </action>
-                <span>/</span>
-                <action method="addCrumb">
-                    <argument name="crumbName" xsi:type="string">Hàng mới về</argument>
-                </action>
+    <section style="overflow-x: hidden;" class="collection-page">
+        <div class="new-collection">
+            <div class="title-wrapper container">
+                <h3 class="title">Colorfull Life | New Collection 2021</h3>
+                <p class="desc">Các gam màu trong cuộc sống hoà quyện tạo nên một cái “tôi” riêng biệt. Mỗi cô gái, mỗi hình tượng và ẩn chứa những màu sắc khác nhau...<br> Chú trọng tới từng uyển chuyển, sự bắt mắt bất tận của mùa hè gắn liền với màu sắc rạng rỡ. Trong
+                    BST “Colorful Life”, sự hoà quyện của các “tông” màu khéo léo mang tới một bức tranh<br> toàn cảnh đa cảm xúc, đa tính cách. Khi diện lên mình Colorful Life là thời điểm nàng mong muốn được trưng diện và sáng tạo từ chính đôi mắt thời
+                    trang của mình.</p>
             </div>
-            <h2 class="title">
-                <span>Hàng mới về</span>
-            </h2>
+            <div class="banner-wrapper">
+                <img src="./images/page/collection/banner-11.jpg" alt="">
+            </div>
         </div>
         <!--  -->
-        <div class="row">
-            <!-- key word filter -->
-            <div class="col-12">
-                <div class="filter-group-wrapper d-flex align-items-center justify-content-between">
-                    <div class="btn-action-sidebar">
-                        <button class="btn-action closer">Bộ lọc<i>ico</i></button>
-                    </div>
-                    <ul class="list-keyword d-flex align-items-center">
-                        <li><a href="#">Áo</a></li>
-                        <li><a href="#">Đầm</a></li>
-                        <li><a href="#">500.000&#8363; - 1.000.000&#8363;</a></li>
-                        <li><a href="#">Colorfull life</a></li>
-                        <li><a href="#">S</a></li>
-                        <li><a href="#">M</a></li>
-                        <li>
-                            <a href="#" class="color"> <span style="background-color:#FFA500">color cam</span></a>
-                        </li>
-                        <li class="btn-clear-all"><a href="#">Xóa tất cả</a></li>
+        <div class="summer-collection container">
+            <div class="title-wrapper">
+                <h3 class="title">Bộ sưu tập danh cho mùa hè</h3>
+                <p class="desc">Bằng sự ưu đãi tuyệt vời của chất liệu chủ đạo Poplin thống trị mùa Hè 2021, đi kèm các chất liệu lụa,<br> tơ nhật,... cùng tối đa hoá các gam màu nổi bật: Marigold, Island Green, Orange Ochre,...<br> hướng bạn tới sự cuốn hút, sôi động
+                    tràn đầy năng lượng trong Hè này.</p>
+            </div>
+            <div class="slide-wrapper">
+                <div class="thumbnail-slide">
+                    <i class="fa fa-angle-up slide-up"></i>
+                    <ul class="autoplay slider-nav" data-slides-To-Show='4' data-slides-To-Scroll='1' data-as-Nav-For='.slider-for' data-dots='false' data-focus-On-Select='true' data-vertical='true' data-vertical-Swiping='true' data-next-Arrow='.thumbnail-slide .slide-up'
+                        data-prev-Arrow='.thumbnail-slide .slide-down' data-responsive='[{"breakpoint": "575", "settings": {"slidesToShow": "3"}}]'>
+                        <li class="sm-item"><img src="./images/page//collection/slide-sm-11.jpg" /></li>
+                        <li class="sm-item"><img src="./images/page//collection/slide-sm-12.jpg" /></li>
+                        <li class="sm-item"><img src="./images/page//collection/slide-sm-13.jpg" /></li>
+                        <li class="sm-item"><img src="./images/page//collection/slide-sm-14.jpg" /></li>
+                        <li class="sm-item"><img src="./images/page//collection/slide-sm-11.jpg" /></li>
                     </ul>
-                    <div class="select-sort-option d-flex">
-                        <div class="total-product">
-                            <span>716 sản phẩm</span>
+                    <i class="fa fa-angle-down slide-down"></i>
+                </div>
+                <div class="main-slide">
+                    <ul class="autoplay slider-for" data-fade='true' data-as-Nav-For='.slider-nav' data-dots='false' data-arrows='false' data-autoplay="true" data-slides-To-Show='1' data-slides-To-Scroll='1'>
+                        <a href="#" class="item">
+                            <img src="./images/page/collection/banner-22.png">
+                            <span>Áo kiểu cổ dập ly</span>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="./images/page/collection/banner-22.png">
+                            <span>Áo kiểu cổ dập ly</span>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="./images/page/collection/banner-22.png">
+                            <span>Áo kiểu cổ dập ly</span>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="./images/page/collection/banner-22.png">
+                            <span>Áo kiểu cổ dập ly</span>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="./images/page/collection/banner-22.png">
+                            <span>Áo kiểu cổ dập ly</span>
+                        </a>
+                    </ul>
+                </div>
+                <a href="#" class="link-more">Xem thêm sản phẩm</a>
+            </div>
+        </div>
+        <!--  -->
+        <div class="material-design container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 col-12">
+                    <div class="banner-wrapper">
+                        <img src="./images/page/collection/banner-22.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="title-wrapper">
+                        <h3 class="title">Chất liệu tự nhiên</h3>
+                        <p class="desc">Bằng sự ưu đãi tuyệt vời của chất liệu chủ đạo Poplin thống trị <br> mùa Hè 2021, đi kèm các chất liệu lụa, tơ nhật,... cùng tối đa hoá <br> các gam màu nổi bật: Marigold, Island Green, Orange Ochre,...</p>
+                        <a href="#" class="btn-link-more">Xem bộ sản phẩm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="skill-block container">
+            <div class="title-wrapper">
+                <h3 class="title">Kỹ thuật cắt may</h3>
+                <p class="desc">Bằng sự ưu đãi tuyệt vời của chất liệu chủ đạo Poplin thống trị mùa Hè 2021, đi kèm các chất liệu lụa,<br> tơ nhật,... cùng tối đa hoá các gam màu nổi bật: Marigold, Island Green, Orange Ochre,...</p>
+            </div>
+            <div class="slide-product-demo">
+                <div class="slide-wrapper autoplay" data-dots='false' data-infinite="true" data-speed="300" data-padding="15" data-accessibility="true" data-autoplay="false" data-slides-To-Show="4" data-slides-To-Scroll="1" data-space="15" data-responsive='[{"breakpoint": "1200", "settings": {"slidesToShow": "3"}}, {"breakpoint": "992", "settings": {"slidesToShow": "2"}}, {"breakpoint": "768", "settings": {"slidesToShow": "2"}}, {"breakpoint": "481", "settings": {"slidesToShow": "1"}}, {"breakpoint": "361", "settings": {"slidesToShow": "1"}}]'>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-11.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="select-sort-option-wrapper">
-                            <label for="select-option">Xếp theo: <span id="key-select">BÁM CHẠY</span></label>
-                            <ul id="select-option">
-                                <li>BÁN CHẠY</li>
-                                <li>GIÁ THẤP NHẤT</li>
-                                <li>MỚI NHẤT</li>
-                            </ul>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-22.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-33.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-33.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-link-more">Xem bộ sưu tập</a>
+        </div>
+        <!--  -->
+        <div class="quilify-block container">
+            <div class="title-wrapper">
+                <h3 class="title">Sản phẩm được chăm chút tỉ mỉ</h3>
+            </div>
+            <div class="banner-wrapper">
+                <img src="./images/page/collection/banner-33.jpg" alt="">
+            </div>
+            <div class="slide-product-demo">
+                <div class="slide-wrapper autoplay" data-dots='false' data-infinite="true" data-speed="300" data-padding="15" data-accessibility="true" data-autoplay="false" data-slides-To-Show="4" data-slides-To-Scroll="1" data-space="15" data-responsive='[{"breakpoint": "1200", "settings": {"slidesToShow": "3"}}, {"breakpoint": "992", "settings": {"slidesToShow": "2"}}, {"breakpoint": "768", "settings": {"slidesToShow": "2"}}, {"breakpoint": "481", "settings": {"slidesToShow": "1"}}, {"breakpoint": "361", "settings": {"slidesToShow": "1"}}]'>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-22.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-33.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-wrapper">
+                            <a href="#">
+                                <img src="./images//page/collection/slide-22.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="see-more">
+                            <a href="#">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row" id="category-page">
-            <!-- side bar -->
-            <sidebar class="col- category-sidebar">
-                <div class="support-option">
-                    <ul class="list-support-fiter dropdown">
-                        <li>
-                            <div class="show-option d-flex align-items-center justify-content-between">
-                                <div class="name-option">Hàng mới về</div>
-                                <div class="show">-</div>
-                            </div>
-                            <div class="fretboard">
-                                <ul class="list-support-option">
-                                    <li class="active"><a href="#" title="áo">áo</a></li>
-                                    <li class="active"><a href="#" title="đầm">đầm</a></li>
-                                    <li><a href="#" title="Jumpsuit">Jumpsuit</a></li>
-                                    <li><a href="#" title="Chân váy">Chân váy</a></li>
-                                    <li><a href="#" title="Quần">Quần</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="show-option d-flex align-items-center justify-content-between">
-                                <div class="name-option">Giá</div>
-                                <div class="show">-</div>
-                            </div>
-                            <div class="fretboard">
-                                <ul class="list-support-option">
-                                    <li><a href="#" title="300.000&#8363; - 500.000&#8363;">300.000&#8363; - 500.000&#8363;</a></li>
-                                    <li class="active"><a href="#" title="500.000&#8363; - 1.000.000&#8363;">500.000&#8363; - 1.000.000&#8363;</a></li>
-                                    <li><a href="#" title="trên 1.000.000&#8363;">trên 1.000.000&#8363;</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="show-option d-flex align-items-center justify-content-between">
-                                <div class="name-option">Bộ sưu tập</div>
-                                <div class="show">-</div>
-                            </div>
-                            <div class="fretboard">
-                                <ul class="list-support-option">
-                                    <li class="active"><a href="#" title="Colorfull life">Colorfull life</a></li>
-                                    <li class="active"><a href="#" title="Summer Moments">Summer Moments</a></li>
-                                    <li><a href="#" title="Beautiful at Home">Beautiful at Home</a></li>
-                                    <li><a href="#" title="Spring Blossom">Spring Blossom</a></li>
-                                    <li><a href="#" title="Be Glamorous">Be Glamorous</a></li>
-                                    <li><a href="#" title="Be Elegant">Be Elegant</a></li>
-                                    <li><a href="#" title="Winter Breath">Winter Breath</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="show-option d-flex align-items-center justify-content-between">
-                                <div class="name-option">Kích cỡ</div>
-                                <div class="show">-</div>
-                            </div>
-                            <div class="fretboard">
-                                <ul class="list-support-option size swatch">
-                                    <li class="active"><a href="#" title="S">S</a></li>
-                                    <li><a href="#" title="M">M</a></li>
-                                    <li><a href="#" title="L">L</a></li>
-                                    <li><a href="#" title="XL">XL</a></li>
-                                    <li><a href="#" title="FREESIZE">FREESIZE</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="show-option d-flex align-items-center justify-content-between">
-                                <div class="name-option">MÀU SẮC</div>
-                                <div class="show">-</div>
-                            </div>
-                            <div class="fretboard">
-                                <ul class="list-support-option">
-                                    <li class="active"><a href="#" title="Họa tiết">Họa tiết</a></li>
-                                    <li class=""><a href="#" title="Màu trơn">Màu trơn</a></li>
-                                </ul>
-                                <!-- <ul class="list-support-option">
-                                    <li class="active"><a href="#" title="Đen" style="background-color: #000000;">#000000</a></li>
-                                    <li><a href="#" title="Xanh" style="background-color: #0000FF;">#0000FF</a></li>
-                                    <li><a href="#" title="nâu" style="background-color: #A52A2A;">#A52A2A</a></li>
-                                    <li><a href="#" title="Xanh lá" style="background-color: #008000;">#008000</a></li>
-                                    <li><a href="#" title="ghi" style="background-color: #C0C0C0;">#C0C0C0</a></li>
-                                    <li><a href="#" title="trắng" style="background-color: #EAEAEA;">#EAEAEA</a></li>
-                                    <li><a href="#" title="cầu vồng" style="background-color: #0000FF;">#0000FF</a></li>
-                                    <li><a href="#" title="cà phê" style="background-color: #C7BBB1;">#C7BBB1</a></li>
-                                    <li><a href="#" title="cam" style="background-color: #FFA500;">#FFA500</a></li>
-                                    <li><a href="#" title="hồng" style="background-color: #FFC0CB;">#FFC0CB</a></li>
-                                    <li><a href="#" title="tím" style="background-color: #800080;">#800080</a></li>
-                                    <li><a href="#" title="đỏ" style="background-color: #FF0000;">#FF0000</a></li>
-                                    <li><a href="#" title="trắng" style="background-color: #FFFFFF;">#FFFFFF</a></li>
-                                    <li><a href="#" title="vàng" style="background-color: #FFFF00;">#FFFF00</a></li>
-                                </ul> -->
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </sidebar>
-            <!-- grid product  -->
-            <div class="col- category-products">
-                <!-- list product  -->
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_1.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_2.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_2.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_1.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_1.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_2.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_2.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_1.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_1.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_2.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_2.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_1.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_1.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_2.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_2.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_1.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_1.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_2.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="product-wrapper">
-                            <div class="product-img-wrapper">
-                                <div class="product-label">
-                                    <div class="label-content">
-                                        <span class="discount">-30%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-img">
-                                    <img class="product-img-first" src="./images/page/category/product_2.jpg" />
-                                    <img class="product-img-second" src="./images/page/category/product_1.jpg" />
-                                </a>
-                                <a href="#" class="add-to-wishlist">
-                                    <img src="./images/page/category/heart.png" />
-                                </a>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <p class="product-status">Mới ra mắt</p>
-                                <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                                <div class="product-price-wrapper">
-                                    <span class="new-price">899.000 &#8363;</span>
-                                    <span class="old-price">899.000 &#8363;</span>
-                                    <span class="discount">-30%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- pagination -->
-                <ul class="pagination d-flex align-items-center justify-content-center">
-                    <li><a href="#" class="prev none"><i class="fa fa-angle-left" aria-hidden="true"></i>Trang trước</a></li>
-                    <li><a href="#" class="active">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#" class="next">Xem tiếp<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                </ul>
+        <!--  -->
+        <div class="exhibition-block">
+            <div class="title-wrapper container">
+                <h3 class="title">Triển lãm thời trang</h3>
+                <p class="desc">HeraDG mong muốn nâng tầm trải nghiệm đem đến những góc nhìn sâu sắc về thời trang,<br> chất liệu bằng triển lãm thời trang mang tên Colorful Life vào 11.07.2021</p>
+            </div>
+            <div class="banner-wrapper">
+                <img src="./images/page/collection/banner-44.jpg" alt="">
             </div>
         </div>
     </section>
@@ -1082,35 +863,7 @@
 <!-- custom js -->
 <script type="text/javascript">
     jQuery(document).ready(function($) {
-        $('.btn-action').click(function(event) {
-            event.preventDefault();
-            if ($(this).hasClass('closer')) {
-                $(this).removeClass('closer').addClass('open')
-            } else {
-                $(this).removeClass('open').addClass('closer')
-            }
-            $('#category-page').toggleClass('active');
-        });
 
-        $('.list-support-option li').click(function(event) {
-            event.preventDefault();
-            $(this).toggleClass('active');
-        })
-
-        $('.list-keyword li:not(.btn-clear-all)').click(function(event) {
-            event.preventDefault();
-            $(this).remove();
-        })
-
-        $('.list-keyword li.btn-clear-all').click(function(event) {
-            event.preventDefault();
-            $(this).parent().children().remove();
-        })
-
-        $('#select-option li').click(function(event) {
-            event.preventDefault();
-            $('#key-select').text($(this).text());
-        })
     })
 </script>
 

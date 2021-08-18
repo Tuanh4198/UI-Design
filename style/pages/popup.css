@@ -70,10 +70,10 @@
 .modals-wrapper.modals-popups .modal-popup._show .modal-inner-wrap {
   top: 50%;
 }
-.modals-wrapper.modals-popups .modal-popup .field.password .control {
+.modals-wrapper.modals-popups .modal-popup .field .control {
   position: relative;
 }
-.modals-wrapper.modals-popups .modal-popup .field.password .showpass {
+.modals-wrapper.modals-popups .modal-popup .field .showpass {
   position: absolute;
   top: 19px;
   right: 16px;
@@ -83,7 +83,7 @@
   line-height: 14px;
   font-weight: 400;
 }
-.modals-wrapper.modals-popups .modal-popup .field.password .input-text {
+.modals-wrapper.modals-popups .modal-popup .field .input-text {
   padding-right: 60px;
 }
 .modals-wrapper.modals-popups .modal-popup .modals-overlay {

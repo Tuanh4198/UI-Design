@@ -3,6 +3,10 @@ jQuery(document).ready(function($) {
         $(this).slick($(this).data());
     });
 
+    $(".select2").each(function() {
+        $(this).select2();
+    });
+
     // fixed menu
     (function($) {
         let menu = $('.fixed-main-menu');

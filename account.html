@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="./style/pages/_category.css" />
     <!-- <link rel="stylesheet" href="./style/pages/account.css" /> -->
     <link rel="stylesheet" href="./style/pages/style.css" />
-
+    <!-- select 2 -->
+    <link rel="stylesheet" href="./library/select2/select2.min.css" />
     <!-- link flat icon -->
     <link rel="stylesheet" href="./images/page/flaticon/font/flaticon.css" />
     <!-- link font EB Garamond-->
@@ -559,11 +560,11 @@
                         </div>
                     </div>
                     <div class="select-mobile">
-                        <select class="account-options mobile" id="account"> 
-                            <option value="THÔNG TIN TÀI KHOẢN" selected="selected">THÔNG TIN TÀI KHOẢN</option> 
-                            <option value="THEO DÕI ĐƠN HÀNG">THEO DÕI ĐƠN HÀNG</option> 
-                            <option value="SẢN PHẨM YÊU THÍCH">SẢN PHẨM YÊU THÍCH</option> 
-                            <option value="GỬI GÓP Ý">GỬI GÓP Ý</option> 
+                        <select class="select2 account-options mobile" id="account"> 
+                            <option value="account-info" selected="selected">THÔNG TIN TÀI KHOẢN</option> 
+                            <option value="account-order-tracking">THEO DÕI ĐƠN HÀNG</option> 
+                            <option value="account-my-wishlist">SẢN PHẨM YÊU THÍCH</option> 
+                            <option value="account-comment">GỬI GÓP Ý</option> 
                         </select>
                     </div>
                 </div>
@@ -619,38 +620,34 @@
                                             <div class="field state required">
                                                 <label class="label" for="customer-state"><span>Tỉnh/Thành phố</span></label>
                                                 <div class="control">
-                                                    <div class="select">TP Hà Nội</div>
-                                                    <div class="options" id="state">
-                                                        <div class="option" value="TP Hà Nội" selected="selected">TP Hà Nội</div>
-                                                        <div class="option" value="TP H">TP H</div>
-                                                        <div class="option" value="TP B">TP B</div>
-                                                        <div class="option" value="TP A">TP A</div>
-                                                    </div>
+                                                    <select class="options select2" id="state">
+                                                        <option  value="TP Hà Nội" selected="selected">TP Hà Nội</option>
+                                                        <option  value="TP H">TP H</option>
+                                                        <option  value="TP B">TP B</option>
+                                                        <option  value="TP A">TP A</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="field district required">
                                                 <label class="label" for="customer-district"><span>Quận/Huyện</span></label>
                                                 <div class="control">
-                                                    <div class="select">Quận Hà Đông</div>
-                                                    <div class="options" id="district">
-                                                        <div class="option" value="Quận Hà Đông" selected="selected">Quận Hà Đông</div>
-                                                        <div class="option" value="Quận Mai Linh">Quận Mai Linh</div>
-                                                        <div class="option" value="Quận Hà Thành">Quận Hà Thành</div>
-                                                        <div class="option" value="Quận Hà Nam">Quận Hà Nam</div>
-                                                    </div>
+                                                    <select class="options select2" id="district">
+                                                        <option value="Quận Hà Đông" selected="selected">Quận Hà Đông</option>
+                                                        <option value="Quận Mai Linh">Quận Mai Linh</option>
+                                                        <option value="Quận Hà Thành">Quận Hà Thành</option>
+                                                        <option value="Quận Hà Nam">Quận Hà Nam</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="field wards required">
                                                 <label class="label" for="customer-wards"><span>Phường/Xã</span></label>
                                                 <div class="control">
-                                                    <div class="select">Phường Quang Trung</div>
-                                                    <div class="options" id="customer-wards">
-                                                        <div class="option" value="Phường Quang Trung" selected="selected">Phường Quang Trung</div>
-                                                        <div class="option" value="Phường Bắc Từ Liêm">Phường Bắc Từ Liêm</div>
-                                                        <div class="option" value="Phường Nam Từ Liêm">Phường Nam Từ Liêm</div>
-                                                        <div class="option" value="Phường Quang Khải">Phường Quang Khải</d>
-                                                        </div>
-                                                    </div>
+                                                    <select class="options select2" id="customer-wards">
+                                                        <option value="Phường Quang Trung" selected="selected">Phường Quang Trung</option>
+                                                        <option value="Phường Bắc Từ Liêm">Phường Bắc Từ Liêm</option>
+                                                        <option value="Phường Nam Từ Liêm">Phường Nam Từ Liêm</option>
+                                                        <option value="Phường Quang Khải">Phường Quang Khải</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -673,7 +670,6 @@
                         <h2 class="title">Sản phẩm yêu thích</h2>
                         <div class="items">
                             <div class="row">
-
                                 <div class="col-6 col-xs-6 col-sm-6 col-md-3 col-lg-3">
                                     <div class="item">
                                         <div class="image">
@@ -696,13 +692,12 @@
                                                 <li><a href="#" style="background-color: #C3918F">pink</a></li>
                                             </ul>
                                             <div class="size control">
-                                                <div class="select">Chọn size</div>
-                                                <div class="size options">
-                                                    <div class="option" value="Chọn size" selected="selected">Chọn size</div>
-                                                    <div class="option" value="Size M" selected="selected">Size M</div>
-                                                    <div class="option" value="Size L" selected="selected">Size M</div>
-                                                    <div class="option" value="Size M" selected="selected">Size M</div>
-                                                </div>
+                                                <select class="size options select2">
+                                                    <option class="option" value="Chọn size" selected="selected">Chọn size</option>
+                                                    <option class="option" value="Size M">Size M</option>
+                                                    <option class="option" value="Size L">Size M</option>
+                                                    <option class="option" value="Size M">Size M</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="actions">
@@ -738,13 +733,13 @@
                                                 <li><a href="#" style="background-color: #C3918F">pink</a></li>
                                             </ul>
                                             <div class="size control">
-                                                <div class="select">Chọn size</div>
-                                                <div class="size options">
-                                                    <div class="option" value="Chọn size" selected="selected">Chọn size</div>
-                                                    <div class="option" value="Size M" selected="selected">Size M</div>
-                                                    <div class="option" value="Size L" selected="selected">Size M</div>
-                                                    <div class="option" value="Size M" selected="selected">Size M</div>
-                                                </div>
+
+                                                <select class="size options select2">
+                                                    <option class="option" value="Chọn size" selected="selected">Chọn size</option>
+                                                    <option class="option" value="Size M">Size M</option>
+                                                    <option class="option" value="Size L">Size M</option>
+                                                    <option class="option" value="Size M">Size M</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="actions">
@@ -780,13 +775,13 @@
                                                 <li><a href="#" style="background-color: #C3918F">pink</a></li>
                                             </ul>
                                             <div class="size control">
-                                                <div class="select">Chọn size</div>
-                                                <div class="size options">
-                                                    <div class="option" value="Chọn size" selected="selected">Chọn size</div>
-                                                    <div class="option" value="Size M" selected="selected">Size M</div>
-                                                    <div class="option" value="Size L" selected="selected">Size M</div>
-                                                    <div class="option" value="Size M" selected="selected">Size M</div>
-                                                </div>
+
+                                                <select class="size options select2">
+                                                    <option class="option" value="Chọn size" selected="selected">Chọn size</option>
+                                                    <option class="option" value="Size M">Size M</option>
+                                                    <option class="option" value="Size L">Size M</option>
+                                                    <option class="option" value="Size M">Size M</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="actions">
@@ -822,13 +817,13 @@
                                                 <li><a href="#" style="background-color: #C3918F">pink</a></li>
                                             </ul>
                                             <div class="size control">
-                                                <div class="select">Chọn size</div>
-                                                <div class="size options">
-                                                    <div class="option" value="Chọn size" selected="selected">Chọn size</div>
-                                                    <div class="option" value="Size M" selected="selected">Size M</div>
-                                                    <div class="option" value="Size L" selected="selected">Size M</div>
-                                                    <div class="option" value="Size M" selected="selected">Size M</div>
-                                                </div>
+
+                                                <select class="size options select2">
+                                                    <option class="option" value="Chọn size" selected="selected">Chọn size</option>
+                                                    <option class="option" value="Size M">Size M</option>
+                                                    <option class="option" value="Size L">Size M</option>
+                                                    <option class="option" value="Size M">Size M</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="actions">
@@ -1137,6 +1132,7 @@
 <script type="text/javascript " src="./library/js/bootstrap.min.js "></script>
 <!-- slick -->
 <script type="text/javascript " src="./library/slick/slick.min.js "></script>
+<script type="text/javascript" src="./library/select2/select2.min.js"></script>
 <!-- main js -->
 <script type="text/javascript " src="./javascript/main.js "></script>
 <!-- custom js -->
@@ -1147,6 +1143,11 @@
             $(this).toggleClass("active");
             $(this).next().toggleClass("open");
         })
+        $('body').on('change', '.select2.mobile', function() {
+            $(".tabcontent").hide();
+            var activeTab = $(this).val();        
+            $("#" + activeTab).fadeIn(); 
+        });
     })
 </script>
 

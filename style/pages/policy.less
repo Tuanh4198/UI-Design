@@ -1,9 +1,7 @@
 body{
     &.page-policy{
         color: #242424;
-        .item-choose-mobile{
-            display: none;
-        }
+      
     }
     .section-policy{
         padding-bottom: 40px;
@@ -16,6 +14,9 @@ body{
             span{
                 padding: 0 5px;
             }
+        }
+        .menu-mobile{
+            display: none;
         }
         .box-container{
             padding: 0 30px;
@@ -105,6 +106,9 @@ body{
                         .container-border{
                             padding-bottom: 24px;
                             border-bottom: 1px solid #CCCCCC;
+                            &.level0{
+                                margin-bottom: 30px;
+                            }
                         }
                     }
                 }
@@ -124,6 +128,18 @@ body{
 @media only screen and (max-width:767px){
     body {
         .section-policy {
+            .menu-mobile{
+                display: block;
+            }
+            .select2-container{
+                width: 210px !important;
+            }
+            .select2-container--default{
+                .select2-selection--single {
+                    border: none;
+                    background-color: #F9F9F9;
+                }
+            } 
             .blog-bottom{
                 .container{
                     .toolbar-policy {
@@ -139,60 +155,8 @@ body{
                         .policy-label{
                             display: none;
                         }
-                        .item-choose-mobile{
-                            display: block;
-                            &::after{
-                                content: "\f0d7";
-                                font-family: "FontAwesome";
-                                padding-left: 8px;
-                            }
-                        }
-                        .list_menu{
-                            position: absolute;
-                            top: 100%;
-                            left: 50%;
-                            transform: translateX(-50%) scale(0.5);
-                            z-index: 10;
-                            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
-                            -moz-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
-                            -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
-                            opacity: 0;
-                            visibility: hidden;
-                            transition: all 0.3s ease;
-                            -moz-transition: all 0.3s ease;
-                            -webkit-transition: all 0.3s ease;
-                            -o-transition: all 0.3s ease;
-                            background-color: #ffffff;
-                            .item-news-list{
-                                margin-bottom: 0;
-                                padding: 16px 23px;
-                                width: 200px;
-                                .item,.item.active{
-                                    span{
-                                        border: none;
-                                    }
-                                }
-                                &:hover{
-                                    background-color: #242424;
-                                    .item{
-                                        color: #ffffff;
-                                    }
-                                }
-
-                            }
-
-                        }
-                        &.active{
-                            .list_menu{
-                                opacity: 1;
-                                visibility: visible;
-                                transform: translateX(-50%) scale(1);
-                            }
-                            .item-choose-mobile{
-                                &::after{
-                                    content: "\f0d8";
-                                }
-                            }
+                        .item-news-list {
+                            display: none;
                         }
                     }
                     #box-content{
@@ -212,6 +176,11 @@ body{
             .breadcrumbs{
                 display: none;
             }
+            .select2-container--default{
+                .select2-selection--single {
+                    background-color: #ffffff;
+                }
+            } 
             .box-container > .title {
                 font-size: 24px;
                 line-height: 31px;
