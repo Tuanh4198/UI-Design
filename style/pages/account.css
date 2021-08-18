@@ -127,14 +127,6 @@ body.page-account .blog-bottom,
 body.page-order-tracking .blog-bottom {
   background-color: #F9F9F9;
 }
-body.page-account .blog-bottom .tabcontent,
-body.page-order-tracking .blog-bottom .tabcontent {
-  display: none;
-}
-body.page-account .blog-bottom .tabcontent.active,
-body.page-order-tracking .blog-bottom .tabcontent.active {
-  display: block;
-}
 body.page-account .blog-bottom h2,
 body.page-order-tracking .blog-bottom h2 {
   font-size: 26px;

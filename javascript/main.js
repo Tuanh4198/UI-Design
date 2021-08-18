@@ -15,6 +15,23 @@ jQuery(document).ready(function($) {
     })($);
     // end fixed menu
 
+    //convert tab//
+    $(function() {
+        $(".tabcontent").hide();
+        $(".tabcontent:first").show();
+        $(body).find(".tablinks").each(function() {
+            $(this).click(function(e) {
+                e.preventDefault();
+                $(body).find(".tablinks").removeClass("active");
+                $(this).addClass("active");
+                $(".tabcontent").hide();
+                var activeTab = $(this).attr("electronic");        
+                $("#" + activeTab).fadeIn(); 
+            });
+        })
+    });
+
+    // end
     // load top
     (function($) {
         let up_btn = $("body .up");

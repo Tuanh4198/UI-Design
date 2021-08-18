@@ -51,15 +51,19 @@ body{
                         line-height: 16px;
                         font-weight: 400;
                         margin-bottom: 16px;
-                        a{
+                        cursor: pointer;
+                        .item{
                             text-decoration: none;
                             color: #242424;
                             display: block;
                             span{
                                 border-bottom: 1px solid transparent;
                             }
-                            &.active,
-                            &:hover{
+                           
+                        }
+                        &.active,
+                        &:hover{
+                            .item{
                                 span{
                                     border-color: #242424;
                                 }
@@ -163,14 +167,14 @@ body{
                                 margin-bottom: 0;
                                 padding: 16px 23px;
                                 width: 200px;
-                                a,a.active{
+                                .item,.item.active{
                                     span{
                                         border: none;
                                     }
                                 }
                                 &:hover{
                                     background-color: #242424;
-                                    a{
+                                    .item{
                                         color: #ffffff;
                                     }
                                 }

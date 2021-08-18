@@ -679,8 +679,7 @@ header {
   background-color: #999999;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 8px;
 }
 .minicart .minicart-content .modal-content .product-list .product-wrapper .product-detail-wrapper .product-options .product-option:last-child {
@@ -5125,6 +5124,10 @@ body.page-account .blog-menu .list_menu .item-news-list,
 body.page-order-tracking .blog-menu .list_menu .item-news-list {
   width: 25%;
 }
+body.page-account .blog-menu .list_menu .item-news-list.active a::before,
+body.page-order-tracking .blog-menu .list_menu .item-news-list.active a::before {
+  width: 100%;
+}
 body.page-account .blog-menu .list_menu .item-news-list a,
 body.page-order-tracking .blog-menu .list_menu .item-news-list a {
   color: #242424;
@@ -5140,10 +5143,6 @@ body.page-order-tracking .blog-menu .list_menu .item-news-list a {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-}
-body.page-account .blog-menu .list_menu .item-news-list a.active::before,
-body.page-order-tracking .blog-menu .list_menu .item-news-list a.active::before {
-  width: 100%;
 }
 body.page-account .blog-menu .list_menu .item-news-list a:hover::before,
 body.page-order-tracking .blog-menu .list_menu .item-news-list a:hover::before {
@@ -8370,17 +8369,18 @@ body .section-policy .blog-bottom .container .toolbar-policy .item-news-list {
   line-height: 16px;
   font-weight: 400;
   margin-bottom: 16px;
+  cursor: pointer;
 }
-body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a {
+body .section-policy .blog-bottom .container .toolbar-policy .item-news-list .item {
   text-decoration: none;
   color: #242424;
   display: block;
 }
-body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a span {
+body .section-policy .blog-bottom .container .toolbar-policy .item-news-list .item span {
   border-bottom: 1px solid transparent;
 }
-body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a.active span,
-body .section-policy .blog-bottom .container .toolbar-policy .item-news-list a:hover span {
+body .section-policy .blog-bottom .container .toolbar-policy .item-news-list.active .item span,
+body .section-policy .blog-bottom .container .toolbar-policy .item-news-list:hover .item span {
   border-color: #242424;
 }
 body .section-policy .blog-bottom .container .toolbar-policy .policy-options.mobile {
@@ -8471,14 +8471,14 @@ body .section-policy .blog-bottom .container #box-content .content .container-bo
     padding: 16px 23px;
     width: 200px;
   }
-  body .section-policy .blog-bottom .container .toolbar-policy .list_menu .item-news-list a span,
-  body .section-policy .blog-bottom .container .toolbar-policy .list_menu .item-news-list a.active span {
+  body .section-policy .blog-bottom .container .toolbar-policy .list_menu .item-news-list .item span,
+  body .section-policy .blog-bottom .container .toolbar-policy .list_menu .item-news-list .item.active span {
     border: none;
   }
   body .section-policy .blog-bottom .container .toolbar-policy .list_menu .item-news-list:hover {
     background-color: #242424;
   }
-  body .section-policy .blog-bottom .container .toolbar-policy .list_menu .item-news-list:hover a {
+  body .section-policy .blog-bottom .container .toolbar-policy .list_menu .item-news-list:hover .item {
     color: #ffffff;
   }
   body .section-policy .blog-bottom .container .toolbar-policy.active .list_menu {
@@ -9345,8 +9345,7 @@ button {
   vertical-align: middle;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .slick-dots li.slick-active button:before {
   width: 10px;
