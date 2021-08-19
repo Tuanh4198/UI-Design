@@ -721,7 +721,7 @@ header {
   position: relative;
 }
 .header-account .toggle-content .modal-header .btn-close {
-  top: 0;
+  top: -10px;
   right: 0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
