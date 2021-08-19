@@ -64,6 +64,62 @@
   opacity: 1;
   visibility: visible;
 }
+@-webkit-keyframes headerIn {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes headerIn {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+.scrollUp {
+  -webkit-animation: headerIn 0.5s forwards;
+          animation: headerIn 0.5s forwards;
+}
+@-webkit-keyframes headerOut {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@keyframes headerOut {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+.scrollDown {
+  -webkit-animation: headerOut 0.5s forwards;
+          animation: headerOut 0.5s forwards;
+}
 * {
   margin: 0;
   padding: 0;
@@ -81,8 +137,10 @@ body,
 html {
   font-family: 'Inter', sans-serif;
 }
-button,
-a {
+body button,
+body a,
+body .btn-check:focus + .btn,
+body .btn:focus {
   border: none;
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -90,13 +148,31 @@ a {
   -o-transition: all 0.3s ease;
   text-decoration: none;
 }
-button:focus,
-a:focus,
-button:hover,
-a:hover {
+body button:focus,
+body a:focus,
+body .btn-check:focus + .btn:focus,
+body .btn:focus:focus,
+body button:hover,
+body a:hover,
+body .btn-check:focus + .btn:hover,
+body .btn:focus:hover,
+body button:focus-visible,
+body a:focus-visible,
+body .btn-check:focus + .btn:focus-visible,
+body .btn:focus:focus-visible,
+body button:active,
+body a:active,
+body .btn-check:focus + .btn:active,
+body .btn:focus:active,
+body button:visited,
+body a:visited,
+body .btn-check:focus + .btn:visited,
+body .btn:focus:visited {
   text-decoration: none;
   outline: none;
-  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
 p,
 h1,
@@ -128,6 +204,17 @@ table .col {
   .container {
     max-width: 1600px;
     padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 1599px) {
+  body .container {
+    max-width: 100%;
+    padding: 0 32px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  body .container {
+    padding: 0 15px;
   }
 }
 .product-wrapper {
