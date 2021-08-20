@@ -77,15 +77,33 @@ body .seciton-blog .blog-menu .menu-left .content-menu .level0:first-child {
 body .seciton-blog .blog-menu .menu-left .content-menu .level0:last-child {
   padding-right: 0;
 }
+body .seciton-blog .blog-menu .menu-left .content-menu .level0.active a:before {
+  background-color: #242424;
+  width: 100%;
+}
 body .seciton-blog .blog-menu .menu-left .content-menu .level0 a {
   text-decoration: none;
   color: #242424;
-  padding: 24px 0 21px 0;
+  padding: 24px 0 24px 0;
   display: block;
-  border-bottom: 3px solid transparent;
+  position: relative;
 }
-body .seciton-blog .blog-menu .menu-left .content-menu .level0:hover a {
-  border-bottom: 3px solid #242424;
+body .seciton-blog .blog-menu .menu-left .content-menu .level0 a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+body .seciton-blog .blog-menu .menu-left .content-menu .level0 a:hover::before {
+  background-color: #242424;
+  width: 100%;
 }
 body .seciton-blog .blog-menu .menu-right {
   display: -webkit-box;
@@ -100,7 +118,7 @@ body .seciton-blog .blog-menu .menu-right .title-categories {
   font-weight: 500;
   color: #999999;
   text-transform: uppercase;
-  padding-top: 24px;
+  padding-top: 19px;
   padding-bottom: 21px;
   cursor: pointer;
 }
@@ -123,6 +141,7 @@ body .seciton-blog .blog-menu .menu-right .box-categories {
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  z-index: 1;
 }
 body .seciton-blog .blog-menu .menu-right .box-categories.active {
   opacity: 1;
@@ -153,11 +172,16 @@ body .seciton-blog .blog-menu .menu-right .content-mega-menu {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 body .seciton-blog .blog-menu .menu-right .content-mega-menu:before,
 body .seciton-blog .blog-menu .menu-right .content-mega-menu:after {
   display: none;
+}
+body .seciton-blog .blog-menu .menu-right .content-mega-menu > li {
+  width: 20%;
+  padding: 0 15px;
 }
 body .seciton-blog .blog-menu .menu-right p.title {
   font-size: 14px;
@@ -521,14 +545,23 @@ body .seciton-blog .blog-bottom .blog-content .news-bottom .box-right .banner-2 
   }
 }
 @media only screen and (max-width: 991px) {
+  body .seciton-blog .blog-menu .container {
+    padding-right: 0;
+  }
   body .seciton-blog .blog-menu .menu-left {
     width: calc(100% - 100px);
   }
   body .seciton-blog .blog-menu .menu-right {
-    padding: 0 7px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
     -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+  }
+  body .seciton-blog .blog-menu .menu-right .title-categories {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  body .seciton-blog .blog-menu .menu-right .box-categories {
+    min-width: 100vw;
   }
   body .seciton-blog .blog-menu .text-delete {
     display: none;
@@ -584,6 +617,14 @@ body .seciton-blog .blog-bottom .blog-content .news-bottom .box-right .banner-2 
     padding-right: 160px;
   }
 }
+@media only screen and (max-width: 639px) {
+  body .seciton-blog .blog-menu .menu-right .content-mega-menu > li {
+    width: calc(100% / 3);
+  }
+  body .seciton-blog .blog-menu .menu-right .content-mega-menu > li:not( :nth-child(n + 4)) {
+    margin-bottom: 20px;
+  }
+}
 @media only screen and (max-width: 575px) {
   body .seciton-blog .breadcrumbs {
     display: none;
@@ -608,10 +649,17 @@ body .seciton-blog .blog-bottom .blog-content .news-bottom .box-right .banner-2 
     line-height: 14.52px;
     padding: 16px 0 13px 0;
   }
-  body .seciton-blog .blog-menu .menu-right .title {
+  body .seciton-blog .blog-menu .menu-right .content-mega-menu > li {
+    width: calc(100% / 2);
+  }
+  body .seciton-blog .blog-menu .menu-right .content-mega-menu > li:not( :nth-child(n + 3)) {
+    margin-bottom: 20px;
+  }
+  body .seciton-blog .blog-menu .menu-right .title-categories {
     font-size: 12px;
     line-height: 14.52px;
-    padding: 16px 0 13px 0;
+    padding-top: 16px;
+    padding-bottom: 13px;
   }
   body .seciton-blog .blog-bottom .blog-content .news-top .news-left .box-content .content .category {
     font-size: 9px;

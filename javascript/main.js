@@ -12,21 +12,14 @@ jQuery(document).ready(function($) {
         let menu = $('.fixed-main-menu');
         body = $('body,html');
         menuPosition = menu.offset().top;
-		let positionPage = 0;
         $(window).scroll(() => {
             let startpage = body.scrollTop();
-            (startpage > menuPosition) ? (menu.addClass('fixed')) : (menu.removeClass('fixed'));
-			if(positionPage < startpage) {
-				menu.addClass('scrollDown').removeClass('scrollUp');
-			} else if(positionPage > startpage) {
-				menu.addClass('scrollUp').removeClass('scrollDown');
-			}
-			positionPage = startpage;
+            (startpage > menuPosition) ? (menu.addClass('fixed')) : (menu.removeClass('fixed'))
         });
     })($);
     // end fixed menu
 
-    //convert tab
+    //convert tab//
     $(function() {
         $(".tabcontent").hide();
         $(".tabcontent:first").show();
@@ -41,8 +34,8 @@ jQuery(document).ready(function($) {
             });
         })
     });
-    // end
 
+    // end
     // load top
     (function($) {
         let up_btn = $("body .up");
@@ -136,11 +129,11 @@ jQuery(document).ready(function($) {
 
     //toggle popup
     $(document).ready(function() {
-		$(".modals-wrapper").on('click', '.action-close', function(e) {
-			$(".modals-wrapper").find(".modal-popup").removeClass("_show");
-		})
-	})
-	//end
+            $(".modals-wrapper").on('click', '.action-close', function(e) {
+                $(".modals-wrapper").find(".modal-popup").removeClass("_show");
+            })
+        })
+        //end
 
     // toggle button
     $(".toggle-tab").click(function(event) {
@@ -197,15 +190,15 @@ jQuery(document).ready(function($) {
 });
 
 $(".convert-type").each(function() {
-	$(this).click(function() {
-		var input = $($(this).next());
-		if (input.attr("type") == "password") {
-			input.attr("type", "text");
-			$(this).val("HIDE");
-		} else {
-			input.attr("type", "password");
-			$(this).val("SHOW");
-		}
-	});
-})
-// end
+        $(this).click(function() {
+            var input = $($(this).next());
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+                $(this).val("HIDE");
+            } else {
+                input.attr("type", "password");
+                $(this).val("SHOW");
+            }
+        });
+    })
+    // end

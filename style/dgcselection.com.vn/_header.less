@@ -409,7 +409,7 @@ header {
 			position: relative;
 
 			.btn-close {
-				top: -10px;
+				top: 0;
 				right: 0;
 				transform: translateY(0);
 				padding: 0;
@@ -599,9 +599,6 @@ header {
 
 					.product-img-wrapper {
 						margin-bottom: 0;
-						.product-img {
-							overflow: hidden;
-						}
 					}
 
 					.product-detail-wrapper {
@@ -1253,16 +1250,17 @@ header {
 }
 
 .fixed-main-menu {
-	&.fixed{
+	&.fixed {
 		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
 		z-index: 12;
 		background-color: white;
-		box-shadow: 0 0 2px rgba(0, 0, 0, .2);
-		transition: all .3s ease;
-		animation: none;
+		border-width: 0 0 1px;
+		border-style: solid;
+		border-color: #E3E3E3;
+		transition: all .8s ease;
 
 		.header-top {
 			display: none;
@@ -1283,18 +1281,6 @@ header {
 			}
 		}
 	}
-	&.scrollUp{
-		transform: unset;
-		opacity: 1;
-		visibility: visible;
-	}
-
-	&.scrollDown{
-		transform: translateY(-20px);
-		opacity: 0;
-		visibility: hidden;
-
-	}
 }
 
 .viewed-products {
@@ -1314,6 +1300,7 @@ header {
 		width: auto;
 		height: auto;
 		border-radius: 0;
+		z-index: 10;
 
 		&:before {
 			display: none;
@@ -1356,30 +1343,6 @@ header {
 
 	.product-list {
 		padding: 12px 10px;
-		max-height: 489px;
-		overflow-y: auto;
-		&::-webkit-scrollbar {
-			width: 5px;
-		}
-
-		&::-webkit-scrollbar-thumb {
-			background-color: #242424;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
-
-			&:hover {
-				background-color: #242424;
-			}
-		}
-
-		&::-webkit-scrollbar-track {
-			box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-			background-color: #999999;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
-		}
 
 		.product-wrapper {
 			display: -webkit-box;
@@ -1395,9 +1358,6 @@ header {
 			border-color: #F6F6F6;
 
 			.product-img-wrapper {
-				max-width: 80px;
-				border-radius: 10px;
-
 				.product-img {
 					border-radius: 5px;
 				}
@@ -1477,7 +1437,6 @@ header {
 }
 
 .open-minicart {
-	overflow: hidden;
 	body {
 		overflow: hidden;
 	}
@@ -1492,6 +1451,13 @@ header {
 	right: 16px;
 	opacity: 1;
 	z-index: 1;
+
+	&:before {
+		content: url('../../images/close.png');
+		height: 12px;
+		width: 12px;
+		display: inline-block;
+	}
 
 	&:hover {
 		opacity: .5;
