@@ -1,5 +1,6 @@
 .social-profile {
     margin-top: 106px;
+    text-align: initial;
 
     .social-item {
         display: inline-block;
@@ -16,6 +17,8 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 17px;
+        border-width: 0;
+        padding: 0;
 
 
         img {
@@ -35,8 +38,12 @@
         }
 
         &:hover {
+            background-color: transparent;
+            color: #999999;
+
             img {
                 opacity: .5;
+                display: inline-block;
             }
         }
     }
@@ -198,6 +205,7 @@
 
             .block-content {
                 margin-top: 16px;
+                border-width: 0;
 
                 input {
                     height: 40px;
@@ -440,6 +448,10 @@
         padding: 20px 0;
         margin-top: 33px;
         text-align: center;
+
+        .social-item{
+            margin-bottom: 0;
+        }
     }
 
     .footer {
