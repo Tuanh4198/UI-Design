@@ -1,3 +1,26 @@
+@-webkit-keyframes blink-1 {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+@keyframes blink-1 {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
 a {
 	color: #242424;
 
@@ -8,6 +31,8 @@ a {
 
 header {
 	color: #242424;
+	position: relative;
+	z-index: 10;
 }
 
 .haschild-toggle {
@@ -1180,7 +1205,6 @@ header {
 
 .header-bottom {
 	background-color: #f4f4f4;
-	padding: 25px 20px;
 
 	.banner-header {
 		.title {
@@ -1201,6 +1225,8 @@ header {
 			color: white;
 			display: inline-block;
 			margin-top: 6px;
+			-webkit-animation: blink-1 3s infinite both;
+	        animation: blink-1 3s infinite both;
 
 			&:hover {
 				background-color: #505050;
@@ -1214,7 +1240,10 @@ header {
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 29px;
+	}
 
+	.banner-mobile{
+		display: none;
 	}
 }
 
@@ -1280,6 +1309,7 @@ header {
 		width: auto;
 		height: auto;
 		border-radius: 0;
+		z-index: 11;
 
 		&:before {
 			display: none;
@@ -1322,7 +1352,7 @@ header {
 
 	.product-list {
 		padding: 12px 10px;
-		max-height: 489px;
+		max-height: 50vh;
 		overflow-y: auto;
 		&::-webkit-scrollbar {
 			width: 5px;
@@ -1958,6 +1988,16 @@ header {
 					border-width: 0;
 				}
 			}
+		}
+	}
+
+	.header-bottom{
+		img{
+			display: none;
+		}
+
+		.banner-mobile{
+			display: block;
 		}
 	}
 }

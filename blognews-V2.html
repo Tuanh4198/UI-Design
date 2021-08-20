@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DGC - Thời trang nam</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./images/DGC/favicon.ico" />
+    <title>Tin Tức DGC</title>
     <!-- animation -->
     <link rel="stylesheet" href="./library/animate.css" />
     <!-- font fontawesome -->
@@ -15,21 +14,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- bs4 -->
     <link rel="stylesheet" href="./library/css/bootstrap.min.css" />
     <!-- slick slider -->
     <link rel="stylesheet" href="./library/slick/slick-theme.css" />
     <link rel="stylesheet" href="./library/slick/slick.css" />
     <!-- main style -->
-    <link rel="stylesheet" href="./style/pages/style_v2.css">
+    <link rel="stylesheet" href="./images/page/flaticon/font/flaticon.css" />
+    <!-- <link rel="stylesheet" href="./style/pages/blognews.css" /> -->
+    <link rel="stylesheet" href="./style/pages/style_v2.css"/>
+    <!-- link font EB Garamond-->
+    <link rel=" preconnect " href="https://fonts.googleapis.com ">
+    <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap " rel="stylesheet ">
 </head>
 
-<body>
+<body class="page-blog ">
     <!-- Header -->
     <header id="header" class="header fixed-main-menu">
         <div class="header-top">
@@ -662,15 +662,14 @@
             </div>
         </div>
         <div class=" header-bottom ">
-            <div class=" header-bottom ">
-                <div class="header-bottom-main dflex justify-content-center ">
-                    <div class="banner-top-gift">
-                        <a href="#">
-                            <img src="images/homedgc/topbanner.gif" alt="">
-                            <img class="banner-mobile" src="images/homedgc/topbanner-mobile.gif" alt="">
-                        </a>
-                    </div>                    
+            <div class="header-bottom-main dflex justify-content-center ">
+                <div class="banner-top-gift">
+                    <a href="#">
+                        <img src="./images/homedgc/topbanner.gif" alt="">
+                        <img class="banner-mobile" src="./images/homedgc/topbanner-mobile.gif" alt="">
+                    </a>
                 </div>
+                
             </div>
         </div>
     </header>
@@ -753,485 +752,390 @@
     <!-- End header -->
 
     <!-- Content -->
-    <section>
-        <div class="autoplay slider-home" data-dots='true' data-arrow="false" data-infinite="true" data-speed="300" data-autoplay="false" data-slides-To-Show="1" data-slides-To-Scroll="1">
-            <div class="item">
-                <a href="#">
-                    <img class="img-larger" src="images/homedgc/home-slider-1.jpg" alt="image slide">
-                    <img class="img-mobile" src="./images/homedgc/home-slider-mobile.jpg" alt="image-mobile slide">
-                </a>
-            </div>
-            <div class="item">
-                <a href="#">
-                    <img class="img-larger" src="images/homedgc/home-slider-1.jpg" alt="image slide">
-                    <img class="img-mobile" src="./images/homedgc/home-slider-mobile.jpg" alt="image-mobile slide">
-                </a>
-            </div>
-            <div class="item">
-                <a href="#">
-                    <img class="img-larger" src="images/homedgc/home-slider-1.jpg" alt="image slide">
-                    <img class="img-mobile" src="./images/homedgc/home-slider-mobile.jpg" alt="image-mobile slide">
-                </a>
-            </div>
 
-        </div>
-        <div class="history-brand">
-            <div class="container">
-                <div class="history-brand-content">
-                    <h2 class="title">Lịch sử thương hiệu<br /> DGCSelection</h2>
-                    <p class="description">Thành lập năm 1990, Tổng công ty Đức Giang – CTCP (DUGARCO) là một trong những doanh nghiệp hàng đầu của ngành dệt may Việt Nam và là nhà sản xuất, cung cấp hàng may mặc uy tín cho nhiều khách hàng nổi tiếng trên thế giới và trong
-                        nước.
-                    </p>
-                    <a href="#" class="action">Tìm hiểu thêm</a>
+    <section class="blog-news">
+        <class class="blog-top ">
+            <div class="box-container">
+                <div class="breadcrumbs ">
+                    <action method="addCrumb ">
+                        <argument name="crumbName " xsi:type="string ">Trang chủ</argument>
+                    </action>
+                    <span>/</span>
+                    <action method="addCrumb ">
+                        <argument name="crumbName " xsi:type="string ">Tin tức</argument>
+                    </action>
                 </div>
-            </div>
-        </div>
-        <div class="new-product">
-            <h2 class="title">Mới ra mắt</h2>
-            <div class="autoplay content" data-dots="true" data-infinite="true" data-speed="300" data-autoplay="false" data-slides-To-Show="3" data-slides-To-Scroll="1" data-responsive='[{"breakpoint": 1471, "settings": {"slidesToShow": 3}}, {"breakpoint": 1200, "settings": {"slidesToShow": 2}}, {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 2}}, {"breakpoint": 576, "settings": {"slidesToShow": 1}}, {"breakpoint": 481, "settings": {"slidesToShow": 1}}, {"breakpoint": 361, "settings": {"slidesToShow": 1}}]'>
-                <div class="item product-wrapper">
-                    <div class="product-img-wrapper">
-                        <div class="product-label">
-                            <div class="label-content">
-                                <span class="discount">-30%</span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="product-img">
-                            <img src="images/homedgc/product.jpg" alt="image product">
-                        </a>
-                        <a href="#" class="add-to-wishlist">
-                            <img src="images/homeheradg/heart.png" alt="image wislist">
-                        </a>
-
-                    </div>
-                    <div class="product-detail-wrapper">
-
-                        <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                        <div class="product-price-wrapper">
-                            <span class="new-price">899.000 &#8363;</span>
-                            <span class="old-price">899.000 &#8363;</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item product-wrapper">
-                    <div class="product-img-wrapper">
-                        <div class="product-label">
-                            <div class="label-content">
-                                <span class="discount">-30%</span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-img">
-                            <img src="images/homedgc/product-2.jpg" alt="image product">
-                        </a>
-                        <a href="#" class="add-to-wishlist">
-                            <img src="images/homeheradg/heart.png" alt="image wislist">
-                        </a>
-                    </div>
-                    <div class="product-detail-wrapper">
-
-                        <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                        <div class="product-price-wrapper">
-                            <span class="new-price">899.000 &#8363;</span>
-                            <span class="old-price">899.000 &#8363;</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item product-wrapper">
-                    <div class="product-img-wrapper">
-                        <div class="product-label">
-                            <div class="label-content">
-                                <span class="discount">-30%</span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-img">
-                            <img src="images/homedgc/product-3.jpg" alt="image product">
-                        </a>
-                        <a href="#" class="add-to-wishlist">
-                            <img src="images/homeheradg/heart.png" alt="image wislist">
-                        </a>
-                    </div>
-                    <div class="product-detail-wrapper">
-
-                        <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                        <div class="product-price-wrapper">
-                            <span class="new-price">899.000 &#8363;</span>
-                            <span class="old-price">899.000 &#8363;</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item product-wrapper">
-                    <div class="product-img-wrapper">
-                        <div class="product-label">
-                            <div class="label-content">
-                                <span class="discount">-30%</span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-img">
-                            <img src="images/homedgc/product-2.jpg" alt="image product">
-                        </a>
-                        <a href="#" class="add-to-wishlist">
-                            <img src="images/homeheradg/heart.png" alt="image wislist">
-                        </a>
-                    </div>
-                    <div class="product-detail-wrapper">
-
-                        <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                        <div class="product-price-wrapper">
-                            <span class="new-price">899.000 &#8363;</span>
-                            <span class="old-price">899.000 &#8363;</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item product-wrapper">
-                    <div class="product-img-wrapper">
-                        <div class="product-label">
-                            <div class="label-content">
-                                <span class="discount">-30%</span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-img">
-                            <img src="images/homedgc/product.jpg" alt="image product">
-                        </a>
-                        <a href="#" class="add-to-wishlist">
-                            <img src="images/homeheradg/heart.png" alt="image wislist">
-                        </a>
-                    </div>
-                    <div class="product-detail-wrapper">
-
-                        <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                        <div class="product-price-wrapper">
-                            <span class="new-price">899.000 &#8363;</span>
-                            <span class="old-price">899.000 &#8363;</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item product-wrapper">
-                    <div class="product-img-wrapper">
-                        <div class="product-label">
-                            <div class="label-content">
-                                <span class="discount">-30%</span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-img">
-                            <img src="images/homedgc/product-2.jpg" alt="image product">
-                        </a>
-                        <a href="#" class="add-to-wishlist">
-                            <img src="images/homeheradg/heart.png" alt="image wislist">
-                        </a>
-                    </div>
-                    <div class="product-detail-wrapper">
-
-                        <a href="#" class="product-name">Jumpsuit dài tay SJSBA008</a>
-                        <div class="product-price-wrapper">
-                            <span class="new-price">899.000 &#8363;</span>
-                            <span class="old-price">899.000 &#8363;</span>
-
-                        </div>
+                <div class="title ">
+                    <div class="content ">
+                        <span>Tin tức</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="new-collection">
-            <div class="dflex new-collection-content">
-                <div class="collection-images">
-                    <img src="./images/homedgc/new-collection.jpg" alt="">
-                </div>
-                <div class="collection-detail">
-                    <h2 class="title">Newcollection 2021 <br />The elegant man</h2>
-                    <p class="description">Cùng đi tới vùng đất mới, xuyên không gian nhiệt đới, hoà mình vào vùng đất thiên nhiên đầy nắng và gió, khẽ khàng trên những con đường thật dài, những tia nắng khẽ ngang qua với dư vị mua hè thật khác biệt.</p>
-                    <a href="#" class="action">Tìm hiểu thêm</a>
-                </div>
             </div>
-        </div>
-        <div class="brand-selection">
-            <h2 class="title">Khám phá DGCSelection</h2>
-            <div class="content">
-                <div class="dflex selection-items">
-                    <div class="selection-item">
-                        <div class="selection-item-content">
-                            <div class="seclection-item-child">
-                                <div class="selection-item-images">
-                                    <img src="./images/homedgc/DGC-selection.jpg" alt="">
-                                </div>
-                                <div class="selection-item-detail">
-                                    <h3 class="item-title">Sản phẩm dược làm từ Linen</h3>
-                                    <p class="item-title-sub">An toàn với tự nhiên 100%</p>
-                                    <a href="#" class="item-action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="seclection-item-child">
-                                <div class="selection-item-images">
-                                    <img src="./images/homedgc/DGC-selection2.jpg" alt="">
-                                </div>
-                                <div class="selection-item-detail">
-                                    <h3 class="item-title">Sợi vải tự nhiên Lyocell</h3>
-                                    <p class="item-title-sub">Thân thiện với môi trường</p>
-                                    <a href="#" class="item-action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
+            <div class="blog-menu ">
+                <div class="container">
+                    <div class="menu-left ">
+                        <div class="menu-primary">
+                            <ul class="content-menu level0 ">
+                                <li class="level0 "><a href="# ">mới nhất</a></li>
+                                <li class="level0 "><a href="# ">Thời trang</a></li>
+                                <li class="level0 "><a href="# ">làm đẹp</a></li>
+                                <li class="level0 "><a href="# ">Văn hóa</a></li>
+                                <li class="level0 "><a href="# ">Lifestyle</a></li>
+                                <li class="level0 "><a href="# ">Outfit of the week</a></li>
+                                <li class="level0 "><a href="# ">Kinh nghiệm hay</a></li>
+                                <li class="level0 "><a href="# ">Câu chuyện nhân vật</a></li>
+                                <li class="level0 "><a href="# ">HeraDg có gì mới</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="selection-item">
-                        <div class="selection-item-content">
-                            <div class="seclection-item-child">
-                                <div class="selection-item-images">
-                                    <img src="./images/homedgc/DGC-selection-3.jpg" alt="">
-                                </div>
-                                <div class="selection-item-detail">
-                                    <h3 class="item-title">Top sản phẩm ưu đãi</h3>
-                                    <p class="item-title-sub">Giảm giá lên đến 20%</p>
-                                    <a href="#" class="item-action">Tìm hiểu thêm</a>
-                                </div>
+                    <div class="menu-right ">
+                        <div class="blog-categories">
+                            <div class="title-categories">
+                                <span class="text ">Tất cả <span class="text-delete">chuyên mục</span></span>
+                                <span class="icont ">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </span>
                             </div>
-                            <div class="seclection-item-child">
-                                <div class="selection-item-images">
-                                    <img src="./images/homedgc/DGC-selection-4.jpg" alt="">
-                                </div>
-                                <div class="selection-item-detail">
-                                    <h3 class="item-title">Sản phẩm HOT nhất</h3>
-                                    <p class="item-title-sub">Nhiều người đặt hàng nhất trong tháng</p>
-                                    <a href="#" class="item-action">Tìm hiểu thêm</a>
-                                </div>
+                            <div class="box-categories">
+                                <div class="close-menu"></div>
+                                <div class="title-mega-menu">Tất cả chuyên mục</div>
+                                <ul class="content-mega-menu lv0">
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Giải trí</p>
+                                            <li><a href="#">Giới sao</a></li>
+                                            <li><a href="#">Nhạc hay</a></li>
+                                            <li><a href="#">Dân sinh</a></li>
+                                            <li><a href="#">Phim</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Thể thao</p>
+                                            <li><a href="#">Quần vợt</a></li>
+                                            <li><a href="#">Olympics 2020</a></li>
+                                            <li><a href="#">Tennis</a></li>
+                                            <li><a href="#">Hậu trường</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Giáo dục</p>
+                                            <li><a href="#">Tuyển sinh</a></li>
+                                            <li><a href="#">Điểm thi</a></li>
+                                            <li><a href="#">Du học</a></li>
+                                            <li><a href="#">Học tiếng anh</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Sức khỏe</p>
+                                            <li><a href="#">Tin tức</a></li>
+                                            <li><a href="#">Tư vấn</a></li>
+                                            <li><a href="#">Dinh dưỡng</a></li>
+                                            <li><a href="#">Khỏe đẹp</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="lv1">
+                                            <p class="title">Đời sống</p>
+                                            <li><a href="#">Tổ ấm</a></li>
+                                            <li><a href="#">Bài học sống</a></li>
+                                            <li><a href="#">Nhà</a></li>
+                                            <li><a href="#">Tiêu dùng</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="blog-slider">
-            <h2 class="title">Phong cách sống DGCSelection</h2>
-            <div class="content">
-                <ul class="nav nav-tabs fadeInUp alo-animate" role="tablist">
-                    <li role="presentation"><a href="#all-blog" class="active" aria-controls="all-categories-suggest" role="tab" data-toggle="tab"><span>Tất
-                                cả</span></a></li>
-                    <li role="presentation"><a href="#dgc-blog" aria-controls="skirt-suggest" role="tab" data-toggle="tab"><span>DGC Blog</span></a></li>
-                    <li role="presentation"><a href="#news-blog" aria-controls="shirt-suggest" role="tab" data-toggle="tab"><span>Tin tức</span></a></li>
-                </ul>
+            <div class="blog-bottom ">
+                <div class="container ">
+                    <div class="blog-content ">
+                        <div class="layout-content ">
+                            <div class="news-bottom">
+                                <div class="box">
+                                    <div class="new">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new1_v2.jpg" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>HeraDG mời hợp tác đại lý khu vực các tỉnh phía Bắc</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new2.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>Câu chuyện về những chiếc khẩu trang của HeraDG</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new3.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>Nàng dâu Bảo Thanh bất ngờ xuất hiện mừng HeraDG tròn 3 tuổi</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new4_v2.jpg" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>Khẳng định thương hiệu Hera DG trong sinh nhật 6 tuổi</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new5.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>HeraDG x DGC: Hành trình thiện nguyện kết nối yêu thương</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new6.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>HeraDG x DGC: Hành trình thiện nguyện kết nối yêu thương</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new7.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>HeraDG mời hợp tác đại lý khu vực các tỉnh phía Bắc</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new8.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>Câu chuyện về những chiếc khẩu trang của HeraDG</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new9.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>Nàng dâu Bảo Thanh bất ngờ xuất hiện mừng HeraDG tròn 3 tuổi</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new10.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>Khẳng định thương hiệu Hera DG trong sinh nhật 6 tuổi</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new11.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>HeraDG x DGC: Hành trình thiện nguyện kết nối yêu thương</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new ">
+                                        <div class="box-content ">
+                                            <a href="# " class="image ">
+                                                <img src="./images/page/blog/new12.png" class="img-responsive " alt="Image ">
+                                            </a>
+                                            <div class="content ">
+                                                <a href="# " class="category "><span>Thời trang</span></a>
+                                                <a href="# " class="name "><span>HeraDG x DGC: Hành trình thiện nguyện kết nối yêu thương</span></a>
+                                                <div class="detail ">
+                                                    <span class="text ">Những món phụ kiện nhỏ xinh cho mái tóc có thể giúp bạn nâng cao tinh thần và tạo ra nguồn năng lượng tươi mới cho những ngày giãn cách tại nhà.</span>
+                                                </div>
+                                                <div href=" " class="date ">
+                                                    <span class="icon ">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                                    <span class="text ">21 tháng 8, 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                <!-- Tab panes -->
-                <div class="tab-content fadeInUp alo-animate">
-                    <div role="tabpanel" class="tab-pane fade active " id="all-blog">
-                        <div class="autoplay" data-dots="true" data-infinite="true" data-speed="300" data-autoplay="false" data-slides-To-Show="3" data-slides-To-Scroll="1" data-responsive='[{"breakpoint": 1471, "settings": {"slidesToShow": 3}}, {"breakpoint": 1200, "settings": {"slidesToShow": 2}}, {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}}, {"breakpoint": 576, "settings": {"slidesToShow": 1}}, {"breakpoint": 481, "settings": {"slidesToShow": 1}}, {"breakpoint": 361, "settings": {"slidesToShow": 1}}]'>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-2.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-3.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-2.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
+                                <div class="action ">
+                                    <button class="btn see-more " type="submit ">Xem thêm bài viết</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="dgc-blog">
-                        <div class="autoplay" data-dots="true" data-infinite="true" data-speed="300" data-autoplay="true" data-slides-To-Show="3" data-slides-To-Scroll="1" data-responsive='[{"breakpoint": 1471, "settings": {"slidesToShow": 3}}, {"breakpoint": 1200, "settings": {"slidesToShow": 2}}, {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}}, {"breakpoint": 576, "settings": {"slidesToShow": 1}}, {"breakpoint": 481, "settings": {"slidesToShow": 1}}, {"breakpoint": 361, "settings": {"slidesToShow": 1}}]'>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
+                        <div class="layout-sidebar ">
+                            <div class="banner-1 ">
+                                <a href="# ">
+                                    <img src="./images/page/blog/blog-img16.png " alt=" ">
+                                </a>
+                                <div class="content ">
+                                    <span class="logo ">
+                                    <img src="./images/page/blog/logo.png " class="img-responsive " alt="Image ">    
+                                </span>
+                                    <a href="# ">Khám phá đồ nam</a>
                                 </div>
                             </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-2.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-3.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-2.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="news-blog">
-                        <div class="autoplay" data-dots="true" data-infinite="true" data-speed="300" data-autoplay="true" data-slides-To-Show="3" data-slides-To-Scroll="1" data-responsive='[{"breakpoint": 1471, "settings": {"slidesToShow": 3}}, {"breakpoint": 1200, "settings": {"slidesToShow": 2}}, {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}}, {"breakpoint": 576, "settings": {"slidesToShow": 1}}, {"breakpoint": 481, "settings": {"slidesToShow": 1}}, {"breakpoint": 361, "settings": {"slidesToShow": 1}}]'>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-2.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-3.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
-                                </div>
-                            </div>
-                            <div class="item blog-item">
-                                <div class="blog-images">
-                                    <a href="#"><img src="./images/homedgc/blog-2.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-detail">
-                                    <a href="#" class="categories">Phong cách</a>
-                                    <h3 class="name"><a href="#" class="name-link">10 cầu thủ có Gu thời trang đẹp
-                                            nhất Euro</a></h3>
-                                    <a href="#" class="action">Tìm hiểu thêm</a>
+                            <div class="banner-2 ">
+                                <a href="# ">
+                                    <img src="./images/page/blog/blog-img17.png " alt=" ">
+                                </a>
+                                <div class="content ">
+                                    <p href="# " class="text ">
+                                        <span>
+                                        New collection 2021
+                                    </span>
+                                    </p>
+                                    <a href="# ">Khám phá ngay</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="style-children">
-            <h2 class="title">DGC for children</h2>
-            <div class="dflex content">
-                <div class="style-children-images">
-                    <img src="./images/homedgc/children.png" alt="">
-                    <div class="images-detail">
-                        <h3 class="logo">DGC</h3>
-                        <h3 class="image-title">FORCHILDREN</h3>
-                        <p class="images-sub-title">A Better Childhood</p>
-                    </div>
-                </div>
-                <div class="style-children-detail">
-                    <h3 class="detail-title">"Một công ty không cần phải lớn mạnh mới có thể làm điều có ý nghĩa"
-                    </h3>
-                    <p class="detail-description">DGC xây dựng chương trình “DGC for children: A Better Childhood” với mong muốn góp một phần nhỏ giúp đỡ trẻ em có hoàn cảnh khó khăn, giúp các em có thể đến trường, có cuộc sống tốt đẹp hơn.</p>
-                    <ul class="number">
-                        <li class="number-item dflex">
-                            <div class="count">7.202</div>
-                            <div class="number-title">Khách hàng đã tham ra vào chương trình</div>
-                        </li>
-                        <li class="number-item dflex">
-                            <div class="count">118 tr</div>
-                            <div class="number-title">Là số tiền đã trích ra gửi đến trẻ em có hoàn cảnh khó khăn
-                            </div>
-                        </li>
-                        <li class="number-item dflex">
-                            <div class="count">12.037</div>
-                            <div class="number-title">Sản phẩm đã được gửi đến tay khách hàng</div>
-                        </li>
-                    </ul>
-                    <a href="#" class="action">Tìm hiểu thêm</a>
-                </div>
-            </div>
-        </div>
+
     </section>
-    <!-- End Content -->
 
     <!-- Footer -->
     <footer class=" footer ">
@@ -1356,18 +1260,28 @@
     <!-- End Footer -->
 
     <!-- scroll top -->
-    <span class="up"><i class="fa fa-chevron-up"></i></span>
+    <span class="up "><i class="fa fa-chevron-up "></i></span>
 </body>
 <!-- jquerry -->
-<script type="text/javascript" src="./library/jquery.min.js"></script>
+<script type="text/javascript " src="./library/jquery.min.js "></script>
 <!-- bs4 -->
-<script type="text/javascript" src="./library/js/bootstrap.min.js"></script>
+<script type="text/javascript " src="./library/js/bootstrap.min.js "></script>
 <!-- slick -->
-<script type="text/javascript" src="./library/slick/slick.min.js"></script>
+<script type="text/javascript " src="./library/slick/slick.min.js "></script>
 <!-- main js -->
-<script type="text/javascript" src="./javascript/main.js"></script>
+<script type="text/javascript " src="./javascript/main.js "></script>
 <!-- custom js -->
-<script type="text/javascript">
+<script type="text/javascript ">
+    jQuery(document).ready(function($) {
+        $(".blog-news").find(".blog-categories .title-categories").click(function(e) {
+            e.preventDefault();
+            $(this).next().toggleClass("active");
+        })
+        $(".blog-news").find(".close-menu").click(function(e) {
+            e.preventDefault();
+            $(this).parent().removeClass("active");
+        })
+    })
 </script>
 
 </html>

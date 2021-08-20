@@ -14,3 +14,42 @@
 @import './policy.less';
 @import './popup.less';
 @import './showroom.less';
+
+
+// inner page
+
+@font_Garamond: 'Inter', sans-serif;
+
+// blog page
+body {
+    .blog-news {
+        .box-container {
+            > .title{
+                font-family: 'Inter', sans-serif;           
+            }
+        }
+    }
+
+    .blog-children {
+        .blog-bottom {
+            .box-top {
+                .container {
+                    > .title{
+                        font-family: 'Inter', sans-serif;
+                            font-size: 32px;
+                            font-weight: 600;
+                            line-height: 49px;
+                            letter-spacing: -0.01em;
+                            text-transform: uppercase;
+                    }
+
+                    > .category-date {
+                        .category{
+                            color: #0F1F3D;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
