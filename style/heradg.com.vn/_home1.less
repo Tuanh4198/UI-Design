@@ -109,8 +109,10 @@ button {
 }
 .slider-home {
     margin-top: 16px;
-    margin-bottom: 75px;
+    
+
     &.slick-slider {
+        margin-bottom: 80px;
         .slick-prev,
         .slick-next {
             background: #FFFFFF;
@@ -313,6 +315,10 @@ button {
             color: @base_color;
         }
     }
+}
+.nav-tabs a {
+    font-size: 12px;
+    line-height: 15px;
 }
 .tab-content {
     overflow: visible;
@@ -675,6 +681,9 @@ button {
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .event-mobile {
+        display: none;
     }
     .slick-slider {
         .slick-prev,
@@ -1916,6 +1925,7 @@ button {
     .slick-next {
         width: 35px;
         height: 35px;
+        line-height: 33px;
         &:before {
             font-size: 18px;
         }
@@ -1928,6 +1938,82 @@ button {
 
 }
 @media only screen and (max-width: 575px) {
+    .nav-tabs {
+        a {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        li:not(:last-child) {
+            margin-right: 26px;
+        }
+
+    }
+    .lookbook-slogan {
+       
+        .container-slogan {
+            padding-bottom: 45px;
+        }
+        .prev-person,
+        .next-person {
+            bottom: 0;
+            top: auto;
+            transform: none;
+            .text {
+                // display: none;
+            }
+        }
+        .prev-person {
+            left: 20px;
+        }
+        .next-person {
+            right: 20px;
+        }
+    }
+    .lookbook-slogan .container-slogan .slogan-left .title-sub, 
+    .lookbook-slogan .container-slogan .slogan-main .title-sub,
+    .lookbook-slogan .container-slogan .slogan-right .image-title {
+        display: none;
+    }
+    .lookbook-slogan {
+        .container-slogan {
+            padding-bottom: 50px;
+            .slogan-left {
+                margin-bottom: 35px;
+            }
+            .slogan-right {
+                .lookbook-phare {
+                    .title {
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 4px;
+                    }
+                }
+                .lookbook-phare {
+                    p {
+                        font-size: 13px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .lookbook-slogan {
+        padding-left: 0px;
+        padding-right: 0px;
+        .container-slogan {
+            .slogan-left {
+                padding-left: 55px;
+                padding-right: 55px;
+            }
+            .slogan-right {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+    .slider-home.slick-slider {
+        margin-bottom: 53px;
+    }
     .news-blog {
         .col-latest-blog {
             .image {
@@ -1951,51 +2037,114 @@ button {
         
     }
     .new-product-categories {
+        .new-product-categories-main {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         .nav-tabs {
             flex-wrap: nowrap;
-            justify-content: flex-start;
             overflow-x: auto;
-            padding-left: 15px;
-            padding-right: 15px;
+            // padding-left: 15px;
+            // padding-right: 15px;
             li {
-                flex: 0 0 78px;
-                max-width: 78px;
+                // flex: 0 0 78px;
+                // max-width: 78px;
     
             }
+        }
+        .slick-list {
+            padding-right: 0;
+            
+        }
+        .slick-prev,
+        .slick-next {
+            display: none !important;
         }
     }
     .suggest-product-categories {
+        .suggest-product-categories-main {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         .nav-tabs {
             flex-wrap: nowrap;
-            justify-content: flex-start;
             overflow-x: auto;
-            padding-left: 15px;
-            padding-right: 15px;
+            // padding-left: 15px;
+            // padding-right: 15px;
             li {
-                flex: 0 0 78px;
-                max-width: 78px;
+                // flex: 0 0 78px;
+                // max-width: 78px;
     
             }
         }
+        .slick-list {
+            padding-left: 0;
+            
+        }
+        .slick-prev,
+        .slick-next {
+            display: none !important;
+        }
     }
-    .lookbook-slogan {
-        padding-left: 30px;
-        padding-right: 30px;
-        .prev-person,
-        .next-person {
-            .text {
-                display: none;
+    .slider-home.slick-slider {
+        margin-bottom: 53px;
+
+    }
+    .hera-service {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        .row {
+            margin-left: -4px;
+            margin-right: -4px;
+            .col-item-service {
+                padding-left: 4px;
+                padding-right: 4px;
             }
         }
-        .prev-person {
-            left: -20px;
+        .hera-service-content {
+            .title {
+                font-size: 26px;
+                line-height: 34px;
+                margin-bottom: 18px;
+            }
+            .subtitle {
+                font-size: 13px;
+                line-height: 16px;
+                margin-bottom: 4px;
+            }
+            .pharse {
+                font-size: 11px;
+                line-height: 16px;
+
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 16px;
+                
+            }
         }
-        .next-person {
-            right: -20px;
+        .item-service {
+            min-height: 157px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            .image {
+                img {
+                    max-width: 32px;
+                }
+            }
         }
     }
+    
 }
 @media only screen and (max-width: 480px) {
+    .news-blog .col-news .news-item-info .image {
+        width: 42%;
+    }
+    .news-blog .col-news .news-item-info .news-item-details {
+        width: 58%;
+    }
     .testimonial {
         .slick-list {
             .testimonial-item {
@@ -2029,7 +2178,8 @@ button {
     }
     .suggest-product-categories {
         .suggest-product-categories-main {
-            padding-right: 100px;
+            padding-right: 11px;
+            padding-left: 11px;
         }
         .slick-slider {
             .slick-prev {
@@ -2040,11 +2190,20 @@ button {
 
             }
         }
+        .tab-content {
+            .autoplay {
+                margin-left: -3px;
+                margin-right: -3px;
+                .item {
+                    padding-left: 3px;
+                    padding-right: 3px;
+                }
+            }
+        }
     }
     .slider-home {
         &.slick-slider {
             .slick-dots {
-                
                 li {
                     width: 30px;
                     button {
@@ -2068,9 +2227,41 @@ button {
             }
         }
     }
+    .product-wrapper {
+        .product-name {
+            font-size: 13px;
+        }
+        .product-price-wrapper {
+            .new-price {
+                font-size: 13px;
+                line-height: 16px;
+            }
+            .old-price {
+                font-size: 11px;
+                line-height: 16px;
+            }
+        }
+        .product-item-actions {
+            .btn-cart {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
     .new-product-categories {
         .new-product-categories-main {
-            padding-left: 100px;
+            padding-left: 11px;
+            padding-right: 11px;    
+        }
+        .tab-content {
+            .autoplay {
+                margin-left: -3px;
+                margin-right: -3px;
+                .item {
+                    padding-left: 3px;
+                    padding-right: 3px;
+                }
+            }
         }
         .slick-prev {
             left: -73px;
@@ -2079,6 +2270,167 @@ button {
             left: -30px;
         }
     }   
+}
+@media only screen and (max-width: 375px) {
+    .event-product-categories {
+        .event-desktop {
+            display: none;
+        }
+        .event-mobile {
+            display: block;
+        }
+        .nav-tabs {
+            li {
+                width: 100%;
+                text-align: center;
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .slider-home.slick-slider {
+        margin-bottom: 53px;
+    }
+    .lookbook-slogan .container-slogan .slogan-left .title-sub, 
+    .lookbook-slogan .container-slogan .slogan-main .title-sub,
+    .lookbook-slogan .container-slogan .slogan-right .image-title {
+        display: none;
+    }
+    .lookbook-slogan {
+        margin-bottom: 0;
+        .container-slogan {
+            padding-bottom: 38px;
+            .slogan-left {
+                margin-bottom: 35px;
+            }
+            .slogan-right {
+                .lookbook-phare {
+                    .title {
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 4px;
+                    }
+                }
+                .lookbook-phare {
+                    p {
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+        .prev-person,
+        .next-person {
+            bottom: 26px;
+            a {
+                font-size: 12px;
+                line-height: 14px;
+                .fa {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .lookbook-slogan {
+        padding-left: 0px;
+        padding-right: 0px;
+        .container-slogan {
+            .slogan-left {
+                padding-left: 55px;
+                padding-right: 55px;
+            }
+            .slogan-right {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        
+    }
+    .new-product-categories {
+        .new-product-categories-main {
+            padding-top: 40px;
+            > .title {
+                font-size: 26px;
+                line-height: 34px;
+                margin-bottom: 19px;
+            }
+        }
+        .nav-tabs {
+            margin-bottom: 16px;
+        }
+        .product-wrapper {
+            margin-bottom: 20px;
+        }
+        
+    }
+    .suggest-product-categories {
+        .suggest-product-categories-main {
+            padding-top: 40px;
+            > .title {
+                font-size: 26px;
+                line-height: 34px;
+                margin-bottom: 19px;
+            }
+        }
+        .nav-tabs {
+            margin-bottom: 16px;
+        }
+        .product-wrapper {
+            margin-bottom: 20px;
+        }
+        
+    }
+    .news-blog {
+        .title {
+            h2 {
+                font-size: 26px;
+                line-height: 28px;
+            }
+        }
+        .col-latest-blog {
+            .blog-item-details {
+                .title {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .hera-charity {
+        .hera-charity-primary {
+            .hera-charity-info {
+                .title {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+                .phares {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+                .charity-sum {
+                    .col-left-charity {
+                        span {
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                    .col-right-charity {
+                        span {
+                            font-size: 11px;
+                            line-height: 13px;
+
+                        }
+                    }
+                }
+                .actions {
+                    a {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 360px) {
     .event-product-categories {
