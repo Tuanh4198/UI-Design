@@ -1372,6 +1372,7 @@ header {
 }
 .header-bottom {
   background-color: #f4f4f4;
+  margin-bottom: 16px;
 }
 .header-bottom .banner-header .title {
   font-family: Oswald;
@@ -8256,8 +8257,7 @@ header {
   border: 2px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 2px;
-  padding-bottom: 1px;
+  padding: 2px 2px 3px;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   cursor: pointer;
