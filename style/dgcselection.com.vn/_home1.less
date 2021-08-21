@@ -1,7 +1,7 @@
 @import '../config/_config.less';
 @import '../layout/product.less';
-@import './_header.less';
-@import './_footer.less';
+@import '../dgcselection.com.vn/_header.less';
+@import '../dgcselection.com.vn/_footer.less';
 
 html {
     overflow-x: hidden;
@@ -1191,6 +1191,47 @@ button {
 
         .nav-tabs{
             margin-bottom: 16px;
+        }
+    }
+}
+
+
+// blog page
+body {
+    .blog-news {
+        .box-container {
+            > .title{
+                .content{
+                    font-family: 'Inter', sans-serif;
+                }                
+            }
+        }
+    }
+
+    .blog-children {
+        .blog-bottom {
+            .box-top {
+                .container {
+                    > .title{
+                        span{
+                            font-family: 'Inter', sans-serif;
+                            font-size: 32px;
+                            font-weight: 600;
+                            line-height: 49px;
+                            letter-spacing: -0.01em;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    > .category-date {
+                        .category{
+                            span{
+                                color: #0F1F3D;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
