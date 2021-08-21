@@ -127,3 +127,33 @@
 		}
 	}
 }
+
+@keyframes headerIn {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.scrollUp {
+	animation: headerIn .5s forwards;
+}
+
+@keyframes headerOut {
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+}
+
+.scrollDown {
+	animation: headerOut .5s forwards;
+}

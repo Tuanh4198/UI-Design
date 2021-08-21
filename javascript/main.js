@@ -1,4 +1,10 @@
 jQuery(document).ready(function($) {
+	if($(window).width() <= 575) {
+		$('.two-rows').each(function() {
+			$(this).attr('data-rows', 2);
+		})
+	}
+
     $(".autoplay").each(function() {
         $(this).slick($(this).data());
     });
@@ -8,16 +14,23 @@ jQuery(document).ready(function($) {
     });
 
     // fixed menu
-    (function($) {
-        let menu = $('.fixed-main-menu');
-        body = $('body,html');
-        menuPosition = menu.offset().top;
-        $(window).scroll(() => {
-            let startpage = body.scrollTop();
-            (startpage > menuPosition) ? (menu.addClass('fixed')) : (menu.removeClass('fixed'))
-        });
-    })($);
-    // end fixed menu
+	(function($) {
+		let menu = $('.fixed-main-menu');
+		body = $('body,html');
+		menuPosition = menu.offset().top;
+		let positionPage = 0;
+		$(window).scroll(() => {
+			let startpage = body.scrollTop();
+            (startpage > menuPosition) ? (menu.addClass('fixed')) : (menu.removeClass('fixed'));
+			if(positionPage < startpage) {
+				menu.addClass('scrollDown').removeClass('scrollUp');
+			} else if(positionPage > startpage) {
+				menu.addClass('scrollUp').removeClass('scrollDown');
+			}
+			positionPage = startpage;
+		});
+	})($);
+	// end fixed menu
 
     //convert tab//
     $(function() {
