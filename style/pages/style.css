@@ -10506,6 +10506,9 @@ button {
 .slider-home .slick-slide .item img {
   width: 100%;
 }
+.slider-home .slick-slide .item img.slider-mobile {
+  display: none;
+}
 .autoplay > .item {
   display: none;
 }
@@ -11861,7 +11864,7 @@ button {
     text-align: center;
   }
   .event-product-categories .nav-tabs::-webkit-scrollbar {
-    height: 2px;
+    height: 0px;
   }
   .event-product-categories .nav-tabs::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -12041,6 +12044,12 @@ button {
   }
 }
 @media only screen and (max-width: 575px) {
+  .slider-home .slick-slide .item img.slider-desktop {
+    display: none;
+  }
+  .slider-home .slick-slide .item img.slider-mobile {
+    display: block;
+  }
   .event-product-categories .event-desktop {
     display: none;
   }

@@ -176,6 +176,10 @@ button {
             
             img {
                 width: 100%;
+                &.slider-mobile {
+                    display: none;
+                }
+                
                 
             }
         }
@@ -1719,7 +1723,7 @@ button {
                 text-align: center;
             }
             &::-webkit-scrollbar {
-                height: 2px;
+                height: 0px;
             }
             &::-webkit-scrollbar-track {
                 background: #f1f1f1; 
@@ -1964,6 +1968,21 @@ button {
 
 }
 @media only screen and (max-width: 575px) {
+    .slider-home {
+        .slick-slide {
+            .item {
+                img {
+                    &.slider-desktop {
+                        display: none;
+                    }
+                    &.slider-mobile {
+                        display: block;
+                        
+                    }
+                }
+            }
+        }
+    }
     .event-product-categories {
         .event-desktop {
             display: none;
