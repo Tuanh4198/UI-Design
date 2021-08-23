@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
 	})($);
 	// end fixed menu
 
-    //convert tab//
+    //tab
     $(function() {
         $(".tabcontent").hide();
         $(".tabcontent:first").show();
@@ -47,8 +47,8 @@ jQuery(document).ready(function($) {
             });
         })
     });
+    // end tab
 
-    // end
     // load top
     (function($) {
         let up_btn = $("body .up");
@@ -107,46 +107,46 @@ jQuery(document).ready(function($) {
     // end Effect drop down
 
     // spinner quantity
-    (function($) {
-        $('.quantity').each(function() {
-            let spinner = $(this),
-                input = $('.quantity input[type="number"]'),
-                btnUp = $('.quantity .quantity-up'),
-                btnDown = $('.quantity .quantity-down'),
-                min = input.attr('min'),
-                max = input.attr('max');
-            let newVal;
-            btnUp.click(function() {
-                let oldValue = parseFloat(input.val());
-                if (oldValue >= max) {
-                    newVal = oldValue;
-                } else {
-                    newVal = oldValue + 1;
-                }
-                spinner.find("input").val(newVal);
-                spinner.find("input").trigger("change");
-            });
-            btnDown.click(function() {
-                let oldValue = parseFloat(input.val());
-                if (oldValue <= min) {
-                    newVal = oldValue;
-                } else {
-                    newVal = oldValue - 1;
-                }
-                spinner.find("input").val(newVal);
-                spinner.find("input").trigger("change");
-            });
-        });
+   	$(function() {
+		let newVal, spinner, input, min, max;
+		$('.quantity .quantity-up').click(function(event) {
+			spinner = $(this).parent();
+			input = spinner.find("input");
+			min = input.attr('min');
+			max = input.attr('max');
+			let oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				newVal = oldValue;
+			} else {
+				newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+		$('.quantity .quantity-down').click(function(event) {
+			spinner = $(this).parent();
+			input = spinner.find("input");
+			min = input.attr('min');
+			max = input.attr('max');
+			let oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				newVal = oldValue;
+			} else {
+				newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
     });
     //end
 
     //toggle popup
     $(document).ready(function() {
-            $(".modals-wrapper").on('click', '.action-close', function(e) {
-                $(".modals-wrapper").find(".modal-popup").removeClass("_show");
-            })
-        })
-        //end
+		$(".modals-wrapper").on('click', '.action-close', function(e) {
+			$(".modals-wrapper").find(".modal-popup").removeClass("_show");
+		})
+	})
+	//end
 
     // toggle button
     $(".toggle-tab").click(function(event) {
@@ -203,15 +203,15 @@ jQuery(document).ready(function($) {
 });
 
 $(".convert-type").each(function() {
-        $(this).click(function() {
-            var input = $($(this).next());
-            if (input.attr("type") == "password") {
-                input.attr("type", "text");
-                $(this).val("HIDE");
-            } else {
-                input.attr("type", "password");
-                $(this).val("SHOW");
-            }
-        });
-    })
-    // end
+	$(this).click(function() {
+		var input = $($(this).next());
+		if (input.attr("type") == "password") {
+			input.attr("type", "text");
+			$(this).val("HIDE");
+		} else {
+			input.attr("type", "password");
+			$(this).val("SHOW");
+		}
+	});
+})
+// end

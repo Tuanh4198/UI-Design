@@ -25,6 +25,8 @@
 		}
 
 		li {
+			display: inline-table;
+
 			&:not(:last-child) {
 				margin-bottom: 30px;
 			}
@@ -32,18 +34,17 @@
 	}
 
 	.product-wrapper {
+		margin: 0;
+
 		.product-img-wrapper {
+			margin-bottom: 0;
+
 			img {
 				width: 100%;
 			}
 		}
 
 		.product-detail-wrapper {
-			display: flex;
-			justify-content: space-between;
-			flex-direction: column;
-			height: 100%;
-
 			.product-detail{
 				flex: 1;
 				display: flex;
@@ -54,8 +55,7 @@
 			.product-action {
 				flex: 1;
 				justify-content: space-between;
-				align-items: flex-end;
-				padding-bottom: 10px;
+				align-items: center;
 			}
 
 			.new-price {
@@ -91,6 +91,7 @@
 				font-size: 16px;
 				line-height: 19px;
 				color: @base_color;
+				margin-top: 0;
 
 				&:hover {color: @hover_color;}
 			}
@@ -101,6 +102,7 @@
 				font-size: 13px;
 				line-height: 16px;
 				color: #999999;
+				margin-bottom: 8px;
 			}
 
 			.product-qty {
@@ -114,7 +116,7 @@
 					line-height: 16px;
 					color: #999999;
 					margin-bottom: 0;
-					margin-right: 15px;
+					margin-right: 5px;
 				}
 
 				.group-qty {
@@ -134,6 +136,7 @@
 						align-items: center;
 						justify-content: center;
 						cursor: pointer;
+						padding: 0 5px;
 
 						&:hover {color: black}
 					}

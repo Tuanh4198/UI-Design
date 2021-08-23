@@ -1411,24 +1411,20 @@
 .mini-cart-wrapper .list-products::-webkit-scrollbar-thumb:hover {
   background: #888;
 }
+.mini-cart-wrapper .list-products li {
+  display: inline-table;
+}
 .mini-cart-wrapper .list-products li:not(:last-child) {
   margin-bottom: 30px;
 }
+.mini-cart-wrapper .product-wrapper {
+  margin: 0;
+}
+.mini-cart-wrapper .product-wrapper .product-img-wrapper {
+  margin-bottom: 0;
+}
 .mini-cart-wrapper .product-wrapper .product-img-wrapper img {
   width: 100%;
-}
-.mini-cart-wrapper .product-wrapper .product-detail-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
 }
 .mini-cart-wrapper .product-wrapper .product-detail-wrapper .product-detail {
   -webkit-box-flex: 1;
@@ -1452,10 +1448,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .mini-cart-wrapper .product-wrapper .product-detail-wrapper .new-price {
   font-style: normal;
@@ -1487,6 +1482,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #242424;
+  margin-top: 0;
 }
 .mini-cart-wrapper .product-wrapper .product-detail-wrapper .product-name:hover {
   color: #993a3a;
@@ -1497,6 +1493,7 @@
   font-size: 13px;
   line-height: 16px;
   color: #999999;
+  margin-bottom: 8px;
 }
 .mini-cart-wrapper .product-wrapper .product-detail-wrapper .product-qty {
   display: -webkit-box;
@@ -1513,7 +1510,7 @@
   line-height: 16px;
   color: #999999;
   margin-bottom: 0;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 .mini-cart-wrapper .product-wrapper .product-detail-wrapper .product-qty .group-qty {
   display: -webkit-inline-box;
@@ -1542,6 +1539,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  padding: 0 5px;
 }
 .mini-cart-wrapper .product-wrapper .product-detail-wrapper .product-qty .group-qty .btn-qty:hover {
   color: black;
