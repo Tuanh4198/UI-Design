@@ -2261,7 +2261,8 @@ header {
     margin-left: -24px;
     margin-right: -24px;
   }
-  .footer .footer-links .footer-link {
+  .footer .footer-links .footer-link,
+  .footer .footer-links .footer-social {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -2285,12 +2286,6 @@ header {
   .footer-bottom {
     padding: 25px 24px;
   }
-  .footer-bottom .footer-bottom-content {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
 }
 @media screen and (max-width: 991px) {
   .social-profile {
@@ -2309,6 +2304,9 @@ header {
   }
   .footer .footer-link {
     margin-bottom: 20px;
+  }
+  .footer .footer-link:last-child {
+    margin-bottom: 0;
   }
   .footer .footer-social {
     padding-left: 0;
