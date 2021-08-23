@@ -1426,18 +1426,18 @@ header {
   position: relative;
   padding: 0 32px;
 }
-.header-bottom {
+.page-top {
   background-color: #f4f4f4;
   margin-bottom: 16px;
 }
-.header-bottom .banner-header .title {
+.page-top .banner-header .title {
   font-family: Oswald;
   font-size: 32px;
   font-weight: 500;
   line-height: 47px;
   letter-spacing: -0.02em;
 }
-.header-bottom .banner-header .action {
+.page-top .banner-header .action {
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
@@ -1450,17 +1450,17 @@ header {
   -webkit-animation: blink-1 3s infinite both;
   animation: blink-1 3s infinite both;
 }
-.header-bottom .banner-header .action:hover {
+.page-top .banner-header .action:hover {
   background-color: #505050;
 }
-.header-bottom .banner-content {
+.page-top .banner-content {
   max-width: 307px;
   margin-left: 33px;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
 }
-.header-bottom .banner-mobile {
+.page-top .banner-mobile {
   display: none;
 }
 .fixed-main-menu.fixed {
@@ -1477,9 +1477,6 @@ header {
   transition: all 0.8s ease;
 }
 .fixed-main-menu.fixed .header-top {
-  display: none;
-}
-.fixed-main-menu.fixed .header-bottom {
   display: none;
 }
 .fixed-main-menu.fixed .navbar .menu-top .navbar-nav > .nav-item {
@@ -1616,8 +1613,15 @@ header {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+.open-minicart {
+  overflow: hidden;
+}
 .open-minicart body {
   overflow: hidden;
+}
+.open-minicart .fixed-main-menu {
+  -webkit-animation: none;
+          animation: none;
 }
 .btn-close {
   font-size: 0;
@@ -1813,29 +1817,6 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .header-bottom .header-bottom-content {
-    position: relative;
-    padding-bottom: 47px;
-  }
-  .header-bottom .banner-header {
-    min-width: 100%;
-  }
-  .header-bottom .banner-header .title {
-    font-size: 24px;
-  }
-  .header-bottom .banner-header .action {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  .header-bottom .banner-content {
-    margin-left: 0;
-    max-width: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    margin-top: 6px;
-  }
 }
 @media screen and (max-width: 575px) {
   .header-search {
@@ -1932,10 +1913,10 @@ header {
   .header .header-tool .header-tool-content > * {
     border-width: 0;
   }
-  .header-bottom img {
+  .page-top img {
     display: none;
   }
-  .header-bottom .banner-mobile {
+  .page-top .banner-mobile {
     display: block;
   }
 }
@@ -3272,10 +3253,10 @@ button {
   .slider-home .slick-dots {
     bottom: 16px;
   }
-  .slider-home .img-larger {
+  .slider-home .slick-slide .item .img-larger {
     display: none;
   }
-  .slider-home .img-mobile {
+  .slider-home .slick-slide .item .img-mobile {
     display: block;
   }
   .style-children {
@@ -3343,6 +3324,9 @@ button {
   }
 }
 @media screen and (max-width: 359px) {
+  .slider-home .slick-dots li {
+    width: 30px;
+  }
   .blog-slider > .content {
     padding-left: 28px;
   }
