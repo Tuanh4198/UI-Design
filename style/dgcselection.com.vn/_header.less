@@ -1234,7 +1234,7 @@ header {
 	padding: 0 32px;
 }
 
-.header-bottom {
+.page-top {
 	background-color: #f4f4f4;
 	margin-bottom: 16px;
 
@@ -1294,10 +1294,6 @@ header {
 		transition: all .8s ease;
 
 		.header-top {
-			display: none;
-		}
-
-		.header-bottom {
 			display: none;
 		}
 
@@ -1467,8 +1463,13 @@ header {
 }
 
 .open-minicart {
+	overflow: hidden;
 	body {
 		overflow: hidden;
+	}
+
+	.fixed-main-menu{
+		animation: none;
 	}
 }
 
@@ -1757,37 +1758,6 @@ header {
 			justify-content: center;
 		}
 	}
-
-	.header-bottom {
-
-		.header-bottom-content {
-			position: relative;
-			padding-bottom: 47px;
-		}
-
-		.banner-header {
-			min-width: 100%;
-
-			.title {
-				font-size: 24px;
-			}
-
-			.action {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-			}
-		}
-
-		.banner-content {
-			margin-left: 0;
-			max-width: 100%;
-			font-size: 14px;
-			font-weight: 400;
-			line-height: 22px;
-			margin-top: 6px;
-		}
-	}
 }
 
 @media screen and (max-width: (@screen__ss - 1)) {
@@ -1927,7 +1897,7 @@ header {
 		}
 	}
 
-	.header-bottom{
+	.page-top{
 		img{
 			display: none;
 		}

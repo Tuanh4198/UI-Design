@@ -1082,13 +1082,18 @@ button {
             bottom: 16px;
         }
 
-        .img-larger{
-            display: none;
+        .slick-slide {
+            .item {
+                .img-larger{
+                    display: none;
+                }
+        
+                .img-mobile{
+                    display: block;
+                }
+            }
         }
 
-        .img-mobile{
-            display: block;
-        }
     }
     .style-children {
         padding: 40px 0;
@@ -1181,6 +1186,14 @@ button {
 }
 
 @media screen and (max-width: (@screen__xs-m - 1)){
+    .slider-home {
+        .slick-dots {
+            li{
+                width: 30px;
+            }
+        }
+    }
+
     .blog-slider {
         > .content{
             padding-left: 28px;
