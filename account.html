@@ -840,7 +840,7 @@
                                                 <span class="price-before">899.000 <span class="currency-unit">đ</span></span>
                                                 <span class="discount">-30%</span>
                                             </div>
-                                            <ul class="list-option color">
+                                            <ul class="list-option list-support-option color swatch">
                                                 <li class="active"><a href="#" style="background-color: #DBB65B">yellow</a></li>
                                                 <li><a href="#" style="background-color: #252731">black</a></li>
                                                 <li><a href="#" style="background-color: #90ABC3">blue</a></li>
@@ -1303,6 +1303,26 @@
             var activeTab = $(this).val();        
             $("#" + activeTab).fadeIn(); 
         });
+
+        $('.list-support-option li').click(function(event) {
+            event.preventDefault();
+            $(this).toggleClass('active');
+        })
+
+        $('.list-keyword li:not(.btn-clear-all)').click(function(event) {
+            event.preventDefault();
+            $(this).remove();
+        })
+
+        $('.list-keyword li.btn-clear-all').click(function(event) {
+            event.preventDefault();
+            $(this).parent().children().remove();
+        })
+
+        $('#select-option li').click(function(event) {
+            event.preventDefault();
+            $('#key-select').text($(this).text());
+        })
     })
 </script>
 
