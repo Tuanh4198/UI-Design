@@ -397,7 +397,8 @@
                 margin-right: -24px;
             }
 
-            .footer-link{
+            .footer-link,
+            .footer-social{
                 padding-left: 24px;
                 padding-right: 24px;
             }
@@ -432,11 +433,6 @@
 
     .footer-bottom {
         padding: 25px 24px;
-
-        .footer-bottom-content {
-            justify-content: center;
-            text-align: center;
-        }
     }
 }
 
@@ -461,6 +457,10 @@
 
         .footer-link {
             margin-bottom: 20px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
 
         .footer-social{
@@ -581,5 +581,3 @@
         }
     }
 }
-
-@media screen and (max-width: (@screen__xxs - 1)) {}
