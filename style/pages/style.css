@@ -1552,9 +1552,9 @@
   line-height: 20px;
   color: #242424;
   display: inline-block;
-  width: 20px;
+  width: 17px;
+  padding: 0;
   text-align: center;
-  padding: 0 5px;
 }
 .mini-cart-wrapper .product-wrapper .product-detail-wrapper .product-qty .group-qty input::-webkit-inner-spin-button,
 .mini-cart-wrapper .product-wrapper .product-detail-wrapper .product-qty .group-qty input::-webkit-outer-spin-button {
