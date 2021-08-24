@@ -6254,22 +6254,22 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
 .detail-page .product-option-wrapper [class*="list-option"].color li {
   width: 45px;
   height: 30px;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-right: 5px;
   margin-bottom: 15px;
   overflow: hidden;
   background: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  border: 1px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 2px 2px 3px;
+  padding: 2px;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   cursor: pointer;
 }
 .detail-page .product-option-wrapper [class*="list-option"].color li:hover,
 .detail-page .product-option-wrapper [class*="list-option"].color li.active {
-  border: 2px solid #9A9A9A;
+  border: 1px solid black;
 }
 .detail-page .product-option-wrapper [class*="list-option"].color li a {
   font-size: 0;
@@ -7512,16 +7512,15 @@ body.page-account .blog-bottom .items .item .content .list-option.color li,
 body.page-order-tracking .blog-bottom .items .item .content .list-option.color li {
   width: 45px;
   height: 30px;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-right: 5px;
   margin-bottom: 10px;
   overflow: hidden;
   background: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  border: 1px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2px;
-  padding-bottom: 3px;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   cursor: pointer;
@@ -7530,7 +7529,7 @@ body.page-account .blog-bottom .items .item .content .list-option.color li:hover
 body.page-order-tracking .blog-bottom .items .item .content .list-option.color li:hover,
 body.page-account .blog-bottom .items .item .content .list-option.color li.active,
 body.page-order-tracking .blog-bottom .items .item .content .list-option.color li.active {
-  border: 2px solid #9A9A9A;
+  border: 1px solid black;
 }
 body.page-account .blog-bottom .items .item .content .list-option.color li a,
 body.page-order-tracking .blog-bottom .items .item .content .list-option.color li a {
