@@ -741,7 +741,7 @@ header {
   position: relative;
 }
 .header-account .toggle-content .modal-header .btn-close {
-  top: 0;
+  top: -10px;
   right: 0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1628,15 +1628,22 @@ header {
   right: 16px;
   opacity: 1;
   z-index: 1;
-}
-.btn-close:before {
-  content: url('../../images/close.png');
-  height: 12px;
-  width: 12px;
-  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url('../../images/close.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .btn-close:hover {
   opacity: 0.5;
+}
+.btn-close:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .product-list .product-wrapper {
   display: -webkit-box;
@@ -1733,8 +1740,8 @@ header {
     display: block;
     position: relative;
   }
-  .nav-mobile .nav-mobile-title .btn-close:before {
-    content: url('../../images/close-menu.png');
+  .nav-mobile .nav-mobile-title .btn-close {
+    background-image: url('../../images/close-menu.png');
   }
   .nav-mobile .nav-mobile-content {
     overflow-y: auto;
@@ -1768,6 +1775,9 @@ header {
   .nav-mobile .sub-menu.active {
     display: block;
   }
+  .nav-open {
+    overflow: hidden;
+  }
   .nav-open .nav-toggle:after {
     content: "";
     position: fixed;
@@ -1777,6 +1787,10 @@ header {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 900;
+  }
+  .nav-open .header {
+    -webkit-animation: none;
+            animation: none;
   }
   .nav-open .header .nav-mobile {
     -webkit-transform: translateX(0);
