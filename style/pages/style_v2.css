@@ -170,6 +170,14 @@ body .btn:focus:visited {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-width: 1px;
+}
 p,
 h1,
 h2,
