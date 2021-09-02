@@ -778,18 +778,58 @@
                                 </li>
                                 <li>
                                     <ul class="list-option color">
-										<li class="active"><a href="#" style="background: url('./images/page/detail/color1.png')">yellow</a></li>
-										<li><a href="#" style="background: url('./images/page/detail/color2.png')">black</a></li>
-                                        <li><a href="#" style="background-color: #90ABC3">blue</a></li>
-                                        <li><a href="#" style="background-color: #C3918F">pink</a></li>
+                                        <li class="active">
+											<label for="yellow">
+												<span style="background: url('./images/page/detail/color1.png')">yellow</span>
+											</label>
+											<input type="radio" id="yellow" name="color" value="yellow">
+										</li>
+                                        <li>
+											<label for="black">
+												<span style="background: url('./images/page/detail/color2.png')">black</span>
+											</label>
+											<input type="radio" id="black" name="color" value="black">
+										</li>
+                                        <li>
+											<label for="blue">
+												<span style="background-color: #90ABC3">blue</span>
+											</label>
+											<input type="radio" id="blue" name="color" value="blue">
+										</li>
+                                        <li>
+											<label for="pink">
+												<span style="background-color: #C3918F">pink</span>
+											</label>
+											<input type="radio" id="pink" name="color" value="pink">
+										</li>
                                     </ul>
                                 </li>
                                 <li>
                                     <ul class="list-option size">
-                                        <li class="active"><a href="#">S</a></li>
-                                        <li><a href="#">MS</a></li>
-                                        <li><a href="#">L</a></li>
-                                        <li><a href="#">XL</a></li>
+                                        <li class="active">
+											<label for="S">
+												S
+											</label>
+											<input type="radio" id="S" name="size" value="S">
+										</li>
+                                        <li>
+											<label for="MS">
+												MS
+											</label>
+											<input type="radio" id="MS" name="size" value="MS">
+										</li>
+                                        <li>
+											<label for="L">
+												L
+											</label>
+											<input type="radio" id="L" name="size" value="L">
+										</li>
+                                        <li>
+											<label for="XL">
+												XL
+											</label>
+											<input type="radio" id="XL" name="size" value="XL">
+										</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -1806,7 +1846,9 @@
 
         $('.list-option li').click(function(event) {
             event.preventDefault();
+            $(this).parent().find('li').removeClass('active');
             $(this).toggleClass('active');
+            console.log($(this).find('input').val()); 
         })
 
         $('#btn-choose-size').click(function(event) {
