@@ -1467,6 +1467,10 @@ header {
 .page-top .banner-mobile {
   display: none;
 }
+.fixed-main-menu {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .fixed-main-menu.fixed {
   position: fixed;
   top: 0;
