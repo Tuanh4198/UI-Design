@@ -2195,6 +2195,14 @@
 .checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user {
   border: none;
 }
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user tbody,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user td,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user tfoot,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user th,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user thead,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user tr {
+  border-width: 0;
+}
 .checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user td,
 .checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user th {
   border: none;
@@ -6970,11 +6978,11 @@ body .blog-news .blog-bottom .blog-content .banner-2 a img {
   margin-top: 10px;
   color: #ff0000;
 }
-.page-news-pass .seciton-news-pass {
+.seciton-news-pass {
   text-align: center;
   border-bottom: 2px solid #F5F6F8;
 }
-.page-news-pass .seciton-news-pass .block-title-heading {
+.seciton-news-pass .block-title-heading {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
@@ -6982,50 +6990,50 @@ body .blog-news .blog-bottom .blog-content .banner-2 a img {
   padding: 35px 0 8px 0;
   display: block;
 }
-.page-news-pass .seciton-news-pass .actions-toolbar {
+.seciton-news-pass .actions-toolbar {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 28px;
 }
-.page-news-pass .seciton-news-pass .actions-toolbar a {
+.seciton-news-pass .actions-toolbar a {
   font-weight: 700;
   color: #242424;
 }
-.page-news-pass .seciton-news-pass .block-content {
+.seciton-news-pass .block-content {
   max-width: 372px;
   display: block;
   margin: 0 auto;
   text-align: left;
   padding-bottom: 90px;
 }
-.page-news-pass .seciton-news-pass .block-content .label {
+.seciton-news-pass .block-content .label {
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
   display: inline-block;
   margin-bottom: 10px;
 }
-.page-news-pass .seciton-news-pass .block-content .label .icon {
+.seciton-news-pass .block-content .label .icon {
   color: #C31D1D;
 }
-.page-news-pass .seciton-news-pass .block-content .field input {
+.seciton-news-pass .block-content .field input {
   height: 52px;
   width: 100%;
   border-radius: 1px;
   border: 1px solid #E8E8E8;
   padding: 16px;
 }
-.page-news-pass .seciton-news-pass .block-content .field input:focus-visible {
+.seciton-news-pass .block-content .field input:focus-visible {
   outline: none;
 }
-.page-news-pass .seciton-news-pass .block-content .field input:focus {
+.seciton-news-pass .block-content .field input:focus {
   border-color: #242424;
 }
-.page-news-pass .seciton-news-pass .block-content .actions-toolbar {
+.seciton-news-pass .block-content .actions-toolbar {
   margin-top: 16px;
 }
-.page-news-pass .seciton-news-pass .block-content .actions-toolbar .action-confirm {
+.seciton-news-pass .block-content .actions-toolbar .action-confirm {
   background-color: #242424;
   width: 100%;
   padding: 15px 0;
@@ -7034,16 +7042,16 @@ body .blog-news .blog-bottom .blog-content .banner-2 a img {
   line-height: 17px;
   cursor: pointer;
 }
-.page-news-pass .seciton-news-pass .block-content .actions-toolbar .action-confirm:hover {
+.seciton-news-pass .block-content .actions-toolbar .action-confirm:hover {
   background-color: #505050;
 }
 @media only screen and (max-width: 575px) {
-  .page-news-pass .seciton-news-pass .block-title-heading {
+  .seciton-news-pass .block-title-heading {
     font-size: 24px;
     line-height: 31px;
     padding: 20px 0 16px 0;
   }
-  .page-news-pass .seciton-news-pass .block-content {
+  .seciton-news-pass .block-content {
     padding-bottom: 20px;
   }
 }
