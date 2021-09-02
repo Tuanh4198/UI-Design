@@ -6036,6 +6036,9 @@ body .seciton-blog .blog-bottom .blog-content .news-bottom .box-left .new .box-c
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 body .seciton-blog .blog-bottom .blog-content .news-bottom .box-left .new .box-content .category {
   line-height: 14.52px;
@@ -6698,9 +6701,6 @@ body .blog-news .blog-bottom .blog-content .news-bottom .box {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-right: 8px;
   margin-left: -18px;
   margin-right: -18px;
