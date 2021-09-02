@@ -170,6 +170,14 @@ body .btn:focus:visited {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-width: 1px;
+}
 p,
 h1,
 h2,
@@ -741,7 +749,7 @@ header {
   position: relative;
 }
 .header-account .toggle-content .modal-header .btn-close {
-  top: 0;
+  top: -10px;
   right: 0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1459,6 +1467,10 @@ header {
 .page-top .banner-mobile {
   display: none;
 }
+.fixed-main-menu {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .fixed-main-menu.fixed {
   position: fixed;
   top: 0;
@@ -1628,15 +1640,22 @@ header {
   right: 16px;
   opacity: 1;
   z-index: 1;
-}
-.btn-close:before {
-  content: url('../../images/close.png');
-  height: 12px;
-  width: 12px;
-  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url('../../images/close.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .btn-close:hover {
   opacity: 0.5;
+}
+.btn-close:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .product-list .product-wrapper {
   display: -webkit-box;
@@ -1733,8 +1752,8 @@ header {
     display: block;
     position: relative;
   }
-  .nav-mobile .nav-mobile-title .btn-close:before {
-    content: url('../../images/close-menu.png');
+  .nav-mobile .nav-mobile-title .btn-close {
+    background-image: url('../../images/close-menu.png');
   }
   .nav-mobile .nav-mobile-content {
     overflow-y: auto;
@@ -1768,6 +1787,9 @@ header {
   .nav-mobile .sub-menu.active {
     display: block;
   }
+  .nav-open {
+    overflow: hidden;
+  }
   .nav-open .nav-toggle:after {
     content: "";
     position: fixed;
@@ -1777,6 +1799,10 @@ header {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 900;
+  }
+  .nav-open .header {
+    -webkit-animation: none;
+            animation: none;
   }
   .nav-open .header .nav-mobile {
     -webkit-transform: translateX(0);
@@ -5541,6 +5567,14 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
 }
 .checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user {
   border: none;
+}
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user tbody,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user td,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user tfoot,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user th,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user thead,
+.checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user tr {
+  border-width: 0;
 }
 .checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user td,
 .checkout-page .order-success-wrapper .customer-info-wrapper .table-info-user th {
@@ -9409,6 +9443,9 @@ body .seciton-blog .blog-bottom .blog-content .news-bottom .box-left .new .box-c
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 body .seciton-blog .blog-bottom .blog-content .news-bottom .box-left .new .box-content .category {
   line-height: 14.52px;
@@ -10071,9 +10108,6 @@ body .blog-news .blog-bottom .blog-content .news-bottom .box {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-right: 8px;
   margin-left: -18px;
   margin-right: -18px;
@@ -10343,11 +10377,11 @@ body .blog-news .blog-bottom .blog-content .banner-2 a img {
   margin-top: 10px;
   color: #ff0000;
 }
-.page-news-pass .seciton-news-pass {
+.seciton-news-pass {
   text-align: center;
   border-bottom: 2px solid #F5F6F8;
 }
-.page-news-pass .seciton-news-pass .block-title-heading {
+.seciton-news-pass .block-title-heading {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
@@ -10355,50 +10389,50 @@ body .blog-news .blog-bottom .blog-content .banner-2 a img {
   padding: 35px 0 8px 0;
   display: block;
 }
-.page-news-pass .seciton-news-pass .actions-toolbar {
+.seciton-news-pass .actions-toolbar {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 28px;
 }
-.page-news-pass .seciton-news-pass .actions-toolbar a {
+.seciton-news-pass .actions-toolbar a {
   font-weight: 700;
   color: #242424;
 }
-.page-news-pass .seciton-news-pass .block-content {
+.seciton-news-pass .block-content {
   max-width: 372px;
   display: block;
   margin: 0 auto;
   text-align: left;
   padding-bottom: 90px;
 }
-.page-news-pass .seciton-news-pass .block-content .label {
+.seciton-news-pass .block-content .label {
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
   display: inline-block;
   margin-bottom: 10px;
 }
-.page-news-pass .seciton-news-pass .block-content .label .icon {
+.seciton-news-pass .block-content .label .icon {
   color: #C31D1D;
 }
-.page-news-pass .seciton-news-pass .block-content .field input {
+.seciton-news-pass .block-content .field input {
   height: 52px;
   width: 100%;
   border-radius: 1px;
   border: 1px solid #E8E8E8;
   padding: 16px;
 }
-.page-news-pass .seciton-news-pass .block-content .field input:focus-visible {
+.seciton-news-pass .block-content .field input:focus-visible {
   outline: none;
 }
-.page-news-pass .seciton-news-pass .block-content .field input:focus {
+.seciton-news-pass .block-content .field input:focus {
   border-color: #242424;
 }
-.page-news-pass .seciton-news-pass .block-content .actions-toolbar {
+.seciton-news-pass .block-content .actions-toolbar {
   margin-top: 16px;
 }
-.page-news-pass .seciton-news-pass .block-content .actions-toolbar .action-confirm {
+.seciton-news-pass .block-content .actions-toolbar .action-confirm {
   background-color: #242424;
   width: 100%;
   padding: 15px 0;
@@ -10407,16 +10441,16 @@ body .blog-news .blog-bottom .blog-content .banner-2 a img {
   line-height: 17px;
   cursor: pointer;
 }
-.page-news-pass .seciton-news-pass .block-content .actions-toolbar .action-confirm:hover {
+.seciton-news-pass .block-content .actions-toolbar .action-confirm:hover {
   background-color: #505050;
 }
 @media only screen and (max-width: 575px) {
-  .page-news-pass .seciton-news-pass .block-title-heading {
+  .seciton-news-pass .block-title-heading {
     font-size: 24px;
     line-height: 31px;
     padding: 20px 0 16px 0;
   }
-  .page-news-pass .seciton-news-pass .block-content {
+  .seciton-news-pass .block-content {
     padding-bottom: 20px;
   }
 }

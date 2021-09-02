@@ -19,9 +19,14 @@ jQuery(document).ready(function($) {
 		body = $('body,html');
 		menuPosition = menu.offset().top;
 		let positionPage = 0;
+        let header= $('header');
+        let height_header= menu.height();
 		$(window).scroll(() => {
 			let startpage = body.scrollTop();
             (startpage > menuPosition) ? (menu.addClass('fixed')) : (menu.removeClass('fixed'));
+            header.attr( "style", function() {
+                return "min-height" + ":" + height_header + "px";
+            });
 			if(positionPage < startpage) {
 				menu.addClass('scrollDown').removeClass('scrollUp');
 			} else if(positionPage > startpage) {
