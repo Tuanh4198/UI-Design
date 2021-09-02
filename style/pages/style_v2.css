@@ -1632,13 +1632,16 @@ header {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-.open-minicart {
+.open-minicart,
+.nav-open {
   overflow: hidden;
 }
-.open-minicart body {
+.open-minicart body,
+.nav-open body {
   overflow: hidden;
 }
-.open-minicart .fixed-main-menu {
+.open-minicart .fixed-main-menu,
+.nav-open .fixed-main-menu {
   -webkit-animation: none;
           animation: none;
 }
