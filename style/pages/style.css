@@ -9161,6 +9161,9 @@ header {
   position: absolute;
   width: 1px;
 }
+.navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right {
+  padding-left: 10px;
+}
 .navbar .menu-top .navbar-nav .nav-item.mega .content-mega .mega-block-right .mega-block-title {
   font-size: 14px;
   font-weight: 600;
@@ -9317,6 +9320,14 @@ header {
   height: auto;
   pointer-events: unset;
   padding: 10px 0;
+}
+.navbar .menu-top .navbar-nav .nav-item.max-width-120.mega .content-mega .mega-menu > li {
+  max-width: 120px;
+}
+.navbar .menu-top .navbar-nav .nav-item.max-width-120.mega .content-mega .mega-menu > li .mega-item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .navbar .nav-mobile {
   position: fixed;

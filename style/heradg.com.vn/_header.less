@@ -878,7 +878,7 @@ header {
 							margin: 0 -10px;
 
 							>li {
-								width: 120px;
+								width: 220px;
 								padding: 0 10px;
 
 								&:before {
@@ -930,6 +930,7 @@ header {
 						}
 
 						.mega-block-right {
+							padding-left: 10px;
 
 							.mega-block-title {
 								font-size: 14px;
@@ -1122,6 +1123,24 @@ header {
 							height: auto;
 							pointer-events: unset;
 							padding: 10px 0;
+						}
+					}
+				}
+
+				&.max-width-120{
+					&.mega {
+						.content-mega {
+							.mega-menu {
+								> li{
+									max-width: 120px;
+
+									.mega-item {
+										overflow: hidden;
+										white-space: nowrap; 
+										text-overflow: ellipsis;
+									}
+								}
+							}
 						}
 					}
 				}
