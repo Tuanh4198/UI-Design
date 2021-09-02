@@ -62,13 +62,14 @@ jQuery(document).ready(function($) {
             cursor: 'pointer'
         });
         up_btn.click(function() {
-            $('html,body').animate({ scrollTop: 0 }, 1000);
+            $('html,body').animate({ scrollTop: 0 }, 0);
         });
         $(window).scroll(function(event) {
             let startpage = body.scrollTop();
             if (startpage > 200) {
                 up_btn.addClass('up-active');
-            } else if (startpage < 200) {
+            } 
+            else if (startpage < 200) {
                 up_btn.removeClass('up-active');
             }
         });
