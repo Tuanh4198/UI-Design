@@ -2002,6 +2002,9 @@
       -ms-flex-align: center;
           align-items: center;
   color: #242424;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
 }
 .checkout-page .cart-content-wrapper .info-usser .select2-container--default .select2-selection--single::-webkit-input-placeholder, .checkout-page .cart-content-wrapper .info-usser .field::-webkit-input-placeholder {
   font-style: normal;
