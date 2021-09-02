@@ -6219,9 +6219,9 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .detail-page .product-option-wrapper [class*="list-option"].size li {
   background: #FFFFFF;
@@ -6284,7 +6284,7 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
 }
 .detail-page .product-option-wrapper [class*="list-option"].color li label {
   display: block;
-  padding: 2px 2px 3px;
+  padding: 2px;
   cursor: pointer;
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
