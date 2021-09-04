@@ -3990,6 +3990,23 @@
   .detail-page .title-wrapper h4.title {
     font-size: 24px;
   }
+  .detail-page .product-image-main .main-slide {
+    margin-right: 0;
+    padding-right: 0;
+    border-width: 0;
+    max-width: 100%;
+  }
+  .detail-page .product-image-main .thumbnail-slide {
+    display: none;
+  }
+  .detail-page .product-image-main .slider__label {
+    display: none;
+  }
+  .detail-page .product_detail .col-detail {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 @media only screen and (max-width: 480px) {
   .detail-page .related-product .slick-list {
@@ -12502,6 +12519,12 @@ button {
         flex-wrap: nowrap;
     overflow-x: auto;
   }
+  .new-product-categories .nav-tabs li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 78px;
+            flex: 0 0 78px;
+    max-width: 78px;
+  }
   .new-product-categories .slick-list {
     padding-right: 0;
   }
@@ -12517,6 +12540,21 @@ button {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     overflow-x: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .suggest-product-categories .nav-tabs li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 78px;
+            flex: 0 0 78px;
+    max-width: 78px;
+  }
+  .suggest-product-categories .nav-tabs li span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
   }
   .suggest-product-categories .slick-list {
     padding-left: 0;
