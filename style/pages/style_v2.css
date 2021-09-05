@@ -117,8 +117,8 @@
   }
 }
 .scrollDown {
-  -webkit-animation: headerOut 0.5s forwards;
-          animation: headerOut 0.5s forwards;
+  -webkit-animation: headerOut 0s forwards;
+          animation: headerOut 0s forwards;
 }
 * {
   margin: 0;
