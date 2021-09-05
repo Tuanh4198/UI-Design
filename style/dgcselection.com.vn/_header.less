@@ -1671,10 +1671,12 @@ header {
 			padding-left: 15px;
 		}
 
+		.mega-link,
 		.nav-link {
 			text-transform: capitalize;
 			padding: 10px 0;
 			color: #242424;
+			display: block;
 
 			&.active {
 				font-weight: 600;
@@ -1682,10 +1684,15 @@ header {
 		}
 
 		.collapse {
-			display: block;
 			position: absolute;
-			right: 15px;
-			top: 10px;
+			right: 0;
+			top: 0;
+			width: 40px;
+			height: 44px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 
 			&:before {
 				content: "\f107";

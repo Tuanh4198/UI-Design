@@ -20,18 +20,21 @@ jQuery(document).ready(function ($) {
         menuPosition = menu.offset().top;
         let positionPage = 0;
         let header = $("header");
+        let headerTopHeight = $("header .header-top").height();
         let height_header = menu.height();
         $(window).scroll(() => {
-            let startpage = body.scrollTop();
-            startpage > menuPosition
-                ? menu.addClass("fixed")
-                : menu.removeClass("fixed");
+            let startpage = body.scrollTop() - height_header;
+            if(startpage > menuPosition) {
+							  menu.addClass("fixed")
+						} else if (startpage + height_header <= headerTopHeight) {
+							  menu.removeClass("fixed");
+						}
             header.attr("style", function () {
                 return "min-height" + ":" + height_header + "px";
             });
             if (positionPage < startpage && startpage > 0) {
                 menu.addClass("scrollDown").removeClass("scrollUp");
-            } else if (positionPage > startpage && startpage > 0) {
+            } else if (positionPage > startpage + height_header && startpage > 0) {
                 menu.addClass("scrollUp").removeClass("scrollDown");
             } else {
                 menu.addClass("scrollUp").removeClass("scrollDown");
