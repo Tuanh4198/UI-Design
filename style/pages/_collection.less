@@ -146,6 +146,11 @@
 		.thumbnail-slide {
 			max-width: 70px;
 			overflow: hidden;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			z-index: 1;
+			transform: translateY(-50%);
 
 			li {
 				border: 1px solid white;
@@ -173,14 +178,17 @@
 		}
 
 		.slide-wrapper {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			align-items: center;
+			// display: flex;
+			// flex-wrap: wrap;
+			// justify-content: space-between;
+			// align-items: center;
+			position: relative;
 		}
 
 		.main-slide {
 			max-width: 1000px;
+			margin-right: 0;
+			margin-left: auto;
 
 			.item {
 				img {

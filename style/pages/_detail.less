@@ -417,8 +417,6 @@
 
 	.product-image-main {
 		display: flex;
-		align-items: flex-start;
-		justify-content: center;
 
 		&:hover {
 			.thumbnail-slide {
@@ -452,6 +450,10 @@
 			width: 45px;
 			opacity: 0;
 			transition: 0.3s ease-in;
+
+			.slick-list {
+				min-height: 100%;
+			}
 		}
 
 		.main-slide {

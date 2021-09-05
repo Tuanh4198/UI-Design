@@ -1777,19 +1777,33 @@ header {
     position: relative;
     padding-left: 15px;
   }
+  .nav-mobile .mega-link,
   .nav-mobile .nav-link {
     text-transform: capitalize;
     padding: 10px 0;
     color: #242424;
+    display: block;
   }
+  .nav-mobile .mega-link.active,
   .nav-mobile .nav-link.active {
     font-weight: 600;
   }
   .nav-mobile .collapse {
-    display: block;
     position: absolute;
-    right: 15px;
-    top: 10px;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 44px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .nav-mobile .collapse:before {
     content: "\f107";
@@ -6150,6 +6164,12 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
 .collection-page .summer-collection .thumbnail-slide {
   max-width: 70px;
   overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .collection-page .summer-collection .thumbnail-slide li {
   border: 1px solid white;
@@ -6174,20 +6194,12 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
   color: #242424;
 }
 .collection-page .summer-collection .slide-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
 }
 .collection-page .summer-collection .main-slide {
   max-width: 1000px;
+  margin-right: 0;
+  margin-left: auto;
 }
 .collection-page .summer-collection .main-slide .item img {
   -webkit-transition: 0.3s ease-in;
@@ -6765,12 +6777,6 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .detail-page .product-image-main:hover .thumbnail-slide {
   opacity: 1;
@@ -6801,6 +6807,9 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
   opacity: 0;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
+}
+.detail-page .product-image-main .thumbnail-slide .slick-list {
+  min-height: 100%;
 }
 .detail-page .product-image-main .main-slide {
   max-width: calc(100% - 65px);
