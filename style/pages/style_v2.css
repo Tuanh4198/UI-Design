@@ -7407,7 +7407,13 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
 }
 @media only screen and (max-width: 575px) {
   .detail-page .title-wrapper h4.title {
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+  }
+  .detail-page .title-wrapper .btn-slide {
+    display: none;
   }
   .detail-page .product-image-main .main-slide {
     margin-right: 0;
@@ -7426,14 +7432,17 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
         -ms-flex-order: 3;
             order: 3;
   }
-}
-@media only screen and (max-width: 480px) {
   .detail-page .related-product .slick-list {
-    margin: 0;
+    margin-left: -5.5px;
+    margin-right: -5.5px;
   }
   .detail-page .related-product .product-wrapper {
-    padding: 0;
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+    margin-bottom: 32px;
   }
+}
+@media only screen and (max-width: 480px) {
 }
 body .page-account .blog-top,
 body .page-order-tracking .blog-top {
