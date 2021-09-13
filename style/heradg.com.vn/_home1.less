@@ -584,7 +584,7 @@ button {
         padding-bottom: 100px;
 
         >.title {
-            font-family: 'EB Garamond', serif;
+            font-family: @icielBrandon;
             font-weight: bold;
             font-size: 48px;
             line-height: 63px;
@@ -689,7 +689,7 @@ button {
     }
 
     .title {
-        font-family: 'EB Garamond', serif;
+        font-family: @icielBrandon;
         font-weight: bold;
         font-size: 48px;
         line-height: 63px;
@@ -770,7 +770,7 @@ button {
     padding-bottom: 96px;
 
     .title {
-        font-family: 'EB Garamond', serif;
+        font-family: @icielBrandon;
         font-weight: bold;
         font-size: 48px;
         line-height: 63px;
@@ -928,7 +928,7 @@ button {
         padding-bottom: 100px;
 
         .title {
-            font-family: 'EB Garamond', serif;
+            font-family: @icielBrandon;
             font-weight: bold;
             font-size: 48px;
             line-height: 63px;
@@ -1000,7 +1000,7 @@ button {
 
     .title {
         h2 {
-            font-family: 'EB Garamond', serif;
+            font-family: @icielBrandon;
             font-weight: bold;
             font-size: 48px;
             line-height: 63px;
@@ -1172,7 +1172,7 @@ button {
         margin-right: auto;
 
         >.title {
-            font-family: 'EB Garamond', serif;
+            font-family: @icielBrandon;
             font-weight: bold;
             font-size: 48px;
             line-height: 63px;
@@ -1323,7 +1323,7 @@ button {
         }
 
         .title {
-            font-family: EB Garamond;
+            font-family: @icielBrandon;
             font-weight: bold;
             font-size: 48px;
             line-height: 63px;
@@ -1438,7 +1438,7 @@ button {
             }
 
             .title {
-                font-family: EB Garamond;
+                font-family: @icielBrandon;
                 font-weight: bold;
                 font-size: 40px;
                 line-height: 52px;
@@ -1669,11 +1669,6 @@ button {
                     }
                 }
             }
-
-            .slick-next,
-            .slick-prev {
-                display: none !important;
-            }
         }
     }
 }
@@ -1703,8 +1698,6 @@ button {
     .event-product-categories {
         .event-item {
             .event-item-info {
-                .event-img-wrapper {}
-
                 .event-detail-wrapper {
                     width: 38%;
                 }
@@ -1725,12 +1718,9 @@ button {
     }
 
     .event-product-categories {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 30px !important;
+        padding-bottom: 0 !important;
 
-    }
-
-    .event-product-categories {
         .event-item {
             .event-item-info {
                 .event-detail-primary {
@@ -1765,11 +1755,8 @@ button {
                 .col-item-blog {
                     padding-left: 30px;
                     padding-right: 30px;
-
-
                 }
             }
-
         }
     }
 }
@@ -1977,7 +1964,6 @@ button {
                     }
                 }
             }
-
         }
 
         .nav-tabs {
@@ -1990,7 +1976,6 @@ button {
                 margin-left: 8px !important;
                 margin-right: 8px !important;
                 margin-bottom: 10px;
-
                 flex: 0 0 182px;
                 max-width: 182px;
                 text-align: center;
@@ -2013,12 +1998,75 @@ button {
                 background: #555;
             }
         }
-
     }
-
 }
 
 @media only screen and (max-width: 767px) {
+    section.main.content {
+		h2.title {
+			font-weight: bold !important;
+			font-size: 24px !important;
+			line-height: 33px !important;
+			text-align: center !important;
+			text-transform: uppercase !important;
+			color: #242424 !important;
+		}
+
+		.testimonial {
+			h2.title {
+				margin-bottom: 25px !important;
+			}
+		}
+	
+		.autoplay {
+			.slick-arrow {
+				top: 37% !important;
+				background: #FFFFFF !important;
+				opacity: 0.5 !important;
+				border: none !important;
+				visibility: visible !important;
+			}
+
+			.slick-prev {
+				left: 10px !important;
+			}
+	
+			.slick-next {
+				right: 10px !important;
+			}
+		}
+
+		.event-product-categories {
+			.autoplay {
+				.slick-arrow {
+					top: 50% !important;
+				}
+			}
+		}
+
+		.tab-content .autoplay .item {
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+		}
+
+		.event-product-categories .tab-content .autoplay .item {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+
+		.new-product-categories .tab-title,
+		.suggest-product-categories .tab-title {
+			margin-bottom: 15px !important;
+			padding-bottom: 10px !important;
+		}
+	}
+
+	.colorful-life {
+		.colorful-life-content {
+			flex-direction: column-reverse !important;
+		}
+	}
+
     .product-recommended {
         .product-recommended-primary {
             .block-left-recommended {
@@ -2033,20 +2081,21 @@ button {
     }
 
     .hera-service {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 30px !important;
+        padding-bottom: 0px;
 
         .hera-service-content {
             .title {
                 font-size: 28px;
             }
         }
-
     }
 
     .testimonial {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+		padding-top: 30px !important;
+		padding-bottom: 30px !important;
 
         .slick-list {
             padding-left: 0;
@@ -2058,8 +2107,14 @@ button {
                 }
             }
         }
-
     }
+
+	.product-recommended {
+		.product-recommended-content {
+			padding-top: 30px !important;
+			padding-bottom: 20px !important;
+		}
+	}
 
     .hera-charity {
         .hera-charity-content {
@@ -2081,14 +2136,18 @@ button {
     }
 
     .news-blog {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
         .col-latest-blog,
         .col-news {
             flex: 0 0 100%;
             max-width: 100%;
         }
+
+        .col-latest-blog {
+
+		}
 
         .col-latest-blog {
             margin-bottom: 20px;
@@ -2103,18 +2162,35 @@ button {
 
                 .news-item-details {
                     width: 75%;
-
                 }
             }
         }
 
-        .title {
-            h2 {
-                font-size: 28px;
-                line-height: 35px;
-            }
-        }
+		.col-news {
+			.title {
+				height: auto;
+				margin-bottom: 15px;
+				line-height: initial;
+	
+				h2 {
+					font-size: 28px;
+					line-height: 35px;
+					margin-bottom: 0;
+				}
+			}
+		}
     }
+
+	section.main.content {
+		.hera-charity {
+			padding-top: 30px;
+			padding-bottom: 30px;
+	
+			h2.title {
+				margin-bottom: 15px;
+			}
+		}
+	}
 
     .suggest-product-categories {
         .slick-list {
@@ -2123,8 +2199,8 @@ button {
 
         .suggest-product-categories-main {
             padding-right: 140px;
-            padding-top: 45px;
-            padding-bottom: 45px;
+            padding-top: 30px;
+            padding-bottom: 30px;
 
             .title {
                 font-size: 28px;
@@ -2140,7 +2216,6 @@ button {
                 right: -85px;
             }
         }
-
     }
 
     .event-product-categories {
@@ -2161,8 +2236,7 @@ button {
             .event-item-info {
                 .event-img-wrapper {
                     width: 100%;
-                    margin-bottom: 20px;
-
+                    margin-bottom: 0;
                 }
 
                 .event-detail-wrapper {
@@ -2180,28 +2254,39 @@ button {
                 }
             }
         }
-
     }
 
-
     .colorful-life {
+		margin-top: 0;
+
         .colorful-left {
             width: 100%;
             padding-right: 0;
-            margin-bottom: 30px;
+			margin-bottom: 10px;
+
+			div.btn {
+				display: none;
+			}
         }
 
         .colorful-right {
             width: 100%;
+			margin-bottom: 25px !important;
 
             img {
-                width: 100%;
+				max-width: initial;
+				margin: 0 -15px;
             }
         }
     }
 
     .colorful-life-product {
-        margin-bottom: 70px;
+        margin-bottom: 30px;
+		
+		.slick-dots {
+			position: absolute !important;
+			bottom: -10px !important;
+		}
     }
 
     .lookbook-slogan {
@@ -2240,14 +2325,22 @@ button {
     .new-product-categories {
         .new-product-categories-main {
             padding-left: 140px;
-            padding-top: 45px;
-            padding-bottom: 50px;
+            padding-top: 30px !important;
+            padding-bottom: 35px !important;
+
+			.slick-dots {
+				position: absolute !important;
+				bottom: -10px !important;
+			}
 
             >.title {
                 font-size: 28px;
-
             }
         }
+
+		.slick-dotted.slick-slider {
+			margin-bottom: 0 !important;
+		}
 
         .slick-list {
             padding-right: 80px;
@@ -2362,18 +2455,16 @@ button {
             bottom: 26px;
             top: auto;
             transform: none;
-
-            .text {
-                // display: none;
-            }
         }
 
         .prev-person {
             left: 20px;
+			bottom: 20px;
         }
 
         .next-person {
             right: 20px;
+			bottom: 20px;
         }
     }
 
@@ -2395,7 +2486,7 @@ button {
                     .title {
                         font-size: 16px;
                         line-height: 22px;
-                        margin-bottom: 4px;
+                        margin-bottom: 10px;
                     }
                 }
 
@@ -2403,6 +2494,13 @@ button {
                     p {
                         font-size: 13px;
                         line-height: 15px;
+						text-align: center;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 11px;
+						line-height: 15px;
+						text-align: center;
+						color: #242424;
                     }
                 }
             }
@@ -2427,7 +2525,7 @@ button {
     }
 
     .slider-home.slick-slider {
-        margin-bottom: 53px;
+        margin-bottom: 20px;
     }
 
     .news-blog {
@@ -2473,30 +2571,11 @@ button {
             width: 150%;
             justify-content: flex-start;
             margin-bottom: 0;
-
-            // padding-left: 15px;
-            // padding-right: 15px;
-            li {
-                // flex: 0 0 78px;
-                // max-width: 78px;
-
-                // span {
-                //     overflow: hidden;
-                //     white-space: nowrap;
-                //     text-overflow: ellipsis;
-                //     display: block;
-                // }
-            }
         }
 
         .slick-list {
             padding-right: 0;
 
-        }
-
-        .slick-prev,
-        .slick-next {
-            display: none !important;
         }
     }
 
@@ -2518,36 +2597,20 @@ button {
             width: 150%;
             justify-content: flex-start;
             margin-bottom: 0;
-
-            // padding-left: 15px;
-            // padding-right: 15px;
-            li {
-                // flex: 0 0 78px;
-                // max-width: 78px;
-
-                // span {
-                //     overflow: hidden;
-                //     white-space: nowrap;
-                //     text-overflow: ellipsis;
-                //     display: block;
-                // }
-            }
         }
 
         .slick-list {
             padding-left: 0;
-
         }
 
-        .slick-prev,
-        .slick-next {
-            display: none !important;
-        }
-    }
+		.slick-dotted.slick-slider {
+            margin-bottom: 0;
+		}
 
-    .slider-home.slick-slider {
-        margin-bottom: 53px;
-
+		.slick-dots {
+			position: absolute !important;
+			bottom: -10px !important;
+		}
     }
 
     .hera-service {
@@ -2580,7 +2643,6 @@ button {
             .pharse {
                 font-size: 11px;
                 line-height: 16px;
-
                 font-family: Inter;
                 font-style: normal;
                 font-weight: 500;
@@ -2662,7 +2724,6 @@ button {
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -2865,10 +2926,6 @@ button {
         }
     }
 
-    .slider-home.slick-slider {
-        margin-bottom: 53px;
-    }
-
     .lookbook-slogan .container-slogan .slogan-left .title-sub,
     .lookbook-slogan .container-slogan .slogan-main .title-sub,
     .lookbook-slogan .container-slogan .slogan-right .image-title {
@@ -2938,8 +2995,6 @@ button {
 
     .new-product-categories {
         .new-product-categories-main {
-            padding-top: 40px;
-
             >.title {
                 font-size: 26px;
                 line-height: 34px;
