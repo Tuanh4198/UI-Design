@@ -165,11 +165,16 @@ button {
 }
 
 .autoplay {
-    >.item {
+    >* {
         display: none;
     }
-}
 
+    &.slick-slider{
+        >*{
+            display: block;
+        }
+    }
+}
 .history-brand {
     text-align: center;
     margin-top: 42px;

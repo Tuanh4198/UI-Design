@@ -730,8 +730,39 @@
                     </div>
                     <div class="col-lg-6 col-12 col-img">
                         <div class="product-image-main">
+                            <!-- demo nhiều ảnh  -->
                             <div class="main-slide">
                                 <ul class="slider-for">
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
+                                    <a href="#" class="item">
+                                        <img src="./images/page/detail/slide_lg2.jpg">
+                                    </a>
                                     <a href="#" class="item">
                                         <img src="./images/page/detail/slide_lg2.jpg">
                                     </a>
@@ -755,13 +786,26 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="thumbnail-slide">
-                                <ul class="autoplay slider-nav" data-slides-To-Show='4' data-slides-To-Scroll='1' data-as-Nav-For='.slider-for' data-dots='false' data-arrows='false' data-focus-On-Select='true' data-vertical='true' data-vertical-Swiping='true' data-responsive='[{"breakpoint": "361", "settings": {"slidesToShow": "3"}}]'>
-                                    <li class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
-                                    <li class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
-                                    <li class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
-                                    <li class="sm-item"><img src="./images/page/detail/slide_sm_8.jpg" /></li>
-                                    <li class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                             <!-- add data-index vào từng li với giá trị từ 1 đến n, item đầu tiên phải thêm class 'active' -->
+                            <!-- thêm id="scrolling_div" -->
+                            <div class="thumbnail-slide" id="scrolling_div"> 
+                                <ul class="slider-nav">
+                                    <li data-index="1" class="sm-item active"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="2" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="3" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="4" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="5" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="6" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="7" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="8" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="9" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="10" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="11" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="12" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="13" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="14" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    <li data-index="15" class="sm-item"><img src="./images/page/detail/slide_sm_5.jpg" /></li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -1871,15 +1915,37 @@
             }));
         });
 
+       
+        // change js
+
         $(function() {
             let $slider = $('.main-slide .slider-for');
             let $progressBar = $('.progress');
             let $progressBarLabel = $('.slider__label');
+            let $thumbnail = $('.thumbnail-slide .slider-nav li');
+            let $thumbnailWrapper = $('.thumbnail-slide');
             $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-				console.log('object');
                 let calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
                 $progressBarLabel.css('height', `${calc}%`);
+				$thumbnail.each(function () {
+					$(this).removeClass('active');
+				});
+				$thumbnail[nextSlide].classList.add('active');
+				console.log($thumbnail[nextSlide].offsetTop);
+				// $('.thumbnail-slide').scroll({
+				// 	top: $thumbnail[nextSlide].offsetTop,
+				// 	behavior: 'smooth'
+				// });
+				document.getElementById('scrolling_div').scrollTop = $thumbnail[nextSlide].offsetTop;
+				// $thumbnail[nextSlide].offsetTop;
             });
+
+			$thumbnail.each(function () {
+				$(this).click(function (e) {
+					let index = $(this).data('index')
+   					$('.main-slide .slider-for').slick('slickGoTo', index - 1);
+                });
+			});
         });
 
         $(function() {
@@ -1887,8 +1953,8 @@
 			let windowWidth = $(window).width();
 			slider.slick({
 				vertical: false,
-				asNavFor: '.slider-nav',
-				dots:false, 
+				// asNavFor: '.slider-nav',
+				dots:true, 
 				arrows:false,
 				autoplay:false, 
 				speed:1000,
@@ -1898,6 +1964,7 @@
 				slidesToScroll:1
 			});
         });
+
 
 		$(function() {
             let btn = $('#choose_size_modal .close');

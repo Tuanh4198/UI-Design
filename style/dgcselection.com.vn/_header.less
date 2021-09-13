@@ -285,7 +285,7 @@ header {
 		transition: all 0.3s ease;
 
 		&:before {
-			content: url('../../images/search.png');
+			content: url('../../images/search.svg');
 			width: 22px;
 			height: 22px;
 			display: inline-block;
@@ -330,8 +330,7 @@ header {
 
 
 		&:before {
-			content: url(../../images/search.png);
-			width: 21px;
+			content: url('../../images/search.svg');
 			height: 21px;
 			display: inline-block;
 			vertical-align: middle;
@@ -376,9 +375,21 @@ header {
 .header-wishlist {
 	.showlike {
 		font-size: 22px;
+		position: relative;
 
 		.qty {
-			display: none;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: #242424;
+			color: white;
+			font-size: 12px;
+			line-height: 20px;
+			display: inline-block;
+			text-align: center;
+			position: absolute;
+			top: -5px;
+			right: -10px;
 		}
 	}
 
@@ -394,7 +405,7 @@ header {
 		cursor: pointer;
 
 		&:before {
-			content: url('../../images/user.png');
+			content: url('../../images/user.svg');
 			display: inline-block;
 			width: 21px;
 			height: 21px;
@@ -514,7 +525,7 @@ header {
 		cursor: pointer;
 
 		&:before {
-			content: url('../../images/minicart.png');
+			content: url('../../images/minicart.svg');
 			display: inline-block;
 			width: 21px;
 			height: 21px;
@@ -1795,17 +1806,17 @@ header {
 		}
 	}
 
-	.header {
-		.header-tool {
-			.header-tool-content {
-				.header-wishlist {
-					span{
-						font-size: 21px;
-					}
-				}
-			}
-		}
-	}
+	// .header {
+	// 	.header-tool {
+	// 		.header-tool-content {
+	// 			.header-wishlist {
+	// 				span{
+	// 					font-size: 21px;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	.header-top {
 		.header-top-content {

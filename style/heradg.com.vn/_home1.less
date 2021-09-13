@@ -125,19 +125,6 @@ button {
     }
 }
 
-.slick-slider{
-    .slick-slide{
-        display: none;
-    }
-
-    &.slick-initialized {
-        .slick-slide{
-            display: block;
-        }
-    }
-}
-
-
 .slider-home {
     margin-top: 16px;
 
@@ -229,8 +216,14 @@ button {
 }
 
 .autoplay {
-    >.item {
+    >* {
         display: none;
+    }
+
+    &.slick-slider {
+        >* {
+            display: block;
+        }
     }
 }
 
@@ -1034,7 +1027,7 @@ button {
                 padding-left: 53px;
                 padding-right: 53px;
 
-                &:nth-child(n+4){
+                &:nth-child(n+4) {
                     display: none;
                 }
             }
@@ -1605,6 +1598,10 @@ button {
             width: 75%;
             width: 66.8%;
 
+            .brand{
+                display: none;
+            }
+
             .autoplay {
                 >.item {
                     display: none !important;
@@ -1701,7 +1698,6 @@ button {
                 }
             }
         }
-
     }
 
     .event-product-categories {
@@ -2291,15 +2287,15 @@ button {
 @media only screen and (max-width: 639px) {
     .news-blog {
         .col-latest-blog {
-            > .row {
+            >.row {
                 margin-left: -8px;
                 margin-right: -8px;
 
-                .col-item-blog{
+                .col-item-blog {
                     padding-left: 8px;
                     padding-right: 8px;
 
-                    &:nth-child(n+4){
+                    &:nth-child(n+4) {
                         display: block;
                     }
                 }
@@ -2355,14 +2351,15 @@ button {
     }
 
     .lookbook-slogan {
+        margin-bottom: 0;
 
         .container-slogan {
-            padding-bottom: 45px;
+            padding-bottom: 40px;
         }
 
         .prev-person,
         .next-person {
-            bottom: 0;
+            bottom: 26px;
             top: auto;
             transform: none;
 
@@ -2388,7 +2385,6 @@ button {
 
     .lookbook-slogan {
         .container-slogan {
-            padding-bottom: 50px;
 
             .slogan-left {
                 margin-bottom: 35px;
@@ -2465,7 +2461,7 @@ button {
             padding-right: 20px;
         }
 
-        .tab-title{
+        .tab-title {
             width: 100%;
             margin-bottom: 35px;
             padding-bottom: 20px;
@@ -2510,7 +2506,7 @@ button {
             padding-right: 20px;
         }
 
-        .tab-title{
+        .tab-title {
             width: 100%;
             margin-bottom: 35px;
             padding-bottom: 20px;
@@ -2602,6 +2598,66 @@ button {
             .image {
                 img {
                     max-width: 32px;
+                }
+            }
+        }
+    }
+
+    .product-recommended {
+        .product-recommended-primary {
+            .block-right-recommended {
+                .product-items {
+                    .product-wrapper {
+                        .product-detail-wrapper {
+                            padding-left: 8px;
+                            padding-right: 8px;
+
+                            .product-name {
+                                font-size: 13px;
+                                font-weight: 500;
+                                line-height: 17px;
+                            }
+                        }
+                    }
+                }
+
+                .slick-list {
+                    padding-right: 45px;
+                }
+
+                .brand {
+                    display: block;
+                    margin-bottom: 18px;
+                    text-align: center;
+                }
+            }
+
+            .block-left-recommended {
+                order: 2;
+                text-align: center;
+                padding: 0 25px;
+                margin-top: 26px;
+
+                .brand {
+                    display: none;
+                }
+
+                >.title {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 27px;
+                }
+
+                .pharse {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 23px;
+                }
+
+                .btn-sugest{
+                    a{
+                        padding: 7px 37px;
+                    }
                 }
             }
         }
