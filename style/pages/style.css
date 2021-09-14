@@ -12083,9 +12083,9 @@ button {
     width: 100%;
     padding-left: 0;
     margin-top: 20px;
-    text-align: center;
   }
   .lookbook-slogan .container-slogan .slogan-right .lookbook-phare .title {
+    text-align: initial;
     margin: 0 auto;
     margin-bottom: 6px;
   }
@@ -12332,6 +12332,10 @@ button {
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
+    max-width: 100%;
+  }
+  .lookbook-slogan .container-slogan .slogan-right .lookbook-phare p {
+    text-align: justify;
   }
   .colorful-life .colorful-life-content {
     -webkit-box-orient: vertical !important;
@@ -12686,11 +12690,8 @@ button {
   }
   .lookbook-slogan .container-slogan .slogan-right .lookbook-phare p {
     font-size: 13px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 15px;
-    text-align: center;
     color: #242424;
   }
   .lookbook-slogan {
@@ -12948,9 +12949,6 @@ button {
   }
   .lookbook-slogan .container-slogan {
     padding-bottom: 38px;
-  }
-  .lookbook-slogan .container-slogan .slogan-left {
-    margin-bottom: 35px;
   }
   .lookbook-slogan .container-slogan .slogan-right .lookbook-phare .title {
     font-size: 16px;

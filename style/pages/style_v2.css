@@ -2638,6 +2638,14 @@ button {
 .slider-home .slick-slide .item .img-mobile {
   display: none;
 }
+.slider-home .slick-next,
+.slider-home .slick-prev {
+  width: 32px;
+  height: 60px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
 .slider-home .slick-dots {
   bottom: 24px;
 }
@@ -3414,9 +3422,11 @@ button {
   }
 }
 @media screen and (max-width: 575px) {
-  .slider-home .slick-prev,
+  .slider-home .slick-prev {
+    left: 0;
+  }
   .slider-home .slick-next {
-    display: none !important;
+    right: 0;
   }
   .slider-home .slick-dots {
     bottom: 16px;
