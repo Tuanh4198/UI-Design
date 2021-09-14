@@ -3,11 +3,12 @@
     text-align: center;
 
     .title {
-        font-family: EB Garamond;
+        font-family: @icielBrandon;
         font-size: 40px;
         font-weight: 700;
         line-height: 52px;
         letter-spacing: -0.01em;
+        text-transform: uppercase;
     }
 
     .content {
@@ -29,7 +30,7 @@
             display: inline-block;
         }
 
-        .img-hover{
+        .img-hover {
             display: none;
         }
 
@@ -47,11 +48,11 @@
             border-color: #242424;
             color: white;
 
-            img{
+            img {
                 display: none;
             }
 
-            .img-hover{
+            .img-hover {
                 display: inline-block;
             }
         }
@@ -124,7 +125,8 @@
             padding: 5px 32px;
             display: inline-block;
             margin-top: 10px;
-            &:hover{
+
+            &:hover {
                 background-color: #505050;
             }
         }
@@ -388,7 +390,7 @@
         }
     }
 
-    .footer-bottom{
+    .footer-bottom {
         padding: 24px 16px;
     }
 }
@@ -399,7 +401,7 @@
         .footer-links {
             flex: 0 0 100%;
             padding-right: 15px;
-            order:2;
+            order: 2;
         }
 
         .footer-subscribe {
@@ -443,15 +445,19 @@
     }
 }
 
-@media screen and (max-width: (@screen__ss - 1)) {
+ @media screen and (max-width: (@screen__xm - 1))    {
     .social-profile {
         .title {
-            font-size: 26px;
+            font-size: 20px;
             font-weight: 700;
-            line-height: 34px;
+            line-height: 28px;
             letter-spacing: -0.01em;
         }
+    }
+}
 
+@media screen and (max-width: (@screen__ss - 1)) {
+    .social-profile {
         .content {
             border-width: 1px;
             border-style: solid;
@@ -491,7 +497,7 @@
             }
         }
 
-        .footer-links{
+        .footer-links {
             padding: 24px 16px;
 
         }
@@ -521,7 +527,7 @@
     }
 
     .footer-bottom {
-        .footer-bottom-content{
+        .footer-bottom-content {
             text-align: initial;
         }
     }

@@ -50,7 +50,7 @@ button {
 .slick-next {
     width: 56px;
     height: 56px;
-    line-height: 53px;
+    line-height: 54px;
     text-align: center;
     z-index: 2;
     -webkit-border-radius: 50%;
@@ -245,6 +245,7 @@ button {
         .slogan-main {
             display: flex !important;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         .slogan-left,
@@ -264,6 +265,7 @@ button {
 
         .slogan-right {
             width: 50%;
+            padding-left: 59px;
 
             .image-title {
                 float: right;
@@ -271,8 +273,6 @@ button {
             }
 
             .lookbook-phare {
-                max-width: 425px;
-                margin-bottom: 100px;
 
                 .title {
                     font-family: @fontbase;
@@ -282,6 +282,7 @@ button {
                     text-transform: uppercase;
                     color: @base_color;
                     margin-bottom: 20px;
+                    max-width: 377px;
                 }
 
                 p {
@@ -409,168 +410,6 @@ button {
 }
 
 // end product tabs
-// product item
-.product-img-wrapper {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 16px;
-
-    img {
-        // width: 100%;
-        transition: .3s ease-in;
-    }
-
-    .add-to-wishlist {
-        position: absolute;
-        z-index: 1;
-        right: 0;
-        bottom: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: .3s ease-in;
-    }
-}
-
-.product-wrapper {
-    width: 100%;
-    margin-bottom: 40px;
-
-    &:hover {
-        .product-img-wrapper {
-            .add-to-wishlist {
-                opacity: 1;
-                visibility: visible;
-                right: 15px;
-                bottom: 20px;
-            }
-        }
-
-        img {
-            transform: scale(1.1);
-        }
-    }
-
-    .product-label {
-        position: absolute;
-        z-index: 3;
-
-        .label-content {
-            min-width: 54px;
-            height: 23px;
-            line-height: 21px;
-            display: block;
-            text-align: center;
-            background: #242424;
-
-            &:before {
-                border-style: solid;
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-width: 0 0 23px 12px;
-                right: -12px;
-                border-bottom-color: transparent !important;
-                border-right-color: transparent !important;
-                border-top-color: transparent !important;
-                border-left-color: #242424;
-            }
-        }
-
-        .discount {
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 17px;
-            color: #ffffff;
-        }
-    }
-
-    .product-item-actions {
-        .btn-cart {
-            padding: 0;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 19px;
-            text-decoration: none;
-            color: @base_color;
-            background: none;
-            border: none;
-            border-bottom: 1px solid @base_color;
-
-            &:focus {
-                box-shadow: none;
-                outline: none;
-            }
-
-            &:hover {
-                color: @hover_color;
-                border-color: @hover_color;
-            }
-
-        }
-    }
-
-
-}
-
-.product-status {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-.product-name {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: @base_color;
-    transition: .3s ease-in;
-    margin-bottom: 6px;
-    margin-top: 5px;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    max-height: 48px;
-
-    &:hover {
-        color: @hover_color;
-    }
-}
-
-.product-detail-wrapper {
-    .product-price-wrapper {
-        margin-bottom: 5px;
-    }
-
-    .new-price {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #999999;
-        margin-right: 5px;
-    }
-
-    .old-price {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: #999999;
-        text-decoration: line-through;
-        margin-right: 5px;
-    }
-
-
-}
 
 .new-product-categories {
     // max-width: 1600px;
@@ -661,6 +500,7 @@ button {
                 line-height: 28px;
                 color: @base_color;
                 margin-bottom: 0;
+                text-align: justify;
 
             }
 
@@ -740,22 +580,6 @@ button {
                 right: -58px;
             }
 
-            // &:hover {
-            //     .slick-prev,
-            //     .slick-next {
-            //         opacity: 1;
-            //         visibility: visible;
-
-            //     }
-            //     .slick-prev {
-            //         left: -58px;
-            //     }
-            //     .slick-next {
-            //         right: -58px;
-
-            //     }
-            // }
-
         }
     }
 
@@ -822,6 +646,22 @@ button {
         }
     }
 
+    .block-content{
+        position: relative;
+    }
+
+    .tab-title {
+        max-width: 100%;
+        overflow-x: scroll;
+        .dflex;
+        scroll-behavior: smooth;
+        justify-content: center;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
     .nav-tabs {
         margin-bottom: 40px;
 
@@ -836,22 +676,25 @@ button {
             border: 1px solid #e1e1e1;
             transition: none;
 
-            &.active,
-            &:hover {
-                color: #ffffff;
-                background: #242424;
-                border: 1px solid #242424;
-                border-radius: 4px;
-
-                &:after {
-                    display: none;
-                }
+            &:after {
+                display: none;
             }
         }
+
 
         li {
             margin-right: 10px;
             margin-left: 10px;
+
+            &.active,
+            &:hover {
+                a {
+                    color: #ffffff;
+                    background: #242424;
+                    border: 1px solid #242424;
+                    border-radius: 4px;
+                }
+            }
         }
 
     }
@@ -1243,21 +1086,21 @@ button {
                 }
 
                 .col-left-charity {
-                    padding-right: 28px;
                     max-width: 65px;
-
+                    
                     span {
                         font-style: normal;
                         font-weight: 600;
                         font-size: 24px;
                         line-height: 29px;
-                        text-align: center;
                         text-transform: uppercase;
                         color: @base_color;
                     }
                 }
 
                 .col-right-charity {
+                    padding-left: 28px;
+
                     .container-text1 {
                         max-width: 163px;
                     }
@@ -1598,7 +1441,7 @@ button {
             width: 75%;
             width: 66.8%;
 
-            .brand{
+            .brand {
                 display: none;
             }
 
@@ -1707,6 +1550,27 @@ button {
 }
 
 @media only screen and (max-width: 1199px) {
+    .lookbook-slogan {
+        .container-slogan {
+            .slogan-left{
+                width: 100%;
+            }
+
+            .slogan-right{
+                width: 100%;
+                padding-left: 0;
+                margin-top: 20px;
+                text-align: center;
+
+                .lookbook-phare{
+                    .title{
+                        margin: 0 auto;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+        }
+    }
     .hera-charity {
         .hera-charity-primary {
             .hera-charity-info {
@@ -1894,7 +1758,6 @@ button {
         .container-slogan {
             .slogan-left {
                 width: 100%;
-                margin-bottom: 30px;
 
                 img {
                     width: 100%;
@@ -1968,7 +1831,6 @@ button {
 
         .nav-tabs {
             flex-wrap: nowrap;
-            overflow-x: auto;
             justify-content: flex-start;
             margin-bottom: 30px;
 
@@ -2003,69 +1865,126 @@ button {
 
 @media only screen and (max-width: 767px) {
     section.main.content {
-		h2.title {
-			font-weight: bold !important;
-			font-size: 24px !important;
-			line-height: 33px !important;
-			text-align: center !important;
-			text-transform: uppercase !important;
-			color: #242424 !important;
-		}
+        h2.title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+            text-transform: uppercase;
+            color: @base_color;
+        }
 
-		.testimonial {
-			h2.title {
-				margin-bottom: 25px !important;
-			}
-		}
-	
-		.autoplay {
-			.slick-arrow {
-				top: 37% !important;
-				background: #FFFFFF !important;
-				opacity: 0.5 !important;
-				border: none !important;
-				visibility: visible !important;
-			}
+        .testimonial {
+            h2.title {
+                margin-bottom: 25px !important;
+            }
+        }
 
-			.slick-prev {
-				left: 10px !important;
-			}
-	
-			.slick-next {
-				right: 10px !important;
-			}
-		}
+        .autoplay {
+            .slick-arrow {
+                top: 37% !important;
+                background: #FFFFFF !important;
+                color: white !important;
+                opacity: 0.5 ;
+                border: none !important;
+                visibility: visible !important;
+                width: 32px;
+                height: 32px;
 
-		.event-product-categories {
-			.autoplay {
-				.slick-arrow {
-					top: 50% !important;
-				}
-			}
-		}
+                &:hover{
+                    opacity: 1;
+                }
+            }
 
-		.tab-content .autoplay .item {
-			padding-left: 10px !important;
-			padding-right: 10px !important;
-		}
+            .slick-prev {
+                left: 3px !important;
+            }
 
-		.event-product-categories .tab-content .autoplay .item {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-		}
+            .slick-next {
+                right: 3px !important;
+                left: auto;
+            }
+        }
 
-		.new-product-categories .tab-title,
-		.suggest-product-categories .tab-title {
-			margin-bottom: 15px !important;
-			padding-bottom: 10px !important;
-		}
-	}
+        .event-product-categories {
+            .autoplay {
+                .slick-arrow {
+                    top: 50% !important;
+                }
+            }
+        }
 
-	.colorful-life {
-		.colorful-life-content {
-			flex-direction: column-reverse !important;
-		}
-	}
+        .tab-content .autoplay .item {
+            padding-left: 3px !important;
+            padding-right: 3px !important;
+        }
+
+        .event-product-categories .tab-content .autoplay .item {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .new-product-categories .tab-title,
+        .suggest-product-categories .tab-title {
+            margin-bottom: 15px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .hera-charity {
+            .hera-charity-content {
+                h2.title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: -0.01em;
+                    text-transform: initial;
+                }
+            }
+        }
+
+        .hera-service {
+            .hera-service-content{
+                .title{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: -0.01em;
+                }
+            }
+        }
+
+        .nav-tabs{
+            margin-bottom: 16px;
+        }
+    }
+
+    .slider-home.slick-slider{
+        margin-bottom: 20px;
+    }
+
+    .lookbook-slogan {
+        .container-slogan {
+
+            .slogan-right{
+                padding-left: 25px;
+                padding-right: 25px;
+
+                .lookbook-phare{
+                    .title{
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+
+    .colorful-life {
+        .colorful-life-content {
+            flex-direction: column-reverse !important;
+        }
+    }
 
     .product-recommended {
         .product-recommended-primary {
@@ -2094,8 +2013,8 @@ button {
     .testimonial {
         padding-left: 15px !important;
         padding-right: 15px !important;
-		padding-top: 30px !important;
-		padding-bottom: 30px !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
 
         .slick-list {
             padding-left: 0;
@@ -2105,31 +2024,51 @@ button {
                 .pharse {
                     font-size: 14px;
                 }
+
+                .title{
+                    font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: -0.01em;
+                }
             }
         }
     }
 
-	.product-recommended {
-		.product-recommended-content {
-			padding-top: 30px !important;
-			padding-bottom: 20px !important;
-		}
-	}
+    .product-recommended {
+        .product-recommended-content {
+            padding-top: 30px !important;
+            padding-bottom: 20px !important;
+        }
+    }
 
     .hera-charity {
-        .hera-charity-content {
-            >.title {
-                font-size: 28px;
-                line-height: 35px;
-                margin-bottom: 33px;
-
-            }
-        }
-
         .hera-charity-primary {
             .hera-charity-info {
+                padding-left: 20px;
+                padding-right: 20px;
+
                 .title {
                     font-size: 18px;
+                }
+
+                .charity-sum {
+                    .col-left-charity, 
+                    .col-right-charity{
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+
+                    }
+                    
+                    .col-right-charity {
+                        .container-text1{
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+                .hera-charity-info-wrapper{
+                    max-width: 100%;
                 }
             }
         }
@@ -2139,15 +2078,21 @@ button {
         padding-top: 30px;
         padding-bottom: 30px;
 
+        .title {
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+            }
+        }
+
         .col-latest-blog,
         .col-news {
             flex: 0 0 100%;
             max-width: 100%;
         }
-
-        .col-latest-blog {
-
-		}
 
         .col-latest-blog {
             margin-bottom: 20px;
@@ -2164,47 +2109,51 @@ button {
                     width: 75%;
                 }
             }
-        }
 
-		.col-news {
-			.title {
-				height: auto;
-				margin-bottom: 15px;
-				line-height: initial;
-	
-				h2 {
-					font-size: 28px;
-					line-height: 35px;
-					margin-bottom: 0;
-				}
-			}
-		}
+            .title {
+                height: auto;
+                margin-bottom: 15px;
+                line-height: initial;
+
+                h2 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: -0.01em;
+                }
+            }
+        }
     }
 
-	section.main.content {
-		.hera-charity {
-			padding-top: 30px;
-			padding-bottom: 30px;
-	
-			h2.title {
-				margin-bottom: 15px;
-			}
-		}
-	}
+    section.main.content {
+        .hera-charity {
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            h2.title {
+                margin-bottom: 15px;
+            }
+        }
+    }
 
     .suggest-product-categories {
         .slick-list {
-            padding-left: 80px;
+            padding-left: 0;
         }
 
         .suggest-product-categories-main {
-            padding-right: 140px;
+            padding-right: 12px;
+            padding-left: 12px;
             padding-top: 30px;
             padding-bottom: 30px;
 
             .title {
                 font-size: 28px;
             }
+        }
+
+        .nav-tabs{
+            margin-bottom: 10px;
         }
 
         .slick-slider {
@@ -2254,39 +2203,88 @@ button {
                 }
             }
         }
+
+        .slick-slider {
+            .slick-prev {
+                left: 0;
+            }
+
+            .slick-next {
+                right: 0;
+            }
+
+            .slick-prev,
+            .slick-next {
+                width: 32px;
+                height: 32px;
+                background-color: white;
+                opacity: .5;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
 
     .colorful-life {
-		margin-top: 0;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        h2.title{
+            position: relative;
+            margin-bottom: 20px;
+
+            &:before{
+                content:"";
+                position: absolute;
+                top: calc(~"100% + 4px");
+                left: 50%;
+                transform:translateX(-50%);
+                height: 1px;
+                width: 100px;
+                background-color: @base_color;
+            }
+        }
 
         .colorful-left {
             width: 100%;
-            padding-right: 0;
-			margin-bottom: 10px;
+            padding-right: 12px;
+            padding-left: 12px;
+            ;
+            margin-bottom: 10px;
 
-			div.btn {
-				display: none;
-			}
+            div.btn {
+                display: none;
+            }
         }
 
         .colorful-right {
             width: 100%;
-			margin-bottom: 25px !important;
-
-            img {
-				max-width: initial;
-				margin: 0 -15px;
-            }
+            margin-bottom: 25px !important;
         }
     }
 
     .colorful-life-product {
         margin-bottom: 30px;
-		
-		.slick-dots {
-			position: absolute !important;
-			bottom: -10px !important;
-		}
+
+        .slick-dots {
+            position: absolute !important;
+            bottom: -18px !important;
+        }
+
+        .colorful-life-product-main {
+            .autoplay {
+                margin-left: -3px;
+                margin-right: -3px;
+
+                .product-wrapper {
+                    padding-left: 3px;
+                    padding-right: 3px;
+                }
+            }
+        }
     }
 
     .lookbook-slogan {
@@ -2324,26 +2322,27 @@ button {
 
     .new-product-categories {
         .new-product-categories-main {
-            padding-left: 140px;
+            padding-left: 12px;
+            padding-right: 12px;;
             padding-top: 30px !important;
             padding-bottom: 35px !important;
 
-			.slick-dots {
-				position: absolute !important;
-				bottom: -10px !important;
-			}
+            .slick-dots {
+                position: absolute !important;
+                bottom: -18px !important;
+            }
 
             >.title {
                 font-size: 28px;
             }
         }
 
-		.slick-dotted.slick-slider {
-			margin-bottom: 0 !important;
-		}
+        .slick-dotted.slick-slider {
+            margin-bottom: 0 !important;
+        }
 
         .slick-list {
-            padding-right: 80px;
+            padding-right: 0;
         }
 
         .slick-prev {
@@ -2355,12 +2354,6 @@ button {
         }
     }
 
-    .colorful-life {
-        .title {
-            font-size: 28px;
-        }
-    }
-
     .slick-prev,
     .slick-next {
         width: 35px;
@@ -2369,11 +2362,34 @@ button {
 
         &:before {
             font-size: 18px;
+            font-weight: 600;
+            color: @base_color !important;
         }
     }
 
     .nav-tabs li:not(:last-child) {
         margin-right: 20px;
+    }
+
+    .tab-content {
+        .autoplay{
+            margin-left: -3px;
+            margin-right: -3px;
+        }
+    }
+
+    .product-recommended {
+        .product-recommended-primary {
+            .block-right-recommended {
+                .product-items {
+                    .product-wrapper {
+                        .product-detail-wrapper {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -2459,12 +2475,12 @@ button {
 
         .prev-person {
             left: 20px;
-			bottom: 20px;
+            bottom: 20px;
         }
 
         .next-person {
             right: 20px;
-			bottom: 20px;
+            bottom: 20px;
         }
     }
 
@@ -2476,11 +2492,6 @@ button {
 
     .lookbook-slogan {
         .container-slogan {
-
-            .slogan-left {
-                margin-bottom: 35px;
-            }
-
             .slogan-right {
                 .lookbook-phare {
                     .title {
@@ -2494,13 +2505,13 @@ button {
                     p {
                         font-size: 13px;
                         line-height: 15px;
-						text-align: center;
-						font-style: normal;
-						font-weight: normal;
-						font-size: 11px;
-						line-height: 15px;
-						text-align: center;
-						color: #242424;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 11px;
+                        line-height: 15px;
+                        text-align: center;
+                        color: #242424;
                     }
                 }
             }
@@ -2513,13 +2524,8 @@ button {
 
         .container-slogan {
             .slogan-left {
-                padding-left: 55px;
-                padding-right: 55px;
-            }
-
-            .slogan-right {
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 44px;
+                padding-right: 44px;
             }
         }
     }
@@ -2603,14 +2609,14 @@ button {
             padding-left: 0;
         }
 
-		.slick-dotted.slick-slider {
+        .slick-dotted.slick-slider {
             margin-bottom: 0;
-		}
+        }
 
-		.slick-dots {
-			position: absolute !important;
-			bottom: -10px !important;
-		}
+        .slick-dots {
+            position: absolute !important;
+            bottom: -10px !important;
+        }
     }
 
     .hera-service {
@@ -2716,8 +2722,8 @@ button {
                     line-height: 23px;
                 }
 
-                .btn-sugest{
-                    a{
+                .btn-sugest {
+                    a {
                         padding: 7px 37px;
                     }
                 }
@@ -2735,33 +2741,6 @@ button {
     .news-blog .col-news .news-item-info .news-item-details {
         width: calc(~"100% - 124px");
         padding-left: 20px;
-    }
-
-    .testimonial {
-        .slick-list {
-            .testimonial-item {
-                .title {
-                    font-size: 22px;
-                }
-            }
-        }
-    }
-
-    .hera-charity {
-        .hera-charity-primary {
-            .hera-charity-info {
-                padding-left: 15px;
-                padding-right: 15px;
-
-                .charity-sum {
-                    .col-left-charity {
-                        max-width: 85px;
-
-                    }
-                }
-            }
-        }
-
     }
 
     .news-blog {
@@ -2828,31 +2807,6 @@ button {
                     font-size: 14px;
 
                 }
-            }
-        }
-    }
-
-    .product-wrapper {
-        .product-name {
-            font-size: 13px;
-        }
-
-        .product-price-wrapper {
-            .new-price {
-                font-size: 13px;
-                line-height: 16px;
-            }
-
-            .old-price {
-                font-size: 11px;
-                line-height: 16px;
-            }
-        }
-
-        .product-item-actions {
-            .btn-cart {
-                font-size: 14px;
-                line-height: 17px;
             }
         }
     }
@@ -3035,13 +2989,6 @@ button {
     }
 
     .news-blog {
-        .title {
-            h2 {
-                font-size: 26px;
-                line-height: 28px;
-            }
-        }
-
         .col-latest-blog {
             .blog-item-details {
                 .title {

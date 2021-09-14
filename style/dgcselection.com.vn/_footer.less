@@ -26,7 +26,7 @@
             vertical-align: baseline;
         }
 
-        .img-hover{
+        .img-hover {
             display: none;
         }
 
@@ -47,6 +47,10 @@
             }
         }
     }
+}
+
+.footer-social-menu {
+    display: none;
 }
 
 .footer-title {
@@ -120,13 +124,18 @@
             font-weight: 400;
             line-height: 18px;
             text-align: center;
-            background-color: white;
-            color: #242424;
+            background-color: @base_color;
+            color: white;
             border-radius: 30px;
             border-width: 1px;
             border-style: solid;
-            border-color: #E6E6E6;
+            border-color: @base_color;
 
+            &:hover{
+                background-color: white;
+                color: @base_color;
+                border-color: #E6E6E6;
+            }
         }
     }
 
@@ -236,6 +245,12 @@
                     border-width: 1px;
                     border-style: solid;
                     border-color: #E6E6E6;
+
+                    &:hover{
+                        background-color: @base_color;
+                        color: white;
+                        border-color: @base_color;
+                    }
                 }
             }
         }
@@ -382,7 +397,7 @@
 }
 
 @media screen and (max-width: (@screen__xl-m - 1)) {
-    .social-profile{
+    .social-profile {
         margin-top: 50px;
     }
 
@@ -392,13 +407,13 @@
             padding: 32px 24px;
             order: 2;
 
-            >.row{
+            >.row {
                 margin-left: -24px;
                 margin-right: -24px;
             }
 
             .footer-link,
-            .footer-social{
+            .footer-social {
                 padding-left: 24px;
                 padding-right: 24px;
             }
@@ -423,7 +438,7 @@
         }
 
         .footer-about {
-            .action{
+            .action {
                 max-width: 327px;
                 margin-left: 0;
                 margin-right: auto;
@@ -445,25 +460,25 @@
         margin-top: 33px;
         text-align: center;
 
-        .social-item{
+        .social-item {
             margin-bottom: 0;
         }
     }
 
     .footer {
-        .footer-links{
+        .footer-links {
             padding-bottom: 0;
         }
 
         .footer-link {
             margin-bottom: 20px;
 
-            &:last-child{
+            &:last-child {
                 margin-bottom: 0;
             }
         }
 
-        .footer-social{
+        .footer-social {
             padding-left: 0;
             padding-right: 0;
         }
@@ -495,15 +510,47 @@
                 }
             }
         }
-        
+
         .social-link {
             text-align: initial;
             font-size: 0;
             line-height: initial;
 
-            span{
+            span {
                 font-size: 14px;
                 margin-right: 0;
+            }
+        }
+    }
+
+    .footer-social {
+        display: none;
+    }
+
+    .footer-social-menu {
+        display: block;
+
+        .social-title {
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 16px 12px 12px;
+            font-family: @icielBrandon;
+        }
+
+        .social-profile{
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 16px;
+            border-width: 0;
+
+            .social-link {
+                span{
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -560,20 +607,20 @@
     }
 
     .footer-bottom {
-        .footer-bottom-content{
+        .footer-bottom-content {
             text-align: initial;
         }
 
         .footer-bottom-detail {
             .more-info {
-                li{
+                li {
                     margin-right: 0;
                     padding-right: 0;
                     border-width: 0;
                     display: block;
                     margin-top: 4px;
 
-                    &:first-child{
+                    &:first-child {
                         margin-top: 0;
                     }
                 }

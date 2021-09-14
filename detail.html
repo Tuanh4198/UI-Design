@@ -1832,13 +1832,7 @@
 					$(this).removeClass('active');
 				});
 				$thumbnail[nextSlide].classList.add('active');
-				console.log($thumbnail[nextSlide].offsetTop);
-				// $('.thumbnail-slide').scroll({
-				// 	top: $thumbnail[nextSlide].offsetTop,
-				// 	behavior: 'smooth'
-				// });
 				document.getElementById('scrolling_div').scrollTop = $thumbnail[nextSlide].offsetTop;
-				// $thumbnail[nextSlide].offsetTop;
             });
 
 			$thumbnail.each(function () {
@@ -1854,7 +1848,6 @@
 			let windowWidth = $(window).width();
 			slider.slick({
 				vertical: false,
-				// asNavFor: '.slider-nav',
 				dots:true, 
 				arrows:false,
 				autoplay:false, 

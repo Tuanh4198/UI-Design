@@ -11,6 +11,7 @@ body {
     font-family: 'Inter', sans-serif;
     background: #ffffff;
     overflow-x: hidden;
+
 }
 
 img {
@@ -500,6 +501,10 @@ button {
     }
 }
 
+.product-home-center{
+    margin-top: 61px;
+}
+
 .new-collection {
     margin-top: 65px;
 
@@ -509,7 +514,7 @@ button {
 
     .collection-detail {
         flex: 1;
-        padding-left: 127px;
+        padding-left: 94px;
 
         .title {
             font-size: 30px;
@@ -522,7 +527,8 @@ button {
             font-weight: 400;
             line-height: 22px;
             margin-top: 12px;
-            max-width: 306px;
+            max-width: 384px;
+            text-align: justify;
         }
 
         .action {
@@ -544,7 +550,7 @@ button {
 }
 
 .brand-selection {
-    margin-top: 115px;
+    margin-top: 16px;
     padding: 0 89px;
 
     >.title {
@@ -974,7 +980,7 @@ button {
 
 
     .brand-selection {
-        margin-top: 40px;
+        margin-top: 68px;
         padding: 0;
 
         >.title {
@@ -1118,6 +1124,10 @@ button {
 
         >.title {
             padding: 0 24px;
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 28px;  
+            text-transform: uppercase;  
         }
 
         .style-children-detail {
@@ -1162,6 +1172,7 @@ button {
     .new-product {
         >.title {
             text-align: center;
+            text-transform: uppercase;
         }
 
         .slick-list {
@@ -1212,7 +1223,27 @@ button {
 
         .slick-prev,
         .slick-next {
-            display: none !important;
+            bottom: -45px;
+            top: auto;
+            opacity: .5;
+
+            &:before{
+                color: @base_color;
+                font-size: 30px;
+            }
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+        .slick-prev{
+            left: 0;
+            right: auto;
+        }
+
+        .slick-next{
+            right: 0;
         }
 
         .slick-dots {
@@ -1220,17 +1251,53 @@ button {
         }
     }
 
+    .product-home-center{
+        .slick-prev, 
+        .slick-next{
+            bottom: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 60px;
+            background-color: white;
+            .round-borders(0);
+            opacity: .7;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .new-collection{
+        .collection-detail{
+            text-align: center;
+            .title{
+                text-transform: uppercase;
+            }
+        }
+    }
+
     .blog-slider {
 
         >.title {
-            font-size: 20px;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 28px;  
+            text-transform: uppercase;   
         }
 
         >.content {
             padding-left: 36px;
+            margin-top: 8px;
 
             .slick-list {
                 padding-right: 70px;
+            }
+
+            .nav-tabs{
+                margin-bottom: 24px;
             }
         }
 
@@ -1243,9 +1310,10 @@ button {
     .brand-selection {
         >.title {
             text-align: center;
-            font-size: 20px;
-            line-height: 28px;
-
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 28px;  
+            text-transform: uppercase;         
         }
 
         .selection-item-images {
