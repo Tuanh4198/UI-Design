@@ -1924,6 +1924,7 @@
             let $progressBarLabel = $('.slider__label');
             let $thumbnail = $('.thumbnail-slide .slider-nav li');
             let $thumbnailWrapper = $('.thumbnail-slide');
+            let windowWidth = $(window).width();
             $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
                 let calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
                 $progressBarLabel.css('height', `${calc}%`);
@@ -1931,19 +1932,18 @@
 					$(this).removeClass('active');
 				});
 				$thumbnail[nextSlide].classList.add('active');
-				console.log($thumbnail[nextSlide].offsetTop);
-				// $('.thumbnail-slide').scroll({
-				// 	top: $thumbnail[nextSlide].offsetTop,
-				// 	behavior: 'smooth'
-				// });
-				document.getElementById('scrolling_div').scrollTop = $thumbnail[nextSlide].offsetTop;
-				// $thumbnail[nextSlide].offsetTop;
+                if ( windowWidth <= 575) {
+                    document.getElementById('scrolling_div').scrollLeft = $thumbnail[nextSlide].offsetLeft;
+                }
+                else{
+                    document.getElementById('scrolling_div').scrollTop = $thumbnail[nextSlide].offsetTop;
+                }
             });
 
 			$thumbnail.each(function () {
 				$(this).click(function (e) {
-					let index = $(this).data('index')
-   					$('.main-slide .slider-for').slick('slickGoTo', index - 1);
+					let index = $(this).data('index');
+                    $('.main-slide .slider-for').slick('slickGoTo', index - 1);
                 });
 			});
         });
@@ -1952,10 +1952,8 @@
             let slider = $('.main-slide .slider-for');
 			let windowWidth = $(window).width();
 			slider.slick({
-				vertical: false,
-				// asNavFor: '.slider-nav',
 				dots:true, 
-				arrows:false,
+				arrows:true,
 				autoplay:false, 
 				speed:1000,
 				vertical: (windowWidth <= 575) ? false : true,

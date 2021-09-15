@@ -125,7 +125,7 @@ button {
     }
 
     .slick-next,
-    .slick-prev{
+    .slick-prev {
         width: 32px;
         height: 60px;
         .round-borders(0);
@@ -176,12 +176,13 @@ button {
         display: none;
     }
 
-    &.slick-slider{
-        >*{
+    &.slick-slider {
+        >* {
             display: block;
         }
     }
 }
+
 .history-brand {
     text-align: center;
     margin-top: 42px;
@@ -507,7 +508,7 @@ button {
     }
 }
 
-.product-home-center{
+.product-home-center {
     margin-top: 61px;
 }
 
@@ -732,18 +733,20 @@ button {
 
 .style-children {
     background-color: #0F1F3D;
-    padding: 59px 63px 94px;
+    padding: 94px 69px;
 
     >.title {
         color: white;
         font-size: 30px;
         font-weight: 600;
         line-height: 38px;
+        margin-bottom: 16px;
+        display: none;
     }
 
     >.content {
         margin-top: 19px;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .style-children-images {
@@ -751,8 +754,6 @@ button {
         width: 833px;
         position: relative;
         text-align: center;
-        padding-top: 177px;
-        padding-bottom: 73px;
 
         .images-detail {
             position: absolute;
@@ -788,6 +789,14 @@ button {
         color: white;
         flex: 1;
         padding-left: 58px;
+
+        >.title {
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 38px;
+            margin-bottom: 73px;
+        }
 
         .detail-title {
             font-size: 20px;
@@ -861,12 +870,33 @@ button {
     }
 
     .style-children {
+        padding: 50px 15px;
+
+        >.title {
+            display: block;
+        }
+
+        >.content {
+            align-items: flex-start;
+        }
+
         .style-children-images {
             width: 60%;
         }
 
         .style-children-detail {
             padding-left: 40px;
+            padding-right: 40px;
+
+            >.title {
+                display: none;
+            }
+
+            .number {
+                .number-item {
+                    padding: 16px 0;
+                }
+            }
         }
     }
 }
@@ -912,8 +942,36 @@ button {
 
 @media screen and (max-width: (@screen__xm - 1)) {
     .style-children {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 40px 0;
+
+        >.title{
+            text-align: center;
+        }
+
+        .style-children-images {
+            width: 100%;
+
+            .images-detail {
+
+                .logo,
+                .image-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        .style-children-detail {
+            margin-top: 24px;
+
+            .number {
+                max-width: 100%;
+            }
+
+            .action{
+                margin-top: 20px;
+            }
+        }
     }
 
     .new-collection {
@@ -1067,42 +1125,12 @@ button {
             right: 16px;
         }
     }
-
-    .style-children {
-        padding: 40px 16px;
-
-        >.title {
-            font-size: 24px;
-            line-height: 32px;
-        }
-
-        .style-children-images {
-            width: 100%;
-
-            .images-detail {
-
-                .logo,
-                .image-title {
-                    font-size: 24px;
-                    line-height: 32px;
-                }
-            }
-        }
-
-        .style-children-detail {
-            margin-top: 24px;
-
-            .number {
-                max-width: 100%;
-            }
-        }
-    }
 }
 
 @media screen and (max-width: (@screen__ss - 1)) {
     .slider-home {
 
-        .slick-prev{
+        .slick-prev {
             left: 0;
         }
 
@@ -1135,8 +1163,8 @@ button {
             padding: 0 24px;
             font-size: 19px;
             font-weight: 600;
-            line-height: 28px;  
-            text-transform: uppercase;  
+            line-height: 28px;
+            text-transform: uppercase;
         }
 
         .style-children-detail {
@@ -1236,22 +1264,22 @@ button {
             top: auto;
             opacity: .5;
 
-            &:before{
+            &:before {
                 color: @base_color;
                 font-size: 30px;
             }
 
-            &:hover{
+            &:hover {
                 opacity: 1;
             }
         }
 
-        .slick-prev{
+        .slick-prev {
             left: 0;
             right: auto;
         }
 
-        .slick-next{
+        .slick-next {
             right: 0;
         }
 
@@ -1260,9 +1288,10 @@ button {
         }
     }
 
-    .product-home-center{
-        .slick-prev, 
-        .slick-next{
+    .product-home-center {
+
+        .slick-prev,
+        .slick-next {
             bottom: auto;
             top: 50%;
             transform: translateY(-50%);
@@ -1272,16 +1301,17 @@ button {
             .round-borders(0);
             opacity: .7;
 
-            &:hover{
+            &:hover {
                 opacity: 1;
             }
         }
     }
 
-    .new-collection{
-        .collection-detail{
+    .new-collection {
+        .collection-detail {
             text-align: center;
-            .title{
+
+            .title {
                 text-transform: uppercase;
             }
         }
@@ -1293,8 +1323,8 @@ button {
             text-align: center;
             font-size: 19px;
             font-weight: 600;
-            line-height: 28px;  
-            text-transform: uppercase;   
+            line-height: 28px;
+            text-transform: uppercase;
         }
 
         >.content {
@@ -1305,7 +1335,7 @@ button {
                 padding-right: 70px;
             }
 
-            .nav-tabs{
+            .nav-tabs {
                 margin-bottom: 24px;
             }
         }
@@ -1321,8 +1351,8 @@ button {
             text-align: center;
             font-size: 19px;
             font-weight: 600;
-            line-height: 28px;  
-            text-transform: uppercase;         
+            line-height: 28px;
+            text-transform: uppercase;
         }
 
         .selection-item-images {
@@ -1339,7 +1369,7 @@ button {
             display: none;
         }
 
-        .seclection-item-child{
+        .seclection-item-child {
             margin-bottom: 8px;
         }
 
