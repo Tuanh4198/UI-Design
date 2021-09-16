@@ -711,6 +711,65 @@ body {
     }
 }
 
+.confirm-email-success {
+    padding: 35px 0 40px;
+    border-width:0 0 2px;
+    border-style: solid;
+    border-color: #F5F6F8;
+
+    .breadcrumbs-wrapper {
+        .title {
+            font-family: @font_Garamond;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 52px;
+            text-align: center;
+        }
+    }
+
+    .messenger {
+        max-width: 569px;
+        margin: 8px auto 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .actions {
+        margin-top: 24px;
+
+        .action {
+            display: block;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: white;
+            background-color: @base_color;
+            max-width: 366px;
+            margin: 0 auto 12px;
+            text-align: center;
+
+            &:last-child{
+                margin-bottom: 0;
+                background-color: #F7F7F7;
+                color: @base_color;
+
+                &:hover{
+                    background-color: #505050;
+                    color: white;
+                }
+            }
+
+            &:hover{
+                background-color: #505050;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:767px) {
     body {
 
@@ -767,6 +826,24 @@ body {
                         text-align: center;
                     }
                 }
+            }
+        }
+    }
+
+    .confirm-email-success {    
+        .breadcrumbs-wrapper {
+            .title {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+            }
+        }
+
+        .actions {
+            .action{
+                font-size: 14px;
             }
         }
     }
@@ -898,6 +975,14 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .confirm-email-success {    
+        .breadcrumbs-wrapper {
+            .title {
+                font-size: 17px;
             }
         }
     }

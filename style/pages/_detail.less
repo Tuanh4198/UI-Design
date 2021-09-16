@@ -1229,6 +1229,15 @@
 				padding: 0;
 			}
 		}
+
+		.related-product {
+			margin-top: 32px;
+
+			&.block-second,
+			&.block-third{
+				margin-top: 55px;
+			}
+		}
 	}
 }
 
@@ -1272,9 +1281,13 @@
 					background-color: white;
 					border-color: white;
 					opacity: .5;
+					width: 45px;
+					height: 45px;
+					line-height: 43px;
 
 					&:before{
 						color: @base_color;
+						font-size: 20px;
 					}
 
 					&:hover{
@@ -1283,10 +1296,10 @@
 				}
 
 				.slick-prev{
-					left: -8px;
+					left: 0px;
 				}
 				.slick-next{
-					right: -8px;
+					right: 0px;
 				}
 			}
 

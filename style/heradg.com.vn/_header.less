@@ -280,7 +280,7 @@ header {
 	border-radius: 6px;
 	border-color: #E8E8E8;
 	padding: 0 12px;
-	max-width: 130px;
+	max-width: 160px;
 
 	.btn {
 		font-size: 0;
@@ -315,6 +315,7 @@ header {
 		text-overflow: ellipsis;
 		padding-right: 0;
 		background-color: transparent;
+		padding-left: 5px;
 
 		&:focus {
 			outline: none;
@@ -403,7 +404,7 @@ header {
 			position: relative;
 
 			.btn-close {
-				top: 0;
+				top: -7px;
 				right: 0;
 				transform: translateY(0);
 				padding: 0;
@@ -718,7 +719,12 @@ header {
 							}
 						}
 
-						.product-action {
+						.product-item-actions {
+							align-items: center;
+							justify-content: space-between;
+						}
+
+						.product-item-action {
 							background-color: transparent;
 							color: #999999;
 							padding: 0;
@@ -1470,7 +1476,7 @@ header {
 		}
 	}
 
-	.view-product-item-action  {
+	.view-product-item-action {
 
 		.add-all {
 			background-color: #242424;
@@ -1734,13 +1740,17 @@ header {
 	.nav-mobile {
 		.nav-mobile-title {
 			padding: 10px 15px;
-			background-color: #242424;
-			color: white;
+			background-color: #F6F6F6;
+			color: @base_color;
 			display: block;
 			position: relative;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 17px;
+			text-transform: uppercase;
 
 			.btn-close {
-				background-image: url('../../images/close-menu.png');
+				// background-image: url('../../images/close-menu.png');
 
 				&::before {
 					display: none;
@@ -1751,14 +1761,30 @@ header {
 
 		.nav-mobile-content {
 			overflow-y: auto;
-			-webkit-overflow-scrolling: touch;
 			height: calc(~"100% - 44px");
 			padding-bottom: 120px;
+
+			>.nav-item {
+				padding: 10px 15px;
+				display: block;
+				border-width: 0 0 1px;
+				border-style: solid;
+				border-color: @border_color
+			}
+
+			li{
+				li{
+					padding: 0 15px;
+				}
+			}
 		}
 
 		.nav-item {
 			position: relative;
-			padding-left: 15px;
+
+			&.home {
+				display: none;
+			}
 		}
 
 		.mega-link,
@@ -1773,10 +1799,20 @@ header {
 			}
 		}
 
+		// li {
+		// 	a {
+		// 		padding: 10px 15px;
+		// 		display: block;
+		// 		border-width: 0 0 1px;
+		// 		border-style: solid;
+		// 		border-color: @border_color
+		// 	}
+		// }
+
 		.collapse {
 			position: absolute;
 			right: 0;
-			top: 0;
+			top: 10px;
 			width: 40px;
 			height: 44px;
 			text-align: center;

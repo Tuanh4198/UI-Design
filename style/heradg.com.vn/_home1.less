@@ -96,6 +96,10 @@ button {
     bottom: -35px;
 
     li {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        
         button {
             width: auto;
             height: auto;
@@ -109,6 +113,9 @@ button {
                 border-radius: 50%;
                 border: 1px solid #808080;
                 vertical-align: middle;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
 
@@ -536,7 +543,19 @@ button {
         text-align: center;
         letter-spacing: -0.01em;
         color: @base_color;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
+        position: relative;
+
+        &:before{
+            content:"";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 100px;
+            background-color: @base_color;
+        }
     }
 }
 
@@ -646,7 +665,7 @@ button {
         }
     }
 
-    .block-content{
+    .block-content {
         position: relative;
     }
 
@@ -1087,7 +1106,7 @@ button {
 
                 .col-left-charity {
                     max-width: 65px;
-                    
+
                     span {
                         font-style: normal;
                         font-weight: 600;
@@ -1516,6 +1535,17 @@ button {
     }
 }
 
+section.main.content {
+    h2.title {
+        text-transform: uppercase;
+        font-family: @icielBrandon;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.01em;
+    }
+}
+
 @media only screen and (max-width: 1470px) {
     .hera-charity {
         .hera-charity-primary {
@@ -1552,17 +1582,17 @@ button {
 @media only screen and (max-width: 1199px) {
     .lookbook-slogan {
         .container-slogan {
-            .slogan-left{
+            .slogan-left {
                 width: 100%;
             }
 
-            .slogan-right{
+            .slogan-right {
                 width: 100%;
                 padding-left: 0;
                 margin-top: 20px;
-                
-                .lookbook-phare{
-                    .title{
+
+                .lookbook-phare {
+                    .title {
                         text-align: initial;
                         margin: 0 auto;
                         margin-bottom: 6px;
@@ -1571,6 +1601,7 @@ button {
             }
         }
     }
+
     .hera-charity {
         .hera-charity-primary {
             .hera-charity-info {
@@ -1876,7 +1907,7 @@ button {
 
         .testimonial {
             h2.title {
-                margin-bottom: 25px !important;
+                margin-bottom: 13px !important;
             }
         }
 
@@ -1885,13 +1916,13 @@ button {
                 top: 37% !important;
                 background: #FFFFFF !important;
                 color: white !important;
-                opacity: 0.5 ;
+                opacity: 0.5;
                 border: none !important;
                 visibility: visible !important;
                 width: 32px;
                 height: 32px;
 
-                &:hover{
+                &:hover {
                     opacity: 1;
                 }
             }
@@ -1903,6 +1934,13 @@ button {
             .slick-next {
                 right: 3px !important;
                 left: auto;
+            }
+
+            &.slider-home {
+                .slick-arrow{
+                    top: 50% !important;
+                    transform: translateY(-50%);
+                }
             }
         }
 
@@ -1926,8 +1964,8 @@ button {
 
         .new-product-categories .tab-title,
         .suggest-product-categories .tab-title {
-            margin-bottom: 15px !important;
-            padding-bottom: 10px !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
         }
 
         .hera-charity {
@@ -1943,8 +1981,8 @@ button {
         }
 
         .hera-service {
-            .hera-service-content{
-                .title{
+            .hera-service-content {
+                .title {
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 28px;
@@ -1953,31 +1991,31 @@ button {
             }
         }
 
-        .nav-tabs{
-            margin-bottom: 16px;
+        .nav-tabs {
+            margin-bottom: 0;
         }
     }
 
-    .slider-home.slick-slider{
+    .slider-home.slick-slider {
         margin-bottom: 20px;
     }
 
     .lookbook-slogan {
         .container-slogan {
 
-            .slogan-right{
+            .slogan-right {
                 padding-left: 25px;
                 padding-right: 25px;
 
-                .lookbook-phare{
-                    .title{
+                .lookbook-phare {
+                    .title {
                         font-size: 14px;
                         font-weight: 600;
                         line-height: 21px;
                         max-width: 100%;
                     }
 
-                    p{
+                    p {
                         text-align: justify;
                     }
                 }
@@ -2030,11 +2068,11 @@ button {
                     font-size: 14px;
                 }
 
-                .title{
+                .title {
                     font-size: 20px;
-            font-weight: 700;
-            line-height: 28px;
-            letter-spacing: -0.01em;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: -0.01em;
                 }
             }
         }
@@ -2058,21 +2096,22 @@ button {
                 }
 
                 .charity-sum {
-                    .col-left-charity, 
-                    .col-right-charity{
+
+                    .col-left-charity,
+                    .col-right-charity {
                         padding-top: 16px;
                         padding-bottom: 16px;
 
                     }
-                    
+
                     .col-right-charity {
-                        .container-text1{
+                        .container-text1 {
                             max-width: 100%;
                         }
                     }
                 }
 
-                .hera-charity-info-wrapper{
+                .hera-charity-info-wrapper {
                     max-width: 100%;
                 }
             }
@@ -2090,6 +2129,7 @@ button {
                 line-height: 28px;
                 letter-spacing: -0.01em;
                 text-transform: uppercase;
+                margin-bottom: 12px;
             }
         }
 
@@ -2102,6 +2142,21 @@ button {
         .col-latest-blog {
             margin-bottom: 20px;
 
+            .category-blog{
+                display: none;
+            }
+
+            .blog-item-details {
+                .title{
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            .btn-view-more{
+                font-size: 13px;
+                line-height: auto;
+            }
         }
 
         .col-news {
@@ -2119,12 +2174,19 @@ button {
                 height: auto;
                 margin-bottom: 15px;
                 line-height: initial;
+                font-size: 14px;
+                line-height: 22px;
 
                 h2 {
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 28px;
                     letter-spacing: -0.01em;
+                }
+
+                .btn-view-more{
+                    font-size: 13px;
+                    line-height: auto;
                 }
             }
         }
@@ -2157,7 +2219,7 @@ button {
             }
         }
 
-        .nav-tabs{
+        .nav-tabs {
             margin-bottom: 10px;
         }
 
@@ -2237,16 +2299,16 @@ button {
         padding-left: 0;
         padding-right: 0;
 
-        h2.title{
+        h2.title {
             position: relative;
             margin-bottom: 20px;
 
-            &:before{
-                content:"";
+            &:before {
+                content: "";
                 position: absolute;
                 top: calc(~"100% + 4px");
                 left: 50%;
-                transform:translateX(-50%);
+                transform: translateX(-50%);
                 height: 1px;
                 width: 100px;
                 background-color: @base_color;
@@ -2328,7 +2390,8 @@ button {
     .new-product-categories {
         .new-product-categories-main {
             padding-left: 12px;
-            padding-right: 12px;;
+            padding-right: 12px;
+            ;
             padding-top: 30px !important;
             padding-bottom: 35px !important;
 
@@ -2368,7 +2431,7 @@ button {
         &:before {
             font-size: 18px;
             font-weight: 600;
-            color: @base_color !important;
+            color: @base_color  !important;
         }
     }
 
@@ -2377,7 +2440,7 @@ button {
     }
 
     .tab-content {
-        .autoplay{
+        .autoplay {
             margin-left: -3px;
             margin-right: -3px;
         }
@@ -2571,6 +2634,10 @@ button {
             margin-bottom: 35px;
             padding-bottom: 20px;
             overflow-x: auto;
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
         }
 
         .nav-tabs {
@@ -2597,6 +2664,9 @@ button {
             margin-bottom: 35px;
             padding-bottom: 20px;
             overflow-x: auto;
+            &::-webkit-scrollbar {
+                width: 0;
+            }
         }
 
         .nav-tabs {
@@ -2744,13 +2814,13 @@ button {
         padding-left: 20px;
     }
 
-    .news-blog {
-        .col-news {
-            .title {
-                height: 46px;
-            }
-        }
-    }
+    // .news-blog {
+    //     .col-news {
+    //         .title {
+    //             height: 46px;
+    //         }
+    //     }
+    // }
 
     .suggest-product-categories {
         .suggest-product-categories-main {
@@ -2786,13 +2856,14 @@ button {
         &.slick-slider {
             .slick-dots {
                 li {
-                    width: 30px;
-
+                    width: 34px;
+                    
                     button {
-                        width: 30px;
+                        height: 2px;
+                        width: 34px;
 
                         &:before {
-                            width: 30px;
+                            width: 34px;
                         }
                     }
                 }
