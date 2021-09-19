@@ -77,6 +77,10 @@ button {
     bottom: -35px;
 
     li {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        
         button {
             width: auto;
             height: auto;
@@ -527,6 +531,7 @@ button {
             font-size: 30px;
             font-weight: 600;
             line-height: 38px;
+            max-width: 384px;
         }
 
         .description {
@@ -865,7 +870,8 @@ button {
         }
 
         .collection-detail {
-            padding-left: 50px;
+            padding-left: 40px;
+            padding-right: 10px;
         }
     }
 
@@ -994,6 +1000,7 @@ button {
 
             .description {
                 margin-top: 10px;
+                text-align: justify;
             }
 
             .action {
@@ -1030,6 +1037,10 @@ button {
             margin-top: 16px;
             padding-left: 16px;
             padding-right: 16px;
+
+            .title{
+                max-width: 100%;
+            }
 
             .description {
                 margin-top: 6px;
@@ -1140,6 +1151,12 @@ button {
 
         .slick-dots {
             bottom: 16px;
+
+            li{
+                width: 34px;
+                height: 2px;
+                margin-right: 2px;
+            }
         }
 
         .slick-slide {
@@ -1233,25 +1250,11 @@ button {
                 }
 
                 .product-name {
-                    font-size: 10px;
-                    font-weight: 500;
-                    line-height: 17px;
                     margin-bottom: 2px;
                 }
 
                 .product-price-wrapper {
-                    line-height: 12px;
-
-                    .new-price {
-                        font-size: 10px;
-                        font-weight: 500;
-                        line-height: 12px;
-                    }
-
                     .old-price {
-                        font-size: 10px;
-                        font-weight: 500;
-                        line-height: 12px;
                         color: #999999;
                     }
                 }
@@ -1344,6 +1347,16 @@ button {
         .slick-next {
             display: none !important;
         }
+
+        .nav-tabs {
+            margin-right: 36px;
+
+            li{
+                &:first-child{
+                    display: none;
+                }
+            }
+        }
     }
 
     .brand-selection {
@@ -1402,10 +1415,11 @@ button {
             .slick-list {
                 padding-right: 0;
             }
-        }
-
-        .nav-tabs {
-            margin-bottom: 16px;
+            
+            .nav-tabs {
+                margin-bottom: 16px;
+                margin-right: 28px;
+            }
         }
     }
 }

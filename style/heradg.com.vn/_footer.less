@@ -220,7 +220,7 @@
                     background-color: transparent;
 
                     &::placeholder {
-                        color: #E8EAEE;
+                        color: #A19F9F;
                     }
                 }
 
@@ -459,28 +459,32 @@
 @media screen and (max-width: (@screen__ss - 1)) {
     .social-profile {
         .content {
-            border-width: 1px;
+            border-width: 1px 0 0 1px;
             border-style: solid;
             border-color: #E1E1E1;
-        }
-
-        .social-item {
-            margin-bottom: 0;
-
-            &:last-child {
-                .social-link {
-                    border-width: 0;
-                }
+    
+            >.row{
+                margin-left: 0;
+                margin-right: 0;
             }
         }
-
+    
+        .social-item {
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
         .social-link {
-            border-width: 0 0 1px;
+            border-width: 0 1px 1px 0;
             text-align: initial;
             padding: 12px;
+            span{
+                font-size: 13px;
+            }
         }
     }
-
+    
     .footer {
         .collapsible {
             border-width: 0 0 1px;
@@ -529,6 +533,36 @@
     .footer-bottom {
         .footer-bottom-content {
             text-align: initial;
+        }
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .footer {
+        .social-profile {
+            .content {
+                border-width: 1px;
+                border-style: solid;
+                border-color: #E1E1E1;
+            }
+    
+            .social-item {
+                margin-bottom: 0;
+                max-width: 100%;
+                flex: 0 0 100%;
+    
+                &:last-child {
+                    .social-link {
+                        border-width: 0;
+                    }
+                }
+            }
+    
+            .social-link {
+                border-width: 0 0 1px;
+                text-align: initial;
+                padding: 12px;
+            }
         }
     }
 }

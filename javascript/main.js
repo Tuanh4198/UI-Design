@@ -176,6 +176,12 @@ jQuery(document).ready(function($) {
         $(this).parents(".popup").toggleClass("visible");
     });
 
+    $(".viewed-products .btn-close").click(function(event) {
+        event.preventDefault();
+        $('html').toggleClass("open-popup");
+    });
+
+
     // minicart
     $(".minicart .showcart ").click(function(event) {
         event.preventDefault();

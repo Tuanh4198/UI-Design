@@ -5,10 +5,10 @@
 		margin-bottom: 40px;
 
 		.title {
-			font-family: @font_Garamond;
+			font-family: @icielBrandon;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 40px;
+			font-size: 32px;
 			line-height: 52px;
 			text-align: center;
 			letter-spacing: -0.01em;
@@ -17,6 +17,7 @@
 			order: 2;
 			flex-grow: 0;
 			margin: 0px auto 10px;
+			text-transform: uppercase;
 		}
 
 		.desc {
@@ -89,6 +90,35 @@
 		.slick-slide {
 			padding: 0 15px;
 		}
+
+		.slick-slider {
+
+			.slick-prev,
+			.slick-next {
+				bottom: auto;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				width: 32px;
+				height: 60px;
+				background-color: white;
+				border-radius: 0;
+				-moz-border-radius: 0;
+				-webkit-border-radius: 0;
+				opacity: 0.7;
+
+				&:hover {
+					opacity: 1;
+
+					&:before {
+						color: @base_color  !important;
+						font-size: 30px;
+						line-height: 60px;
+					}
+				}
+			}
+		}
+
 	}
 
 	.exhibition-block {
@@ -147,18 +177,25 @@
 			max-width: 70px;
 			overflow: hidden;
 			position: absolute;
-			top: 50%;
+			top: 35px;
+			bottom: 35px;
 			left: 0;
 			z-index: 1;
-			transform: translateY(-50%);
+			overflow-y: auto;
+			&::-webkit-scrollbar {
+				width: 0;
+			}
 
 			li {
-				border: 1px solid white;
+				border-width: 1px;
+				border-style: solid;
+				border-color:transparent;
 				transition: .3s ease-in;
 				cursor: pointer;
+				margin-bottom: 22px;
 
-				&:hover {
-					border: 1px solid @hover_color;
+				&.active {
+					border-color: @base_color;
 				}
 			}
 
@@ -175,6 +212,10 @@
 					color: @base_color;
 				}
 			}
+
+			&:last-child{
+				margin-bottom: 0;
+			}
 		}
 
 		.slide-wrapper {
@@ -183,14 +224,22 @@
 			// justify-content: space-between;
 			// align-items: center;
 			position: relative;
+			max-width: 1080px;
+			margin-left: auto;
 		}
 
 		.main-slide {
-			max-width: 1000px;
 			margin-right: 0;
 			margin-left: auto;
+			
+			.slider-for{
+				padding-left: 84px;				
+			}
 
 			.item {
+				position: relative;
+				overflow: hidden;
+
 				img {
 					transition: .3s ease-in;
 					width: 100%;
@@ -234,6 +283,47 @@
 						visibility: visible;
 						transform: translateY(0);
 					}
+				}
+			}
+		}
+
+		.slick-arrow{
+			border-width: 0;
+			background-color: transparent;
+			opacity: .3;
+			width: 56px;
+			height: 56px;
+			line-height: 54px;
+
+			&:before{
+				font-size: 30px;
+				line-height: 54px;
+			}
+
+			&:hover{
+				background-color: transparent;
+				opacity: 1;
+			}
+
+			&.slick-next{
+				top: auto;
+				bottom: -10px;
+				left: 6px;
+				transform: translateY(0);
+
+				&:before{
+					content:"\f107";
+				}
+			}
+
+			&.slick-prev{
+				top: -10px;
+				left: 6px;
+				right: auto;
+				transform: translateY(0);
+
+				&:before{
+					content:"\f106";
 				}
 			}
 		}
@@ -328,6 +418,13 @@
 			padding: 0 8px;
 		}
 	}
+
+	.slick-prev,
+	.slick-next {
+		&:before {
+			color: @base_color  !important;
+		}
+	}
 }
 
 @media only screen and (min-width: 1600px) {
@@ -344,19 +441,11 @@
 
 @media only screen and (max-width: 1200px) {
 	.collection-page {
-		.summer-collection {
-			.main-slide {
-				max-width: calc(~'100% - 100px');
-			}
-		}
-
-		.slick-prev {
-			left: 0;
-		}
-
-		.slick-next {
-			right: 0;
-		}
+		// .summer-collection {
+		// 	.main-slide {
+		// 		max-width: calc(~'100% - 100px');
+		// 	}
+		// }
 
 		.container {
 			.title-wrapper {
@@ -386,17 +475,17 @@
 }
 
 @media only screen and (max-width: 991px) {
-	.collection-page {
-		.summer-collection {
-			.thumbnail-slide {
-				max-width: 30px;
-			}
+	// .collection-page {
+	// 	.summer-collection {
+	// 		.thumbnail-slide {
+	// 			max-width: 30px;
+	// 		}
 
-			.main-slide {
-				max-width: calc(~'100% - 45px');
-			}
-		}
-	}
+	// 		.main-slide {
+	// 			max-width: calc(~'100% - 45px');
+	// 		}
+	// 	}
+	// }
 }
 
 
@@ -409,6 +498,14 @@
 
 		.title-wrapper {
 			margin-bottom: 24px;
+
+			.title {
+				text-transform: uppercase;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 24px;
+				letter-spacing: -0.01em;
+			}
 		}
 
 		.summer-collection {
@@ -419,22 +516,23 @@
 			}
 
 			.slide-wrapper {
-				padding-bottom: 111px;
+				margin-bottom: 151px;
 
 				.main-slide {
-					max-width: 100%;
+					.slider-for{
+						padding-left: 0;
+					}
 				}
 
 				.thumbnail-slide {
 					max-width: 100%;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					top: auto;
+					top: calc(~"100% + 12px");
+					left: 34px;
+					right: 34px;
 					transform: translateY(0);
-					height: 99px;
-					padding-left: 34px;
-					padding-right: 34px;
+					height: 100%;
+					overflow-y: hidden;
+					overflow-x: auto;
 
 					.slide-up {
 						position: absolute;
@@ -462,29 +560,73 @@
 						}
 					}
 
-					.slick-slider{
+					.slick-slider {
 						height: 100%;
 
-						*{
+						* {
 							height: 100%;
 
-							img{
+							img {
 								object-fit: cover;
 							}
 						}
 					}
 
-					.sm-item{
-						padding-left: 5px;
-						padding-right: 5px;
-						border-width: 0;
+					.slider-nav{
+						.dflex;
+						flex-wrap: nowrap;
+						height: 99px;
+					}
+
+					.sm-item {
+						flex: 0 0 69px;
+						margin-bottom: 0;
+						margin-right: 10px;
+						overflow: hidden;
+
+						&:last-child{
+							margin-right: 0;
+						}
+					}
+				}
+
+				.slick-arrow{
+					width: 34px;
+		
+					&.slick-next{
+						top: auto;
+						bottom: -90px;
+						left: auto;
+						right: 0;
+		
+						&:before{
+							content:"\f105";
+						}
+					}
+		
+					&.slick-prev{
+						top: auto;
+						bottom: -90px;
+						left: 0;
+		
+						&:before{
+							content:"\f104";
+						}
 					}
 				}
 			}
 		}
 
 		.material-design {
-			margin-bottom: 40px;
+			margin-bottom: 20px;
+
+			>* {
+				order: 2;
+
+				&:first-child {
+					order: 1;
+				}
+			}
 		}
 
 		.slide-product-demo {
@@ -495,6 +637,11 @@
 
 			.item {
 				margin-bottom: 10px;
+			}
+
+			.slick-list{
+				margin-left: -8px;
+				margin-right: -8px;
 			}
 
 			.slick-next,
@@ -511,6 +658,11 @@
 
 		.skill-block {
 			margin-bottom: 40px;
+
+			.btn-link-more {
+				padding: 0 24px;
+				margin-top: 24px;
+			}
 		}
 
 		.quilify-block {

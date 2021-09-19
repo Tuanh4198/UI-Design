@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/icielBrandon/font-icielBrandon.css" />
     <!-- fonts gstatic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -583,7 +584,7 @@
                                                         <span class="product-label">
                                                             <span class="label-content">
                                                                 <span class="discount">-30%</span>
-                                                            </span>
+                                                        </span>
                                                         </span>
                                                     </div>
                                                     <div class=" product-actions dflex ">
@@ -623,7 +624,7 @@
                                                         <span class="product-label">
                                                             <span class="label-content">
                                                                 <span class="discount">-30%</span>
-                                                            </span>
+                                                        </span>
                                                         </span>
                                                     </div>
                                                     <div class=" product-actions dflex ">
@@ -657,7 +658,7 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </header>
     <!-- End header -->
 
@@ -759,7 +760,7 @@
                             </div>
                             <!-- add data-index vào từng li với giá trị từ 1 đến n, item đầu tiên phải thêm class 'active' -->
                             <!-- thêm id="scrolling_div" -->
-                            <div class="thumbnail-slide" id="scrolling_div"> 
+                            <div class="thumbnail-slide" id="scrolling_div">
                                 <ul class="slider-nav">
                                     <li data-index="1" class="sm-item active"><img src="./images/page/detail/slide_sm_1.jpg" /></li>
                                     <li data-index="2" class="sm-item"><img src="./images/page/detail/slide_sm_2.jpg" /></li>
@@ -795,57 +796,57 @@
                                 <li>
                                     <ul class="list-option color">
                                         <li class="active">
-											<label for="yellow">
+                                            <label for="yellow">
 												<span style="background: url('./images/page/detail/color1.png')">yellow</span>
 											</label>
-											<input type="radio" id="yellow" name="color" value="yellow">
-										</li>
+                                            <input type="radio" id="yellow" name="color" value="yellow">
+                                        </li>
                                         <li>
-											<label for="black">
+                                            <label for="black">
 												<span style="background: url('./images/page/detail/color2.png')">black</span>
 											</label>
-											<input type="radio" id="black" name="color" value="black">
-										</li>
+                                            <input type="radio" id="black" name="color" value="black">
+                                        </li>
                                         <li>
-											<label for="blue">
+                                            <label for="blue">
 												<span style="background-color: #90ABC3">blue</span>
 											</label>
-											<input type="radio" id="blue" name="color" value="blue">
-										</li>
+                                            <input type="radio" id="blue" name="color" value="blue">
+                                        </li>
                                         <li>
-											<label for="pink">
+                                            <label for="pink">
 												<span style="background-color: #C3918F">pink</span>
 											</label>
-											<input type="radio" id="pink" name="color" value="pink">
-										</li>
+                                            <input type="radio" id="pink" name="color" value="pink">
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <ul class="list-option size">
                                         <li class="active">
-											<label for="S">
+                                            <label for="S">
 												S
 											</label>
-											<input type="radio" id="S" name="size" value="S">
-										</li>
+                                            <input type="radio" id="S" name="size" value="S">
+                                        </li>
                                         <li>
-											<label for="MS">
+                                            <label for="MS">
 												MS
 											</label>
-											<input type="radio" id="MS" name="size" value="MS">
-										</li>
+                                            <input type="radio" id="MS" name="size" value="MS">
+                                        </li>
                                         <li>
-											<label for="L">
+                                            <label for="L">
 												L
 											</label>
-											<input type="radio" id="L" name="size" value="L">
-										</li>
+                                            <input type="radio" id="L" name="size" value="L">
+                                        </li>
                                         <li>
-											<label for="XL">
+                                            <label for="XL">
 												XL
 											</label>
-											<input type="radio" id="XL" name="size" value="XL">
-										</li>
+                                            <input type="radio" id="XL" name="size" value="XL">
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -1625,9 +1626,9 @@
                         <button type="button" class="btn btn-block btn-checkout">Giúp tôi tìm cỡ này</button>
                         <p class="time-open-shop">Gọi đặt mua <span>1800.1103</span> (7:30 - 22:00)</p>
                     </div>
-				</form>
-			</div>
-		</div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -1789,7 +1790,7 @@
             event.preventDefault();
             $(this).parent().find('li').removeClass('active');
             $(this).toggleClass('active');
-            console.log($(this).find('input').val()); 
+            console.log($(this).find('input').val());
         })
 
         $('#btn-choose-size').click(function(event) {
@@ -1829,52 +1830,51 @@
             $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
                 let calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
                 $progressBarLabel.css('height', `${calc}%`);
-				$thumbnail.each(function () {
-					$(this).removeClass('active');
-				});
-				$thumbnail[nextSlide].classList.add('active');
-                if ( windowWidth <= 575) {
+                $thumbnail.each(function() {
+                    $(this).removeClass('active');
+                });
+                $thumbnail[nextSlide].classList.add('active');
+                if (windowWidth <= 575) {
                     console.log($thumbnail[nextSlide].offsetLeft);
                     document.getElementById('scrolling_div').scrollLeft = $thumbnail[nextSlide].offsetLeft;
-                }
-                else{
+                } else {
                     document.getElementById('scrolling_div').scrollTop = $thumbnail[nextSlide].offsetTop;
                 }
             });
 
-			$thumbnail.each(function () {
-				$(this).click(function (e) {
-					let index = $(this).data('index');
+            $thumbnail.each(function() {
+                $(this).click(function(e) {
+                    let index = $(this).data('index');
                     $('.main-slide .slider-for').slick('slickGoTo', index - 1);
                 });
-			});
+            });
         });
 
         $(function() {
             let slider = $('.main-slide .slider-for');
-			let windowWidth = $(window).width();
-			slider.slick({
-				dots:true, 
-				arrows:true,
-				autoplay:false, 
-				speed:1000,
-				vertical: (windowWidth <= 575) ? false : true,
-				autoplaySpeed:2000,
-				slidesToShow:1,
-				slidesToScroll:1
-			});
+            let windowWidth = $(window).width();
+            slider.slick({
+                dots: true,
+                arrows: true,
+                autoplay: false,
+                speed: 1000,
+                vertical: (windowWidth <= 575) ? false : true,
+                autoplaySpeed: 2000,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
         });
 
-		$(function() {
+        $(function() {
             let btn = $('#choose_size_modal .close');
-			btn.click(function(event) {
-				event.preventDefault();
-				$('.modal-backdrop').hide();
-				$('#choose_size_modal').removeClass('show');
-				setTimeout(function(){
-					$('#choose_size_modal .dismiss').trigger('click');
-				}, 300);
-			})
+            btn.click(function(event) {
+                event.preventDefault();
+                $('.modal-backdrop').hide();
+                $('#choose_size_modal').removeClass('show');
+                setTimeout(function() {
+                    $('#choose_size_modal .dismiss').trigger('click');
+                }, 300);
+            })
         });
     });
 </script>

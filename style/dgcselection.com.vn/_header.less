@@ -65,6 +65,8 @@ header {
 		font-size: 12px;
 		font-weight: 600;
 		line-height: 15px;
+		padding-bottom: 8px;
+		margin-bottom: -8px;
 
 
 
@@ -263,6 +265,15 @@ header {
 			margin-right: 0;
 			padding-right: 0;
 			border-width: 0;
+		}
+
+		&:hover{
+			.custom-link-content {
+				opacity: 1;
+				visibility: visible;
+				height: auto;
+				overflow: visible;
+			}
 		}
 	}
 }
@@ -1205,7 +1216,7 @@ header {
 		transform: translateX(-100%);
 		transition: all .3s ease;
 		background-color: white;
-		max-width: 280px;
+		max-width: 344px;
 		width: 100%;
 		height: 100vh;
 		max-height: 100vh;
@@ -1496,6 +1507,25 @@ header {
 	}
 }
 
+.open-popup{
+	.overlay{
+		display: block !important;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, .5);
+		z-index: 9;
+	}
+
+	.header,
+	header{
+		z-index: 9
+	}
+}
+
 .open-minicart,
 .nav-open {
 	overflow: hidden;
@@ -1629,7 +1659,7 @@ header {
 		vertical-align: middle;
 
 		span {
-			width: 18px;
+			width: 14.5px;
 			height: 2px;
 			position: absolute;
 			-webkit-transition-property: -webkit-transform;
@@ -1676,25 +1706,50 @@ header {
 
 	.nav-mobile {
 		.nav-mobile-title {
-			padding: 10px 15px;
-			background-color: #242424;
-			color: white;
+			padding: 16px 15px;
+			background-color: #F6F6F6;
+			color: @base_color;
 			display: block;
 			position: relative;
+			border-width: 0 0 1px;
+			border-style: solid;
+			border-color: @border_color;
+			text-transform: uppercase;
+			font-weight: 700;
 
 			.btn-close {
-				background-image: url('../../images/close-menu.png');
+				// background-image: url('../../images/close-menu.png');
+				right: 20px;
 			}
 		}
 
 		.nav-mobile-content {
 			overflow-y: auto;
 			max-height: calc(~"100% - 44px");
+
+			>.nav-item {
+				padding: 5.5px 0;
+				margin: 0 15px;
+				display: block;
+				border-width: 0 0 1px;
+				border-style: solid;
+				border-color: @border_color
+			}
+
+			li{
+				li{
+					padding: 0 15px;
+				}
+			}
 		}
 
 		.nav-item {
 			position: relative;
 			padding-left: 15px;
+
+			&.home {
+				display: none;
+			}
 		}
 
 		.mega-link,
@@ -1712,7 +1767,7 @@ header {
 		.collapse {
 			position: absolute;
 			right: 0;
-			top: 0;
+			top: 10px;
 			width: 40px;
 			height: 44px;
 			text-align: center;

@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: @fontbase;
     background: #ffffff;
     overflow-x: hidden;
 }
@@ -1406,14 +1406,16 @@ button {
     }
 
     .product-recommended-primary {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        // display: flex;
+        // flex-wrap: wrap;
+        // align-items: center;
+        overflow: hidden;
 
         .block-left-recommended {
-            width: 25%;
             width: 33.2%;
             padding-right: 55px;
+            display: inline-block;
+            float: left;
 
             .brand {
                 margin-bottom: 15px;
@@ -1457,8 +1459,9 @@ button {
         }
 
         .block-right-recommended {
-            width: 75%;
             width: 66.8%;
+            display: inline-block;
+            float: right;
 
             .brand {
                 display: none;
@@ -2720,7 +2723,7 @@ section.main.content {
             .pharse {
                 font-size: 11px;
                 line-height: 16px;
-                font-family: Inter;
+                font-family: @icielBrandon;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 11px;

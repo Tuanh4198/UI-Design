@@ -1,3 +1,4 @@
+@icielBrandon: 'icielBrandon', sans-serif;
 @import '../dgcselection.com.vn/_home1.less';
 @import './_aboutus.less';
 @import './_category.less';
@@ -24,8 +25,8 @@
 body {
     .blog-news {
         .box-container {
-            > .title{
-                font-family: 'Inter', sans-serif;           
+            >.title {
+                font-family: 'Inter', sans-serif;
             }
         }
     }
@@ -34,20 +35,95 @@ body {
         .blog-bottom {
             .box-top {
                 .container {
-                    > .title{
+                    >.title {
                         font-family: 'Inter', sans-serif;
-                            font-size: 32px;
-                            font-weight: 600;
-                            line-height: 49px;
-                            letter-spacing: -0.01em;
-                            text-transform: uppercase;
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 49px;
+                        letter-spacing: -0.01em;
+                        text-transform: uppercase;
                     }
 
-                    > .category-date {
-                        .category{
+                    >.category-date {
+                        .category {
                             color: #0F1F3D;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+// detail product 
+.detail-page {
+    .product-image-main {
+        .main-slide {
+            .slick-next,
+            .slick-prev {
+                bottom: auto;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                width: 32px;
+                height: 60px;
+                background-color: white;
+                border-radius: 0;
+                -moz-border-radius: 0;
+                -webkit-border-radius: 0;
+                opacity: 0.7;
+
+                &:before {
+                    color: #242424;
+                    font-size: 30px;
+                    line-height: 60px;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .thumbnail-slide{
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .detail-page {
+        .related-product{
+            position: relative
+        }
+        .title-wrapper {
+            .btn-slide {
+                display: block;
+
+                .slide-left,
+                .slide-right{
+                    position:absolute;
+                    bottom: -50px;
+                    background-color: transparent !important;
+                    border-radius: 0;
+                    -moz-border-radius: 0;
+                    -webkit-border-radius: 0;
+                    opacity: 0.7;
+                    z-index: 10;
+                    border-width: 0;
+    
+                    &:before {
+                        color: #242424 !important;
+                        font-size: 30px;
+                    }
+                }
+
+                .slide-left{
+                    left: -16px;
+                }
+
+                .slide-right{
+                    right: -16px;
                 }
             }
         }
