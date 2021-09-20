@@ -2089,15 +2089,7 @@ header {
 .social-profile {
   text-align: initial;
 }
-.social-profile .social-item {
-  display: inline-block;
-  margin-right: 20px;
-}
-.social-profile .social-item:last-child {
-  margin-right: 0;
-}
 .social-profile .social-link {
-  display: block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-size: 14px;
@@ -2155,6 +2147,12 @@ header {
 .footer-link .link-list a:hover {
   border-color: #242424;
 }
+.footer-link .social-profile {
+  margin-top: 66px;
+}
+.footer-link .social-profile .link-list a {
+  border-width: 0;
+}
 .footer {
   color: #242424;
 }
@@ -2162,7 +2160,7 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 64px 69px;
+  padding: 64px 69px 20px;
 }
 .footer .footer-social {
   margin-top: 106px;
@@ -2472,10 +2470,6 @@ header {
   }
 }
 @media screen and (max-width: 991px) {
-  .social-profile {
-    padding: 0 0  20px;
-    text-align: center;
-  }
   .social-profile .social-item {
     margin-bottom: 0;
   }
@@ -2502,6 +2496,9 @@ header {
   }
 }
 @media screen and (max-width: 575px) {
+  .social-profile {
+    text-align: center;
+  }
   .social-profile .title {
     font-size: 26px;
     font-weight: 700;
@@ -2516,6 +2513,10 @@ header {
   .social-profile .social-item {
     margin-bottom: 0;
     margin-right: 43px;
+    display: inline-block;
+  }
+  .social-profile .social-item:last-child {
+    margin-right: 0;
   }
   .social-profile .social-item:last-child .social-link {
     border-width: 0;
@@ -2529,7 +2530,7 @@ header {
     font-size: 14px;
     margin-right: 0;
   }
-  .footer-social {
+  .footer-link .social-profile {
     display: none;
   }
   .footer .footer-social-menu {
@@ -4223,6 +4224,8 @@ body .blog-children .blog-bottom .box-top .container > .category-date .category 
 .about-us-page .category-tab .main-slide {
   max-width: 1000px;
   margin-left: 15px;
+  position: relative;
+  overflow: hidden;
 }
 .about-us-page .category-tab .main-slide .item img {
   -webkit-transition: 0.3s ease-in;

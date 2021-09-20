@@ -486,6 +486,8 @@
 .about-us-page .category-tab .main-slide {
   max-width: 1000px;
   margin-left: 15px;
+  position: relative;
+  overflow: hidden;
 }
 .about-us-page .category-tab .main-slide .item img {
   -webkit-transition: 0.3s ease-in;
@@ -12505,9 +12507,6 @@ button {
 .product-recommended .product-recommended-primary .block-right-recommended .product-items {
   margin-left: -12px;
   margin-right: -12px;
-}
-.product-recommended .product-recommended-primary .block-right-recommended .product-items .slick-slide .product-wrapper {
-  display: block !important;
 }
 .product-recommended .product-recommended-primary .block-right-recommended .product-items .product-wrapper {
   padding-left: 12px;
